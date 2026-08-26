@@ -11,6 +11,7 @@ for y in json.load(open("dividend_yield.json", encoding="utf-8")):
     YIELDS[y["code"]] = {
         "dy": y["dy_12m_daily"] * 100, "tr": y["tr_ret"] * 100, "pr": y["pr_ret"] * 100,
         "d0": f"{y['d0'][:4]}-{y['d0'][4:6]}-{y['d0'][6:]}", "d1": f"{y['d1'][:4]}-{y['d1'][4:6]}-{y['d1'][6:]}",
+        "ldy": y["latest_dy"] * 100, "ld1": f"{y['latest_d1'][:4]}-{y['latest_d1'][4:6]}-{y['latest_d1'][6:]}",
     }
 
 # 年度涨跌对比矩阵(4指数 x 11年)
@@ -338,9 +339,14 @@ tr.hl td{background:#fffaf7}
   <div class="desc">回撤数据是选择的钥匙：收益相近时，回撤更小、恢复更快的指数持有体验更好，也更可能坚持到底。</div>
   <div class="pick" id="pick"></div>
   <div class="quote">
-    <p>「10 年定投的最大考验从来不是选哪个指数，而是在账面浮亏十几万的那几个月里，你能不能继续投下去。定投最大的敌人不是市场，是你自己。」</p>
-    <div class="who">—— 回撤是策略的属性，坚持是唯一的策略</div>
+    <p>「10 年定投的最大考验从来不是选哪个指数，而是在账面浮亏的那几个月里，你能不能继续投下去。定投最大的敌人不是市场，是你自己。」</p>
+    <div class="who">回撤是权益策略固有特征，坚持是关键。对比 10 年期缴年金险，其保证回本周期约 8‑12 年，中途退保会亏损本金。红利定投波动直观可见，但保留资金流动性，长期具备更高收益的可能性。</div>
   </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <p>如需获取更多定投策略参考、同步市场变化相关观察，<b>欢迎和我进一步交流，落地你的定投计划</b>。您的支持是我继续研究的动力。以上内容仅供学习参考，不构成投资建议，投资有风险，入市需谨慎。</p>
 </div>
 
 <!-- foot -->
@@ -354,12 +360,6 @@ tr.hl td{background:#fffaf7}
   <p>6. <b>当前股息率</b>：近 12 个月实际分红收益率，用官方全收益指数与价格指数的日收益差累计（价差法·逐日口径）计算（%%DY_RANGE%%），与 Wind 披露 TTM 股息率交叉验证一致（如中证红利 4.24%，2026-07-31）；逐日口径与首尾法结果差异通常小于 0.3pct。</p>
   <p>7. <b>年度表现口径</b>：年末浮盈＝年末市值−累计投入；当年盈亏＝年末市值−上年末市值−当年投入；2026 行为截至 2026-07-31（回测区间末），非完整年度。</p>
   <p class="warn">⚠ 本页为历史数据回测，不代表未来收益。红利策略亦存在长期跑输与估值回归风险。投资有风险，决策需谨慎。</p>
-</div>
-
-<!-- CTA -->
-<div class="cta">
-  <p>如需获取更多定投策略参考、同步市场变化相关观察，<b>可联系我开户</b></p>
-  <div class="sub">业务收入支撑日常数据与内容维护，感谢支持。投资有风险，入市需谨慎。</div>
 </div>
 
 </div>
@@ -409,9 +409,11 @@ const TOTAL  = SERIES.H20269.invested[SERIES.H20269.invested.length-1];
     const y = YIELDS[c];
     return `<div class="card" style="padding:14px 16px">
       <div class="top"><span class="dot" style="background:${COLORS[c]}"></span><span class="nm">${SHORT[c]}</span><span class="ix-code">${c}</span></div>
-      <div class="fval" style="font-size:24px">${y.dy.toFixed(2)}%</div>
+      <div style="font-size:24px;font-weight:700;color:#e74c3c">${y.ldy.toFixed(2)}%</div>
+      <div style="font-size:12px;color:var(--sub);margin-top:2px">最新股息率（截至 ${y.ld1}）</div>
+      <div style="font-size:24px;font-weight:600;margin-top:8px">${y.dy.toFixed(2)}%</div>
       <div style="font-size:12px;color:var(--sub);margin-top:2px">近12个月实际股息率（${y.d0} ~ ${y.d1}）</div>
-      <div style="font-size:11.5px;color:var(--sub);margin-top:6px;background:#fafbfc;border-radius:8px;padding:6px 8px">同期全收益 ${y.tr.toFixed(1)}% ｜ 价格 ${y.pr.toFixed(1)}%</div>
+      <div style="font-size:11.5px;color:var(--sub);margin-top:8px;background:#fafbfc;border-radius:8px;padding:6px 8px">同期全收益 ${y.tr.toFixed(1)}% ｜ 价格 ${y.pr.toFixed(1)}%</div>
     </div>`;
   }).join("");
 })();
