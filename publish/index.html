@@ -59,10 +59,27 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
 .card .kv .v.pos{color:var(--red)} .card .kv .v.neg{color:var(--green)}
 .card .mdd{font-size:12.5px;color:var(--sub);margin-top:10px;background:#fafbfc;border-radius:8px;padding:7px 10px}
 /* Table */
-.tbl-box{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(20,30,50,.05)}
-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl-box{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow-x:auto;overflow-y:hidden;box-shadow:0 1px 3px rgba(20,30,50,.05);-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:480px}
 th{background:#f8fafc;color:var(--sub);font-weight:600;text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
 td{padding:11px 14px;border-bottom:1px solid #f1f4f8;white-space:nowrap}
+.tbl-scroll-hint{display:none;color:var(--sub);font-size:12px;margin:6px 2px 0;text-align:right}
+@media(max-width:760px){
+  .hero h1{font-size:23px}.hero{padding:28px 22px}
+  .know{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .pick{grid-template-columns:1fr}
+  .card .kv{grid-template-columns:1fr}
+  th,td{padding:9px 10px;font-size:12.5px}
+  /* 回撤明细表8列: 隐藏耗时列(第6峰值→谷底 / 第8峰值→恢复), 保留所有日期和金额 */
+  #tbl_mdd td:nth-child(6), #tbl_mdd td:nth-child(8),
+  #tbl_mdd th:nth-child(6), #tbl_mdd th:nth-child(8){display:none}
+  /* 年度表6列: 隐藏当年盈亏(衍生值, 由浮盈变化可推算) */
+  #tbl_annual td:nth-child(6), #tbl_annual th:nth-child(6){display:none}
+  /* 年度涨跌对比表5列: 隐藏红利低波100(次列), 保留主要四指数 */
+  #tbl_yoy td:nth-last-child(2), #tbl_yoy th:nth-last-child(2){display:none}
+  .tbl-scroll-hint{display:block}
+}
 tr:last-child td{border-bottom:none}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 td b{font-weight:700}
@@ -111,6 +128,11 @@ tr.hl td{background:#fffaf7}
 .quote{margin-top:18px;background:#1d2939;border-radius:14px;padding:24px 28px;color:#e8eef6}
 .quote p{font-size:16.5px;font-weight:600;letter-spacing:.5px}
 .quote .who{margin-top:8px;font-size:12.5px;color:#8fa0b5}
+/* CTA */
+.cta{margin-top:18px;background:linear-gradient(135deg,#fdf3f2 0%,#fbe9e7 100%);border:1px solid #f3d9d5;border-radius:14px;padding:24px 30px;text-align:center;box-shadow:0 1px 6px rgba(192,57,43,.06)}
+.cta p{font-size:16px;font-weight:700;color:#8c2f28;letter-spacing:.5px;line-height:1.8}
+.cta p b{color:#b3372c;font-weight:800}
+.cta .sub{font-size:12px;color:#8b7a77;margin-top:8px;letter-spacing:.3px;line-height:1.7}
 @media(max-width:720px){.hero h1{font-size:23px}.hero{padding:28px 22px}}
 </style>
 </head>
@@ -194,6 +216,7 @@ tr.hl td{background:#fffaf7}
     <div class="tbl-box" style="border:none;box-shadow:none">
     <table id="tbl_mdd"></table>
     </div>
+    <div class="tbl-scroll-hint">← 左右滑动查看更多 →</div>
   </div>
 
   <div class="alert">
@@ -228,6 +251,7 @@ tr.hl td{background:#fffaf7}
     <div class="tbl-box" style="border:none;box-shadow:none;margin-top:6px">
     <table id="tbl_annual"></table>
     </div>
+    <div class="tbl-scroll-hint">← 左右滑动查看更多 →</div>
   </div>
 </div>
 
@@ -238,8 +262,9 @@ tr.hl td{background:#fffaf7}
   <h2><span class="no">5</span>指数年度涨跌幅：四指数横向对比</h2>
   <div class="desc">各指数年度涨跌幅（<b>全收益口径</b>，含分红再投）。2016 年为定投起点（2016-07-01）至年末，其余年份为自然年（上年末→本年末）；2026 行为截至 2026-07-31（非完整年度）。红涨绿跌（A 股习惯）。</div>
   <div class="tbl-box" style="overflow-x:auto">
-    <table id="tbl_yoy" style="min-width:560px"></table>
-  </div>
+<table id="tbl_yoy" style="min-width:560px"></table>
+      </div>
+      <div class="tbl-scroll-hint">← 左右滑动查看更多 →</div>
 </div>
 
 <!-- 6 那到底选哪个 -->
@@ -263,6 +288,12 @@ tr.hl td{background:#fffaf7}
   <p>6. <b>当前股息率</b>：近 12 个月实际分红收益率，用官方全收益指数与价格指数的日收益差累计（价差法·逐日口径）计算（2025-07-31 ~ 2026-07-31），与 Wind 披露 TTM 股息率交叉验证一致（如中证红利 4.24%，2026-07-31）；逐日口径与首尾法结果差异通常小于 0.3pct。</p>
   <p>7. <b>年度表现口径</b>：年末浮盈＝年末市值−累计投入；当年盈亏＝年末市值−上年末市值−当年投入；2026 行为截至 2026-07-31（回测区间末），非完整年度。</p>
   <p class="warn">⚠ 本页为历史数据回测，不代表未来收益。红利策略亦存在长期跑输与估值回归风险。投资有风险，决策需谨慎。</p>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <p>如需获取更多定投策略参考、同步市场变化相关观察，<b>可联系我开户</b></p>
+  <div class="sub">业务收入支撑日常数据与内容维护，感谢支持。投资有风险，入市需谨慎。</div>
 </div>
 
 </div>
