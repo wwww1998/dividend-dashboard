@@ -191,7 +191,7 @@ tr.hl td{background:#fffaf7}
   th,td{padding:9px 10px;font-size:12.5px}
   #tbl_mdd td:nth-child(6),#tbl_mdd td:nth-child(8),#tbl_mdd th:nth-child(6),#tbl_mdd th:nth-child(8){display:none}
   #tbl_annual td:nth-child(6),#tbl_annual th:nth-child(6){display:none}
-  #tbl_yoy td:nth-last-child(2),#tbl_yoy th:nth-last-child(2){display:none}
+  /* 年度涨跌对比表: 四指数全部保留, 窄屏靠横向滚动 (tbl-box 已 overflow-x:auto) */
   .tbl-scroll-hint{display:block}
 }
 </style>

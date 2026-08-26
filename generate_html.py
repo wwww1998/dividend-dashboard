@@ -144,8 +144,7 @@ td{padding:11px 14px;border-bottom:1px solid #f1f4f8;white-space:nowrap}
   #tbl_mdd th:nth-child(6), #tbl_mdd th:nth-child(8){display:none}
   /* 年度表6列: 隐藏当年盈亏(衍生值, 由浮盈变化可推算) */
   #tbl_annual td:nth-child(6), #tbl_annual th:nth-child(6){display:none}
-  /* 年度涨跌对比表5列: 隐藏红利低波100(次列), 保留主要四指数 */
-  #tbl_yoy td:nth-last-child(2), #tbl_yoy th:nth-last-child(2){display:none}
+  /* 年度涨跌对比表: 四指数全部保留, 窄屏靠横向滚动 (tbl-box 已 overflow-x:auto) */
   .tbl-scroll-hint{display:block}
 }
 tr:last-child td{border-bottom:none}
