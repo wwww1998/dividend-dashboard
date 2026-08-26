@@ -59,8 +59,8 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
 .card .kv .v.pos{color:var(--red)} .card .kv .v.neg{color:var(--green)}
 .card .mdd{font-size:12.5px;color:var(--sub);margin-top:10px;background:#fafbfc;border-radius:8px;padding:7px 10px}
 /* Table */
-.tbl-box{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(20,30,50,.05)}
-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl-box{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow-x:auto;overflow-y:hidden;box-shadow:0 1px 3px rgba(20,30,50,.05);-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:480px}
 th{background:#f8fafc;color:var(--sub);font-weight:600;text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
 td{padding:11px 14px;border-bottom:1px solid #f1f4f8;white-space:nowrap}
 tr:last-child td{border-bottom:none}
@@ -116,7 +116,16 @@ tr.hl td{background:#fffaf7}
 .cta p{font-size:16px;font-weight:700;color:#8c2f28;letter-spacing:.5px;line-height:1.8}
 .cta p b{color:#b3372c;font-weight:800}
 .cta .sub{font-size:12px;color:#8b7a77;margin-top:8px;letter-spacing:.3px;line-height:1.7}
-@media(max-width:720px){.hero h1{font-size:23px}.hero{padding:28px 22px}}
+@media(max-width:760px){
+  .hero h1{font-size:23px}.hero{padding:28px 22px}
+  .know,.cards,.pick{grid-template-columns:1fr}
+  .card .kv{grid-template-columns:1fr}
+  th,td{padding:9px 10px;font-size:12.5px}
+  #tbl_mdd td:nth-child(6),#tbl_mdd td:nth-child(8),#tbl_mdd th:nth-child(6),#tbl_mdd th:nth-child(8){display:none}
+  #tbl_annual td:nth-child(6),#tbl_annual th:nth-child(6){display:none}
+  #tbl_yoy td:nth-last-child(2),#tbl_yoy th:nth-last-child(2){display:none}
+  .tbl-scroll-hint{display:block}
+}
 </style>
 </head>
 <body>
@@ -199,6 +208,7 @@ tr.hl td{background:#fffaf7}
     <div class="tbl-box" style="border:none;box-shadow:none">
     <table id="tbl_mdd"></table>
     </div>
+    <div class="tbl-scroll-hint">← 左右滑动查看更多 →</div>
   </div>
 
   <div class="alert">
@@ -233,6 +243,7 @@ tr.hl td{background:#fffaf7}
     <div class="tbl-box" style="border:none;box-shadow:none;margin-top:6px">
     <table id="tbl_annual"></table>
     </div>
+    <div class="tbl-scroll-hint">← 左右滑动查看更多 →</div>
   </div>
 </div>
 
