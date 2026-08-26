@@ -71,7 +71,7 @@ html = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>四大红利全收益指数 · 10年定投真实回撤回测</title>
+<title>四大红利全收益指数 · 10年定投数据回测</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <script>window.echarts||document.write('<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.5.0/echarts.min.js"><\\/script>');</script>
 <style>
@@ -201,9 +201,8 @@ tr.hl td{background:#fffaf7}
 
 <!-- HERO -->
 <div class="hero">
-  <div class="tag">真实数据复算 · 非转载</div>
-  <h1>每年年初定投 %%AMOUNT%% 元红利指数，10 年后能赚多少？<br><em>四大红利全收益指数 · 真实回撤回测</em></h1>
-  <div class="sub">基于中证指数官网全收益指数官方日线（csindex.com.cn），逐日复算 2017-01 至 2026-07 十年定投：每年年初（1 月首个交易日）买入 %%AMOUNT%% 元，共 %%PERIODS%% 期、累计投入 ¥%%TOTAL%%。重点还原每个指数的<b style="color:#ffb37a">真实回撤</b>——包括定投组合的实际浮亏与恢复耗时。</div>
+  <h1>每年年初定投 %%AMOUNT%% 元红利指数，10 年后能赚多少？<br><em>四大红利全收益指数 ·数据回测</em></h1>
+  <div class="sub">基于中证指数官网全收益指数官方日线（csindex.com.cn），逐日复算 2017-01 至 2026-07 十年定投：每年年初（1 月首个交易日）买入 %%AMOUNT%% 元，共 %%PERIODS%% 期、累计投入 ¥%%TOTAL%%。重点还原每个指数的<b style="color:#ffb37a">真实回测</b>——包括定投组合的实际浮亏与恢复耗时。</div>
   <div class="rules">
     <div class="rule">周期 <b>2016.07 - 2026.07</b></div>
     <div class="rule">频率 <b>每年年初（1 月首个交易日）</b></div>
@@ -216,7 +215,7 @@ tr.hl td{background:#fffaf7}
 <!-- 0 背景科普 -->
 <div class="sec">
   <h2><span class="no">0</span>红利指数基金是什么？为什么买？</h2>
-  <div class="desc">先搞懂三件事，再看上面的回撤数据才有意义。</div>
+  <div class="desc">先搞懂三件事，再看上面的回测数据才有意义。</div>
   <div class="know">
     <div class="kn">
       <h3><span class="ico" style="background:#3498db">①</span>是什么：一篮子"爱分红的好公司"</h3>
