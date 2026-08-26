@@ -228,8 +228,8 @@ tr.hl td{background:#fffaf7}
       <h3><span class="ico" style="background:#3498db">①</span>是什么：一篮子"爱分红的好公司"</h3>
       <p>红利指数基金＝跟踪<b>红利指数</b>的基金（场内 ETF 或场外联接基金）。红利指数从股市里挑出一批<b>股息率高、分红稳定</b>的股票，按股息率加权——你买的不是一只股票，而是"高股息组合"，每年收到成分公司的现金分红。四个主流红利指数的<b>全收益代码</b>：</p>
       <ul>
-        <li><b>上证红利全收益</b> <span class="ix-code">H00015</span>：沪市 50 只，老牌</li>
-        <li><b>中证红利全收益</b> <span class="ix-code">H00922</span>：沪深两市 100 只，最主流</li>
+        <li><b>上证红利全收益</b> <span class="ix-code">H00015</span>：沪市 50 只，老牌高股息大盘成分</li>
+        <li><b>中证红利全收益</b> <span class="ix-code">H00922</span>：沪深 100 只，全市场主流红利成分</li>
         <li><b>红利低波全收益</b> <span class="ix-code">H20269</span>：沪深 50 只，股息＋低波动双因子</li>
         <li><b>红利低波100全收益</b> <span class="ix-code">H20955</span>：沪深 100 只，双因子更分散</li>
       </ul>
@@ -482,7 +482,7 @@ let underChart=null, underMode="port";
 function renderUnder(){
   const key = underMode==="port" ? "ddPort" : "ddIdx";
   const series = CODES.map(c=>({
-    name:SHORT[c], type:"line", data:SERIES[c][key], smooth:false, symbol:"none",
+    name:SHORT[c], type:"line", data:SERIES[c][key], smooth:false, symbol:"none", color:COLORS[c],
     lineStyle:{width:1.8,color:COLORS[c]},
     areaStyle:{color:{type:"linear",x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:COLORS[c]+"55"},{offset:1,color:COLORS[c]+"08"}]}},
     emphasis:{focus:"series"},
