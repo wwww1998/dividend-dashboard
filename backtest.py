@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 四大红利全收益指数 10年定投回测 + 真实回撤计算
-规则: 每月第一个交易日定投1000元, 2016-07 ~ 2026-07, 共121期, 总投入12.1万
+规则: 每月第一个交易日定投10000元, 2016-08 ~ 2026-07, 共120期, 总投入12万
 输出: result.json (供网页使用)
 """
 import json, datetime, math
@@ -14,7 +14,7 @@ INDICES = [
 ]
 
 AMOUNT = 10000.0
-START, END = "2016-07", "2026-07"   # 定投区间
+START, END = "2016-08", "2026-07"   # 定投区间
 
 def load(code):
     d = json.load(open(f"{code}.json", encoding="utf-8"))
@@ -79,7 +79,7 @@ result = {"indices": [], "meta": {
 
 for idx in INDICES:
     data = load(idx["code"])
-    # 截取定投区间: 2016-07-01 ~ 2026-07-31
+    # 截取定投区间: 2016-08-01 ~ 2026-07-31
     seg = [p for p in data if START.replace("-", "")[:6] <= p["date"].replace("-", "")[:6] <= END.replace("-", "")[:6]]
     # 需要定投起点前一交易日(用于首次定投后市值)
     first = first_trading_days(seg)
@@ -119,7 +119,7 @@ for idx in INDICES:
         y = p["date"][:4]
         years[y] = p
     # 指数年度涨跌幅(全收益, 用全史数据)
-    # 口径: 2016年为定投起点(2016-07-01)至年末, 其余年份为自然年(上年末→本年末)
+    # 口径: 2016年为定投起点(2016-08-01)至年末, 其余年份为自然年(上年末→本年末)
     close_map = {p["date"]: p["close"] for p in data}
     by_yr = {}
     for p in data:
@@ -127,7 +127,7 @@ for idx in INDICES:
     yr_keys = sorted(by_yr)
     idx_rets = {}
     if "2016" in by_yr:
-        base_2016 = close_map.get("2016-07-01") or by_yr["2015"]
+        base_2016 = close_map.get("2016-08-01") or by_yr["2015"]
         idx_rets["2016"] = round(by_yr["2016"] / base_2016 - 1, 4)
     for i in range(1, len(yr_keys)):
         y = yr_keys[i]
@@ -179,6 +179,7 @@ for idx in result["indices"]:
     for p in idx["plot"]["dates"] and []:
         pass
     # 用 seg 数据重算水下
+    data = load(idx["code"])  # 每个指数各自的原始日线(这里不能沿用外层第一个循环残留的 data)
     seg2 = [p for p in data if START.replace("-", "")[:6] <= p["date"].replace("-", "")[:6] <= END.replace("-", "")[:6]]
     peak = None; dd_list = []
     for p in seg2:

@@ -11,6 +11,7 @@ for y in json.load(open("dividend_yield.json", encoding="utf-8")):
     YIELDS[y["code"]] = {
         "dy": y["dy_12m_daily"] * 100, "tr": y["tr_ret"] * 100, "pr": y["pr_ret"] * 100,
         "d0": f"{y['d0'][:4]}-{y['d0'][4:6]}-{y['d0'][6:]}", "d1": f"{y['d1'][:4]}-{y['d1'][4:6]}-{y['d1'][6:]}",
+        "ldy": y["latest_dy"] * 100, "ld1": f"{y['latest_d1'][:4]}-{y['latest_d1'][4:6]}-{y['latest_d1'][6:]}",
     }
 
 # 年度涨跌对比矩阵(4指数 x 11年)
@@ -71,7 +72,7 @@ html = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>四大红利全收益指数 · 10年定投真实回撤回测</title>
+<title>四大红利全收益指数 · 10年定投数据回测</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <script>window.echarts||document.write('<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.5.0/echarts.min.js"><\\/script>');</script>
 <style>
@@ -208,11 +209,10 @@ tr.hl td{background:#fffaf7}
 
 <!-- HERO -->
 <div class="hero">
-  <div class="tag">真实数据复算 · 非转载</div>
-  <h1>每月定投 %%AMOUNT%% 元红利指数，10 年后能赚多少？<br><em>四大红利全收益指数 · 真实回撤回测</em></h1>
-  <div class="sub">基于中证指数官网全收益指数官方日线（csindex.com.cn），逐日复算 2016-07 至 2026-07 十年定投：每月首个交易日买入 %%AMOUNT%% 元，共 %%PERIODS%% 期、累计投入 ¥%%TOTAL%%。重点还原每个指数的<b style="color:#ffb37a">真实回撤</b>——包括定投组合的实际浮亏与恢复耗时。</div>
+  <h1>每月定投 %%AMOUNT%% 元红利指数，10 年后能赚多少？<br><em>四大红利全收益指数 ·数据回测</em></h1>
+  <div class="sub">基于中证指数官网全收益指数官方日线（csindex.com.cn），逐日复算 2016-08 至 2026-07 十年定投：每月首个交易日买入 %%AMOUNT%% 元，共 %%PERIODS%% 期、累计投入 ¥%%TOTAL%%。重点还原每个指数的<b style="color:#ffb37a">真实回测</b>——包括定投组合的实际浮亏与恢复耗时。</div>
   <div class="rules">
-    <div class="rule">周期 <b>2016.07 - 2026.07</b></div>
+    <div class="rule">周期 <b>2016.08 - 2026.07</b></div>
     <div class="rule">频率 <b>每月首个交易日</b></div>
     <div class="rule">每期 <b>¥%%AMOUNT%%</b></div>
     <div class="rule">总投入 <b>¥%%TOTAL%%</b>（%%PERIODS%% 期）</div>
@@ -223,17 +223,18 @@ tr.hl td{background:#fffaf7}
 <!-- 0 背景科普 -->
 <div class="sec">
   <h2><span class="no">0</span>红利指数基金是什么？为什么买？</h2>
-  <div class="desc">先搞懂三件事，再看上面的回撤数据才有意义。</div>
+  <div class="desc">先搞懂三件事，再看上面的回测数据才有意义。</div>
   <div class="know">
     <div class="kn">
       <h3><span class="ico" style="background:#3498db">①</span>是什么：一篮子"爱分红的好公司"</h3>
       <p>红利指数基金＝跟踪<b>红利指数</b>的基金（场内 ETF 或场外联接基金）。红利指数从股市里挑出一批<b>股息率高、分红稳定</b>的股票，按股息率加权——你买的不是一只股票，而是"高股息组合"，每年收到成分公司的现金分红。四个主流红利指数的<b>全收益代码</b>：</p>
       <ul>
-        <li><b>上证红利全收益</b> <span class="ix-code">H00015</span>：沪市 50 只，老牌</li>
-        <li><b>中证红利全收益</b> <span class="ix-code">H00922</span>：沪深两市 100 只，最主流</li>
-        <li><b>红利低波全收益</b> <span class="ix-code">H20269</span>：沪深 50 只，股息＋低波动双因子</li>
-        <li><b>红利低波100全收益</b> <span class="ix-code">H20955</span>：沪深 100 只，双因子更分散</li>
+        <li><b>上证红利全收益</b> <span class="ix-code">H00015</span>：沪市 50 只，老牌高股息大盘成分，每年 12 月调仓换股，当前央国企权重 75‑80%</li>
+        <li><b>中证红利全收益</b> <span class="ix-code">H00922</span>：沪深 100 只，全市场主流红利成分，每年 12 月调仓换股，当前央国企权重 70‑75%</li>
+        <li><b>红利低波全收益</b> <span class="ix-code">H20269</span>：沪深 50 只，红利低波双因子成分，每年 12 月调仓换股，当前央国企权重 70‑75%</li>
+        <li><b>红利低波100全收益</b> <span class="ix-code">H20955</span>：沪深 100 只，双因子更分散的成分，季度调仓换股（3/6/9/12 月），当前央国企权重 65‑70%</li>
       </ul>
+      <p style="font-size:12px;color:var(--sub);margin-top:6px">注：指数规则不专门筛选国企，因高股息行业特征，国央企天然占比更高。</p>
     </div>
     <div class="kn">
       <h3><span class="ico" style="background:#e67e22">②</span>为什么买：三条获利逻辑</h3>
@@ -327,7 +328,7 @@ tr.hl td{background:#fffaf7}
   <!-- 5 指数年度涨跌幅 -->
 <div class="sec">
   <h2><span class="no">5</span>指数年度涨跌幅：四指数横向对比</h2>
-  <div class="desc">各指数年度涨跌幅（<b>全收益口径</b>，含分红再投）。2016 年为定投起点（2016-07-01）至年末，其余年份为自然年（上年末→本年末）；2026 行为截至 2026-07-31（非完整年度）。红涨绿跌（A 股习惯）。</div>
+  <div class="desc">各指数年度涨跌幅（<b>全收益口径</b>，含分红再投）。2016 年为定投起点（2016-08-01）至年末，其余年份为自然年（上年末→本年末）；2026 行为截至 2026-07-31（非完整年度）。红涨绿跌（A 股习惯）。</div>
   <div class="tbl-box" style="overflow-x:auto">
 <table id="tbl_yoy" style="min-width:560px"></table>
       </div>
@@ -339,28 +340,27 @@ tr.hl td{background:#fffaf7}
   <div class="desc">回撤数据是选择的钥匙：收益相近时，回撤更小、恢复更快的指数持有体验更好，也更可能坚持到底。</div>
   <div class="pick" id="pick"></div>
   <div class="quote">
-    <p>「10 年定投的最大考验从来不是选哪个指数，而是在账面浮亏十几万的那几个月里，你能不能继续投下去。定投最大的敌人不是市场，是你自己。」</p>
-    <div class="who">—— 回撤是策略的属性，坚持是唯一的策略</div>
+    <p>「10 年定投的最大考验从来不是选哪个指数，而是在账面浮亏的那几个月里，你能不能继续投下去。定投最大的敌人不是市场，是你自己。」</p>
+    <div class="who">回撤是权益策略固有特征，坚持是关键。对比 10 年期缴年金险，其保证回本周期约 8‑12 年，中途退保会亏损本金。红利定投波动直观可见，但保留资金流动性，长期具备更高收益的可能性。</div>
   </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <p>如需获取更多定投策略参考、同步市场变化相关观察，<b>欢迎和我进一步交流，落地你的定投计划</b>。您的支持是我继续研究的动力。以上内容仅供学习参考，不构成投资建议，投资有风险，入市需谨慎。</p>
 </div>
 
 <!-- foot -->
 <div class="foot">
   <h3>口径与方法说明</h3>
   <p>1. <b>数据源</b>：中证指数官网（csindex.com.cn）官方日线行情，全收益指数（含分红再投资），四个指数：H00015 上证红利、H00922 中证红利、H20269 红利低波、H20955 红利低波100 全收益。页面推荐产品均为<b>场外联接基金（A/C 类）</b>，可定投：A 类收申购费（长期持有更省），C 类免申购费但按日计提销售服务费（短期持有更省）。</p>
-  <p>2. <b>定投规则</b>：每月首个交易日按当日收盘价买入 %%AMOUNT%% 元；2016-07 首期至 2026-07 末期为 %%PERIODS%% 期、总投入 ¥%%TOTAL%%；未计交易费用与税费。</p>
+  <p>2. <b>定投规则</b>：每月首个交易日按当日收盘价买入 %%AMOUNT%% 元；2016-08 首期至 2026-07 末期为 %%PERIODS%% 期、总投入 ¥%%TOTAL%%；未计交易费用与税费。</p>
   <p>3. <b>年化收益率</b>：按逐笔现金流 XIRR（资金时间价值口径）计算。</p>
   <p>4. <b>组合市值回撤</b>＝每日（累计份额 × 指数点位）从历史峰值回落的最大幅度；<b>指数点位回撤</b>＝指数点位本身从峰值的最大跌幅；<b>恢复日</b>＝回撤区间内首次收复峰值的日期。</p>
   <p>5. <b>口径说明</b>：本页按月定投 ¥%%AMOUNT%% 复算，共 %%PERIODS%% 期、总投入 ¥%%TOTAL%%；收益率与回撤均为百分比口径，与定投金额大小无关（线性缩放）。回测采用中证指数官网全收益指数真实日线、精确到每月首个交易日收盘价买入，未计交易费用与税费。<b>组合市值口径最大回撤四项：%%MDD_LIST%%</b>。</p>
   <p>6. <b>当前股息率</b>：近 12 个月实际分红收益率，用官方全收益指数与价格指数的日收益差累计（价差法·逐日口径）计算（%%DY_RANGE%%），与 Wind 披露 TTM 股息率交叉验证一致（如中证红利 4.24%，2026-07-31）；逐日口径与首尾法结果差异通常小于 0.3pct。</p>
   <p>7. <b>年度表现口径</b>：年末浮盈＝年末市值−累计投入；当年盈亏＝年末市值−上年末市值−当年投入；2026 行为截至 2026-07-31（回测区间末），非完整年度。</p>
   <p class="warn">⚠ 本页为历史数据回测，不代表未来收益。红利策略亦存在长期跑输与估值回归风险。投资有风险，决策需谨慎。</p>
-</div>
-
-<!-- CTA -->
-<div class="cta">
-  <p>如需获取更多定投策略参考、同步市场变化相关观察，<b>可联系我开户</b></p>
-  <div class="sub">业务收入支撑日常数据与内容维护，感谢支持。投资有风险，入市需谨慎。</div>
 </div>
 
 </div>
@@ -410,9 +410,11 @@ const TOTAL  = SERIES.H20269.invested[SERIES.H20269.invested.length-1];
     const y = YIELDS[c];
     return `<div class="card" style="padding:14px 16px">
       <div class="top"><span class="dot" style="background:${COLORS[c]}"></span><span class="nm">${SHORT[c]}</span><span class="ix-code">${c}</span></div>
-      <div class="fval" style="font-size:24px">${y.dy.toFixed(2)}%</div>
+      <div style="font-size:24px;font-weight:700;color:#e74c3c">${y.ldy.toFixed(2)}%</div>
+      <div style="font-size:12px;color:var(--sub);margin-top:2px">最新股息率（截至 ${y.ld1}）</div>
+      <div style="font-size:24px;font-weight:600;margin-top:8px">${y.dy.toFixed(2)}%</div>
       <div style="font-size:12px;color:var(--sub);margin-top:2px">近12个月实际股息率（${y.d0} ~ ${y.d1}）</div>
-      <div style="font-size:11.5px;color:var(--sub);margin-top:6px;background:#fafbfc;border-radius:8px;padding:6px 8px">同期全收益 ${y.tr.toFixed(1)}% ｜ 价格 ${y.pr.toFixed(1)}%</div>
+      <div style="font-size:11.5px;color:var(--sub);margin-top:8px;background:#fafbfc;border-radius:8px;padding:6px 8px">同期全收益 ${y.tr.toFixed(1)}% ｜ 价格 ${y.pr.toFixed(1)}%</div>
     </div>`;
   }).join("");
 })();
@@ -483,7 +485,7 @@ let underChart=null, underMode="port";
 function renderUnder(){
   const key = underMode==="port" ? "ddPort" : "ddIdx";
   const series = CODES.map(c=>({
-    name:SHORT[c], type:"line", data:SERIES[c][key], smooth:false, symbol:"none",
+    name:SHORT[c], type:"line", data:SERIES[c][key], smooth:false, symbol:"none", color:COLORS[c],
     lineStyle:{width:1.8,color:COLORS[c]},
     areaStyle:{color:{type:"linear",x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:COLORS[c]+"55"},{offset:1,color:COLORS[c]+"08"}]}},
     emphasis:{focus:"series"},

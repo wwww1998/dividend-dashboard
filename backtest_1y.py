@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-四大红利全收益指数 10年定投回测 + 真实回撤计算
-规则: 每月第一个交易日定投1000元, 2016-07 ~ 2026-07, 共121期, 总投入12.1万
-输出: result.json (供网页使用)
+四大红利全收益指数 1年定投回测 + 真实回撤计算
+规则: 每月第一个交易日定投10000元, 2025-08 ~ 2026-07, 共12期, 总投入1.2万
+输出: result_1y.json (供网页使用)
 """
 import json, datetime, math
 
@@ -13,8 +13,8 @@ INDICES = [
     {"code": "H20955", "name": "红利低波100全收益", "short": "红利低波100", "otc": "景顺长城中证红利低波动100ETF联接A(016128)/C(016129)"},
 ]
 
-AMOUNT = 100000.0
-START, END = "2017-01", "2026-07"   # 定投区间(每年年初定投, 2017-2026)
+AMOUNT = 10000.0
+START, END = "2025-08", "2026-07"   # 定投区间(最近1年)
 
 def load(code):
     d = json.load(open(f"{code}.json", encoding="utf-8"))
@@ -63,12 +63,12 @@ def max_drawdown(series, value_key="close"):
     return mdd, mdd_peak_d, mdd_trough_d, recover, mdd_peak_v, mdd_trough_v
 
 def first_trading_days(series):
-    """按年取每年第一个交易日(1月首个交易日) {year: (date, close)}"""
+    """按年月取每月第一个交易日 [(ym, date, close)]"""
     out = {}
     for p in series:
-        y = p["date"][:4]
-        if y not in out:
-            out[y] = (p["date"], p["close"])
+        ym = p["date"][:7]
+        if ym not in out:
+            out[ym] = (p["date"], p["close"])
     return out
 
 result = {"indices": [], "meta": {
@@ -79,7 +79,7 @@ result = {"indices": [], "meta": {
 
 for idx in INDICES:
     data = load(idx["code"])
-    # 截取定投区间: 2016-07-01 ~ 2026-07-31
+    # 截取定投区间: 2025-08-01 ~ 2026-07-31
     seg = [p for p in data if START.replace("-", "")[:6] <= p["date"].replace("-", "")[:6] <= END.replace("-", "")[:6]]
     # 需要定投起点前一交易日(用于首次定投后市值)
     first = first_trading_days(seg)
@@ -91,7 +91,7 @@ for idx in INDICES:
     t0 = None
     for p in seg:
         d = p["date"]
-        if d in [v[0] for v in first.values()]:   # 每年第一个交易日
+        if d in [v[0] for v in first.values()]:   # 每月第一个交易日
             shares += AMOUNT / p["close"]
             invested += AMOUNT
             cashflows.append((d, -AMOUNT))
@@ -119,15 +119,20 @@ for idx in INDICES:
         y = p["date"][:4]
         years[y] = p
     # 指数年度涨跌幅(全收益, 用全史数据)
-    # 口径: 2016年为定投起点(2016-07-01)至年末, 其余年份为自然年(上年末→本年末)
+    # 口径: 2025年为定投起点(2025-08-01)至年末, 其余年份为自然年(上年末→本年末)
     close_map = {p["date"]: p["close"] for p in data}
     by_yr = {}
     for p in data:
         by_yr[p["date"][:4]] = p["close"]
     yr_keys = sorted(by_yr)
     idx_rets = {}
+    if "2025" in by_yr:
+        base_2025 = close_map.get("2025-08-01") or by_yr["2024"]
+        idx_rets["2025"] = round(by_yr["2025"] / base_2025 - 1, 4)
     for i in range(1, len(yr_keys)):
         y = yr_keys[i]
+        if y <= "2025":
+            continue
         idx_rets[y] = round(by_yr[y] / by_yr[yr_keys[i-1]] - 1, 4)
     annual = []
     prev_yr_end = None
@@ -136,7 +141,7 @@ for idx in INDICES:
         base = {"year": y, "invested": p["invested"], "value": p["value"],
                 "profit": p["value"] - p["invested"],
                 "idx_ret": idx_rets.get(y, 0)}
-        if y == "2017":
+        if y == "2025":
             annual.append(base)
         else:
             prev = years[str(int(y) - 1)]
@@ -191,10 +196,10 @@ for idx in result["indices"]:
         dd_list.append(round(v / peak - 1, 4))
     idx["underwater_port"] = {"dates": dates2, "dd": dd_list}
 
-json.dump(result, open("result_yearly.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+json.dump(result, open("result_1y.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 # 打印摘要
-print(f"{'指数':<12}{'终值':>10}{'总收益':>10}{'年化':>8}{'组合MDD':>9}{'指数10yMDD':>11}{'指数全史MDD':>12}")
+print(f"{'指数':<12}{'终值':>10}{'总收益':>10}{'年化':>8}{'组合MDD':>9}{'指数1yMDD':>11}{'指数全史MDD':>12}")
 for idx in result["indices"]:
     md = idx["mdd_port"]["pct"]
     mi = idx["mdd_index_10y"]["pct"]
@@ -207,7 +212,7 @@ for idx in result["indices"]:
     m = idx["mdd_port"]
     print(f"{idx['short']}: {m['pct']*100:.2f}%  峰值{m['peak_date']}({m['peak_value']:,.0f}) -> 谷底{m['trough_date']}({m['trough_value']:,.0f})  浮亏{m['peak_value']-m['trough_value']:,.0f}元  恢复:{m['recover_date'] or '未恢复'}")
 print()
-print("=== 指数口径回撤明细(定投区间10年) ===")
+print("=== 指数口径回撤明细(定投区间1年) ===")
 for idx in result["indices"]:
     m = idx["mdd_index_10y"]
     print(f"{idx['short']}: {m['pct']*100:.2f}%  {m['peak_date']} -> {m['trough_date']}  恢复:{m['recover_date'] or '未恢复'}")
