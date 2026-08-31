@@ -373,7 +373,7 @@ const CARDS = __CARDS__;
 const YIELDS = __YIELDS__;
 const ANNUAL_GRID = __ANNUAL_GRID__;
 
-const COLORS = {H00015:"#e67e22", H00922:"#3498db", H20269:"#e74c3c", H20955:"#27ae60"};
+const COLORS = {H00015:"#27ae60", H00922:"#3498db", H20269:"#e74c3c", H20955:"#e67e22"};
 const SHORT  = {H00015:"上证红利", H00922:"中证红利", H20269:"红利低波", H20955:"红利低波100"};
 const CODES  = ["H00015","H00922","H20269","H20955"];
 const TOTAL  = SERIES.H20269.invested[SERIES.H20269.invested.length-1];
