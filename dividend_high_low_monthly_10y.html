@@ -368,9 +368,9 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
 /* ---------- 趋势图 (延迟渲染) ---------- */
 const __chartTasks = [];
 setTimeout(function(){
-  function __run(i){ if(i < __chartTasks.length) { __chartTasks[i](); setTimeout(()=>__run(i+1), 50); } }
-  __run(0);
-}, 100);
+	  function __run(i){ if(i < __chartTasks.length) { try{ __chartTasks[i](); }catch(e){} setTimeout(()=>__run(i+1), 80); } }
+	  __run(0);
+	}, 100);
 __chartTasks.push(function(){
   const chart = echarts.init(document.getElementById('c_trend'));
   const baseMap = {};
@@ -393,7 +393,7 @@ __chartTasks.push(function(){
   chart.setOption(option);
   window.addEventListener('resize', ()=>chart.resize());
   document.getElementById("lg_trend").innerHTML = CODES.map(c=>`<div class="li"><span class="sw" style="background:${COLORS[c]}"></span>${SHORT[c]}</div>`).join("");
-})();
+	});
 
 /* ---------- 市值走势: 最高价 (延迟渲染) ---------- */
 __chartTasks.push(function(){
@@ -473,10 +473,11 @@ __chartTasks.push(function(){
     underMode = "port"; this.classList.add("on"); document.getElementById("segIdxHigh").classList.remove("on"); render();
   });
   document.getElementById("segIdxHigh").addEventListener("click", function(){
-    underMode = "idx"; this.classList.add("on"); document.getElementById("segPortHigh").classList.remove("on"); render();
-  });
-
-/* ---------- 回撤图: 最低价 (延迟渲染) ---------- */
+	    underMode = "idx"; this.classList.add("on"); document.getElementById("segPortHigh").classList.remove("on"); render();
+	  });
+	});
+	
+	/* ---------- 回撤图: 最低价 (延迟渲染) ---------- */
 __chartTasks.push(function(){
   let underMode = "port";
   const chart = echarts.init(document.getElementById('c_under_low'));

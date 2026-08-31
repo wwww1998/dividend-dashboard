@@ -354,9 +354,9 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
 /* ---------- 延迟顺序渲染队列 ---------- */
 const __chartTasks = [];
 setTimeout(function(){
-  function __run(i){ if(i < __chartTasks.length) { __chartTasks[i](); setTimeout(()=>__run(i+1), 80); } }
-  __run(0);
-}, 100);
+	  function __run(i){ if(i < __chartTasks.length) { try{ __chartTasks[i](); }catch(e){} setTimeout(()=>__run(i+1), 80); } }
+	  __run(0);
+	}, 100);
 
 /* ---------- 趋势图 ---------- */
 (function(){
