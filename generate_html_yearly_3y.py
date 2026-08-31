@@ -249,7 +249,7 @@ tr.hl td{background:#fffaf7}
 
 <!-- 1 指数走势 -->
 <div class="sec">
-  <h2><span class="no">1</span>四大红利指数走势：十年谁在领跑</h2>
+  <h2><span class="no">1</span>四大红利指数走势</h2>
   <div class="desc">四指数<b>全收益</b>（含分红再投）日线，从定投起点归一化为 100 的走势。红利低波整体领先，红利低波100 波动更小；2024 年红利行情四指数同步走强。悬浮可查看任一时点相对起点倍数。</div>
   <div class="card">
     <div id="trendChart" style="height:400px"></div>
