@@ -351,7 +351,14 @@ const YIELDS = __YIELDS__;
 
 const fonts = {color: "#6b7686", fontFamily: "inherit"};
 
-/* ---------- 卡片对比 ---------- */
+/* ---------- 延迟顺序渲染队列 ---------- */
+const __chartTasks = [];
+setTimeout(function(){
+  function __run(i){ if(i < __chartTasks.length) { __chartTasks[i](); setTimeout(()=>__run(i+1), 80); } }
+  __run(0);
+}, 100);
+
+/* ---------- 趋势图 ---------- */
 (function(){
   const box = document.getElementById("cards");
   INDICES.forEach((it)=>{
@@ -409,8 +416,8 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
   });
 })();
 
-/* ---------- 趋势图 ---------- */
-(function(){
+/* ---------- 趋势图 (延迟渲染) ---------- */
+__chartTasks.push(function(){
   const chart = echarts.init(document.getElementById('c_trend'));
   const baseMap = {};
   INDICES.forEach(it=>{
@@ -418,6 +425,7 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
     baseMap[it.code] = first;
   });
   const option = {
+    animation: false,
     tooltip:{trigger:"axis",backgroundColor:"rgba(29,41,57,.92)",borderWidth:0,textStyle:{color:"#fff",fontSize:12},valueFormatter:v=>v==null?"-":v.toFixed(1)},
     legend:{data:CODES.map(c=>SHORT[c]),top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect"},
     xAxis:{type:"category",data:INDICES[0].high.plot.dates,axisLine:{lineStyle:{color:"#ccd4de"}},axisLabel:{color:"#6b7686",fontSize:11},axisTick:{show:false}},
@@ -431,16 +439,17 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
   chart.setOption(option);
   window.addEventListener('resize', ()=>chart.resize());
   document.getElementById("lg_trend").innerHTML = CODES.map(c=>`<div class="li"><span class="sw" style="background:${COLORS[c]}"></span>${SHORT[c]}</div>`).join("");
-})();
+});
 
-/* ---------- 市值走势: 最高价 ---------- */
-(function(){
+/* ---------- 市值走势: 最高价 (延迟渲染) ---------- */
+__chartTasks.push(function(){
   const chart = echarts.init(document.getElementById('c_growth_high'));
   const series = INDICES.map(it=>({
     name:SHORT[it.code] + "(最高价)", type:"line", data:it.high.plot.value, smooth:false, symbol:"none", lineStyle:{width:2,color:COLORS[it.code]}, itemStyle:{color:COLORS[it.code]}
   }));
   series.push({name:"累计投入",type:"line",data:INDICES[0].high.plot.invested,smooth:false,symbol:"none",lineStyle:{width:1.6,type:"dashed",color:"#9aa7b8"},itemStyle:{color:"#9aa7b8",opacity:.55}});
   const option = {
+    animation: false,
     tooltip:{trigger:"axis",backgroundColor:"rgba(29,41,57,.92)",borderWidth:0,textStyle:{color:"#fff",fontSize:12},valueFormatter:v=>v==null?"-":"¥"+Math.round(v).toLocaleString()},
     legend:{data:[...INDICES.map(it=>SHORT[it.code]+"(最高价)"),"累计投入"],top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect",itemWidth:18,itemHeight:8},
     xAxis:{type:"category",data:INDICES[0].high.plot.dates,axisLine:{lineStyle:{color:"#ccd4de"}},axisLabel:{color:"#6b7686",fontSize:11},axisTick:{show:false}},
@@ -450,16 +459,17 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
   chart.setOption(option);
   window.addEventListener('resize', ()=>chart.resize());
   document.getElementById("lg_growth_high").innerHTML = CODES.map(c=>`<div class="li"><span class="sw" style="background:${COLORS[c]}"></span>${SHORT[c]}（最高价）（终值 ¥${INDICES.find(i=>i.code===c).high.final_value.toLocaleString()}）</div>`).join("");
-})();
+});
 
-/* ---------- 市值走势: 最低价 ---------- */
-(function(){
+/* ---------- 市值走势: 最低价 (延迟渲染) ---------- */
+__chartTasks.push(function(){
   const chart = echarts.init(document.getElementById('c_growth_low'));
   const series = INDICES.map(it=>({
     name:SHORT[it.code] + "(最低价)", type:"line", data:it.low.plot.value, smooth:false, symbol:"none", lineStyle:{width:2,color:COLORS[it.code]}, itemStyle:{color:COLORS[it.code]}
   }));
   series.push({name:"累计投入",type:"line",data:INDICES[0].low.plot.invested,smooth:false,symbol:"none",lineStyle:{width:1.6,type:"dashed",color:"#9aa7b8"},itemStyle:{color:"#9aa7b8",opacity:.55}});
   const option = {
+    animation: false,
     tooltip:{trigger:"axis",backgroundColor:"rgba(29,41,57,.92)",borderWidth:0,textStyle:{color:"#fff",fontSize:12},valueFormatter:v=>v==null?"-":"¥"+Math.round(v).toLocaleString()},
     legend:{data:[...INDICES.map(it=>SHORT[it.code]+"(最低价)"),"累计投入"],top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect",itemWidth:18,itemHeight:8},
     xAxis:{type:"category",data:INDICES[0].low.plot.dates,axisLine:{lineStyle:{color:"#ccd4de"}},axisLabel:{color:"#6b7686",fontSize:11},axisTick:{show:false}},
@@ -469,10 +479,10 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
   chart.setOption(option);
   window.addEventListener('resize', ()=>chart.resize());
   document.getElementById("lg_growth_low").innerHTML = CODES.map(c=>`<div class="li"><span class="sw" style="background:${COLORS[c]}"></span>${SHORT[c]}（最低价）（终值 ¥${INDICES.find(i=>i.code===c).low.final_value.toLocaleString()}）</div>`).join("");
-})();
+});
 
-/* ---------- 各指数高低价对比图 ---------- */
-(function(){
+/* ---------- 各指数高低价对比图 (延迟渲染) ---------- */
+__chartTasks.push(function(){
   const box = document.getElementById("compareCards");
   CODES.forEach(c=>{
     const idx = INDICES.find(x=>x.code===c);
@@ -494,6 +504,7 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
     const diff = ((idx.low.cagr - idx.high.cagr) * 100).toFixed(2);
 
     const option = {
+      animation: false,
       tooltip:{
         trigger:"axis",
         backgroundColor:"rgba(29,41,57,.92)",
@@ -514,10 +525,10 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
     chart.setOption(option);
     window.addEventListener('resize', ()=>chart.resize());
   });
-})();
+});
 
-/* ---------- 回撤图: 最高价 ---------- */
-(function(){
+/* ---------- 回撤图: 最高价 (延迟渲染) ---------- */
+__chartTasks.push(function(){
   let underMode = "port";
   const chart = echarts.init(document.getElementById('c_under_high'));
 
@@ -538,6 +549,7 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
       };
     });
     const option = {
+      animation: false,
       tooltip:{trigger:"axis",backgroundColor:"rgba(29,41,57,.92)",borderWidth:0,textStyle:{color:"#fff",fontSize:12},valueFormatter:v=>v==null?"-":(v*100).toFixed(2)+"%"},
       legend:{data:CODES.map(c=>SHORT[c]),top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect"},
       xAxis:{type:"category",data:INDICES[0].high[underMode === "port" ? "underwater_port" : "underwater_index"].dates,axisLine:{lineStyle:{color:"#ccd4de"}},axisLabel:{color:"#6b7686",fontSize:11},axisTick:{show:false}},
@@ -555,10 +567,10 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
   document.getElementById("segIdxHigh").addEventListener("click", function(){
     underMode = "idx"; this.classList.add("on"); document.getElementById("segPortHigh").classList.remove("on"); render();
   });
-})();
+});
 
-/* ---------- 回撤图: 最低价 ---------- */
-(function(){
+/* ---------- 回撤图: 最低价 (延迟渲染) ---------- */
+__chartTasks.push(function(){
   let underMode = "port";
   const chart = echarts.init(document.getElementById('c_under_low'));
 
@@ -579,6 +591,7 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
       };
     });
     const option = {
+      animation: false,
       tooltip:{trigger:"axis",backgroundColor:"rgba(29,41,57,.92)",borderWidth:0,textStyle:{color:"#fff",fontSize:12},valueFormatter:v=>v==null?"-":(v*100).toFixed(2)+"%"},
       legend:{data:CODES.map(c=>SHORT[c]),top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect"},
       xAxis:{type:"category",data:INDICES[0].low[underMode === "port" ? "underwater_port" : "underwater_index"].dates,axisLine:{lineStyle:{color:"#ccd4de"}},axisLabel:{color:"#6b7686",fontSize:11},axisTick:{show:false}},
@@ -596,7 +609,7 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
   document.getElementById("segIdxLow").addEventListener("click", function(){
     underMode = "idx"; this.classList.add("on"); document.getElementById("segPortLow").classList.remove("on"); render();
   });
-})();
+});
 
 /* ---------- 回撤表格 ---------- */
 (function(){
@@ -609,7 +622,7 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
       const m = s.mdd_port;
       const loss = m.peak_value - m.trough_value;
       html += `<tr class="${m.pct < -0.15 ? 'hl' : ''}">
-        <td><span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${COLORS[it.code]}"></span> <b>${it.short}</b></td>
+        <td><span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${COLORS[it.code]}"></span> <b>${it.short}</b> <span style="color:var(--sub);font-size:11px">${it.code}</span></td>
         <td>${s.label}</td>
         <td class="num"><b>${(m.pct*100).toFixed(2)}%</b></td>
         <td>${m.peak_date}</td>
@@ -636,7 +649,7 @@ const fonts = {color: "#6b7686", fontFamily: "inherit"};
     const el = document.createElement("div");
     el.className = "pc";
     el.innerHTML = `
-      <div class="pt"><span class="dot" style="background:${c};width:10px;height:10px;border-radius:50%"></span>${it.short} <span class="pc-tag">${diff>0?"+":""}${diff.toFixed(1)}%</span></div>
+      <div class="pt"><span class="dot" style="background:${c};width:10px;height:10px;border-radius:50%"></span>${it.short} <span style="color:var(--sub);font-size:11px;font-weight:400">${it.code}</span> <span class="pc-tag">${diff>0?"+":""}${diff.toFixed(1)}%</span></div>
       <div class="pc-sub">年化差异（最低价买入 vs 最高价买入）</div>
       <ul>
         <li><div class="k">最高价买入年化</div><div class="v">${(h.cagr*100).toFixed(2)}%</div></li>

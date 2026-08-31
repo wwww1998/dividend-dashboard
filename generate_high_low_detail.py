@@ -163,16 +163,10 @@ const DATA = {jdump(chart_data)};
 const CODES = {jdump(CODES)};
 const fonts = {{color: "#6b7686", fontFamily: "inherit"}};
 
-/* ---------- 4张对比图 ---------- */
+/* ---------- 4张对比图 · 懒加载 ---------- */
 (function(){{
   const box = document.getElementById("chartCards");
-  CODES.forEach(c => {{
-    const d = DATA[c];
-    const card = document.createElement("div");
-    card.className = "chart";
-    card.innerHTML = `<div class="head"><div class="t"><span style="color:${{d.color}}">●</span> ${{d.short}}</div><div class="hint">红=最高价 黄=首日 蓝=最低价</div></div><div id="ch_${{c}}" style="width:100%;height:380px"></div><div class="legend" style="justify-content:center"><div class="li"><span class="sw solid" style="border-color:#e74c3c"></span>最高价 ${{d.high_cagr}}</div><div class="li"><span class="sw solid" style="border-color:#f39c12"></span>首日定投 ${{d.firstday_cagr}}</div><div class="li"><span class="sw solid" style="border-color:#3498db"></span>最低价 ${{d.low_cagr}}</div><div class="li"><span class="sw dash" style="border-color:#9aa7b8"></span>累计投入</div></div>`;
-    box.appendChild(card);
-
+  function renderChart(c, d) {{
     const chart = echarts.init(document.getElementById("ch_"+c));
     const option = {{
       tooltip: {{
@@ -182,6 +176,7 @@ const fonts = {{color: "#6b7686", fontFamily: "inherit"}};
         textStyle: {{color: "#fff", fontSize: 12}},
         valueFormatter: v => v == null ? "-" : "¥" + Math.round(v).toLocaleString()
       }},
+      animationDuration: 400,
       legend: {{data: ["最高价买入","首日定投","最低价买入","累计投入"], top: 0, textStyle: {{...fonts, fontSize: 11}}, icon: "roundRect", itemWidth: 14, itemHeight: 6}},
       xAxis: {{type: "category", data: d.dates, axisLine: {{lineStyle: {{color: "#ccd4de"}}}}, axisLabel: {{color: "#6b7686", fontSize: 10}}, axisTick: {{show: false}}}},
       yAxis: {{type: "value", axisLabel: {{formatter: v => v >= 10000 ? (v/10000).toFixed(0)+"万" : v, color: "#6b7686", fontSize: 10}}, splitLine: {{lineStyle: {{color: "#eef2f7"}}}}}},
@@ -193,9 +188,36 @@ const fonts = {{color: "#6b7686", fontFamily: "inherit"}};
       ],
       grid: {{top: 36, bottom: 20, left: 50, right: 16}}
     }};
-    chart.setOption(option);
+    chart.setOption(option, true);
     window.addEventListener("resize", () => chart.resize());
+  }}
+  const observer = new IntersectionObserver((entries) => {{
+    entries.forEach(entry => {{
+      if (entry.isIntersecting) {{
+        const c = entry.target.dataset.code;
+        if (c && !entry.target.dataset.rendered) {{
+          entry.target.dataset.rendered = "1";
+          renderChart(c, DATA[c]);
+          observer.unobserve(entry.target);
+        }}
+      }}
+    }});
+  }}, {{rootMargin: "100px"}});
+  CODES.forEach(c => {{
+    const d = DATA[c];
+    const card = document.createElement("div");
+    card.className = "chart";
+    card.dataset.code = c;
+    card.innerHTML = `<div class="head"><div class="t"><span style="color:${{d.color}}">●</span> ${{d.short}} <span style="color:var(--sub);font-weight:400;font-size:12px">(${{d.code}})</span></div><div class="hint">红=最高价 黄=首日 蓝=最低价</div></div><div id="ch_${{c}}" style="width:100%;height:380px"></div><div class="legend" style="justify-content:center"><div class="li"><span class="sw solid" style="border-color:#e74c3c"></span>最高价 ${{d.high_cagr}}</div><div class="li"><span class="sw solid" style="border-color:#f39c12"></span>首日定投 ${{d.firstday_cagr}}</div><div class="li"><span class="sw solid" style="border-color:#3498db"></span>最低价 ${{d.low_cagr}}</div><div class="li"><span class="sw dash" style="border-color:#9aa7b8"></span>累计投入</div></div>`;
+    box.appendChild(card);
+    observer.observe(card);
   }});
+  // 立即渲染第一张
+  if (CODES.length > 0 && box.firstChild) {{
+    box.firstChild.dataset.rendered = "1";
+    renderChart(CODES[0], DATA[CODES[0]]);
+    observer.unobserve(box.firstChild);
+  }}
 }})();
 
 /* ---------- 数据表 ---------- */
@@ -207,7 +229,7 @@ const fonts = {{color: "#6b7686", fontFamily: "inherit"}};
     const h_l_gap = (parseFloat(d.low_cagr) - parseFloat(d.high_cagr)).toFixed(2);
     const fd_gap_high = (parseFloat(d.firstday_cagr) - parseFloat(d.high_cagr)).toFixed(2);
     const fd_gap_low = (parseFloat(d.low_cagr) - parseFloat(d.firstday_cagr)).toFixed(2);
-    html += `<tr><td><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${{d.color}}"></span> <b>${{d.short}}</b></td><td class="num">${{d.high_cagr}}</td><td class="num" style="font-weight:700;color:#d68910">${{d.firstday_cagr}}</td><td class="num" style="font-weight:700;color:#2980b9">${{d.low_cagr}}</td><td class="num">¥${{d.high_final.toLocaleString()}}</td><td class="num" style="font-weight:700">¥${{d.firstday_final.toLocaleString()}}</td><td class="num" style="font-weight:700">¥${{d.low_final.toLocaleString()}}</td><td class="num">${{d.high_drawdown}}</td><td class="num">${{d.firstday_drawdown}}</td><td class="num">${{d.low_drawdown}}</td></tr>`;
+    html += `<tr><td><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${{d.color}}"></span> <b>${{d.short}}</b> <span style="color:var(--sub);font-size:11px">${{d.code}}</span></td><td class="num">${{d.high_cagr}}</td><td class="num" style="font-weight:700;color:#d68910">${{d.firstday_cagr}}</td><td class="num" style="font-weight:700;color:#2980b9">${{d.low_cagr}}</td><td class="num">¥${{d.high_final.toLocaleString()}}</td><td class="num" style="font-weight:700">¥${{d.firstday_final.toLocaleString()}}</td><td class="num" style="font-weight:700">¥${{d.low_final.toLocaleString()}}</td><td class="num">${{d.high_drawdown}}</td><td class="num">${{d.firstday_drawdown}}</td><td class="num">${{d.low_drawdown}}</td></tr>`;
   }});
   html += '</tbody>';
   tbl.innerHTML = html;
@@ -225,7 +247,7 @@ const fonts = {{color: "#6b7686", fontFamily: "inherit"}};
     el.className = "chart";
     el.style.padding = "14px 16px";
     el.innerHTML = `
-      <div style="font-weight:700;font-size:15px;margin-bottom:8px"><span style="color:${{d.color}}">●</span> ${{d.short}}</div>
+	      <div style="font-weight:700;font-size:15px;margin-bottom:8px"><span style="color:${{d.color}}">●</span> ${{d.short}} <span style="color:var(--sub);font-weight:400;font-size:12px">(${{d.code}})</span></div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px">
         <div><div style="color:var(--sub);font-size:11px">最高价年化</div><div style="font-weight:700;color:#c0392b">${{d.high_cagr}}</div></div>
         <div><div style="color:var(--sub);font-size:11px">首日年化</div><div style="font-weight:700;color:#d68910">${{d.firstday_cagr}}</div></div>
