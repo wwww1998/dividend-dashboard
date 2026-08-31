@@ -1,0 +1,56 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>1 总账：四个指数全部盈利</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ height: 120, marginTop: 6 }}>
+    <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.8 }}>
+      年化 8.24% - 9.56% 不等，最低也跑赢银行理财。但回撤差异显著——最大回撤（定投组合市值口径）从 -11.53% 到 -17.06% 不等，这正是持有体验的分水岭。
+      <span style={{ color: '#6B7686' }}>（* 股息率为近 12 个月实际分红收益率，价差法计算，Wind 同口径交叉验证一致）</span>
+    </Text>
+  </Box>
+
+  <Box style={{ height: 380, flexDirection: 'row', gap: 16 }}>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 20 }}>
+      <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1D2939' }}>红利低波 <span style={{ fontSize: 14, color: '#6B7686' }}>H20269</span></Text>
+      <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>10年终值</Text>
+      <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#C0392B' }}>¥1,967,153</Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>总收益 <b style={{color:'#C0392B'}}>+63.9%</b> ｜ 年化 <b style={{color:'#C0392B'}}>9.56%</b></Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>组合最大回撤 <b>-14.79%</b></Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>当前股息率 <b style={{color:'#C0392B'}}>4.72%</b></Text>
+      <Text style={{ fontSize: 13.5, color: '#6B7686', marginTop: 10, lineHeight: 1.6 }}>场外：华泰柏瑞中证红利低波动ETF联接 007466/007467</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 20 }}>
+      <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1D2939' }}>红利低波100 <span style={{ fontSize: 14, color: '#6B7686' }}>H20955</span></Text>
+      <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>10年终值</Text>
+      <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#C0392B' }}>¥1,848,858</Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>总收益 <b style={{color:'#C0392B'}}>+54.1%</b> ｜ 年化 <b style={{color:'#C0392B'}}>8.39%</b></Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>组合最大回撤 <b>-11.53%</b></Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>当前股息率 <b style={{color:'#C0392B'}}>4.27%</b></Text>
+      <Text style={{ fontSize: 13.5, color: '#6B7686', marginTop: 10, lineHeight: 1.6 }}>场外：景顺长城中证红利低波动100ETF联接 016128/016129</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 20 }}>
+      <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1D2939' }}>上证红利 <span style={{ fontSize: 14, color: '#6B7686' }}>H00015</span></Text>
+      <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>10年终值</Text>
+      <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#C0392B' }}>¥1,837,767</Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>总收益 <b style={{color:'#C0392B'}}>+53.1%</b> ｜ 年化 <b style={{color:'#C0392B'}}>8.27%</b></Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>组合最大回撤 <b>-17.06%</b></Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>当前股息率 <b style={{color:'#C0392B'}}>4.24%</b></Text>
+      <Text style={{ fontSize: 13.5, color: '#6B7686', marginTop: 10, lineHeight: 1.6 }}>场外：华泰柏瑞红利ETF联接 012761/012762</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 20 }}>
+      <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1D2939' }}>中证红利 <span style={{ fontSize: 14, color: '#6B7686' }}>H00922</span></Text>
+      <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>10年终值</Text>
+      <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#C0392B' }}>¥1,834,922</Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>总收益 <b style={{color:'#C0392B'}}>+52.9%</b> ｜ 年化 <b style={{color:'#C0392B'}}>8.24%</b></Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>组合最大回撤 <b>-13.40%</b></Text>
+      <Text style={{ fontSize: 15, color: '#3B4A5C', marginTop: 8 }}>当前股息率 <b style={{color:'#C0392B'}}>4.17%</b></Text>
+      <Text style={{ fontSize: 13.5, color: '#6B7686', marginTop: 10, lineHeight: 1.6 }}>场外：易方达中证红利ETF联接发起式A/C 009051/009052</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

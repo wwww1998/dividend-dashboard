@@ -1,0 +1,28 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>口径与方法说明</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ height: 520, marginTop: 6, background: '#EEF2F7', borderRadius: 14, padding: '22px 28px' }}>
+    <Text style={{ fontSize: 16, color: '#3B4A5C', lineHeight: 2 }}>
+      <b>1. 数据源</b>：中证指数官网（csindex.com.cn）官方日线行情，全收益指数（含分红再投资），四个指数：H00015 上证红利、H00922 中证红利、H20269 红利低波、H20955 红利低波100 全收益。页面推荐产品均为<b>场外联接基金（A/C 类）</b>，可定投：A 类收申购费（长期持有更省），C 类免申购费但按日计提销售服务费（短期持有更省）。
+      <br />
+      <b>2. 定投规则</b>：每月首个交易日按当日收盘价买入 10,000 元；2016-08 首期至 2026-07 末期为 120 期、总投入 ¥1,200,000；未计交易费用与税费。
+      <br />
+      <b>3. 年化收益率</b>：按逐笔现金流 XIRR（资金时间价值口径）计算。
+      <br />
+      <b>4. 组合市值回撤</b>＝每日（累计份额 × 指数点位）从历史峰值回落的最大幅度；<b>指数点位回撤</b>＝指数点位本身从峰值的最大跌幅；<b>恢复日</b>＝回撤区间内首次收复峰值的日期。
+      <br />
+      <b>5. 口径说明</b>：本页按月定投 ¥10,000 复算，共 120 期、总投入 ¥1,200,000；收益率与回撤均为百分比口径，与定投金额大小无关（线性缩放）。回测采用中证指数官网全收益指数真实日线、精确到每月首个交易日收盘价买入，未计交易费用与税费。<b>组合市值口径最大回撤四项：-17.1% / -14.8% / -13.4% / -11.5%</b>。
+      <br />
+      <b>6. 当前股息率</b>：近 12 个月实际分红收益率，用官方全收益指数与价格指数的日收益差累计（价差法·逐日口径）计算（2025-07-31 ~ 2026-07-31），与 Wind 披露 TTM 股息率交叉验证一致（如中证红利 4.24%，2026-07-31）；逐日口径与首尾法结果差异通常小于 0.3pct。
+      <br />
+      <b>7. 年度表现口径</b>：年末浮盈＝年末市值−累计投入；当年盈亏＝年末市值−上年末市值−当年投入；2026 行为截至 2026-07-31（回测区间末），非完整年度。
+    </Text>
+  </Box>
+
+  <Box style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

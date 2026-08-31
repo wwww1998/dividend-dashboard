@@ -1,0 +1,73 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 100, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>真实回撤：你会实际浮亏多少、亏多久</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>组合市值口径 = 定投者的真实体验</Text>
+  </Box>
+
+  <Box style={{ height: 300, marginTop: 8 }}>
+    <Table
+      style={{ width: '100%', height: 280 }}
+      defaultTextStyle={{ fontSize: 16, textAlign: 'center', color: '#1A1A1A' }}
+      defaultCellStyle={{ border: { left: { width: 1, color: '#E3E8EF' }, right: { width: 1, color: '#E3E8EF' }, top: { width: 1, color: '#E3E8EF' }, bottom: { width: 1, color: '#E3E8EF' } }, padding: 10 }}
+      cells={[
+        [
+          { text: '指数', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '最大回撤', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '峰值日期', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '谷底日期', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '最大浮亏', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '收复耗时', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+        ],
+        [
+          { text: '红利低波', textStyle: { bold: true } },
+          { text: '-14.79%' },
+          { text: '2021-09-13' },
+          { text: '2021-11-10' },
+          { text: '-¥129,309', textStyle: { color: '#C0392B', bold: true } },
+          { text: '约 5 个月' },
+        ],
+        [
+          { text: '红利低波100' },
+          { text: '-11.53%' },
+          { text: '2020-01-07' },
+          { text: '2020-02-03' },
+          { text: '-¥52,411', textStyle: { color: '#C0392B', bold: true } },
+          { text: '约 5 个月' },
+        ],
+        [
+          { text: '上证红利' },
+          { text: '-17.06%' },
+          { text: '2021-09-13' },
+          { text: '2021-11-10' },
+          { text: '-¥149,055', textStyle: { color: '#C0392B', bold: true } },
+          { text: '约 7 个月' },
+        ],
+        [
+          { text: '中证红利' },
+          { text: '-13.40%' },
+          { text: '2020-03-05' },
+          { text: '2020-03-23' },
+          { text: '-¥65,173', textStyle: { color: '#C0392B', bold: true } },
+          { text: '约 3.5 个月' },
+        ],
+      ]}
+    />
+  </Box>
+
+  <Box style={{ height: 220, marginTop: 16, flexDirection: 'row', gap: 18 }}>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 22, justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>浮亏区间</Text>
+      <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#C0392B' }}>¥5.2万 ~ 14.9万</Text>
+      <Text style={{ fontSize: 16, color: '#3B4A5C', lineHeight: 1.6 }}>最深的坑在 2018 熊市（指数口径 -23%~-27%）与 2021.09-11 红利回落</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 22, justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>收复时间</Text>
+      <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#C0392B' }}>3 ~ 7 个月</Text>
+      <Text style={{ fontSize: 16, color: '#3B4A5C', lineHeight: 1.6 }}>定投持续买入摊低成本，把坑填浅了一大半——回撤是策略固有属性，不是 bug</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 52, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

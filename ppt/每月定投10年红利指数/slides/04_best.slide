@@ -1,0 +1,48 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 100, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>红利低波：10 年定投的最佳答案</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>H20269 · 沪深 50 只高股息+低波动成分</Text>
+  </Box>
+
+  <Box style={{ height: 500, marginTop: 8, flexDirection: 'row', gap: 18 }}>
+    <Box style={{ flex: 1.15, background: 'linear-gradient(135deg,#2B3A4A 0%,#1D2939 80%)', borderRadius: 16, padding: 34, justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 20, color: '#8FA0B5' }}>累计投入</Text>
+      <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#FFFFFF' }}>¥1,200,000</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 10 }}>
+        <Text style={{ fontSize: 20, color: '#8FA0B5', marginBottom: 12 }}>→</Text>
+        <Text style={{ fontSize: 66, fontWeight: 'bold', color: '#FF6B5E', lineHeight: 1 }}>¥196.7万</Text>
+      </Box>
+      <Text style={{ fontSize: 18, color: '#FFB37A', fontWeight: 600 }}>+63.9% · 年化 9.56%</Text>
+      <Text style={{ fontSize: 16, color: '#8FA0B5', lineHeight: 1.6, marginTop: 8 }}>
+        红利再投资 + 跌时定投买更多份额，份额越滚越多。一半收益来自低点坚持买入积累的份额。
+      </Text>
+    </Box>
+
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 16 }}>
+      <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 22 }}>
+        <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>为什么是它</Text>
+        <Text style={{ fontSize: 17, color: '#3B4A5C', lineHeight: 1.7, marginTop: 10 }}>
+          ① 高股息：当前股息率 <span style={{ fontWeight: 'bold', color: '#C0392B' }}>4.72%</span>（四指数最高）
+          <br />
+          ② 低波动：回撤更浅，-14.79%，持有体验好
+          <br />
+          ③ 双因子：收益不输纯红利，防御更强
+        </Text>
+      </Box>
+      <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 22 }}>
+        <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>场外可定投</Text>
+        <Text style={{ fontSize: 17, color: '#3B4A5C', lineHeight: 1.7, marginTop: 10 }}>
+          华泰柏瑞中证红利低波动ETF联接
+          <br />
+          A类 <b>007466</b> / C类 <b>007467</b>
+          <br />
+          <span style={{ color: '#6B7686', fontSize: 15 }}>长期定投选 A 类更省，短线选 C 类</span>
+        </Text>
+      </Box>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 52, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

@@ -1,0 +1,58 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>6 那到底选哪个？</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ height: 70, marginTop: 4 }}>
+    <Text style={{ fontSize: 17, color: '#3B4A5C', lineHeight: 1.7 }}>
+      回撤数据是选择的钥匙：收益相近时，回撤更小、恢复更快的指数持有体验更好，也更可能坚持到底。
+    </Text>
+  </Box>
+
+  <Box style={{ height: 330, flexDirection: 'row', gap: 16 }}>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 20 }}>
+      <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1D2939' }}>如果只能选一个：红利低波全收益 <span style={{ fontSize: 12, color: '#C0392B', border: '1px solid #C0392B', borderRadius: 20, padding: '2px 10px' }}>全场最佳</span></Text>
+      <Text style={{ fontSize: 13, color: '#6B7686', marginTop: 6 }}>H20269 · 场外基金：华泰柏瑞中证红利低波动ETF联接 007466/007467</Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9, marginTop: 10 }}>年化收益率 <b>9.56%（四者最高）</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>10年终值 <b>¥1,967,153（+63.9%）</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>组合最大回撤 <b>-14.79%</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>最大浮亏 <b>-¥129,309（2021-11-10 谷底）</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>回撤收复 <b>149 天</b></Text>
+      <Text style={{ fontSize: 13, color: '#6B7686', lineHeight: 1.6, marginTop: 8, background: '#FFFFFF', borderRadius: 8, padding: 8 }}>收益最高且回撤中等，横跨沪深两市、50 只成分股兼顾分散与弹性。</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 20 }}>
+      <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1D2939' }}>追求极致稳定：红利低波100全收益 <span style={{ fontSize: 12, color: '#27AE60', border: '1px solid #27AE60', borderRadius: 20, padding: '2px 10px' }}>回撤最小</span></Text>
+      <Text style={{ fontSize: 13, color: '#6B7686', marginTop: 6 }}>H20955 · 场外基金：景顺长城中证红利低波动100ETF联接 016128/016129</Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9, marginTop: 10 }}>年化收益率 <b>8.39%</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>10年终值 <b>¥1,848,858（+54.1%）</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>组合最大回撤 <b>-11.53%</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>最大浮亏 <b>-¥52,411（2020-02-03 谷底）</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>回撤收复 <b>146 天</b></Text>
+      <Text style={{ fontSize: 13, color: '#6B7686', lineHeight: 1.6, marginTop: 8, background: '#FFFFFF', borderRadius: 8, padding: 8 }}>100 只成分股足够分散，不怕单只股票暴雷；回撤最小、持有最安心。</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 20 }}>
+      <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1D2939' }}>看重体验与配置：中证红利全收益 <span style={{ fontSize: 12, color: '#27AE60', border: '1px solid #27AE60', borderRadius: 20, padding: '2px 10px' }}>均衡之选</span></Text>
+      <Text style={{ fontSize: 13, color: '#6B7686', marginTop: 6 }}>H00922 · 场外基金：易方达中证红利ETF联接发起式A/C 009051/009052</Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9, marginTop: 10 }}>年化收益率 <b>8.24%</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>10年终值 <b>¥1,834,922（+52.9%）</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>组合最大回撤 <b>-13.40%</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>最大浮亏 <b>-¥65,173（2020-03-23 谷底）</b></Text>
+      <Text style={{ fontSize: 14.5, color: '#3B4A5C', lineHeight: 1.9 }}>回撤收复 <b>105 天</b></Text>
+      <Text style={{ fontSize: 13, color: '#6B7686', lineHeight: 1.6, marginTop: 8, background: '#FFFFFF', borderRadius: 8, padding: 8 }}>上证标杆指数，回撤控制好、恢复快；ETF 规模大、流动性好。</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 120, marginTop: 8, background: '#1D2939', borderRadius: 14, padding: '18px 26px' }}>
+    <Text style={{ fontSize: 19, fontWeight: 600, color: '#FFFFFF', lineHeight: 1.7 }}>
+      「10 年定投的最大考验从来不是选哪个指数，而是在账面浮亏的那几个月里，你能不能继续投下去。定投最大的敌人不是市场，是你自己。」
+    </Text>
+    <Text style={{ fontSize: 14.5, color: '#8FA0B5', lineHeight: 1.7, marginTop: 8 }}>
+      回撤是权益策略固有特征，坚持是关键。对比 10 年期缴年金险，其保证回本周期约 8‑12 年，中途退保会亏损本金。红利定投波动直观可见，但保留资金流动性，长期具备更高收益的可能性。
+    </Text>
+  </Box>
+
+  <Box style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

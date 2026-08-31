@@ -1,0 +1,38 @@
+<Slide style={{ width: '1280px', height: '720px', background: 'linear-gradient(135deg,#2B3A4A 0%,#1D2939 60%,#3A2A2A 100%)', padding: '40px 72px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#FFFFFF', justifyContent: 'space-between' }}>
+  <Box style={{ marginTop: 90 }}>
+    <Text style={{ fontSize: 64, fontWeight: 'bold', lineHeight: 1.3, letterSpacing: 1 }}>
+      每月定投 <span style={{ color: '#FF6B5E' }}>10,000 元</span> 红利指数
+      <br />
+      10 年后能赚多少？
+    </Text>
+    <Text style={{ fontSize: 24, color: '#FFB37A', marginTop: 18 }}>四大红利全收益指数 ·数据回测</Text>
+    <Text style={{ fontSize: 18, color: '#C8D4E0', lineHeight: 1.8, marginTop: 24, maxWidth: 1000 }}>
+      基于中证指数官网全收益指数官方日线（csindex.com.cn），逐日复算 2016-08 至 2026-07 十年定投：
+      每月首个交易日买入 10,000 元，共 120 期、累计投入 ¥1,200,000。
+      重点还原每个指数的 <span style={{ color: '#FFB37A', fontWeight: 'bold' }}>真实回测</span>——包括定投组合的实际浮亏与恢复耗时。
+    </Text>
+  </Box>
+
+  <Box style={{ flexDirection: 'row', gap: 16, marginBottom: 70 }}>
+    <Box style={{ background: 'rgba(255,255,255,0.1)', borderRadius: 10, padding: '12px 22px', alignItems: 'center' }}>
+      <Text style={{ fontSize: 14, color: '#8FA0B5' }}>周期</Text>
+      <Text style={{ fontSize: 18, fontWeight: 'bold', marginTop: 4 }}>2016.08 - 2026.07</Text>
+    </Box>
+    <Box style={{ background: 'rgba(255,255,255,0.1)', borderRadius: 10, padding: '12px 22px', alignItems: 'center' }}>
+      <Text style={{ fontSize: 14, color: '#8FA0B5' }}>频率</Text>
+      <Text style={{ fontSize: 18, fontWeight: 'bold', marginTop: 4 }}>每月首个交易日</Text>
+    </Box>
+    <Box style={{ background: 'rgba(255,255,255,0.1)', borderRadius: 10, padding: '12px 22px', alignItems: 'center' }}>
+      <Text style={{ fontSize: 14, color: '#8FA0B5' }}>每期</Text>
+      <Text style={{ fontSize: 18, fontWeight: 'bold', marginTop: 4 }}>¥10,000</Text>
+    </Box>
+    <Box style={{ background: 'rgba(255,255,255,0.1)', borderRadius: 10, padding: '12px 22px', alignItems: 'center' }}>
+      <Text style={{ fontSize: 14, color: '#8FA0B5' }}>总投入</Text>
+      <Text style={{ fontSize: 18, fontWeight: 'bold', marginTop: 4 }}>¥1,200,000（120 期）</Text>
+    </Box>
+    <Box style={{ background: 'rgba(255,255,255,0.1)', borderRadius: 10, padding: '12px 22px', alignItems: 'center' }}>
+      <Text style={{ fontSize: 14, color: '#8FA0B5' }}>口径</Text>
+      <Text style={{ fontSize: 18, fontWeight: 'bold', marginTop: 4 }}>全收益指数（含分红再投）</Text>
+    </Box>
+  </Box>
+</Slide>

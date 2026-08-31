@@ -1,0 +1,28 @@
+<Slide style={{ width: '1280px', height: '720px', background: 'linear-gradient(135deg,#2B3A4A 0%,#1D2939 60%,#3A2A2A 100%)', padding: '40px 72px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#FFFFFF', justifyContent: 'space-between' }}>
+  <Box style={{ marginTop: 110, alignItems: 'center' }}>
+    <Text style={{ fontSize: 30, color: '#FFB37A', letterSpacing: 4, marginBottom: 26 }}>十 年 定 投 的 答 案</Text>
+    <Text style={{ fontSize: 44, fontWeight: 'bold', lineHeight: 1.5, letterSpacing: 1 }}>
+      「10 年定投的最大考验从来不是选哪个指数，
+      <br />
+      而是在账面浮亏的那几个月里，
+      <br />
+      你能不能继续投下去。」
+    </Text>
+    <Text style={{ fontSize: 18, color: '#8FA0B5', marginTop: 24 }}>
+      回撤是权益策略的固有特征，坚持是关键
+    </Text>
+  </Box>
+
+  <Box style={{ alignItems: 'center', marginBottom: 60 }}>
+    <Box style={{ background: 'rgba(255,255,255,0.12)', borderRadius: 16, padding: '26px 44px', alignItems: 'center' }}>
+      <Text style={{ fontSize: 20, color: '#FFFFFF', fontWeight: 600, textAlign: 'center', lineHeight: 1.7 }}>
+        如需获取更多定投策略参考、同步市场变化相关观察，
+        <br />
+        <span style={{ color: '#FF6B5E', fontSize: 24, fontWeight: 'bold' }}>欢迎和我进一步交流，落地你的定投计划</span>
+      </Text>
+      <Text style={{ fontSize: 14, color: '#8FA0B5', marginTop: 14, textAlign: 'center' }}>
+        以上内容仅供学习参考，不构成投资建议 · 投资有风险，入市需谨慎
+      </Text>
+    </Box>
+  </Box>
+</Slide>

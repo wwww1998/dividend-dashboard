@@ -1,0 +1,52 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>结论：怎么开始</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>数据 → 结论 → 行动</Text>
+  </Box>
+
+  <Box style={{ height: 384, marginTop: 10, flexDirection: 'row', gap: 18 }}>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 26, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#1D2939' }}>① 选红利低波</Text>
+        <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.75, marginTop: 12 }}>
+          10 年收益最高（+63.9%）、回撤可控（-14.8%）、股息率最高（4.72%）。场外 007466/007467 可月定投。
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 16, color: '#6B7686' }}>收益 + 防御 + 现金流 三优</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 26, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#1D2939' }}>② 坚持月投纪律</Text>
+        <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.75, marginTop: 12 }}>
+          每月固定金额、雷打不动。回撤（-11%~-17%）是红利策略固有属性，跌时继续买，正是收益的来源。
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 16, color: '#6B7686' }}>纪律优先于择时</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 26, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#1D2939' }}>③ 现在股息率仍高</Text>
+        <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.75, marginTop: 12 }}>
+          当前 4.2%~4.7%，是十年国债（1.7%）的 2.4~2.8 倍。长期持有每年还有 4%+ 现金分红。
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 16, color: '#6B7686' }}>低位区域，越早开始越久复利</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 124, marginTop: 10, background: '#1D2939', borderRadius: 14, padding: '16px 26px', justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }}>
+    <Box>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>风险提示</Text>
+      <Text style={{ fontSize: 15, color: '#8FA0B5', lineHeight: 1.6, marginTop: 6 }}>
+        历史数据回测不代表未来收益；红利策略存在长期跑输与估值回归风险；投资有风险，入市需谨慎。
+      </Text>
+    </Box>
+    <Box style={{ background: '#C0392B', borderRadius: 10, padding: '12px 24px' }}>
+      <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#FFFFFF' }}>定投从今天开始</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 52, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

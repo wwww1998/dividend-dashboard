@@ -1,0 +1,34 @@
+<Slide style={{ width: '1280px', height: '720px', background: 'linear-gradient(135deg,#2B3A4A 0%,#1D2939 70%,#3A2A2A 100%)', padding: '40px 72px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#FFFFFF', justifyContent: 'space-between' }}>
+  <Box style={{ position: 'absolute', right: 64, top: 44, background: 'rgba(255,255,255,0.12)', borderRadius: 20, padding: '6px 16px' }}>
+    <Text style={{ fontSize: 14, color: '#FFB37A', letterSpacing: 1 }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ marginTop: 96, maxWidth: 1000 }}>
+    <Text style={{ fontSize: 22, color: '#8FA0B5', letterSpacing: 3, marginBottom: 18 }}>每月定投 · 10 年 · 真实回测</Text>
+    <Text style={{ fontSize: 60, fontWeight: 'bold', lineHeight: 1.25, letterSpacing: 1 }}>
+      每月定投 <span style={{ color: '#FF6B5E' }}>10,000 元</span> 红利指数
+      <br />
+      10 年后能赚多少？
+    </Text>
+    <Box style={{ marginTop: 30, flexDirection: 'row', gap: 14 }}>
+      <Box style={{ background: 'rgba(255,255,255,0.1)', borderRadius: 10, padding: '10px 20px' }}>
+        <Text style={{ fontSize: 18, fontWeight: 600 }}>120 期</Text>
+      </Box>
+      <Box style={{ background: 'rgba(255,255,255,0.1)', borderRadius: 10, padding: '10px 20px' }}>
+        <Text style={{ fontSize: 18, fontWeight: 600 }}>总投入 ¥120 万</Text>
+      </Box>
+      <Box style={{ background: 'rgba(255,255,255,0.1)', borderRadius: 10, padding: '10px 20px' }}>
+        <Text style={{ fontSize: 18, fontWeight: 600 }}>最高年化 <span style={{ color: '#FF6B5E' }}>9.56%</span></Text>
+      </Box>
+    </Box>
+  </Box>
+
+  <Box style={{ marginBottom: 12, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+    <Text style={{ fontSize: 15, color: '#8FA0B5', lineHeight: 1.6 }}>
+      数据源：中证指数官网全收益指数官方日线（csindex.com.cn）
+      <br />
+      区间：2016.08 - 2026.07 · 每月首个交易日买入 · 未计交易费用
+    </Text>
+    <Text style={{ fontSize: 15, color: '#FFB37A' }}>红利低波 / 中证红利 / 红利低波100 / 上证红利</Text>
+  </Box>
+</Slide>

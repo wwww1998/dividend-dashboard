@@ -1,0 +1,99 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 100, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>年度表现：红利指数的波动真相</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>全收益口径 · 红涨绿跌</Text>
+  </Box>
+
+  <Box style={{ height: 440, marginTop: 8 }}>
+    <Table
+      style={{ width: '100%', height: 420 }}
+      defaultTextStyle={{ fontSize: 16, textAlign: 'center', color: '#1A1A1A' }}
+      defaultCellStyle={{ border: { left: { width: 1, color: '#E3E8EF' }, right: { width: 1, color: '#E3E8EF' }, top: { width: 1, color: '#E3E8EF' }, bottom: { width: 1, color: '#E3E8EF' } }, padding: 9 }}
+      cells={[
+        [
+          { text: '年份', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '红利低波', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '中证红利', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '红利低波100', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '上证红利', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+        ],
+        [
+          { text: '2017', textStyle: { bold: true } },
+          { text: '+23.57%', textStyle: { color: '#C0392B' } },
+          { text: '+21.34%', textStyle: { color: '#C0392B' } },
+          { text: '+15.50%', textStyle: { color: '#C0392B' } },
+          { text: '+20.52%', textStyle: { color: '#C0392B' } },
+        ],
+        [
+          { text: '2018', textStyle: { bold: true } },
+          { text: '-16.39%', textStyle: { color: '#27AE60', bold: true } },
+          { text: '-16.15%', textStyle: { color: '#27AE60', bold: true } },
+          { text: '-14.12%', textStyle: { color: '#27AE60', bold: true } },
+          { text: '-13.59%', textStyle: { color: '#27AE60', bold: true } },
+        ],
+        [
+          { text: '2019', textStyle: { bold: true } },
+          { text: '+20.94%', textStyle: { color: '#C0392B' } },
+          { text: '+20.88%', textStyle: { color: '#C0392B' } },
+          { text: '+16.88%', textStyle: { color: '#C0392B' } },
+          { text: '+16.27%', textStyle: { color: '#C0392B' } },
+        ],
+        [
+          { text: '2020', textStyle: { bold: true } },
+          { text: '+1.99%', textStyle: { color: '#C0392B' } },
+          { text: '+8.18%', textStyle: { color: '#C0392B' } },
+          { text: '+2.34%', textStyle: { color: '#C0392B' } },
+          { text: '-1.05%', textStyle: { color: '#27AE60' } },
+        ],
+        [
+          { text: '2021', textStyle: { bold: true } },
+          { text: '+16.34%', textStyle: { color: '#C0392B' } },
+          { text: '+18.19%', textStyle: { color: '#C0392B' } },
+          { text: '+19.27%', textStyle: { color: '#C0392B' } },
+          { text: '+13.25%', textStyle: { color: '#C0392B' } },
+        ],
+        [
+          { text: '2022', textStyle: { bold: true } },
+          { text: '+3.46%', textStyle: { color: '#C0392B' } },
+          { text: '-0.37%', textStyle: { color: '#27AE60' } },
+          { text: '+0.77%', textStyle: { color: '#C0392B' } },
+          { text: '+3.46%', textStyle: { color: '#C0392B' } },
+        ],
+        [
+          { text: '2023', textStyle: { bold: true } },
+          { text: '+12.23%', textStyle: { color: '#C0392B' } },
+          { text: '+6.34%', textStyle: { color: '#C0392B' } },
+          { text: '+13.26%', textStyle: { color: '#C0392B' } },
+          { text: '+9.06%', textStyle: { color: '#C0392B' } },
+        ],
+        [
+          { text: '2024', textStyle: { bold: true } },
+          { text: '+24.82%', textStyle: { color: '#C0392B', bold: true } },
+          { text: '+18.76%', textStyle: { color: '#C0392B', bold: true } },
+          { text: '+18.64%', textStyle: { color: '#C0392B', bold: true } },
+          { text: '+21.30%', textStyle: { color: '#C0392B', bold: true } },
+        ],
+        [
+          { text: '2025', textStyle: { bold: true } },
+          { text: '+5.57%', textStyle: { color: '#C0392B' } },
+          { text: '+3.76%', textStyle: { color: '#C0392B' } },
+          { text: '+3.97%', textStyle: { color: '#C0392B' } },
+          { text: '+0.41%', textStyle: { color: '#C0392B' } },
+        ],
+      ]}
+    />
+  </Box>
+
+  <Box style={{ height: 80, flexDirection: 'row', gap: 18, marginTop: 6 }}>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 12, padding: '12px 18px' }}>
+      <Text style={{ fontSize: 16, color: '#3B4A5C' }}><b>2018</b> 熊市四指数全跌 -13.6%~-16.4% → 正是摊低成本的黄金期</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 12, padding: '12px 18px' }}>
+      <Text style={{ fontSize: 16, color: '#3B4A5C' }}><b>2024</b> 红利大年 +18.6%~+24.8% → 当年盈亏 +31.6 万（红利低波）</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 52, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>2016 年为定投起点（2016-08）至年末，其余为自然年；2026 截至 7 月末 · 四大红利全收益指数</Text>
+  </Box>
+</Slide>

@@ -1,0 +1,47 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>② 为什么买：三条获利逻辑</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ height: 420, marginTop: 6, flexDirection: 'row', gap: 18 }}>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 24, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>每年收"租"</Text>
+        <Text style={{ fontSize: 17, color: '#3B4A5C', lineHeight: 1.8, marginTop: 10 }}>
+          现金分红：当前股息率约 4%-5%，1 万本金每年约 400-500 元现金分红，远超十年国债（约 1.7%）与银行理财。
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 15, color: '#6B7686' }}>分红现金流 = 每年落袋</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 24, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>复利滚雪球</Text>
+        <Text style={{ fontSize: 17, color: '#3B4A5C', lineHeight: 1.8, marginTop: 10 }}>
+          分红再投资＋定投：分红再买份额、跌时定投买更多份额，份额越滚越多。回测里 10 年 120 万 变 196.7 万（红利低波），一半收益来自"低点坚持买入积累的份额"。
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 15, color: '#6B7686' }}>份额越滚越多</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 24, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>防御性（低波动抗跌）</Text>
+        <Text style={{ fontSize: 17, color: '#3B4A5C', lineHeight: 1.8, marginTop: 10 }}>
+          成分股多为银行、煤炭、石化、交运龙头，盈利稳定。10 年定投最大回撤仅 -11.6%~-17.1%，比大盘温和。
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 15, color: '#6B7686' }}>跌得少，拿得住</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 110, marginTop: 6, background: '#1D2939', borderRadius: 14, padding: '16px 24px' }}>
+    <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFB37A' }}>总回报 ≈ 股息收益（4-5%）＋盈利增长（稳健）＋估值变化（小）</Text>
+    <Text style={{ fontSize: 17, color: '#C8D4E0', lineHeight: 1.7, marginTop: 10 }}>
+      红利策略赚的是"确定性现金流"，不赌估值。
+    </Text>
+  </Box>
+
+  <Box style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

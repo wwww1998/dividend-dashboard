@@ -1,0 +1,56 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>① 是什么：一篮子"爱分红的好公司"</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ height: 398, marginTop: 6 }}>
+    <Text style={{ fontSize: 19, color: '#3B4A5C', lineHeight: 1.8 }}>
+      红利指数基金＝跟踪<span style={{ fontWeight: 'bold' }}>红利指数</span>的基金（场内 ETF 或场外联接基金）。
+      红利指数从股市里挑出一批<span style={{ fontWeight: 'bold' }}>股息率高、分红稳定</span>的股票，按股息率加权——你买的不是一只股票，
+      而是"高股息组合"，每年收到成分公司的现金分红。四个主流红利指数的<span style={{ fontWeight: 'bold' }}>全收益代码</span>：
+    </Text>
+    <Table
+      style={{ width: '100%', height: 292, marginTop: 10 }}
+      defaultTextStyle={{ fontSize: 15, textAlign: 'left', color: '#1A1A1A' }}
+      defaultCellStyle={{ border: { left: { width: 1, color: '#E3E8EF' }, right: { width: 1, color: '#E3E8EF' }, top: { width: 1, color: '#E3E8EF' }, bottom: { width: 1, color: '#E3E8EF' } }, padding: 12 }}
+      cells={[
+        [
+          { text: '指数', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '全收益代码', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '说明', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+        ],
+        [
+          { text: '上证红利全收益', textStyle: { bold: true } },
+          { text: 'H00015' },
+          { text: '沪市 50 只，老牌高股息大盘成分，每年 12 月调仓换股，当前央国企权重 75‑80%' },
+        ],
+        [
+          { text: '中证红利全收益', textStyle: { bold: true } },
+          { text: 'H00922' },
+          { text: '沪深 100 只，全市场主流红利成分，每年 12 月调仓换股，当前央国企权重 70‑75%' },
+        ],
+        [
+          { text: '红利低波全收益', textStyle: { bold: true } },
+          { text: 'H20269' },
+          { text: '沪深 50 只，红利低波双因子成分，每年 12 月调仓换股，当前央国企权重 70‑75%' },
+        ],
+        [
+          { text: '红利低波100全收益', textStyle: { bold: true } },
+          { text: 'H20955' },
+          { text: '沪深 100 只，双因子更分散的成分，季度调仓换股（3/6/9/12 月），当前央国企权重 65‑70%' },
+        ],
+      ]}
+    />
+  </Box>
+
+  <Box style={{ height: 118, marginTop: 6, background: '#FFF5F3', borderRadius: 12, padding: '12px 20px', border: '1px solid #F2D0CB' }}>
+    <Text style={{ fontSize: 16, color: '#8C2F28', lineHeight: 1.7 }}>
+      注：指数规则不专门筛选国企，因高股息行业特征，国央企天然占比更高。
+    </Text>
+  </Box>
+
+  <Box style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

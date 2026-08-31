@@ -1,0 +1,5787 @@
+{
+ "windows": [
+  {
+   "start": "2016-08",
+   "indices": {
+    "上证红利": {
+     "final": 135794.3,
+     "total_ret": 0.1316,
+     "cagr": 0.2557,
+     "mdd": -0.0607,
+     "mdd_amt": 3248.94,
+     "peak_date": "2016-12-01",
+     "trough_date": "2016-12-29",
+     "recover_date": "2017-01-03",
+     "rec_days": 2,
+     "end": "2017-07-31"
+    },
+    "中证红利": {
+     "final": 136294.37,
+     "total_ret": 0.1358,
+     "cagr": 0.2641,
+     "mdd": -0.0632,
+     "mdd_amt": 3384.42,
+     "peak_date": "2016-12-01",
+     "trough_date": "2016-12-29",
+     "recover_date": "2017-01-03",
+     "rec_days": 2,
+     "end": "2017-07-31"
+    },
+    "红利低波": {
+     "final": 137313.17,
+     "total_ret": 0.1443,
+     "cagr": 0.2812,
+     "mdd": -0.068,
+     "mdd_amt": 3650.61,
+     "peak_date": "2016-12-01",
+     "trough_date": "2016-12-29",
+     "recover_date": "2017-01-03",
+     "rec_days": 2,
+     "end": "2017-07-31"
+    },
+    "红利低波100": {
+     "final": 138500.37,
+     "total_ret": 0.1542,
+     "cagr": 0.3013,
+     "mdd": -0.0522,
+     "mdd_amt": 2801.58,
+     "peak_date": "2016-12-01",
+     "trough_date": "2016-12-20",
+     "recover_date": "2017-01-03",
+     "rec_days": 9,
+     "end": "2017-07-31"
+    }
+   }
+  },
+  {
+   "start": "2016-09",
+   "indices": {
+    "上证红利": {
+     "final": 133651.18,
+     "total_ret": 0.1138,
+     "cagr": 0.2193,
+     "mdd": -0.0336,
+     "mdd_amt": 4506.54,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-25",
+     "rec_days": 10,
+     "end": "2017-08-31"
+    },
+    "中证红利": {
+     "final": 135503.75,
+     "total_ret": 0.1292,
+     "cagr": 0.2501,
+     "mdd": -0.029,
+     "mdd_amt": 3898.16,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-25",
+     "rec_days": 10,
+     "end": "2017-08-31"
+    },
+    "红利低波": {
+     "final": 134328.56,
+     "total_ret": 0.1194,
+     "cagr": 0.2306,
+     "mdd": -0.0313,
+     "mdd_amt": 4247.82,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-28",
+     "rec_days": 11,
+     "end": "2017-08-31"
+    },
+    "红利低波100": {
+     "final": 136296.56,
+     "total_ret": 0.1358,
+     "cagr": 0.2634,
+     "mdd": -0.0303,
+     "mdd_amt": 4135.7,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-28",
+     "rec_days": 11,
+     "end": "2017-08-31"
+    }
+   }
+  },
+  {
+   "start": "2016-10",
+   "indices": {
+    "上证红利": {
+     "final": 132441.21,
+     "total_ret": 0.1037,
+     "cagr": 0.2009,
+     "mdd": -0.0336,
+     "mdd_amt": 4103.24,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-25",
+     "rec_days": 10,
+     "end": "2017-09-29"
+    },
+    "中证红利": {
+     "final": 133902.71,
+     "total_ret": 0.1159,
+     "cagr": 0.2253,
+     "mdd": -0.029,
+     "mdd_amt": 3548.3,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-25",
+     "rec_days": 10,
+     "end": "2017-09-29"
+    },
+    "红利低波": {
+     "final": 132719.19,
+     "total_ret": 0.106,
+     "cagr": 0.2056,
+     "mdd": -0.0313,
+     "mdd_amt": 3863.59,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-28",
+     "rec_days": 11,
+     "end": "2017-09-29"
+    },
+    "红利低波100": {
+     "final": 132850.27,
+     "total_ret": 0.1071,
+     "cagr": 0.2077,
+     "mdd": -0.0303,
+     "mdd_amt": 3755.4,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-28",
+     "rec_days": 11,
+     "end": "2017-09-29"
+    }
+   }
+  },
+  {
+   "start": "2016-11",
+   "indices": {
+    "上证红利": {
+     "final": 133369.03,
+     "total_ret": 0.1114,
+     "cagr": 0.2143,
+     "mdd": -0.0336,
+     "mdd_amt": 3700.18,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-25",
+     "rec_days": 10,
+     "end": "2017-10-31"
+    },
+    "中证红利": {
+     "final": 134364.27,
+     "total_ret": 0.1197,
+     "cagr": 0.2307,
+     "mdd": -0.029,
+     "mdd_amt": 3201.05,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-25",
+     "rec_days": 10,
+     "end": "2017-10-31"
+    },
+    "红利低波": {
+     "final": 135887.56,
+     "total_ret": 0.1324,
+     "cagr": 0.256,
+     "mdd": -0.0313,
+     "mdd_amt": 3483.48,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-28",
+     "rec_days": 11,
+     "end": "2017-10-31"
+    },
+    "红利低波100": {
+     "final": 131676.24,
+     "total_ret": 0.0973,
+     "cagr": 0.1865,
+     "mdd": -0.0303,
+     "mdd_amt": 3378.54,
+     "peak_date": "2017-08-01",
+     "trough_date": "2017-08-11",
+     "recover_date": "2017-08-28",
+     "rec_days": 11,
+     "end": "2017-10-31"
+    }
+   }
+  },
+  {
+   "start": "2016-12",
+   "indices": {
+    "上证红利": {
+     "final": 131319.81,
+     "total_ret": 0.0943,
+     "cagr": 0.1811,
+     "mdd": -0.0409,
+     "mdd_amt": 5600.91,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2017-11-30"
+    },
+    "中证红利": {
+     "final": 131133.13,
+     "total_ret": 0.0928,
+     "cagr": 0.178,
+     "mdd": -0.0411,
+     "mdd_amt": 5620.27,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2017-11-30"
+    },
+    "红利低波": {
+     "final": 131589.95,
+     "total_ret": 0.0966,
+     "cagr": 0.1855,
+     "mdd": -0.0419,
+     "mdd_amt": 5756.84,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2017-11-30"
+    },
+    "红利低波100": {
+     "final": 125808.87,
+     "total_ret": 0.0484,
+     "cagr": 0.0918,
+     "mdd": -0.0313,
+     "mdd_amt": 4067.18,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2017-11-30"
+    }
+   }
+  },
+  {
+   "start": "2017-01",
+   "indices": {
+    "上证红利": {
+     "final": 130345.42,
+     "total_ret": 0.0862,
+     "cagr": 0.1664,
+     "mdd": -0.0409,
+     "mdd_amt": 5117.17,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": "2017-12-01",
+     "rec_days": 1,
+     "end": "2017-12-29"
+    },
+    "中证红利": {
+     "final": 130516.01,
+     "total_ret": 0.0876,
+     "cagr": 0.1692,
+     "mdd": -0.0411,
+     "mdd_amt": 5133.44,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": "2017-12-01",
+     "rec_days": 1,
+     "end": "2017-12-29"
+    },
+    "红利低波": {
+     "final": 131322.46,
+     "total_ret": 0.0944,
+     "cagr": 0.1825,
+     "mdd": -0.0419,
+     "mdd_amt": 5255.22,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": "2017-12-01",
+     "rec_days": 1,
+     "end": "2017-12-29"
+    },
+    "红利低波100": {
+     "final": 123129.27,
+     "total_ret": 0.0261,
+     "cagr": 0.0495,
+     "mdd": -0.0313,
+     "mdd_amt": 3706.33,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": "2017-12-01",
+     "rec_days": 1,
+     "end": "2017-12-29"
+    }
+   }
+  },
+  {
+   "start": "2017-02",
+   "indices": {
+    "上证红利": {
+     "final": 137831.2,
+     "total_ret": 0.1486,
+     "cagr": 0.2872,
+     "mdd": -0.0409,
+     "mdd_amt": 4608.9,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": "2017-12-01",
+     "rec_days": 1,
+     "end": "2018-01-31"
+    },
+    "中证红利": {
+     "final": 136999.08,
+     "total_ret": 0.1417,
+     "cagr": 0.2734,
+     "mdd": -0.0411,
+     "mdd_amt": 4621.48,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": "2017-12-01",
+     "rec_days": 1,
+     "end": "2018-01-31"
+    },
+    "红利低波": {
+     "final": 137333.8,
+     "total_ret": 0.1444,
+     "cagr": 0.2789,
+     "mdd": -0.0419,
+     "mdd_amt": 4724.89,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": "2017-12-01",
+     "rec_days": 1,
+     "end": "2018-01-31"
+    },
+    "红利低波100": {
+     "final": 127708.5,
+     "total_ret": 0.0642,
+     "cagr": 0.1215,
+     "mdd": -0.0313,
+     "mdd_amt": 3332.39,
+     "peak_date": "2017-11-22",
+     "trough_date": "2017-11-30",
+     "recover_date": "2017-12-01",
+     "rec_days": 1,
+     "end": "2018-01-31"
+    }
+   }
+  },
+  {
+   "start": "2017-03",
+   "indices": {
+    "上证红利": {
+     "final": 128180.84,
+     "total_ret": 0.0682,
+     "cagr": 0.1306,
+     "mdd": -0.0972,
+     "mdd_amt": 13455.11,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-02-28"
+    },
+    "中证红利": {
+     "final": 126957.79,
+     "total_ret": 0.058,
+     "cagr": 0.1108,
+     "mdd": -0.0939,
+     "mdd_amt": 12688.79,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-02-28"
+    },
+    "红利低波": {
+     "final": 126851.28,
+     "total_ret": 0.0571,
+     "cagr": 0.1091,
+     "mdd": -0.098,
+     "mdd_amt": 13229.91,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-02-28"
+    },
+    "红利低波100": {
+     "final": 119548.93,
+     "total_ret": -0.0038,
+     "cagr": -0.0071,
+     "mdd": -0.0841,
+     "mdd_amt": 10675.44,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-02-28"
+    }
+   }
+  },
+  {
+   "start": "2017-04",
+   "indices": {
+    "上证红利": {
+     "final": 121177.81,
+     "total_ret": 0.0098,
+     "cagr": 0.0185,
+     "mdd": -0.0972,
+     "mdd_amt": 12238.12,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-03-30"
+    },
+    "中证红利": {
+     "final": 120628.64,
+     "total_ret": 0.0052,
+     "cagr": 0.0099,
+     "mdd": -0.0939,
+     "mdd_amt": 11534.17,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-03-30"
+    },
+    "红利低波": {
+     "final": 120492.4,
+     "total_ret": 0.0041,
+     "cagr": 0.0077,
+     "mdd": -0.098,
+     "mdd_amt": 12006.18,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-03-30"
+    },
+    "红利低波100": {
+     "final": 116589.87,
+     "total_ret": -0.0284,
+     "cagr": -0.0531,
+     "mdd": -0.0841,
+     "mdd_amt": 9716.91,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-03-30"
+    }
+   }
+  },
+  {
+   "start": "2017-05",
+   "indices": {
+    "上证红利": {
+     "final": 115649.91,
+     "total_ret": -0.0363,
+     "cagr": -0.0683,
+     "mdd": -0.0972,
+     "mdd_amt": 11044.91,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-04-27"
+    },
+    "中证红利": {
+     "final": 115798.04,
+     "total_ret": -0.035,
+     "cagr": -0.066,
+     "mdd": -0.0939,
+     "mdd_amt": 10406.81,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-04-27"
+    },
+    "红利低波": {
+     "final": 115308.89,
+     "total_ret": -0.0391,
+     "cagr": -0.0736,
+     "mdd": -0.098,
+     "mdd_amt": 10815.34,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-04-27"
+    },
+    "红利低波100": {
+     "final": 112280.98,
+     "total_ret": -0.0643,
+     "cagr": -0.1201,
+     "mdd": -0.0841,
+     "mdd_amt": 8780.43,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-04-27"
+    }
+   }
+  },
+  {
+   "start": "2017-06",
+   "indices": {
+    "上证红利": {
+     "final": 117779.67,
+     "total_ret": -0.0185,
+     "cagr": -0.0344,
+     "mdd": -0.0972,
+     "mdd_amt": 9815.38,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-05-31"
+    },
+    "中证红利": {
+     "final": 118413.53,
+     "total_ret": -0.0132,
+     "cagr": -0.0246,
+     "mdd": -0.0939,
+     "mdd_amt": 9253.67,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-05-31"
+    },
+    "红利低波": {
+     "final": 119121.59,
+     "total_ret": -0.0073,
+     "cagr": -0.0137,
+     "mdd": -0.098,
+     "mdd_amt": 9626.83,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-05-31"
+    },
+    "红利低波100": {
+     "final": 113525.18,
+     "total_ret": -0.054,
+     "cagr": -0.0993,
+     "mdd": -0.0841,
+     "mdd_amt": 7834.31,
+     "peak_date": "2018-02-05",
+     "trough_date": "2018-02-09",
+     "recover_date": "2018-03-01",
+     "rec_days": 9,
+     "end": "2018-05-31"
+    }
+   }
+  },
+  {
+   "start": "2017-07",
+   "indices": {
+    "上证红利": {
+     "final": 109606.19,
+     "total_ret": -0.0866,
+     "cagr": -0.1588,
+     "mdd": -0.0877,
+     "mdd_amt": 10336.95,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-06-29"
+    },
+    "中证红利": {
+     "final": 109207.48,
+     "total_ret": -0.0899,
+     "cagr": -0.1647,
+     "mdd": -0.0968,
+     "mdd_amt": 11449.83,
+     "peak_date": "2018-06-06",
+     "trough_date": "2018-06-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-06-29"
+    },
+    "红利低波": {
+     "final": 110703.32,
+     "total_ret": -0.0775,
+     "cagr": -0.1425,
+     "mdd": -0.0977,
+     "mdd_amt": 11704.76,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-06-29"
+    },
+    "红利低波100": {
+     "final": 104470.42,
+     "total_ret": -0.1294,
+     "cagr": -0.2339,
+     "mdd": -0.0946,
+     "mdd_amt": 10745.21,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-06-29"
+    }
+   }
+  },
+  {
+   "start": "2017-08",
+   "indices": {
+    "上证红利": {
+     "final": 114187.18,
+     "total_ret": -0.0484,
+     "cagr": -0.0892,
+     "mdd": -0.0877,
+     "mdd_amt": 9430.52,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-09",
+     "rec_days": 7,
+     "end": "2018-07-31"
+    },
+    "中证红利": {
+     "final": 112118.1,
+     "total_ret": -0.0657,
+     "cagr": -0.1203,
+     "mdd": -0.0968,
+     "mdd_amt": 10449.13,
+     "peak_date": "2018-06-06",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-09",
+     "rec_days": 7,
+     "end": "2018-07-31"
+    },
+    "红利低波": {
+     "final": 111343.69,
+     "total_ret": -0.0721,
+     "cagr": -0.1318,
+     "mdd": -0.0977,
+     "mdd_amt": 10694.64,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-13",
+     "rec_days": 11,
+     "end": "2018-07-31"
+    },
+    "红利低波100": {
+     "final": 109770.01,
+     "total_ret": -0.0852,
+     "cagr": -0.1551,
+     "mdd": -0.0946,
+     "mdd_amt": 9848.72,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-03",
+     "rec_days": 3,
+     "end": "2018-07-31"
+    }
+   }
+  },
+  {
+   "start": "2017-09",
+   "indices": {
+    "上证红利": {
+     "final": 110363.49,
+     "total_ret": -0.0803,
+     "cagr": -0.1459,
+     "mdd": -0.0877,
+     "mdd_amt": 8560.4,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-02",
+     "rec_days": 2,
+     "end": "2018-08-31"
+    },
+    "中证红利": {
+     "final": 106933.44,
+     "total_ret": -0.1089,
+     "cagr": -0.1961,
+     "mdd": -0.0968,
+     "mdd_amt": 9482.99,
+     "peak_date": "2018-06-06",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-02",
+     "rec_days": 2,
+     "end": "2018-08-31"
+    },
+    "红利低波": {
+     "final": 106035.67,
+     "total_ret": -0.1164,
+     "cagr": -0.209,
+     "mdd": -0.0977,
+     "mdd_amt": 9709.45,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-09",
+     "rec_days": 7,
+     "end": "2018-08-31"
+    },
+    "红利低波100": {
+     "final": 106101.65,
+     "total_ret": -0.1158,
+     "cagr": -0.2081,
+     "mdd": -0.0946,
+     "mdd_amt": 8982.11,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-02",
+     "rec_days": 2,
+     "end": "2018-08-31"
+    }
+   }
+  },
+  {
+   "start": "2017-10",
+   "indices": {
+    "上证红利": {
+     "final": 116676.94,
+     "total_ret": -0.0277,
+     "cagr": -0.0518,
+     "mdd": -0.0877,
+     "mdd_amt": 7686.92,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-02",
+     "rec_days": 2,
+     "end": "2018-09-28"
+    },
+    "中证红利": {
+     "final": 112036.88,
+     "total_ret": -0.0664,
+     "cagr": -0.1227,
+     "mdd": -0.0968,
+     "mdd_amt": 8525.57,
+     "peak_date": "2018-06-06",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-02",
+     "rec_days": 2,
+     "end": "2018-09-28"
+    },
+    "红利低波": {
+     "final": 112230.29,
+     "total_ret": -0.0647,
+     "cagr": -0.1197,
+     "mdd": -0.0977,
+     "mdd_amt": 8714.81,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-02",
+     "rec_days": 2,
+     "end": "2018-09-28"
+    },
+    "红利低波100": {
+     "final": 110864.35,
+     "total_ret": -0.0761,
+     "cagr": -0.1403,
+     "mdd": -0.0946,
+     "mdd_amt": 8115.76,
+     "peak_date": "2018-06-05",
+     "trough_date": "2018-06-28",
+     "recover_date": "2018-07-02",
+     "rec_days": 2,
+     "end": "2018-09-28"
+    }
+   }
+  },
+  {
+   "start": "2017-11",
+   "indices": {
+    "上证红利": {
+     "final": 109552.98,
+     "total_ret": -0.0871,
+     "cagr": -0.1579,
+     "mdd": -0.0693,
+     "mdd_amt": 7860.18,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-10-31"
+    },
+    "中证红利": {
+     "final": 105139.03,
+     "total_ret": -0.1238,
+     "cagr": -0.222,
+     "mdd": -0.0788,
+     "mdd_amt": 8613.86,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-10-31"
+    },
+    "红利低波": {
+     "final": 104154.76,
+     "total_ret": -0.132,
+     "cagr": -0.236,
+     "mdd": -0.0844,
+     "mdd_amt": 9224.68,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-10-31"
+    },
+    "红利低波100": {
+     "final": 107035.72,
+     "total_ret": -0.108,
+     "cagr": -0.1946,
+     "mdd": -0.0882,
+     "mdd_amt": 9688.54,
+     "peak_date": "2018-10-10",
+     "trough_date": "2018-10-18",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2018-10-31"
+    }
+   }
+  },
+  {
+   "start": "2017-12",
+   "indices": {
+    "上证红利": {
+     "final": 109611.82,
+     "total_ret": -0.0866,
+     "cagr": -0.1573,
+     "mdd": -0.0693,
+     "mdd_amt": 7226.74,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2018-11-30"
+    },
+    "中证红利": {
+     "final": 107888.87,
+     "total_ret": -0.1009,
+     "cagr": -0.1826,
+     "mdd": -0.0788,
+     "mdd_amt": 7931.64,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2018-11-30"
+    },
+    "红利低波": {
+     "final": 107190.79,
+     "total_ret": -0.1067,
+     "cagr": -0.1927,
+     "mdd": -0.0844,
+     "mdd_amt": 8496.01,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2018-11-30"
+    },
+    "红利低波100": {
+     "final": 110453.18,
+     "total_ret": -0.0796,
+     "cagr": -0.1449,
+     "mdd": -0.0882,
+     "mdd_amt": 8948.61,
+     "peak_date": "2018-10-10",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2018-11-30"
+    }
+   }
+  },
+  {
+   "start": "2018-01",
+   "indices": {
+    "上证红利": {
+     "final": 110439.72,
+     "total_ret": -0.0797,
+     "cagr": -0.1469,
+     "mdd": -0.0693,
+     "mdd_amt": 6596.06,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2018-12-28"
+    },
+    "中证红利": {
+     "final": 108999.25,
+     "total_ret": -0.0917,
+     "cagr": -0.1684,
+     "mdd": -0.0788,
+     "mdd_amt": 7245.63,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2018-12-28"
+    },
+    "红利低波": {
+     "final": 109164.31,
+     "total_ret": -0.0903,
+     "cagr": -0.166,
+     "mdd": -0.0844,
+     "mdd_amt": 7760.6,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2018-12-28"
+    },
+    "红利低波100": {
+     "final": 111528.22,
+     "total_ret": -0.0706,
+     "cagr": -0.1306,
+     "mdd": -0.0882,
+     "mdd_amt": 8191.55,
+     "peak_date": "2018-10-10",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2018-12-28"
+    }
+   }
+  },
+  {
+   "start": "2018-02",
+   "indices": {
+    "上证红利": {
+     "final": 116362.02,
+     "total_ret": -0.0303,
+     "cagr": -0.0558,
+     "mdd": -0.0693,
+     "mdd_amt": 5977.76,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2019-01-31"
+    },
+    "中证红利": {
+     "final": 115979.45,
+     "total_ret": -0.0335,
+     "cagr": -0.0616,
+     "mdd": -0.0788,
+     "mdd_amt": 6576.54,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2019-01-31"
+    },
+    "红利低波": {
+     "final": 115573.02,
+     "total_ret": -0.0369,
+     "cagr": -0.0677,
+     "mdd": -0.0844,
+     "mdd_amt": 7042.78,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2019-01-31"
+    },
+    "红利低波100": {
+     "final": 115564.56,
+     "total_ret": -0.037,
+     "cagr": -0.0679,
+     "mdd": -0.0882,
+     "mdd_amt": 7431.87,
+     "peak_date": "2018-10-10",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2019-01-31"
+    }
+   }
+  },
+  {
+   "start": "2018-03",
+   "indices": {
+    "上证红利": {
+     "final": 128295.9,
+     "total_ret": 0.0691,
+     "cagr": 0.1324,
+     "mdd": -0.0693,
+     "mdd_amt": 5392.7,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2019-02-28"
+    },
+    "中证红利": {
+     "final": 130115.03,
+     "total_ret": 0.0843,
+     "cagr": 0.1621,
+     "mdd": -0.0788,
+     "mdd_amt": 5931.99,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2019-02-28"
+    },
+    "红利低波": {
+     "final": 125714.48,
+     "total_ret": 0.0476,
+     "cagr": 0.0907,
+     "mdd": -0.0844,
+     "mdd_amt": 6353.57,
+     "peak_date": "2018-10-08",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2019-02-28"
+    },
+    "红利低波100": {
+     "final": 129959.51,
+     "total_ret": 0.083,
+     "cagr": 0.1596,
+     "mdd": -0.0882,
+     "mdd_amt": 6693.55,
+     "peak_date": "2018-10-10",
+     "trough_date": "2018-10-18",
+     "recover_date": "2018-11-01",
+     "rec_days": 10,
+     "end": "2019-02-28"
+    }
+   }
+  },
+  {
+   "start": "2018-04",
+   "indices": {
+    "上证红利": {
+     "final": 134034.1,
+     "total_ret": 0.117,
+     "cagr": 0.2287,
+     "mdd": -0.047,
+     "mdd_amt": 6296.44,
+     "peak_date": "2019-03-06",
+     "trough_date": "2019-03-08",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-03-29"
+    },
+    "中证红利": {
+     "final": 139234.92,
+     "total_ret": 0.1603,
+     "cagr": 0.317,
+     "mdd": -0.0417,
+     "mdd_amt": 5712.43,
+     "peak_date": "2019-03-06",
+     "trough_date": "2019-03-08",
+     "recover_date": "2019-03-18",
+     "rec_days": 6,
+     "end": "2019-03-29"
+    },
+    "红利低波": {
+     "final": 135030.92,
+     "total_ret": 0.1253,
+     "cagr": 0.2455,
+     "mdd": -0.0432,
+     "mdd_amt": 5707.03,
+     "peak_date": "2019-03-06",
+     "trough_date": "2019-03-08",
+     "recover_date": "2019-03-18",
+     "rec_days": 6,
+     "end": "2019-03-29"
+    },
+    "红利低波100": {
+     "final": 137800.15,
+     "total_ret": 0.1483,
+     "cagr": 0.2925,
+     "mdd": -0.047,
+     "mdd_amt": 6509.78,
+     "peak_date": "2019-03-07",
+     "trough_date": "2019-03-08",
+     "recover_date": "2019-03-22",
+     "rec_days": 10,
+     "end": "2019-03-29"
+    }
+   }
+  },
+  {
+   "start": "2018-05",
+   "indices": {
+    "上证红利": {
+     "final": 130931.85,
+     "total_ret": 0.0911,
+     "cagr": 0.1753,
+     "mdd": -0.0757,
+     "mdd_amt": 10626.0,
+     "peak_date": "2019-04-08",
+     "trough_date": "2019-04-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-04-30"
+    },
+    "中证红利": {
+     "final": 138229.59,
+     "total_ret": 0.1519,
+     "cagr": 0.2971,
+     "mdd": -0.0796,
+     "mdd_amt": 11783.34,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-04-30"
+    },
+    "红利低波": {
+     "final": 132654.66,
+     "total_ret": 0.1055,
+     "cagr": 0.2038,
+     "mdd": -0.0728,
+     "mdd_amt": 10299.56,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-26",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-04-30"
+    },
+    "红利低波100": {
+     "final": 137306.49,
+     "total_ret": 0.1442,
+     "cagr": 0.2815,
+     "mdd": -0.0677,
+     "mdd_amt": 9858.35,
+     "peak_date": "2019-04-17",
+     "trough_date": "2019-04-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-04-30"
+    }
+   }
+  },
+  {
+   "start": "2018-06",
+   "indices": {
+    "上证红利": {
+     "final": 123651.55,
+     "total_ret": 0.0304,
+     "cagr": 0.0575,
+     "mdd": -0.0757,
+     "mdd_amt": 9764.82,
+     "peak_date": "2019-04-08",
+     "trough_date": "2019-04-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-05-31"
+    },
+    "中证红利": {
+     "final": 131239.55,
+     "total_ret": 0.0937,
+     "cagr": 0.1801,
+     "mdd": -0.0796,
+     "mdd_amt": 10844.95,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-05-31"
+    },
+    "红利低波": {
+     "final": 126517.97,
+     "total_ret": 0.0543,
+     "cagr": 0.1034,
+     "mdd": -0.0728,
+     "mdd_amt": 9485.43,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-26",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-05-31"
+    },
+    "红利低波100": {
+     "final": 130595.42,
+     "total_ret": 0.0883,
+     "cagr": 0.1696,
+     "mdd": -0.0677,
+     "mdd_amt": 9072.21,
+     "peak_date": "2019-04-17",
+     "trough_date": "2019-04-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-05-31"
+    }
+   }
+  },
+  {
+   "start": "2018-07",
+   "indices": {
+    "上证红利": {
+     "final": 127430.54,
+     "total_ret": 0.0619,
+     "cagr": 0.1197,
+     "mdd": -0.0757,
+     "mdd_amt": 8916.6,
+     "peak_date": "2019-04-08",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-06-03",
+     "rec_days": 22,
+     "end": "2019-06-28"
+    },
+    "中证红利": {
+     "final": 131104.76,
+     "total_ret": 0.0925,
+     "cagr": 0.1805,
+     "mdd": -0.0796,
+     "mdd_amt": 9922.56,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-06-03",
+     "rec_days": 22,
+     "end": "2019-06-28"
+    },
+    "红利低波": {
+     "final": 129248.41,
+     "total_ret": 0.0771,
+     "cagr": 0.1497,
+     "mdd": -0.0728,
+     "mdd_amt": 8690.83,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-26",
+     "recover_date": "2019-06-03",
+     "rec_days": 23,
+     "end": "2019-06-28"
+    },
+    "红利低波100": {
+     "final": 131241.85,
+     "total_ret": 0.0937,
+     "cagr": 0.1828,
+     "mdd": -0.0677,
+     "mdd_amt": 8288.91,
+     "peak_date": "2019-04-17",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-16",
+     "rec_days": 10,
+     "end": "2019-06-28"
+    }
+   }
+  },
+  {
+   "start": "2018-08",
+   "indices": {
+    "上证红利": {
+     "final": 126606.42,
+     "total_ret": 0.0551,
+     "cagr": 0.1048,
+     "mdd": -0.0757,
+     "mdd_amt": 7985.54,
+     "peak_date": "2019-04-08",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-06-03",
+     "rec_days": 22,
+     "end": "2019-07-31"
+    },
+    "中证红利": {
+     "final": 129610.88,
+     "total_ret": 0.0801,
+     "cagr": 0.1534,
+     "mdd": -0.0796,
+     "mdd_amt": 8909.35,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-06-03",
+     "rec_days": 22,
+     "end": "2019-07-31"
+    },
+    "红利低波": {
+     "final": 129756.55,
+     "total_ret": 0.0813,
+     "cagr": 0.1558,
+     "mdd": -0.0728,
+     "mdd_amt": 7820.02,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-26",
+     "recover_date": "2019-05-10",
+     "rec_days": 7,
+     "end": "2019-07-31"
+    },
+    "红利低波100": {
+     "final": 130274.5,
+     "total_ret": 0.0856,
+     "cagr": 0.1643,
+     "mdd": -0.0677,
+     "mdd_amt": 7427.04,
+     "peak_date": "2019-04-17",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-15",
+     "rec_days": 9,
+     "end": "2019-07-31"
+    }
+   }
+  },
+  {
+   "start": "2018-09",
+   "indices": {
+    "上证红利": {
+     "final": 123029.15,
+     "total_ret": 0.0252,
+     "cagr": 0.0477,
+     "mdd": -0.0757,
+     "mdd_amt": 7097.02,
+     "peak_date": "2019-04-08",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-07",
+     "rec_days": 3,
+     "end": "2019-08-30"
+    },
+    "中证红利": {
+     "final": 124472.08,
+     "total_ret": 0.0373,
+     "cagr": 0.0707,
+     "mdd": -0.0796,
+     "mdd_amt": 7923.78,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-16",
+     "rec_days": 10,
+     "end": "2019-08-30"
+    },
+    "红利低波": {
+     "final": 124924.56,
+     "total_ret": 0.041,
+     "cagr": 0.078,
+     "mdd": -0.0728,
+     "mdd_amt": 6958.07,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-26",
+     "recover_date": "2019-05-07",
+     "rec_days": 4,
+     "end": "2019-08-30"
+    },
+    "红利低波100": {
+     "final": 124302.72,
+     "total_ret": 0.0359,
+     "cagr": 0.068,
+     "mdd": -0.0677,
+     "mdd_amt": 6597.54,
+     "peak_date": "2019-04-17",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-07",
+     "rec_days": 3,
+     "end": "2019-08-30"
+    }
+   }
+  },
+  {
+   "start": "2018-10",
+   "indices": {
+    "上证红利": {
+     "final": 122610.12,
+     "total_ret": 0.0218,
+     "cagr": 0.0409,
+     "mdd": -0.0757,
+     "mdd_amt": 6188.32,
+     "peak_date": "2019-04-08",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-06",
+     "rec_days": 2,
+     "end": "2019-09-30"
+    },
+    "中证红利": {
+     "final": 123341.27,
+     "total_ret": 0.0278,
+     "cagr": 0.0525,
+     "mdd": -0.0796,
+     "mdd_amt": 6899.96,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-07",
+     "rec_days": 3,
+     "end": "2019-09-30"
+    },
+    "红利低波": {
+     "final": 123894.38,
+     "total_ret": 0.0325,
+     "cagr": 0.0613,
+     "mdd": -0.0728,
+     "mdd_amt": 6062.25,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-26",
+     "recover_date": "2019-05-06",
+     "rec_days": 3,
+     "end": "2019-09-30"
+    },
+    "红利低波100": {
+     "final": 123093.51,
+     "total_ret": 0.0258,
+     "cagr": 0.0486,
+     "mdd": -0.0677,
+     "mdd_amt": 5739.67,
+     "peak_date": "2019-04-17",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-06",
+     "rec_days": 2,
+     "end": "2019-09-30"
+    }
+   }
+  },
+  {
+   "start": "2018-11",
+   "indices": {
+    "上证红利": {
+     "final": 122499.09,
+     "total_ret": 0.0208,
+     "cagr": 0.0391,
+     "mdd": -0.0757,
+     "mdd_amt": 5292.69,
+     "peak_date": "2019-04-08",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-06",
+     "rec_days": 2,
+     "end": "2019-10-31"
+    },
+    "中证红利": {
+     "final": 122995.38,
+     "total_ret": 0.025,
+     "cagr": 0.0469,
+     "mdd": -0.0796,
+     "mdd_amt": 5878.06,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-06",
+     "rec_days": 2,
+     "end": "2019-10-31"
+    },
+    "红利低波": {
+     "final": 124564.58,
+     "total_ret": 0.038,
+     "cagr": 0.0717,
+     "mdd": -0.0728,
+     "mdd_amt": 5175.06,
+     "peak_date": "2019-04-10",
+     "trough_date": "2019-04-26",
+     "recover_date": "2019-05-06",
+     "rec_days": 3,
+     "end": "2019-10-31"
+    },
+    "红利低波100": {
+     "final": 122724.89,
+     "total_ret": 0.0227,
+     "cagr": 0.0426,
+     "mdd": -0.0677,
+     "mdd_amt": 4885.36,
+     "peak_date": "2019-04-17",
+     "trough_date": "2019-04-29",
+     "recover_date": "2019-05-06",
+     "rec_days": 2,
+     "end": "2019-10-31"
+    }
+   }
+  },
+  {
+   "start": "2018-12",
+   "indices": {
+    "上证红利": {
+     "final": 120616.63,
+     "total_ret": 0.0051,
+     "cagr": 0.0097,
+     "mdd": -0.0441,
+     "mdd_amt": 4668.94,
+     "peak_date": "2019-09-16",
+     "trough_date": "2019-09-30",
+     "recover_date": "2019-10-08",
+     "rec_days": 1,
+     "end": "2019-11-29"
+    },
+    "中证红利": {
+     "final": 120296.37,
+     "total_ret": 0.0025,
+     "cagr": 0.0046,
+     "mdd": -0.0458,
+     "mdd_amt": 4837.75,
+     "peak_date": "2019-09-09",
+     "trough_date": "2019-09-30",
+     "recover_date": "2019-10-08",
+     "rec_days": 1,
+     "end": "2019-11-29"
+    },
+    "红利低波": {
+     "final": 123274.55,
+     "total_ret": 0.0273,
+     "cagr": 0.0517,
+     "mdd": -0.0455,
+     "mdd_amt": 4267.17,
+     "peak_date": "2019-08-01",
+     "trough_date": "2019-08-07",
+     "recover_date": "2019-09-02",
+     "rec_days": 18,
+     "end": "2019-11-29"
+    },
+    "红利低波100": {
+     "final": 120328.7,
+     "total_ret": 0.0027,
+     "cagr": 0.0052,
+     "mdd": -0.0387,
+     "mdd_amt": 4766.33,
+     "peak_date": "2019-11-05",
+     "trough_date": "2019-11-15",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2019-11-29"
+    }
+   }
+  },
+  {
+   "start": "2019-01",
+   "indices": {
+    "上证红利": {
+     "final": 126241.24,
+     "total_ret": 0.052,
+     "cagr": 0.0983,
+     "mdd": -0.0441,
+     "mdd_amt": 4170.63,
+     "peak_date": "2019-09-16",
+     "trough_date": "2019-09-30",
+     "recover_date": "2019-10-08",
+     "rec_days": 1,
+     "end": "2019-12-31"
+    },
+    "中证红利": {
+     "final": 126539.59,
+     "total_ret": 0.0545,
+     "cagr": 0.1031,
+     "mdd": -0.0458,
+     "mdd_amt": 4304.83,
+     "peak_date": "2019-09-09",
+     "trough_date": "2019-09-30",
+     "recover_date": "2019-10-08",
+     "rec_days": 1,
+     "end": "2019-12-31"
+    },
+    "红利低波": {
+     "final": 129309.8,
+     "total_ret": 0.0776,
+     "cagr": 0.1476,
+     "mdd": -0.0329,
+     "mdd_amt": 3755.78,
+     "peak_date": "2019-11-05",
+     "trough_date": "2019-11-15",
+     "recover_date": "2019-12-02",
+     "rec_days": 11,
+     "end": "2019-12-31"
+    },
+    "红利低波100": {
+     "final": 124635.9,
+     "total_ret": 0.0386,
+     "cagr": 0.0727,
+     "mdd": -0.0387,
+     "mdd_amt": 4333.21,
+     "peak_date": "2019-11-05",
+     "trough_date": "2019-11-15",
+     "recover_date": "2019-12-02",
+     "rec_days": 11,
+     "end": "2019-12-31"
+    }
+   }
+  },
+  {
+   "start": "2019-02",
+   "indices": {
+    "上证红利": {
+     "final": 120053.61,
+     "total_ret": 0.0004,
+     "cagr": 0.0009,
+     "mdd": -0.0513,
+     "mdd_amt": 6491.17,
+     "peak_date": "2020-01-14",
+     "trough_date": "2020-01-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-01-23"
+    },
+    "中证红利": {
+     "final": 120703.32,
+     "total_ret": 0.0059,
+     "cagr": 0.0114,
+     "mdd": -0.05,
+     "mdd_amt": 6348.76,
+     "peak_date": "2020-01-14",
+     "trough_date": "2020-01-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-01-23"
+    },
+    "红利低波": {
+     "final": 120253.45,
+     "total_ret": 0.0021,
+     "cagr": 0.0041,
+     "mdd": -0.0629,
+     "mdd_amt": 8067.56,
+     "peak_date": "2020-01-07",
+     "trough_date": "2020-01-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-01-23"
+    },
+    "红利低波100": {
+     "final": 117290.85,
+     "total_ret": -0.0226,
+     "cagr": -0.0434,
+     "mdd": -0.0584,
+     "mdd_amt": 7268.66,
+     "peak_date": "2020-01-07",
+     "trough_date": "2020-01-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-01-23"
+    }
+   }
+  },
+  {
+   "start": "2019-03",
+   "indices": {
+    "上证红利": {
+     "final": 115376.79,
+     "total_ret": -0.0385,
+     "cagr": -0.0717,
+     "mdd": -0.0513,
+     "mdd_amt": 5911.91,
+     "peak_date": "2020-01-14",
+     "trough_date": "2020-01-23",
+     "recover_date": "2020-02-10",
+     "rec_days": 6,
+     "end": "2020-02-28"
+    },
+    "中证红利": {
+     "final": 116995.44,
+     "total_ret": -0.025,
+     "cagr": -0.0468,
+     "mdd": -0.05,
+     "mdd_amt": 5765.25,
+     "peak_date": "2020-01-14",
+     "trough_date": "2020-01-23",
+     "recover_date": "2020-02-10",
+     "rec_days": 6,
+     "end": "2020-02-28"
+    },
+    "红利低波": {
+     "final": 115230.18,
+     "total_ret": -0.0397,
+     "cagr": -0.0739,
+     "mdd": -0.0629,
+     "mdd_amt": 7336.53,
+     "peak_date": "2020-01-07",
+     "trough_date": "2020-01-23",
+     "recover_date": "2020-02-14",
+     "rec_days": 10,
+     "end": "2020-02-28"
+    },
+    "红利低波100": {
+     "final": 111964.94,
+     "total_ret": -0.067,
+     "cagr": -0.1235,
+     "mdd": -0.0584,
+     "mdd_amt": 6599.61,
+     "peak_date": "2020-01-07",
+     "trough_date": "2020-01-23",
+     "recover_date": "2020-02-12",
+     "rec_days": 8,
+     "end": "2020-02-28"
+    }
+   }
+  },
+  {
+   "start": "2019-04",
+   "indices": {
+    "上证红利": {
+     "final": 108674.27,
+     "total_ret": -0.0944,
+     "cagr": -0.1714,
+     "mdd": -0.1369,
+     "mdd_amt": 16697.3,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-03-31"
+    },
+    "中证红利": {
+     "final": 110917.99,
+     "total_ret": -0.0757,
+     "cagr": -0.1382,
+     "mdd": -0.134,
+     "mdd_amt": 16687.19,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-03-31"
+    },
+    "红利低波": {
+     "final": 109709.63,
+     "total_ret": -0.0858,
+     "cagr": -0.1561,
+     "mdd": -0.1347,
+     "mdd_amt": 16461.95,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-03-31"
+    },
+    "红利低波100": {
+     "final": 109121.81,
+     "total_ret": -0.0907,
+     "cagr": -0.1648,
+     "mdd": -0.1066,
+     "mdd_amt": 12658.89,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-03-31"
+    }
+   }
+  },
+  {
+   "start": "2019-05",
+   "indices": {
+    "上证红利": {
+     "final": 112884.03,
+     "total_ret": -0.0593,
+     "cagr": -0.1091,
+     "mdd": -0.1369,
+     "mdd_amt": 15408.56,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-30",
+     "rec_days": 27,
+     "end": "2020-04-30"
+    },
+    "中证红利": {
+     "final": 116097.61,
+     "total_ret": -0.0325,
+     "cagr": -0.0603,
+     "mdd": -0.134,
+     "mdd_amt": 15407.54,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-09",
+     "rec_days": 12,
+     "end": "2020-04-30"
+    },
+    "红利低波": {
+     "final": 115872.66,
+     "total_ret": -0.0344,
+     "cagr": -0.0638,
+     "mdd": -0.1347,
+     "mdd_amt": 15179.37,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-07",
+     "rec_days": 10,
+     "end": "2020-04-30"
+    },
+    "红利低波100": {
+     "final": 113611.24,
+     "total_ret": -0.0532,
+     "cagr": -0.0981,
+     "mdd": -0.1066,
+     "mdd_amt": 11685.93,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-04-30"
+    }
+   }
+  },
+  {
+   "start": "2019-06",
+   "indices": {
+    "上证红利": {
+     "final": 110537.77,
+     "total_ret": -0.0789,
+     "cagr": -0.1453,
+     "mdd": -0.1369,
+     "mdd_amt": 13999.05,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-07",
+     "rec_days": 10,
+     "end": "2020-05-29"
+    },
+    "中证红利": {
+     "final": 114830.43,
+     "total_ret": -0.0431,
+     "cagr": -0.0803,
+     "mdd": -0.134,
+     "mdd_amt": 14014.31,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-07",
+     "rec_days": 10,
+     "end": "2020-05-29"
+    },
+    "红利低波": {
+     "final": 113544.91,
+     "total_ret": -0.0538,
+     "cagr": -0.0999,
+     "mdd": -0.1347,
+     "mdd_amt": 13777.59,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-02",
+     "rec_days": 8,
+     "end": "2020-05-29"
+    },
+    "红利低波100": {
+     "final": 113065.67,
+     "total_ret": -0.0578,
+     "cagr": -0.1072,
+     "mdd": -0.1066,
+     "mdd_amt": 10638.03,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-05-29"
+    }
+   }
+  },
+  {
+   "start": "2019-07",
+   "indices": {
+    "上证红利": {
+     "final": 114166.96,
+     "total_ret": -0.0486,
+     "cagr": -0.0897,
+     "mdd": -0.1369,
+     "mdd_amt": 12569.98,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-02",
+     "rec_days": 8,
+     "end": "2020-06-30"
+    },
+    "中证红利": {
+     "final": 119619.25,
+     "total_ret": -0.0032,
+     "cagr": -0.0059,
+     "mdd": -0.134,
+     "mdd_amt": 12619.5,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-02",
+     "rec_days": 8,
+     "end": "2020-06-30"
+    },
+    "红利低波": {
+     "final": 117397.4,
+     "total_ret": -0.0217,
+     "cagr": -0.0403,
+     "mdd": -0.1347,
+     "mdd_amt": 12379.0,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-06-30"
+    },
+    "红利低波100": {
+     "final": 117431.04,
+     "total_ret": -0.0214,
+     "cagr": -0.0398,
+     "mdd": -0.1066,
+     "mdd_amt": 9589.95,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-06-30"
+    }
+   }
+  },
+  {
+   "start": "2019-08",
+   "indices": {
+    "上证红利": {
+     "final": 125216.01,
+     "total_ret": 0.0435,
+     "cagr": 0.0821,
+     "mdd": -0.1369,
+     "mdd_amt": 11206.65,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-07-31"
+    },
+    "中证红利": {
+     "final": 132853.54,
+     "total_ret": 0.1071,
+     "cagr": 0.2059,
+     "mdd": -0.134,
+     "mdd_amt": 11262.37,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-07-31"
+    },
+    "红利低波": {
+     "final": 131672.08,
+     "total_ret": 0.0973,
+     "cagr": 0.1865,
+     "mdd": -0.1347,
+     "mdd_amt": 11033.66,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-07-31"
+    },
+    "红利低波100": {
+     "final": 129498.8,
+     "total_ret": 0.0792,
+     "cagr": 0.1511,
+     "mdd": -0.0766,
+     "mdd_amt": 10514.65,
+     "peak_date": "2020-07-09",
+     "trough_date": "2020-07-27",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-07-31"
+    }
+   }
+  },
+  {
+   "start": "2019-09",
+   "indices": {
+    "上证红利": {
+     "final": 129526.81,
+     "total_ret": 0.0794,
+     "cagr": 0.1513,
+     "mdd": -0.1369,
+     "mdd_amt": 9819.73,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-08-31"
+    },
+    "中证红利": {
+     "final": 136333.02,
+     "total_ret": 0.1361,
+     "cagr": 0.2632,
+     "mdd": -0.134,
+     "mdd_amt": 9870.94,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-08-31"
+    },
+    "红利低波": {
+     "final": 135750.82,
+     "total_ret": 0.1313,
+     "cagr": 0.2535,
+     "mdd": -0.1347,
+     "mdd_amt": 9667.39,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-08-31"
+    },
+    "红利低波100": {
+     "final": 133216.85,
+     "total_ret": 0.1101,
+     "cagr": 0.2115,
+     "mdd": -0.0766,
+     "mdd_amt": 9682.06,
+     "peak_date": "2020-07-09",
+     "trough_date": "2020-07-27",
+     "recover_date": "2020-08-03",
+     "rec_days": 5,
+     "end": "2020-08-31"
+    }
+   }
+  },
+  {
+   "start": "2019-10",
+   "indices": {
+    "上证红利": {
+     "final": 123818.72,
+     "total_ret": 0.0318,
+     "cagr": 0.06,
+     "mdd": -0.1369,
+     "mdd_amt": 8424.93,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-09-30"
+    },
+    "中证红利": {
+     "final": 128782.56,
+     "total_ret": 0.0732,
+     "cagr": 0.1395,
+     "mdd": -0.134,
+     "mdd_amt": 8463.3,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-09-30"
+    },
+    "红利低波": {
+     "final": 126878.67,
+     "total_ret": 0.0573,
+     "cagr": 0.1088,
+     "mdd": -0.1347,
+     "mdd_amt": 8280.25,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-09-30"
+    },
+    "红利低波100": {
+     "final": 125806.31,
+     "total_ret": 0.0484,
+     "cagr": 0.0916,
+     "mdd": -0.0766,
+     "mdd_amt": 8831.05,
+     "peak_date": "2020-07-09",
+     "trough_date": "2020-07-27",
+     "recover_date": "2020-08-03",
+     "rec_days": 5,
+     "end": "2020-09-30"
+    }
+   }
+  },
+  {
+   "start": "2019-11",
+   "indices": {
+    "上证红利": {
+     "final": 124000.69,
+     "total_ret": 0.0333,
+     "cagr": 0.063,
+     "mdd": -0.1369,
+     "mdd_amt": 7027.24,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-10-30"
+    },
+    "中证红利": {
+     "final": 128956.22,
+     "total_ret": 0.0746,
+     "cagr": 0.1427,
+     "mdd": -0.134,
+     "mdd_amt": 7046.96,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-10-30"
+    },
+    "红利低波": {
+     "final": 126709.71,
+     "total_ret": 0.0559,
+     "cagr": 0.1064,
+     "mdd": -0.1347,
+     "mdd_amt": 6892.83,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-10-30"
+    },
+    "红利低波100": {
+     "final": 125413.73,
+     "total_ret": 0.0451,
+     "cagr": 0.0856,
+     "mdd": -0.0766,
+     "mdd_amt": 7975.85,
+     "peak_date": "2020-07-09",
+     "trough_date": "2020-07-27",
+     "recover_date": "2020-08-03",
+     "rec_days": 5,
+     "end": "2020-10-30"
+    }
+   }
+  },
+  {
+   "start": "2019-12",
+   "indices": {
+    "上证红利": {
+     "final": 134825.62,
+     "total_ret": 0.1235,
+     "cagr": 0.2388,
+     "mdd": -0.066,
+     "mdd_amt": 5819.75,
+     "peak_date": "2020-07-09",
+     "trough_date": "2020-07-27",
+     "recover_date": "2020-08-03",
+     "rec_days": 5,
+     "end": "2020-11-30"
+    },
+    "中证红利": {
+     "final": 139126.48,
+     "total_ret": 0.1594,
+     "cagr": 0.3108,
+     "mdd": -0.134,
+     "mdd_amt": 5646.84,
+     "peak_date": "2020-03-05",
+     "trough_date": "2020-03-23",
+     "recover_date": "2020-04-01",
+     "rec_days": 7,
+     "end": "2020-11-30"
+    },
+    "红利低波": {
+     "final": 137217.31,
+     "total_ret": 0.1435,
+     "cagr": 0.2787,
+     "mdd": -0.0544,
+     "mdd_amt": 6087.52,
+     "peak_date": "2020-09-01",
+     "trough_date": "2020-09-30",
+     "recover_date": "2020-10-09",
+     "rec_days": 1,
+     "end": "2020-11-30"
+    },
+    "红利低波100": {
+     "final": 134041.51,
+     "total_ret": 0.117,
+     "cagr": 0.2258,
+     "mdd": -0.0766,
+     "mdd_amt": 7126.84,
+     "peak_date": "2020-07-09",
+     "trough_date": "2020-07-27",
+     "recover_date": "2020-08-03",
+     "rec_days": 5,
+     "end": "2020-11-30"
+    }
+   }
+  },
+  {
+   "start": "2020-01",
+   "indices": {
+    "上证红利": {
+     "final": 125295.74,
+     "total_ret": 0.0441,
+     "cagr": 0.0833,
+     "mdd": -0.0754,
+     "mdd_amt": 10159.18,
+     "peak_date": "2020-12-01",
+     "trough_date": "2020-12-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-12-31"
+    },
+    "中证红利": {
+     "final": 130678.63,
+     "total_ret": 0.089,
+     "cagr": 0.1699,
+     "mdd": -0.071,
+     "mdd_amt": 9880.67,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-12-31"
+    },
+    "红利低波": {
+     "final": 127186.05,
+     "total_ret": 0.0599,
+     "cagr": 0.1135,
+     "mdd": -0.0793,
+     "mdd_amt": 10879.41,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-12-31"
+    },
+    "红利低波100": {
+     "final": 127124.56,
+     "total_ret": 0.0594,
+     "cagr": 0.1125,
+     "mdd": -0.0635,
+     "mdd_amt": 8555.85,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2020-12-31"
+    }
+   }
+  },
+  {
+   "start": "2020-02",
+   "indices": {
+    "上证红利": {
+     "final": 120122.42,
+     "total_ret": 0.001,
+     "cagr": 0.0019,
+     "mdd": -0.0754,
+     "mdd_amt": 9365.65,
+     "peak_date": "2020-12-01",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-01-29"
+    },
+    "中证红利": {
+     "final": 125338.5,
+     "total_ret": 0.0445,
+     "cagr": 0.0847,
+     "mdd": -0.071,
+     "mdd_amt": 9074.03,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-01-29"
+    },
+    "红利低波": {
+     "final": 122699.61,
+     "total_ret": 0.0225,
+     "cagr": 0.0426,
+     "mdd": -0.0793,
+     "mdd_amt": 10016.32,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-06",
+     "rec_days": 5,
+     "end": "2021-01-29"
+    },
+    "红利低波100": {
+     "final": 123365.61,
+     "total_ret": 0.028,
+     "cagr": 0.0531,
+     "mdd": -0.0635,
+     "mdd_amt": 7874.94,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-01-29"
+    }
+   }
+  },
+  {
+   "start": "2020-03",
+   "indices": {
+    "上证红利": {
+     "final": 126341.44,
+     "total_ret": 0.0528,
+     "cagr": 0.1021,
+     "mdd": -0.0754,
+     "mdd_amt": 8457.1,
+     "peak_date": "2020-12-01",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-02-26"
+    },
+    "中证红利": {
+     "final": 131080.94,
+     "total_ret": 0.0923,
+     "cagr": 0.1804,
+     "mdd": -0.071,
+     "mdd_amt": 8150.56,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-02-26"
+    },
+    "红利低波": {
+     "final": 129097.38,
+     "total_ret": 0.0758,
+     "cagr": 0.1474,
+     "mdd": -0.0793,
+     "mdd_amt": 9011.75,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-02-26"
+    },
+    "红利低波100": {
+     "final": 128871.4,
+     "total_ret": 0.0739,
+     "cagr": 0.1437,
+     "mdd": -0.0635,
+     "mdd_amt": 7088.59,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-02-26"
+    }
+   }
+  },
+  {
+   "start": "2020-04",
+   "indices": {
+    "上证红利": {
+     "final": 131203.44,
+     "total_ret": 0.0934,
+     "cagr": 0.1798,
+     "mdd": -0.0754,
+     "mdd_amt": 7620.01,
+     "peak_date": "2020-12-01",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-03-31"
+    },
+    "中证红利": {
+     "final": 132933.75,
+     "total_ret": 0.1078,
+     "cagr": 0.2084,
+     "mdd": -0.071,
+     "mdd_amt": 7316.43,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-03-31"
+    },
+    "红利低波": {
+     "final": 132804.49,
+     "total_ret": 0.1067,
+     "cagr": 0.2062,
+     "mdd": -0.0793,
+     "mdd_amt": 8084.0,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-03-31"
+    },
+    "红利低波100": {
+     "final": 135083.58,
+     "total_ret": 0.1257,
+     "cagr": 0.2441,
+     "mdd": -0.0635,
+     "mdd_amt": 6356.92,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-03-31"
+    }
+   }
+  },
+  {
+   "start": "2020-05",
+   "indices": {
+    "上证红利": {
+     "final": 129809.05,
+     "total_ret": 0.0817,
+     "cagr": 0.1573,
+     "mdd": -0.0754,
+     "mdd_amt": 6692.38,
+     "peak_date": "2020-12-01",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-04-30"
+    },
+    "中证红利": {
+     "final": 133693.39,
+     "total_ret": 0.1141,
+     "cagr": 0.2215,
+     "mdd": -0.071,
+     "mdd_amt": 6397.06,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-04-30"
+    },
+    "红利低波": {
+     "final": 131476.55,
+     "total_ret": 0.0956,
+     "cagr": 0.1847,
+     "mdd": -0.0793,
+     "mdd_amt": 7070.8,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-04-30"
+    },
+    "红利低波100": {
+     "final": 130741.42,
+     "total_ret": 0.0895,
+     "cagr": 0.1726,
+     "mdd": -0.0635,
+     "mdd_amt": 5572.68,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-04-30"
+    }
+   }
+  },
+  {
+   "start": "2020-06",
+   "indices": {
+    "上证红利": {
+     "final": 133829.5,
+     "total_ret": 0.1152,
+     "cagr": 0.223,
+     "mdd": -0.0754,
+     "mdd_amt": 5790.56,
+     "peak_date": "2020-12-01",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-05-31"
+    },
+    "中证红利": {
+     "final": 138484.88,
+     "total_ret": 0.154,
+     "cagr": 0.3011,
+     "mdd": -0.071,
+     "mdd_amt": 5512.7,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-05-31"
+    },
+    "红利低波": {
+     "final": 137930.43,
+     "total_ret": 0.1494,
+     "cagr": 0.2917,
+     "mdd": -0.0793,
+     "mdd_amt": 6099.67,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-05-31"
+    },
+    "红利低波100": {
+     "final": 130626.28,
+     "total_ret": 0.0886,
+     "cagr": 0.1702,
+     "mdd": -0.0635,
+     "mdd_amt": 4811.96,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-05-31"
+    }
+   }
+  },
+  {
+   "start": "2020-07",
+   "indices": {
+    "上证红利": {
+     "final": 133467.07,
+     "total_ret": 0.1122,
+     "cagr": 0.2175,
+     "mdd": -0.0754,
+     "mdd_amt": 4883.13,
+     "peak_date": "2020-12-01",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-06-30"
+    },
+    "中证红利": {
+     "final": 135308.64,
+     "total_ret": 0.1276,
+     "cagr": 0.2483,
+     "mdd": -0.035,
+     "mdd_amt": 4764.34,
+     "peak_date": "2021-06-01",
+     "trough_date": "2021-06-18",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-06-30"
+    },
+    "红利低波": {
+     "final": 129999.07,
+     "total_ret": 0.0833,
+     "cagr": 0.1603,
+     "mdd": -0.0405,
+     "mdd_amt": 5453.08,
+     "peak_date": "2021-06-02",
+     "trough_date": "2021-06-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-06-30"
+    },
+    "红利低波100": {
+     "final": 129325.66,
+     "total_ret": 0.0777,
+     "cagr": 0.1493,
+     "mdd": -0.0635,
+     "mdd_amt": 4056.98,
+     "peak_date": "2020-12-02",
+     "trough_date": "2020-12-29",
+     "recover_date": "2021-01-04",
+     "rec_days": 3,
+     "end": "2021-06-30"
+    }
+   }
+  },
+  {
+   "start": "2020-08",
+   "indices": {
+    "上证红利": {
+     "final": 126858.62,
+     "total_ret": 0.0572,
+     "cagr": 0.1094,
+     "mdd": -0.0632,
+     "mdd_amt": 8388.44,
+     "peak_date": "2021-07-16",
+     "trough_date": "2021-07-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-07-30"
+    },
+    "中证红利": {
+     "final": 127178.41,
+     "total_ret": 0.0598,
+     "cagr": 0.1146,
+     "mdd": -0.0716,
+     "mdd_amt": 9571.97,
+     "peak_date": "2021-07-22",
+     "trough_date": "2021-07-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-07-30"
+    },
+    "红利低波": {
+     "final": 119646.76,
+     "total_ret": -0.0029,
+     "cagr": -0.0055,
+     "mdd": -0.072,
+     "mdd_amt": 9257.53,
+     "peak_date": "2021-07-01",
+     "trough_date": "2021-07-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-07-30"
+    },
+    "红利低波100": {
+     "final": 120011.18,
+     "total_ret": 0.0001,
+     "cagr": 0.0002,
+     "mdd": -0.0662,
+     "mdd_amt": 8496.35,
+     "peak_date": "2021-07-06",
+     "trough_date": "2021-07-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-07-30"
+    }
+   }
+  },
+  {
+   "start": "2020-09",
+   "indices": {
+    "上证红利": {
+     "final": 140129.85,
+     "total_ret": 0.1677,
+     "cagr": 0.3276,
+     "mdd": -0.0632,
+     "mdd_amt": 7666.13,
+     "peak_date": "2021-07-16",
+     "trough_date": "2021-07-28",
+     "recover_date": "2021-08-02",
+     "rec_days": 3,
+     "end": "2021-08-31"
+    },
+    "中证红利": {
+     "final": 139965.74,
+     "total_ret": 0.1664,
+     "cagr": 0.3249,
+     "mdd": -0.0716,
+     "mdd_amt": 8735.02,
+     "peak_date": "2021-07-22",
+     "trough_date": "2021-07-28",
+     "recover_date": "2021-08-02",
+     "rec_days": 3,
+     "end": "2021-08-31"
+    },
+    "红利低波": {
+     "final": 132725.74,
+     "total_ret": 0.106,
+     "cagr": 0.2039,
+     "mdd": -0.072,
+     "mdd_amt": 8467.6,
+     "peak_date": "2021-07-01",
+     "trough_date": "2021-07-28",
+     "recover_date": "2021-08-02",
+     "rec_days": 3,
+     "end": "2021-08-31"
+    },
+    "红利低波100": {
+     "final": 126819.13,
+     "total_ret": 0.0568,
+     "cagr": 0.1078,
+     "mdd": -0.0662,
+     "mdd_amt": 7771.74,
+     "peak_date": "2021-07-06",
+     "trough_date": "2021-07-29",
+     "recover_date": "2021-08-02",
+     "rec_days": 2,
+     "end": "2021-08-31"
+    }
+   }
+  },
+  {
+   "start": "2020-10",
+   "indices": {
+    "上证红利": {
+     "final": 136941.77,
+     "total_ret": 0.1412,
+     "cagr": 0.2746,
+     "mdd": -0.1071,
+     "mdd_amt": 16281.53,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-09-30"
+    },
+    "中证红利": {
+     "final": 134457.7,
+     "total_ret": 0.1205,
+     "cagr": 0.2331,
+     "mdd": -0.1047,
+     "mdd_amt": 15469.36,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-09-30"
+    },
+    "红利低波": {
+     "final": 136837.06,
+     "total_ret": 0.1403,
+     "cagr": 0.2728,
+     "mdd": -0.0805,
+     "mdd_amt": 11816.56,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-09-30"
+    },
+    "红利低波100": {
+     "final": 132730.97,
+     "total_ret": 0.1061,
+     "cagr": 0.2044,
+     "mdd": -0.0662,
+     "mdd_amt": 7058.31,
+     "peak_date": "2021-07-06",
+     "trough_date": "2021-07-29",
+     "recover_date": "2021-08-02",
+     "rec_days": 2,
+     "end": "2021-09-30"
+    }
+   }
+  },
+  {
+   "start": "2020-11",
+   "indices": {
+    "上证红利": {
+     "final": 123980.86,
+     "total_ret": 0.0332,
+     "cagr": 0.0631,
+     "mdd": -0.1071,
+     "mdd_amt": 14832.94,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-10-29"
+    },
+    "中证红利": {
+     "final": 125286.37,
+     "total_ret": 0.0441,
+     "cagr": 0.084,
+     "mdd": -0.1047,
+     "mdd_amt": 14068.17,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-10-29"
+    },
+    "红利低波": {
+     "final": 122834.03,
+     "total_ret": 0.0236,
+     "cagr": 0.0448,
+     "mdd": -0.0898,
+     "mdd_amt": 12113.89,
+     "peak_date": "2021-10-11",
+     "trough_date": "2021-10-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-10-29"
+    },
+    "红利低波100": {
+     "final": 124295.01,
+     "total_ret": 0.0358,
+     "cagr": 0.0681,
+     "mdd": -0.0623,
+     "mdd_amt": 8240.97,
+     "peak_date": "2021-10-08",
+     "trough_date": "2021-10-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-10-29"
+    }
+   }
+  },
+  {
+   "start": "2020-12",
+   "indices": {
+    "上证红利": {
+     "final": 120250.6,
+     "total_ret": 0.0021,
+     "cagr": 0.0039,
+     "mdd": -0.1071,
+     "mdd_amt": 13376.51,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2021-11-30"
+    },
+    "中证红利": {
+     "final": 125680.69,
+     "total_ret": 0.0473,
+     "cagr": 0.0896,
+     "mdd": -0.1047,
+     "mdd_amt": 12663.79,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": "2021-11-01",
+     "rec_days": 18,
+     "end": "2021-11-30"
+    },
+    "红利低波": {
+     "final": 120336.52,
+     "total_ret": 0.0028,
+     "cagr": 0.0052,
+     "mdd": -0.0898,
+     "mdd_amt": 11021.41,
+     "peak_date": "2021-10-11",
+     "trough_date": "2021-10-29",
+     "recover_date": "2021-11-01",
+     "rec_days": 1,
+     "end": "2021-11-30"
+    },
+    "红利低波100": {
+     "final": 123583.78,
+     "total_ret": 0.0299,
+     "cagr": 0.0562,
+     "mdd": -0.0623,
+     "mdd_amt": 7495.79,
+     "peak_date": "2021-10-08",
+     "trough_date": "2021-10-28",
+     "recover_date": "2021-11-01",
+     "rec_days": 2,
+     "end": "2021-11-30"
+    }
+   }
+  },
+  {
+   "start": "2021-01",
+   "indices": {
+    "上证红利": {
+     "final": 124766.04,
+     "total_ret": 0.0397,
+     "cagr": 0.0748,
+     "mdd": -0.1071,
+     "mdd_amt": 12040.58,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": "2021-10-11",
+     "rec_days": 3,
+     "end": "2021-12-31"
+    },
+    "中证红利": {
+     "final": 128896.55,
+     "total_ret": 0.0741,
+     "cagr": 0.1409,
+     "mdd": -0.1047,
+     "mdd_amt": 11376.48,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": "2021-10-08",
+     "rec_days": 2,
+     "end": "2021-12-31"
+    },
+    "红利低波": {
+     "final": 128915.19,
+     "total_ret": 0.0743,
+     "cagr": 0.1412,
+     "mdd": -0.0898,
+     "mdd_amt": 10019.38,
+     "peak_date": "2021-10-11",
+     "trough_date": "2021-10-29",
+     "recover_date": "2021-11-01",
+     "rec_days": 1,
+     "end": "2021-12-31"
+    },
+    "红利低波100": {
+     "final": 133189.77,
+     "total_ret": 0.1099,
+     "cagr": 0.2109,
+     "mdd": -0.0623,
+     "mdd_amt": 6808.92,
+     "peak_date": "2021-10-08",
+     "trough_date": "2021-10-28",
+     "recover_date": "2021-11-01",
+     "rec_days": 2,
+     "end": "2021-12-31"
+    }
+   }
+  },
+  {
+   "start": "2021-02",
+   "indices": {
+    "上证红利": {
+     "final": 120143.3,
+     "total_ret": 0.0012,
+     "cagr": 0.0023,
+     "mdd": -0.1071,
+     "mdd_amt": 10603.48,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": "2021-10-11",
+     "rec_days": 3,
+     "end": "2022-01-28"
+    },
+    "中证红利": {
+     "final": 122119.36,
+     "total_ret": 0.0177,
+     "cagr": 0.0335,
+     "mdd": -0.1047,
+     "mdd_amt": 10013.32,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": "2021-10-08",
+     "rec_days": 2,
+     "end": "2022-01-28"
+    },
+    "红利低波": {
+     "final": 126050.64,
+     "total_ret": 0.0504,
+     "cagr": 0.0964,
+     "mdd": -0.0898,
+     "mdd_amt": 8930.55,
+     "peak_date": "2021-10-11",
+     "trough_date": "2021-10-29",
+     "recover_date": "2021-11-01",
+     "rec_days": 1,
+     "end": "2022-01-28"
+    },
+    "红利低波100": {
+     "final": 127721.54,
+     "total_ret": 0.0643,
+     "cagr": 0.1235,
+     "mdd": -0.0654,
+     "mdd_amt": 8936.91,
+     "peak_date": "2022-01-11",
+     "trough_date": "2022-01-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-01-28"
+    }
+   }
+  },
+  {
+   "start": "2021-03",
+   "indices": {
+    "上证红利": {
+     "final": 124764.93,
+     "total_ret": 0.0397,
+     "cagr": 0.0757,
+     "mdd": -0.1071,
+     "mdd_amt": 9115.32,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": "2021-10-08",
+     "rec_days": 2,
+     "end": "2022-02-28"
+    },
+    "中证红利": {
+     "final": 125236.64,
+     "total_ret": 0.0436,
+     "cagr": 0.0833,
+     "mdd": -0.1047,
+     "mdd_amt": 8610.86,
+     "peak_date": "2021-09-13",
+     "trough_date": "2021-09-29",
+     "recover_date": "2021-10-08",
+     "rec_days": 2,
+     "end": "2022-02-28"
+    },
+    "红利低波": {
+     "final": 128374.0,
+     "total_ret": 0.0698,
+     "cagr": 0.1341,
+     "mdd": -0.0898,
+     "mdd_amt": 7821.43,
+     "peak_date": "2021-10-11",
+     "trough_date": "2021-10-29",
+     "recover_date": "2021-11-01",
+     "rec_days": 1,
+     "end": "2022-02-28"
+    },
+    "红利低波100": {
+     "final": 128291.99,
+     "total_ret": 0.0691,
+     "cagr": 0.1328,
+     "mdd": -0.0654,
+     "mdd_amt": 8104.39,
+     "peak_date": "2022-01-11",
+     "trough_date": "2022-01-28",
+     "recover_date": "2022-02-07",
+     "rec_days": 1,
+     "end": "2022-02-28"
+    }
+   }
+  },
+  {
+   "start": "2021-04",
+   "indices": {
+    "上证红利": {
+     "final": 129235.76,
+     "total_ret": 0.077,
+     "cagr": 0.1477,
+     "mdd": -0.1062,
+     "mdd_amt": 13552.59,
+     "peak_date": "2022-03-03",
+     "trough_date": "2022-03-15",
+     "recover_date": "2022-03-31",
+     "rec_days": 12,
+     "end": "2022-03-31"
+    },
+    "中证红利": {
+     "final": 125815.29,
+     "total_ret": 0.0485,
+     "cagr": 0.0923,
+     "mdd": -0.1223,
+     "mdd_amt": 15542.65,
+     "peak_date": "2022-03-03",
+     "trough_date": "2022-03-15",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-03-31"
+    },
+    "红利低波": {
+     "final": 130273.1,
+     "total_ret": 0.0856,
+     "cagr": 0.1647,
+     "mdd": -0.1177,
+     "mdd_amt": 15418.16,
+     "peak_date": "2022-03-03",
+     "trough_date": "2022-03-15",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-03-31"
+    },
+    "红利低波100": {
+     "final": 132904.48,
+     "total_ret": 0.1075,
+     "cagr": 0.2081,
+     "mdd": -0.0882,
+     "mdd_amt": 11499.86,
+     "peak_date": "2022-03-03",
+     "trough_date": "2022-03-15",
+     "recover_date": "2022-03-30",
+     "rec_days": 11,
+     "end": "2022-03-31"
+    }
+   }
+  },
+  {
+   "start": "2021-05",
+   "indices": {
+    "上证红利": {
+     "final": 121365.15,
+     "total_ret": 0.0114,
+     "cagr": 0.0216,
+     "mdd": -0.1127,
+     "mdd_amt": 14749.75,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-04-29"
+    },
+    "中证红利": {
+     "final": 117819.66,
+     "total_ret": -0.0182,
+     "cagr": -0.0342,
+     "mdd": -0.1249,
+     "mdd_amt": 15950.68,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-04-29"
+    },
+    "红利低波": {
+     "final": 127467.01,
+     "total_ret": 0.0622,
+     "cagr": 0.1199,
+     "mdd": -0.1177,
+     "mdd_amt": 14063.05,
+     "peak_date": "2022-03-03",
+     "trough_date": "2022-03-15",
+     "recover_date": "2022-04-01",
+     "rec_days": 13,
+     "end": "2022-04-29"
+    },
+    "红利低波100": {
+     "final": 125236.29,
+     "total_ret": 0.0436,
+     "cagr": 0.0836,
+     "mdd": -0.1106,
+     "mdd_amt": 14987.92,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-04-29"
+    }
+   }
+  },
+  {
+   "start": "2021-06",
+   "indices": {
+    "上证红利": {
+     "final": 121407.19,
+     "total_ret": 0.0117,
+     "cagr": 0.0221,
+     "mdd": -0.1127,
+     "mdd_amt": 13451.45,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-05-31"
+    },
+    "中证红利": {
+     "final": 120104.45,
+     "total_ret": 0.0009,
+     "cagr": 0.0016,
+     "mdd": -0.1249,
+     "mdd_amt": 14541.86,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-05-31"
+    },
+    "红利低波": {
+     "final": 128423.05,
+     "total_ret": 0.0702,
+     "cagr": 0.1343,
+     "mdd": -0.1177,
+     "mdd_amt": 12732.78,
+     "peak_date": "2022-03-03",
+     "trough_date": "2022-03-15",
+     "recover_date": "2022-04-01",
+     "rec_days": 13,
+     "end": "2022-05-31"
+    },
+    "红利低波100": {
+     "final": 126257.44,
+     "total_ret": 0.0521,
+     "cagr": 0.0993,
+     "mdd": -0.1106,
+     "mdd_amt": 13681.36,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-05-31"
+    }
+   }
+  },
+  {
+   "start": "2021-07",
+   "indices": {
+    "上证红利": {
+     "final": 124241.44,
+     "total_ret": 0.0353,
+     "cagr": 0.0671,
+     "mdd": -0.1127,
+     "mdd_amt": 12204.64,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-06-30"
+    },
+    "中证红利": {
+     "final": 122536.82,
+     "total_ret": 0.0211,
+     "cagr": 0.04,
+     "mdd": -0.1249,
+     "mdd_amt": 13199.99,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-06-30"
+    },
+    "红利低波": {
+     "final": 128292.98,
+     "total_ret": 0.0691,
+     "cagr": 0.1325,
+     "mdd": -0.1177,
+     "mdd_amt": 11469.54,
+     "peak_date": "2022-03-03",
+     "trough_date": "2022-03-15",
+     "recover_date": "2022-04-01",
+     "rec_days": 13,
+     "end": "2022-06-30"
+    },
+    "红利低波100": {
+     "final": 126528.12,
+     "total_ret": 0.0544,
+     "cagr": 0.1039,
+     "mdd": -0.1106,
+     "mdd_amt": 12379.21,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-06-30"
+    }
+   }
+  },
+  {
+   "start": "2021-08",
+   "indices": {
+    "上证红利": {
+     "final": 120837.0,
+     "total_ret": 0.007,
+     "cagr": 0.0132,
+     "mdd": -0.1127,
+     "mdd_amt": 10961.11,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-07-29"
+    },
+    "中证红利": {
+     "final": 120070.44,
+     "total_ret": 0.0006,
+     "cagr": 0.0011,
+     "mdd": -0.1249,
+     "mdd_amt": 11844.4,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-07-29"
+    },
+    "红利低波": {
+     "final": 122522.45,
+     "total_ret": 0.021,
+     "cagr": 0.0401,
+     "mdd": -0.1177,
+     "mdd_amt": 10169.67,
+     "peak_date": "2022-03-03",
+     "trough_date": "2022-03-15",
+     "recover_date": "2022-04-01",
+     "rec_days": 13,
+     "end": "2022-07-29"
+    },
+    "红利低波100": {
+     "final": 123159.95,
+     "total_ret": 0.0263,
+     "cagr": 0.0503,
+     "mdd": -0.1106,
+     "mdd_amt": 11091.37,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-07-29"
+    }
+   }
+  },
+  {
+   "start": "2021-09",
+   "indices": {
+    "上证红利": {
+     "final": 122616.89,
+     "total_ret": 0.0218,
+     "cagr": 0.041,
+     "mdd": -0.1127,
+     "mdd_amt": 9665.74,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-08-31"
+    },
+    "中证红利": {
+     "final": 121636.56,
+     "total_ret": 0.0136,
+     "cagr": 0.0256,
+     "mdd": -0.1249,
+     "mdd_amt": 10442.27,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-08-31"
+    },
+    "红利低波": {
+     "final": 125111.63,
+     "total_ret": 0.0426,
+     "cagr": 0.0806,
+     "mdd": -0.1177,
+     "mdd_amt": 8766.14,
+     "peak_date": "2022-03-03",
+     "trough_date": "2022-03-15",
+     "recover_date": "2022-04-01",
+     "rec_days": 13,
+     "end": "2022-08-31"
+    },
+    "红利低波100": {
+     "final": 122001.16,
+     "total_ret": 0.0167,
+     "cagr": 0.0313,
+     "mdd": -0.1106,
+     "mdd_amt": 9729.64,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-08-31"
+    }
+   }
+  },
+  {
+   "start": "2021-10",
+   "indices": {
+    "上证红利": {
+     "final": 122721.39,
+     "total_ret": 0.0227,
+     "cagr": 0.0427,
+     "mdd": -0.1127,
+     "mdd_amt": 8509.58,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-09-30"
+    },
+    "中证红利": {
+     "final": 118502.67,
+     "total_ret": -0.0125,
+     "cagr": -0.0233,
+     "mdd": -0.1249,
+     "mdd_amt": 9170.37,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-09-30"
+    },
+    "红利低波": {
+     "final": 122413.79,
+     "total_ret": 0.0201,
+     "cagr": 0.0379,
+     "mdd": -0.07,
+     "mdd_amt": 9173.47,
+     "peak_date": "2022-09-09",
+     "trough_date": "2022-09-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-09-30"
+    },
+    "红利低波100": {
+     "final": 116279.03,
+     "total_ret": -0.031,
+     "cagr": -0.0575,
+     "mdd": -0.1106,
+     "mdd_amt": 8452.49,
+     "peak_date": "2022-04-06",
+     "trough_date": "2022-04-26",
+     "recover_date": "2022-05-05",
+     "rec_days": 4,
+     "end": "2022-09-30"
+    }
+   }
+  },
+  {
+   "start": "2021-11",
+   "indices": {
+    "上证红利": {
+     "final": 113522.07,
+     "total_ret": -0.054,
+     "cagr": -0.0993,
+     "mdd": -0.086,
+     "mdd_amt": 10683.32,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-10-31"
+    },
+    "中证红利": {
+     "final": 111268.03,
+     "total_ret": -0.0728,
+     "cagr": -0.133,
+     "mdd": -0.0768,
+     "mdd_amt": 9251.48,
+     "peak_date": "2022-10-18",
+     "trough_date": "2022-10-31",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-10-31"
+    },
+    "红利低波": {
+     "final": 113058.8,
+     "total_ret": -0.0578,
+     "cagr": -0.1062,
+     "mdd": -0.0888,
+     "mdd_amt": 11023.96,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-10-31"
+    },
+    "红利低波100": {
+     "final": 113092.58,
+     "total_ret": -0.0576,
+     "cagr": -0.1057,
+     "mdd": -0.0648,
+     "mdd_amt": 7348.87,
+     "peak_date": "2022-09-09",
+     "trough_date": "2022-09-29",
+     "recover_date": "2022-10-10",
+     "rec_days": 2,
+     "end": "2022-10-31"
+    }
+   }
+  },
+  {
+   "start": "2021-12",
+   "indices": {
+    "上证红利": {
+     "final": 125628.81,
+     "total_ret": 0.0469,
+     "cagr": 0.089,
+     "mdd": -0.086,
+     "mdd_amt": 9752.87,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2022-11-30"
+    },
+    "中证红利": {
+     "final": 125151.31,
+     "total_ret": 0.0429,
+     "cagr": 0.0814,
+     "mdd": -0.0768,
+     "mdd_amt": 8450.37,
+     "peak_date": "2022-10-18",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2022-11-30"
+    },
+    "红利低波": {
+     "final": 126005.76,
+     "total_ret": 0.05,
+     "cagr": 0.095,
+     "mdd": -0.0888,
+     "mdd_amt": 10029.4,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2022-11-30"
+    },
+    "红利低波100": {
+     "final": 124544.73,
+     "total_ret": 0.0379,
+     "cagr": 0.0717,
+     "mdd": -0.0648,
+     "mdd_amt": 6628.57,
+     "peak_date": "2022-09-09",
+     "trough_date": "2022-09-29",
+     "recover_date": "2022-10-10",
+     "rec_days": 2,
+     "end": "2022-11-30"
+    }
+   }
+  },
+  {
+   "start": "2022-01",
+   "indices": {
+    "上证红利": {
+     "final": 119771.01,
+     "total_ret": -0.0019,
+     "cagr": -0.0036,
+     "mdd": -0.086,
+     "mdd_amt": 8813.88,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2022-12-30"
+    },
+    "中证红利": {
+     "final": 119904.27,
+     "total_ret": -0.0008,
+     "cagr": -0.0015,
+     "mdd": -0.0768,
+     "mdd_amt": 7667.21,
+     "peak_date": "2022-10-18",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2022-12-30"
+    },
+    "红利低波": {
+     "final": 118729.91,
+     "total_ret": -0.0106,
+     "cagr": -0.0198,
+     "mdd": -0.0888,
+     "mdd_amt": 9028.99,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2022-12-30"
+    },
+    "红利低波100": {
+     "final": 120368.9,
+     "total_ret": 0.0031,
+     "cagr": 0.0058,
+     "mdd": -0.0545,
+     "mdd_amt": 6861.72,
+     "peak_date": "2022-12-05",
+     "trough_date": "2022-12-26",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2022-12-30"
+    }
+   }
+  },
+  {
+   "start": "2022-02",
+   "indices": {
+    "上证红利": {
+     "final": 123251.09,
+     "total_ret": 0.0271,
+     "cagr": 0.0508,
+     "mdd": -0.086,
+     "mdd_amt": 7912.32,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-01-31"
+    },
+    "中证红利": {
+     "final": 124230.53,
+     "total_ret": 0.0353,
+     "cagr": 0.0662,
+     "mdd": -0.0768,
+     "mdd_amt": 6909.2,
+     "peak_date": "2022-10-18",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-01-31"
+    },
+    "红利低波": {
+     "final": 122559.92,
+     "total_ret": 0.0213,
+     "cagr": 0.0399,
+     "mdd": -0.0888,
+     "mdd_amt": 8096.73,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-01-31"
+    },
+    "红利低波100": {
+     "final": 125371.78,
+     "total_ret": 0.0448,
+     "cagr": 0.0843,
+     "mdd": -0.0545,
+     "mdd_amt": 6298.91,
+     "peak_date": "2022-12-05",
+     "trough_date": "2022-12-26",
+     "recover_date": "2023-01-03",
+     "rec_days": 5,
+     "end": "2023-01-31"
+    }
+   }
+  },
+  {
+   "start": "2022-03",
+   "indices": {
+    "上证红利": {
+     "final": 126658.7,
+     "total_ret": 0.0555,
+     "cagr": 0.1059,
+     "mdd": -0.086,
+     "mdd_amt": 6996.93,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-02-28"
+    },
+    "中证红利": {
+     "final": 127338.99,
+     "total_ret": 0.0612,
+     "cagr": 0.1169,
+     "mdd": -0.0768,
+     "mdd_amt": 6131.7,
+     "peak_date": "2022-10-18",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-02-28"
+    },
+    "红利低波": {
+     "final": 126403.43,
+     "total_ret": 0.0534,
+     "cagr": 0.1018,
+     "mdd": -0.0888,
+     "mdd_amt": 7168.8,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-02-28"
+    },
+    "红利低波100": {
+     "final": 129118.34,
+     "total_ret": 0.076,
+     "cagr": 0.1458,
+     "mdd": -0.0545,
+     "mdd_amt": 5722.65,
+     "peak_date": "2022-12-05",
+     "trough_date": "2022-12-26",
+     "recover_date": "2023-01-03",
+     "rec_days": 5,
+     "end": "2023-02-28"
+    }
+   }
+  },
+  {
+   "start": "2022-04",
+   "indices": {
+    "上证红利": {
+     "final": 125821.86,
+     "total_ret": 0.0485,
+     "cagr": 0.0921,
+     "mdd": -0.086,
+     "mdd_amt": 6113.8,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-03-31"
+    },
+    "中证红利": {
+     "final": 125072.49,
+     "total_ret": 0.0423,
+     "cagr": 0.0801,
+     "mdd": -0.0768,
+     "mdd_amt": 5372.36,
+     "peak_date": "2022-10-18",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-03-31"
+    },
+    "红利低波": {
+     "final": 127556.29,
+     "total_ret": 0.063,
+     "cagr": 0.1201,
+     "mdd": -0.0888,
+     "mdd_amt": 6256.26,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-03-31"
+    },
+    "红利低波100": {
+     "final": 129679.41,
+     "total_ret": 0.0807,
+     "cagr": 0.1545,
+     "mdd": -0.0545,
+     "mdd_amt": 5149.42,
+     "peak_date": "2022-12-05",
+     "trough_date": "2022-12-26",
+     "recover_date": "2023-01-03",
+     "rec_days": 5,
+     "end": "2023-03-31"
+    }
+   }
+  },
+  {
+   "start": "2022-05",
+   "indices": {
+    "上证红利": {
+     "final": 132555.84,
+     "total_ret": 0.1046,
+     "cagr": 0.2046,
+     "mdd": -0.086,
+     "mdd_amt": 5268.36,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-04-28"
+    },
+    "中证红利": {
+     "final": 130734.53,
+     "total_ret": 0.0895,
+     "cagr": 0.1742,
+     "mdd": -0.0768,
+     "mdd_amt": 4626.33,
+     "peak_date": "2022-10-18",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-04-28"
+    },
+    "红利低波": {
+     "final": 136433.72,
+     "total_ret": 0.1369,
+     "cagr": 0.2702,
+     "mdd": -0.0888,
+     "mdd_amt": 5374.94,
+     "peak_date": "2022-10-12",
+     "trough_date": "2022-10-31",
+     "recover_date": "2022-11-01",
+     "rec_days": 1,
+     "end": "2023-04-28"
+    },
+    "红利低波100": {
+     "final": 137793.08,
+     "total_ret": 0.1483,
+     "cagr": 0.2934,
+     "mdd": -0.0545,
+     "mdd_amt": 4605.89,
+     "peak_date": "2022-12-05",
+     "trough_date": "2022-12-26",
+     "recover_date": "2023-01-03",
+     "rec_days": 5,
+     "end": "2023-04-28"
+    }
+   }
+  },
+  {
+   "start": "2022-06",
+   "indices": {
+    "上证红利": {
+     "final": 128193.96,
+     "total_ret": 0.0683,
+     "cagr": 0.1303,
+     "mdd": -0.089,
+     "mdd_amt": 12395.16,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2023-05-31"
+    },
+    "中证红利": {
+     "final": 125404.6,
+     "total_ret": 0.045,
+     "cagr": 0.0854,
+     "mdd": -0.0794,
+     "mdd_amt": 10728.94,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2023-05-31"
+    },
+    "红利低波": {
+     "final": 130045.57,
+     "total_ret": 0.0837,
+     "cagr": 0.1604,
+     "mdd": -0.1028,
+     "mdd_amt": 14656.59,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2023-05-31"
+    },
+    "红利低波100": {
+     "final": 133255.95,
+     "total_ret": 0.1105,
+     "cagr": 0.2132,
+     "mdd": -0.0826,
+     "mdd_amt": 11771.89,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2023-05-31"
+    }
+   }
+  },
+  {
+   "start": "2022-07",
+   "indices": {
+    "上证红利": {
+     "final": 125096.85,
+     "total_ret": 0.0425,
+     "cagr": 0.0807,
+     "mdd": -0.089,
+     "mdd_amt": 11328.18,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-05",
+     "rec_days": 7,
+     "end": "2023-06-30"
+    },
+    "中证红利": {
+     "final": 123650.51,
+     "total_ret": 0.0304,
+     "cagr": 0.0576,
+     "mdd": -0.0794,
+     "mdd_amt": 9811.35,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-06-30"
+    },
+    "红利低波": {
+     "final": 127386.24,
+     "total_ret": 0.0616,
+     "cagr": 0.1175,
+     "mdd": -0.1028,
+     "mdd_amt": 13422.78,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-05",
+     "rec_days": 7,
+     "end": "2023-06-30"
+    },
+    "红利低波100": {
+     "final": 130613.36,
+     "total_ret": 0.0884,
+     "cagr": 0.1701,
+     "mdd": -0.0826,
+     "mdd_amt": 10766.84,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-06-30"
+    }
+   }
+  },
+  {
+   "start": "2022-08",
+   "indices": {
+    "上证红利": {
+     "final": 131771.52,
+     "total_ret": 0.0981,
+     "cagr": 0.1888,
+     "mdd": -0.089,
+     "mdd_amt": 10287.59,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-07-31"
+    },
+    "中证红利": {
+     "final": 130838.4,
+     "total_ret": 0.0903,
+     "cagr": 0.1734,
+     "mdd": -0.0794,
+     "mdd_amt": 8912.26,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-07-31"
+    },
+    "红利低波": {
+     "final": 134824.67,
+     "total_ret": 0.1235,
+     "cagr": 0.2393,
+     "mdd": -0.1028,
+     "mdd_amt": 12193.01,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-07-31"
+    },
+    "红利低波100": {
+     "final": 139686.49,
+     "total_ret": 0.1641,
+     "cagr": 0.3211,
+     "mdd": -0.0826,
+     "mdd_amt": 9773.89,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-07-31"
+    }
+   }
+  },
+  {
+   "start": "2022-09",
+   "indices": {
+    "上证红利": {
+     "final": 125409.73,
+     "total_ret": 0.0451,
+     "cagr": 0.0852,
+     "mdd": -0.089,
+     "mdd_amt": 9224.68,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-08-31"
+    },
+    "中证红利": {
+     "final": 124536.82,
+     "total_ret": 0.0378,
+     "cagr": 0.0713,
+     "mdd": -0.0794,
+     "mdd_amt": 7998.04,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-08-31"
+    },
+    "红利低波": {
+     "final": 127355.94,
+     "total_ret": 0.0613,
+     "cagr": 0.1164,
+     "mdd": -0.1028,
+     "mdd_amt": 10916.58,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-08-31"
+    },
+    "红利低波100": {
+     "final": 131454.86,
+     "total_ret": 0.0955,
+     "cagr": 0.183,
+     "mdd": -0.0826,
+     "mdd_amt": 8761.34,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-08-31"
+    }
+   }
+  },
+  {
+   "start": "2022-10",
+   "indices": {
+    "上证红利": {
+     "final": 128304.42,
+     "total_ret": 0.0692,
+     "cagr": 0.1335,
+     "mdd": -0.089,
+     "mdd_amt": 8190.06,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-09-28"
+    },
+    "中证红利": {
+     "final": 126414.35,
+     "total_ret": 0.0535,
+     "cagr": 0.1026,
+     "mdd": -0.0794,
+     "mdd_amt": 7103.81,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-09-28"
+    },
+    "红利低波": {
+     "final": 129231.1,
+     "total_ret": 0.0769,
+     "cagr": 0.1487,
+     "mdd": -0.1028,
+     "mdd_amt": 9695.44,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-09-28"
+    },
+    "红利低波100": {
+     "final": 130094.38,
+     "total_ret": 0.0841,
+     "cagr": 0.1629,
+     "mdd": -0.0826,
+     "mdd_amt": 7754.02,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-09-28"
+    }
+   }
+  },
+  {
+   "start": "2022-11",
+   "indices": {
+    "上证红利": {
+     "final": 123228.37,
+     "total_ret": 0.0269,
+     "cagr": 0.0505,
+     "mdd": -0.089,
+     "mdd_amt": 7147.95,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-10-31"
+    },
+    "中证红利": {
+     "final": 121338.35,
+     "total_ret": 0.0112,
+     "cagr": 0.0209,
+     "mdd": -0.0794,
+     "mdd_amt": 6176.53,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-10-31"
+    },
+    "红利低波": {
+     "final": 123949.88,
+     "total_ret": 0.0329,
+     "cagr": 0.0619,
+     "mdd": -0.1028,
+     "mdd_amt": 8447.25,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-10-31"
+    },
+    "红利低波100": {
+     "final": 125192.29,
+     "total_ret": 0.0433,
+     "cagr": 0.0817,
+     "mdd": -0.0826,
+     "mdd_amt": 6700.33,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-10-31"
+    }
+   }
+  },
+  {
+   "start": "2022-12",
+   "indices": {
+    "上证红利": {
+     "final": 122091.47,
+     "total_ret": 0.0174,
+     "cagr": 0.0327,
+     "mdd": -0.089,
+     "mdd_amt": 6028.4,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-11-30"
+    },
+    "中证红利": {
+     "final": 120200.16,
+     "total_ret": 0.0017,
+     "cagr": 0.0031,
+     "mdd": -0.0794,
+     "mdd_amt": 5202.64,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-11-30"
+    },
+    "红利低波": {
+     "final": 122072.03,
+     "total_ret": 0.0173,
+     "cagr": 0.0324,
+     "mdd": -0.1028,
+     "mdd_amt": 7105.97,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-11-30"
+    },
+    "红利低波100": {
+     "final": 124224.45,
+     "total_ret": 0.0352,
+     "cagr": 0.0664,
+     "mdd": -0.0826,
+     "mdd_amt": 5635.31,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-11-30"
+    }
+   }
+  },
+  {
+   "start": "2023-01",
+   "indices": {
+    "上证红利": {
+     "final": 119838.67,
+     "total_ret": -0.0013,
+     "cagr": -0.0025,
+     "mdd": -0.089,
+     "mdd_amt": 4997.48,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-12-29"
+    },
+    "中证红利": {
+     "final": 118874.17,
+     "total_ret": -0.0094,
+     "cagr": -0.0176,
+     "mdd": -0.0439,
+     "mdd_amt": 4500.27,
+     "peak_date": "2023-10-09",
+     "trough_date": "2023-10-23",
+     "recover_date": "2023-11-01",
+     "rec_days": 7,
+     "end": "2023-12-29"
+    },
+    "红利低波": {
+     "final": 120509.68,
+     "total_ret": 0.0042,
+     "cagr": 0.008,
+     "mdd": -0.1028,
+     "mdd_amt": 5885.92,
+     "peak_date": "2023-05-08",
+     "trough_date": "2023-05-25",
+     "recover_date": "2023-06-01",
+     "rec_days": 5,
+     "end": "2023-12-29"
+    },
+    "红利低波100": {
+     "final": 120526.09,
+     "total_ret": 0.0044,
+     "cagr": 0.0083,
+     "mdd": -0.0453,
+     "mdd_amt": 4705.56,
+     "peak_date": "2023-10-17",
+     "trough_date": "2023-10-23",
+     "recover_date": "2023-11-01",
+     "rec_days": 7,
+     "end": "2023-12-29"
+    }
+   }
+  },
+  {
+   "start": "2023-02",
+   "indices": {
+    "上证红利": {
+     "final": 124563.38,
+     "total_ret": 0.038,
+     "cagr": 0.0713,
+     "mdd": -0.0607,
+     "mdd_amt": 7495.06,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-25",
+     "rec_days": 3,
+     "end": "2024-01-31"
+    },
+    "中证红利": {
+     "final": 120814.89,
+     "total_ret": 0.0068,
+     "cagr": 0.0126,
+     "mdd": -0.0629,
+     "mdd_amt": 7624.73,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-01-31"
+    },
+    "红利低波": {
+     "final": 124749.96,
+     "total_ret": 0.0396,
+     "cagr": 0.0743,
+     "mdd": -0.0539,
+     "mdd_amt": 6650.94,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-25",
+     "rec_days": 3,
+     "end": "2024-01-31"
+    },
+    "红利低波100": {
+     "final": 118865.43,
+     "total_ret": -0.0095,
+     "cagr": -0.0175,
+     "mdd": -0.0616,
+     "mdd_amt": 7478.38,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-01-31"
+    }
+   }
+  },
+  {
+   "start": "2023-03",
+   "indices": {
+    "上证红利": {
+     "final": 131353.46,
+     "total_ret": 0.0946,
+     "cagr": 0.1816,
+     "mdd": -0.0607,
+     "mdd_amt": 6828.83,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-25",
+     "rec_days": 3,
+     "end": "2024-02-29"
+    },
+    "中证红利": {
+     "final": 128473.73,
+     "total_ret": 0.0706,
+     "cagr": 0.1347,
+     "mdd": -0.0629,
+     "mdd_amt": 6964.21,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-02-29"
+    },
+    "红利低波": {
+     "final": 129996.51,
+     "total_ret": 0.0833,
+     "cagr": 0.1594,
+     "mdd": -0.0539,
+     "mdd_amt": 6048.74,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-25",
+     "rec_days": 3,
+     "end": "2024-02-29"
+    },
+    "红利低波100": {
+     "final": 124299.77,
+     "total_ret": 0.0358,
+     "cagr": 0.0677,
+     "mdd": -0.0616,
+     "mdd_amt": 6800.27,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-02-29"
+    }
+   }
+  },
+  {
+   "start": "2023-04",
+   "indices": {
+    "上证红利": {
+     "final": 128543.38,
+     "total_ret": 0.0712,
+     "cagr": 0.1369,
+     "mdd": -0.0607,
+     "mdd_amt": 6187.06,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-25",
+     "rec_days": 3,
+     "end": "2024-03-29"
+    },
+    "中证红利": {
+     "final": 126879.75,
+     "total_ret": 0.0573,
+     "cagr": 0.1098,
+     "mdd": -0.0629,
+     "mdd_amt": 6324.68,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-03-29"
+    },
+    "红利低波": {
+     "final": 129677.56,
+     "total_ret": 0.0806,
+     "cagr": 0.1555,
+     "mdd": -0.0539,
+     "mdd_amt": 5468.72,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-25",
+     "rec_days": 3,
+     "end": "2024-03-29"
+    },
+    "红利低波100": {
+     "final": 122205.52,
+     "total_ret": 0.0184,
+     "cagr": 0.0348,
+     "mdd": -0.0616,
+     "mdd_amt": 6145.91,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-03-29"
+    }
+   }
+  },
+  {
+   "start": "2023-05",
+   "indices": {
+    "上证红利": {
+     "final": 130440.93,
+     "total_ret": 0.087,
+     "cagr": 0.1665,
+     "mdd": -0.0512,
+     "mdd_amt": 7013.66,
+     "peak_date": "2024-04-19",
+     "trough_date": "2024-04-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-04-30"
+    },
+    "中证红利": {
+     "final": 128902.66,
+     "total_ret": 0.0742,
+     "cagr": 0.1415,
+     "mdd": -0.0629,
+     "mdd_amt": 5675.06,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-04-30"
+    },
+    "红利低波": {
+     "final": 132157.99,
+     "total_ret": 0.1013,
+     "cagr": 0.1947,
+     "mdd": -0.0443,
+     "mdd_amt": 6105.19,
+     "peak_date": "2024-04-19",
+     "trough_date": "2024-04-29",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-04-30"
+    },
+    "红利低波100": {
+     "final": 125992.32,
+     "total_ret": 0.0499,
+     "cagr": 0.0946,
+     "mdd": -0.0616,
+     "mdd_amt": 5497.73,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-04-30"
+    }
+   }
+  },
+  {
+   "start": "2023-06",
+   "indices": {
+    "上证红利": {
+     "final": 135019.79,
+     "total_ret": 0.1252,
+     "cagr": 0.2415,
+     "mdd": -0.0512,
+     "mdd_amt": 6439.08,
+     "peak_date": "2024-04-19",
+     "trough_date": "2024-04-29",
+     "recover_date": "2024-05-06",
+     "rec_days": 2,
+     "end": "2024-05-31"
+    },
+    "中证红利": {
+     "final": 133218.3,
+     "total_ret": 0.1102,
+     "cagr": 0.2117,
+     "mdd": -0.0629,
+     "mdd_amt": 5064.17,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-05-31"
+    },
+    "红利低波": {
+     "final": 136843.25,
+     "total_ret": 0.1404,
+     "cagr": 0.2719,
+     "mdd": -0.0443,
+     "mdd_amt": 5610.98,
+     "peak_date": "2024-04-19",
+     "trough_date": "2024-04-29",
+     "recover_date": "2024-05-06",
+     "rec_days": 2,
+     "end": "2024-05-31"
+    },
+    "红利低波100": {
+     "final": 127600.41,
+     "total_ret": 0.0633,
+     "cagr": 0.1202,
+     "mdd": -0.0616,
+     "mdd_amt": 4901.18,
+     "peak_date": "2024-01-05",
+     "trough_date": "2024-01-22",
+     "recover_date": "2024-01-26",
+     "rec_days": 4,
+     "end": "2024-05-31"
+    }
+   }
+  },
+  {
+   "start": "2023-07",
+   "indices": {
+    "上证红利": {
+     "final": 130591.9,
+     "total_ret": 0.0883,
+     "cagr": 0.1711,
+     "mdd": -0.0512,
+     "mdd_amt": 5835.89,
+     "peak_date": "2024-04-19",
+     "trough_date": "2024-04-29",
+     "recover_date": "2024-05-06",
+     "rec_days": 2,
+     "end": "2024-06-28"
+    },
+    "中证红利": {
+     "final": 127065.24,
+     "total_ret": 0.0589,
+     "cagr": 0.1132,
+     "mdd": -0.0423,
+     "mdd_amt": 5567.91,
+     "peak_date": "2024-06-04",
+     "trough_date": "2024-06-24",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-06-28"
+    },
+    "红利低波": {
+     "final": 131822.85,
+     "total_ret": 0.0985,
+     "cagr": 0.1916,
+     "mdd": -0.0443,
+     "mdd_amt": 5088.01,
+     "peak_date": "2024-04-19",
+     "trough_date": "2024-04-29",
+     "recover_date": "2024-05-06",
+     "rec_days": 2,
+     "end": "2024-06-28"
+    },
+    "红利低波100": {
+     "final": 121011.47,
+     "total_ret": 0.0084,
+     "cagr": 0.016,
+     "mdd": -0.0521,
+     "mdd_amt": 6578.47,
+     "peak_date": "2024-06-04",
+     "trough_date": "2024-06-24",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-06-28"
+    }
+   }
+  },
+  {
+   "start": "2023-08",
+   "indices": {
+    "上证红利": {
+     "final": 124750.0,
+     "total_ret": 0.0396,
+     "cagr": 0.0747,
+     "mdd": -0.0638,
+     "mdd_amt": 8430.95,
+     "peak_date": "2024-07-02",
+     "trough_date": "2024-07-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-07-31"
+    },
+    "中证红利": {
+     "final": 122486.85,
+     "total_ret": 0.0207,
+     "cagr": 0.0389,
+     "mdd": -0.0621,
+     "mdd_amt": 7979.26,
+     "peak_date": "2024-07-01",
+     "trough_date": "2024-07-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-07-31"
+    },
+    "红利低波": {
+     "final": 126193.27,
+     "total_ret": 0.0516,
+     "cagr": 0.0977,
+     "mdd": -0.0596,
+     "mdd_amt": 7917.56,
+     "peak_date": "2024-07-02",
+     "trough_date": "2024-07-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-07-31"
+    },
+    "红利低波100": {
+     "final": 120927.79,
+     "total_ret": 0.0077,
+     "cagr": 0.0145,
+     "mdd": -0.0521,
+     "mdd_amt": 6013.99,
+     "peak_date": "2024-06-04",
+     "trough_date": "2024-06-24",
+     "recover_date": "2024-07-01",
+     "rec_days": 5,
+     "end": "2024-07-31"
+    }
+   }
+  },
+  {
+   "start": "2023-09",
+   "indices": {
+    "上证红利": {
+     "final": 119684.87,
+     "total_ret": -0.0026,
+     "cagr": -0.0049,
+     "mdd": -0.0638,
+     "mdd_amt": 7716.71,
+     "peak_date": "2024-07-02",
+     "trough_date": "2024-07-30",
+     "recover_date": "2024-08-01",
+     "rec_days": 2,
+     "end": "2024-08-30"
+    },
+    "中证红利": {
+     "final": 118417.23,
+     "total_ret": -0.0132,
+     "cagr": -0.0246,
+     "mdd": -0.0621,
+     "mdd_amt": 7314.45,
+     "peak_date": "2024-07-01",
+     "trough_date": "2024-07-30",
+     "recover_date": "2024-08-01",
+     "rec_days": 2,
+     "end": "2024-08-30"
+    },
+    "红利低波": {
+     "final": 123052.57,
+     "total_ret": 0.0254,
+     "cagr": 0.0479,
+     "mdd": -0.0596,
+     "mdd_amt": 7250.71,
+     "peak_date": "2024-07-02",
+     "trough_date": "2024-07-30",
+     "recover_date": "2024-08-01",
+     "rec_days": 2,
+     "end": "2024-08-30"
+    },
+    "红利低波100": {
+     "final": 116952.84,
+     "total_ret": -0.0254,
+     "cagr": -0.0471,
+     "mdd": -0.0521,
+     "mdd_amt": 5486.43,
+     "peak_date": "2024-06-04",
+     "trough_date": "2024-06-24",
+     "recover_date": "2024-07-01",
+     "rec_days": 5,
+     "end": "2024-08-30"
+    }
+   }
+  },
+  {
+   "start": "2023-10",
+   "indices": {
+    "上证红利": {
+     "final": 136014.77,
+     "total_ret": 0.1335,
+     "cagr": 0.2582,
+     "mdd": -0.0638,
+     "mdd_amt": 6980.81,
+     "peak_date": "2024-07-02",
+     "trough_date": "2024-07-30",
+     "recover_date": "2024-08-01",
+     "rec_days": 2,
+     "end": "2024-09-30"
+    },
+    "中证红利": {
+     "final": 136543.62,
+     "total_ret": 0.1379,
+     "cagr": 0.2671,
+     "mdd": -0.0621,
+     "mdd_amt": 6629.45,
+     "peak_date": "2024-07-01",
+     "trough_date": "2024-07-30",
+     "recover_date": "2024-08-01",
+     "rec_days": 2,
+     "end": "2024-09-30"
+    },
+    "红利低波": {
+     "final": 137354.88,
+     "total_ret": 0.1446,
+     "cagr": 0.2807,
+     "mdd": -0.0624,
+     "mdd_amt": 7660.06,
+     "peak_date": "2024-09-02",
+     "trough_date": "2024-09-11",
+     "recover_date": "2024-09-24",
+     "rec_days": 7,
+     "end": "2024-09-30"
+    },
+    "红利低波100": {
+     "final": 135722.27,
+     "total_ret": 0.131,
+     "cagr": 0.2534,
+     "mdd": -0.0453,
+     "mdd_amt": 5288.95,
+     "peak_date": "2024-09-02",
+     "trough_date": "2024-09-13",
+     "recover_date": "2024-09-24",
+     "rec_days": 5,
+     "end": "2024-09-30"
+    }
+   }
+  },
+  {
+   "start": "2023-11",
+   "indices": {
+    "上证红利": {
+     "final": 124306.23,
+     "total_ret": 0.0359,
+     "cagr": 0.0674,
+     "mdd": -0.0738,
+     "mdd_amt": 9899.4,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-31",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-10-31"
+    },
+    "中证红利": {
+     "final": 125889.44,
+     "total_ret": 0.0491,
+     "cagr": 0.0926,
+     "mdd": -0.0764,
+     "mdd_amt": 10399.46,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-10-31"
+    },
+    "红利低波": {
+     "final": 128089.06,
+     "total_ret": 0.0674,
+     "cagr": 0.1277,
+     "mdd": -0.0715,
+     "mdd_amt": 9786.03,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-10-31"
+    },
+    "红利低波100": {
+     "final": 128367.32,
+     "total_ret": 0.0697,
+     "cagr": 0.1322,
+     "mdd": -0.0746,
+     "mdd_amt": 10234.42,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2024-10-31"
+    }
+   }
+  },
+  {
+   "start": "2023-12",
+   "indices": {
+    "上证红利": {
+     "final": 125098.38,
+     "total_ret": 0.0425,
+     "cagr": 0.0806,
+     "mdd": -0.0738,
+     "mdd_amt": 9003.49,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-31",
+     "recover_date": "2024-11-01",
+     "rec_days": 1,
+     "end": "2024-11-29"
+    },
+    "中证红利": {
+     "final": 126456.32,
+     "total_ret": 0.0538,
+     "cagr": 0.1024,
+     "mdd": -0.0764,
+     "mdd_amt": 9470.71,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2024-11-29"
+    },
+    "红利低波": {
+     "final": 128805.77,
+     "total_ret": 0.0734,
+     "cagr": 0.1404,
+     "mdd": -0.0715,
+     "mdd_amt": 8892.56,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2024-11-29"
+    },
+    "红利低波100": {
+     "final": 130188.21,
+     "total_ret": 0.0849,
+     "cagr": 0.163,
+     "mdd": -0.0746,
+     "mdd_amt": 9348.21,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2024-11-29"
+    }
+   }
+  },
+  {
+   "start": "2024-01",
+   "indices": {
+    "上证红利": {
+     "final": 130118.7,
+     "total_ret": 0.0843,
+     "cagr": 0.1606,
+     "mdd": -0.0738,
+     "mdd_amt": 8115.44,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-31",
+     "recover_date": "2024-11-01",
+     "rec_days": 1,
+     "end": "2024-12-31"
+    },
+    "中证红利": {
+     "final": 129536.4,
+     "total_ret": 0.0795,
+     "cagr": 0.1512,
+     "mdd": -0.0764,
+     "mdd_amt": 8547.75,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2024-12-31"
+    },
+    "红利低波": {
+     "final": 132081.72,
+     "total_ret": 0.1007,
+     "cagr": 0.1926,
+     "mdd": -0.0715,
+     "mdd_amt": 8003.47,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2024-12-31"
+    },
+    "红利低波100": {
+     "final": 133081.96,
+     "total_ret": 0.109,
+     "cagr": 0.209,
+     "mdd": -0.0746,
+     "mdd_amt": 8473.29,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2024-12-31"
+    }
+   }
+  },
+  {
+   "start": "2024-02",
+   "indices": {
+    "上证红利": {
+     "final": 124741.23,
+     "total_ret": 0.0395,
+     "cagr": 0.0757,
+     "mdd": -0.0738,
+     "mdd_amt": 7225.67,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-31",
+     "recover_date": "2024-11-01",
+     "rec_days": 1,
+     "end": "2025-01-27"
+    },
+    "中证红利": {
+     "final": 124299.31,
+     "total_ret": 0.0358,
+     "cagr": 0.0686,
+     "mdd": -0.0764,
+     "mdd_amt": 7624.31,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2025-01-27"
+    },
+    "红利低波": {
+     "final": 127117.59,
+     "total_ret": 0.0593,
+     "cagr": 0.1143,
+     "mdd": -0.0715,
+     "mdd_amt": 7114.42,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2025-01-27"
+    },
+    "红利低波100": {
+     "final": 127449.59,
+     "total_ret": 0.0621,
+     "cagr": 0.1198,
+     "mdd": -0.0746,
+     "mdd_amt": 7585.6,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2025-01-27"
+    }
+   }
+  },
+  {
+   "start": "2024-03",
+   "indices": {
+    "上证红利": {
+     "final": 119786.84,
+     "total_ret": -0.0018,
+     "cagr": -0.0033,
+     "mdd": -0.0738,
+     "mdd_amt": 6354.69,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-31",
+     "recover_date": "2024-11-01",
+     "rec_days": 1,
+     "end": "2025-02-28"
+    },
+    "中证红利": {
+     "final": 121136.55,
+     "total_ret": 0.0095,
+     "cagr": 0.0179,
+     "mdd": -0.0764,
+     "mdd_amt": 6702.3,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2025-02-28"
+    },
+    "红利低波": {
+     "final": 123916.0,
+     "total_ret": 0.0326,
+     "cagr": 0.062,
+     "mdd": -0.0715,
+     "mdd_amt": 6245.26,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2025-02-28"
+    },
+    "红利低波100": {
+     "final": 124583.56,
+     "total_ret": 0.0382,
+     "cagr": 0.0727,
+     "mdd": -0.0746,
+     "mdd_amt": 6679.33,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2025-02-28"
+    }
+   }
+  },
+  {
+   "start": "2024-04",
+   "indices": {
+    "上证红利": {
+     "final": 122212.86,
+     "total_ret": 0.0184,
+     "cagr": 0.0348,
+     "mdd": -0.0738,
+     "mdd_amt": 5543.96,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-31",
+     "recover_date": "2024-11-01",
+     "rec_days": 1,
+     "end": "2025-03-31"
+    },
+    "中证红利": {
+     "final": 122946.08,
+     "total_ret": 0.0246,
+     "cagr": 0.0465,
+     "mdd": -0.0764,
+     "mdd_amt": 5846.51,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2025-03-31"
+    },
+    "红利低波": {
+     "final": 126429.4,
+     "total_ret": 0.0536,
+     "cagr": 0.1022,
+     "mdd": -0.0715,
+     "mdd_amt": 5428.83,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2025-03-31"
+    },
+    "红利低波100": {
+     "final": 125995.02,
+     "total_ret": 0.05,
+     "cagr": 0.0952,
+     "mdd": -0.0746,
+     "mdd_amt": 5825.44,
+     "peak_date": "2024-10-08",
+     "trough_date": "2024-10-09",
+     "recover_date": "2024-11-01",
+     "rec_days": 17,
+     "end": "2025-03-31"
+    }
+   }
+  },
+  {
+   "start": "2024-05",
+   "indices": {
+    "上证红利": {
+     "final": 120045.25,
+     "total_ret": 0.0004,
+     "cagr": 0.0007,
+     "mdd": -0.0629,
+     "mdd_amt": 7754.06,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2025-04-30"
+    },
+    "中证红利": {
+     "final": 120899.0,
+     "total_ret": 0.0075,
+     "cagr": 0.0141,
+     "mdd": -0.0667,
+     "mdd_amt": 8273.94,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2025-04-30"
+    },
+    "红利低波": {
+     "final": 124860.62,
+     "total_ret": 0.0405,
+     "cagr": 0.0772,
+     "mdd": -0.0535,
+     "mdd_amt": 6783.78,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-04-24",
+     "rec_days": 13,
+     "end": "2025-04-30"
+    },
+    "红利低波100": {
+     "final": 123764.21,
+     "total_ret": 0.0314,
+     "cagr": 0.0596,
+     "mdd": -0.0623,
+     "mdd_amt": 7886.96,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2025-04-30"
+    }
+   }
+  },
+  {
+   "start": "2024-06",
+   "indices": {
+    "上证红利": {
+     "final": 123162.87,
+     "total_ret": 0.0264,
+     "cagr": 0.0501,
+     "mdd": -0.0629,
+     "mdd_amt": 7097.02,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-05-30"
+    },
+    "中证红利": {
+     "final": 123658.71,
+     "total_ret": 0.0305,
+     "cagr": 0.0581,
+     "mdd": -0.0667,
+     "mdd_amt": 7575.33,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-05-30"
+    },
+    "红利低波": {
+     "final": 129637.49,
+     "total_ret": 0.0803,
+     "cagr": 0.1551,
+     "mdd": -0.0535,
+     "mdd_amt": 6200.59,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-04-24",
+     "rec_days": 13,
+     "end": "2025-05-30"
+    },
+    "红利低波100": {
+     "final": 126724.13,
+     "total_ret": 0.056,
+     "cagr": 0.1075,
+     "mdd": -0.0623,
+     "mdd_amt": 7219.46,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-05-30"
+    }
+   }
+  },
+  {
+   "start": "2024-07",
+   "indices": {
+    "上证红利": {
+     "final": 124398.98,
+     "total_ret": 0.0367,
+     "cagr": 0.0697,
+     "mdd": -0.0629,
+     "mdd_amt": 6458.22,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-06-30"
+    },
+    "中证红利": {
+     "final": 124898.55,
+     "total_ret": 0.0408,
+     "cagr": 0.0777,
+     "mdd": -0.0667,
+     "mdd_amt": 6891.64,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-06-30"
+    },
+    "红利低波": {
+     "final": 131890.86,
+     "total_ret": 0.0991,
+     "cagr": 0.1917,
+     "mdd": -0.0535,
+     "mdd_amt": 5631.79,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-04-24",
+     "rec_days": 13,
+     "end": "2025-06-30"
+    },
+    "红利低波100": {
+     "final": 126452.61,
+     "total_ret": 0.0538,
+     "cagr": 0.1028,
+     "mdd": -0.0623,
+     "mdd_amt": 6544.63,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-06-30"
+    }
+   }
+  },
+  {
+   "start": "2024-08",
+   "indices": {
+    "上证红利": {
+     "final": 126444.83,
+     "total_ret": 0.0537,
+     "cagr": 0.1023,
+     "mdd": -0.0629,
+     "mdd_amt": 5824.01,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-07-31"
+    },
+    "中证红利": {
+     "final": 127595.52,
+     "total_ret": 0.0633,
+     "cagr": 0.1209,
+     "mdd": -0.0667,
+     "mdd_amt": 6201.96,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-07-31"
+    },
+    "红利低波": {
+     "final": 130044.46,
+     "total_ret": 0.0837,
+     "cagr": 0.1608,
+     "mdd": -0.0394,
+     "mdd_amt": 5334.48,
+     "peak_date": "2025-07-10",
+     "trough_date": "2025-07-31",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2025-07-31"
+    },
+    "红利低波100": {
+     "final": 128584.68,
+     "total_ret": 0.0715,
+     "cagr": 0.137,
+     "mdd": -0.0623,
+     "mdd_amt": 5856.82,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-07-31"
+    }
+   }
+  },
+  {
+   "start": "2024-09",
+   "indices": {
+    "上证红利": {
+     "final": 124680.51,
+     "total_ret": 0.039,
+     "cagr": 0.0746,
+     "mdd": -0.0629,
+     "mdd_amt": 5154.25,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-08-29"
+    },
+    "中证红利": {
+     "final": 127703.88,
+     "total_ret": 0.0642,
+     "cagr": 0.1236,
+     "mdd": -0.0667,
+     "mdd_amt": 5476.81,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-08-29"
+    },
+    "红利低波": {
+     "final": 130018.61,
+     "total_ret": 0.0835,
+     "cagr": 0.1616,
+     "mdd": -0.0394,
+     "mdd_amt": 4854.94,
+     "peak_date": "2025-07-10",
+     "trough_date": "2025-07-31",
+     "recover_date": "2025-08-01",
+     "rec_days": 1,
+     "end": "2025-08-29"
+    },
+    "红利低波100": {
+     "final": 129094.76,
+     "total_ret": 0.0758,
+     "cagr": 0.1464,
+     "mdd": -0.0623,
+     "mdd_amt": 5159.61,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-08-29"
+    }
+   }
+  },
+  {
+   "start": "2024-10",
+   "indices": {
+    "上证红利": {
+     "final": 119553.05,
+     "total_ret": -0.0037,
+     "cagr": -0.007,
+     "mdd": -0.0629,
+     "mdd_amt": 4465.1,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-09-30"
+    },
+    "中证红利": {
+     "final": 124629.16,
+     "total_ret": 0.0386,
+     "cagr": 0.0731,
+     "mdd": -0.0667,
+     "mdd_amt": 4731.95,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-09-30"
+    },
+    "红利低波": {
+     "final": 122420.09,
+     "total_ret": 0.0202,
+     "cagr": 0.038,
+     "mdd": -0.0503,
+     "mdd_amt": 6483.08,
+     "peak_date": "2025-09-02",
+     "trough_date": "2025-09-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2025-09-30"
+    },
+    "红利低波100": {
+     "final": 124560.9,
+     "total_ret": 0.038,
+     "cagr": 0.072,
+     "mdd": -0.0623,
+     "mdd_amt": 4435.52,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-09-30"
+    }
+   }
+  },
+  {
+   "start": "2024-11",
+   "indices": {
+    "上证红利": {
+     "final": 126090.08,
+     "total_ret": 0.0508,
+     "cagr": 0.0962,
+     "mdd": -0.0629,
+     "mdd_amt": 3856.28,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-10-31"
+    },
+    "中证红利": {
+     "final": 128671.77,
+     "total_ret": 0.0723,
+     "cagr": 0.1378,
+     "mdd": -0.0667,
+     "mdd_amt": 4090.91,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-10-31"
+    },
+    "红利低波": {
+     "final": 127472.23,
+     "total_ret": 0.0623,
+     "cagr": 0.1184,
+     "mdd": -0.0503,
+     "mdd_amt": 5945.02,
+     "peak_date": "2025-09-02",
+     "trough_date": "2025-09-30",
+     "recover_date": "2025-10-09",
+     "rec_days": 1,
+     "end": "2025-10-31"
+    },
+    "红利低波100": {
+     "final": 128237.28,
+     "total_ret": 0.0686,
+     "cagr": 0.1308,
+     "mdd": -0.0623,
+     "mdd_amt": 3826.18,
+     "peak_date": "2025-04-03",
+     "trough_date": "2025-04-07",
+     "recover_date": "2025-05-06",
+     "rec_days": 18,
+     "end": "2025-10-31"
+    }
+   }
+  },
+  {
+   "start": "2024-12",
+   "indices": {
+    "上证红利": {
+     "final": 124870.77,
+     "total_ret": 0.0406,
+     "cagr": 0.0778,
+     "mdd": -0.0417,
+     "mdd_amt": 5420.58,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-26",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2025-11-28"
+    },
+    "中证红利": {
+     "final": 125852.27,
+     "total_ret": 0.0488,
+     "cagr": 0.0937,
+     "mdd": -0.0467,
+     "mdd_amt": 6144.48,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-24",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2025-11-28"
+    },
+    "红利低波": {
+     "final": 127633.0,
+     "total_ret": 0.0636,
+     "cagr": 0.1227,
+     "mdd": -0.0503,
+     "mdd_amt": 5375.77,
+     "peak_date": "2025-09-02",
+     "trough_date": "2025-09-30",
+     "recover_date": "2025-10-09",
+     "rec_days": 1,
+     "end": "2025-11-28"
+    },
+    "红利低波100": {
+     "final": 127417.64,
+     "total_ret": 0.0618,
+     "cagr": 0.1192,
+     "mdd": -0.0387,
+     "mdd_amt": 5110.12,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-24",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2025-11-28"
+    }
+   }
+  },
+  {
+   "start": "2025-01",
+   "indices": {
+    "上证红利": {
+     "final": 122602.67,
+     "total_ret": 0.0217,
+     "cagr": 0.0408,
+     "mdd": -0.0417,
+     "mdd_amt": 4957.88,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-26",
+     "recover_date": "2025-12-01",
+     "rec_days": 3,
+     "end": "2025-12-31"
+    },
+    "中证红利": {
+     "final": 124247.68,
+     "total_ret": 0.0354,
+     "cagr": 0.0668,
+     "mdd": -0.0467,
+     "mdd_amt": 5619.29,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-24",
+     "recover_date": "2025-12-01",
+     "rec_days": 5,
+     "end": "2025-12-31"
+    },
+    "红利低波": {
+     "final": 123551.21,
+     "total_ret": 0.0296,
+     "cagr": 0.0558,
+     "mdd": -0.0503,
+     "mdd_amt": 4812.68,
+     "peak_date": "2025-09-02",
+     "trough_date": "2025-09-30",
+     "recover_date": "2025-10-09",
+     "rec_days": 1,
+     "end": "2025-12-31"
+    },
+    "红利低波100": {
+     "final": 124125.45,
+     "total_ret": 0.0344,
+     "cagr": 0.0649,
+     "mdd": -0.0387,
+     "mdd_amt": 4674.7,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-24",
+     "recover_date": "2025-12-01",
+     "rec_days": 5,
+     "end": "2025-12-31"
+    }
+   }
+  },
+  {
+   "start": "2025-02",
+   "indices": {
+    "上证红利": {
+     "final": 126579.7,
+     "total_ret": 0.0548,
+     "cagr": 0.1042,
+     "mdd": -0.0417,
+     "mdd_amt": 4506.28,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-26",
+     "recover_date": "2025-12-01",
+     "rec_days": 3,
+     "end": "2026-01-30"
+    },
+    "中证红利": {
+     "final": 128266.01,
+     "total_ret": 0.0689,
+     "cagr": 0.1314,
+     "mdd": -0.0467,
+     "mdd_amt": 5099.2,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-24",
+     "recover_date": "2025-12-01",
+     "rec_days": 5,
+     "end": "2026-01-30"
+    },
+    "红利低波": {
+     "final": 122383.37,
+     "total_ret": 0.0199,
+     "cagr": 0.0374,
+     "mdd": -0.0503,
+     "mdd_amt": 4258.86,
+     "peak_date": "2025-09-02",
+     "trough_date": "2025-09-30",
+     "recover_date": "2025-10-09",
+     "rec_days": 1,
+     "end": "2026-01-30"
+    },
+    "红利低波100": {
+     "final": 125536.64,
+     "total_ret": 0.0461,
+     "cagr": 0.0875,
+     "mdd": -0.0387,
+     "mdd_amt": 4240.28,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-24",
+     "recover_date": "2025-12-01",
+     "rec_days": 5,
+     "end": "2026-01-30"
+    }
+   }
+  },
+  {
+   "start": "2025-03",
+   "indices": {
+    "上证红利": {
+     "final": 129763.22,
+     "total_ret": 0.0814,
+     "cagr": 0.1576,
+     "mdd": -0.0417,
+     "mdd_amt": 4042.47,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-26",
+     "recover_date": "2025-12-01",
+     "rec_days": 3,
+     "end": "2026-02-27"
+    },
+    "中证红利": {
+     "final": 130253.61,
+     "total_ret": 0.0854,
+     "cagr": 0.1657,
+     "mdd": -0.0467,
+     "mdd_amt": 4563.81,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-24",
+     "recover_date": "2025-12-01",
+     "rec_days": 5,
+     "end": "2026-02-27"
+    },
+    "红利低波": {
+     "final": 122128.18,
+     "total_ret": 0.0177,
+     "cagr": 0.0337,
+     "mdd": -0.0503,
+     "mdd_amt": 3694.94,
+     "peak_date": "2025-09-02",
+     "trough_date": "2025-09-30",
+     "recover_date": "2025-10-09",
+     "rec_days": 1,
+     "end": "2026-02-27"
+    },
+    "红利低波100": {
+     "final": 125740.41,
+     "total_ret": 0.0478,
+     "cagr": 0.0918,
+     "mdd": -0.0387,
+     "mdd_amt": 3793.55,
+     "peak_date": "2025-11-13",
+     "trough_date": "2025-11-24",
+     "recover_date": "2025-12-01",
+     "rec_days": 5,
+     "end": "2026-02-27"
+    }
+   }
+  },
+  {
+   "start": "2025-04",
+   "indices": {
+    "上证红利": {
+     "final": 128734.67,
+     "total_ret": 0.0728,
+     "cagr": 0.1394,
+     "mdd": -0.0422,
+     "mdd_amt": 5659.55,
+     "peak_date": "2026-03-12",
+     "trough_date": "2026-03-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-03-31"
+    },
+    "中证红利": {
+     "final": 126414.58,
+     "total_ret": 0.0535,
+     "cagr": 0.1018,
+     "mdd": -0.0586,
+     "mdd_amt": 7732.69,
+     "peak_date": "2026-03-12",
+     "trough_date": "2026-03-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-03-31"
+    },
+    "红利低波": {
+     "final": 123748.86,
+     "total_ret": 0.0312,
+     "cagr": 0.0591,
+     "mdd": -0.0449,
+     "mdd_amt": 5609.02,
+     "peak_date": "2026-03-17",
+     "trough_date": "2026-03-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-03-31"
+    },
+    "红利低波100": {
+     "final": 124185.77,
+     "total_ret": 0.0349,
+     "cagr": 0.0661,
+     "mdd": -0.0461,
+     "mdd_amt": 5844.31,
+     "peak_date": "2026-03-12",
+     "trough_date": "2026-03-23",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-03-31"
+    }
+   }
+  },
+  {
+   "start": "2025-05",
+   "indices": {
+    "上证红利": {
+     "final": 131403.25,
+     "total_ret": 0.095,
+     "cagr": 0.1835,
+     "mdd": -0.0422,
+     "mdd_amt": 5172.62,
+     "peak_date": "2026-03-12",
+     "trough_date": "2026-03-23",
+     "recover_date": "2026-04-01",
+     "rec_days": 7,
+     "end": "2026-04-30"
+    },
+    "中证红利": {
+     "final": 128507.69,
+     "total_ret": 0.0709,
+     "cagr": 0.136,
+     "mdd": -0.0586,
+     "mdd_amt": 7058.39,
+     "peak_date": "2026-03-12",
+     "trough_date": "2026-03-23",
+     "recover_date": "2026-04-01",
+     "rec_days": 7,
+     "end": "2026-04-30"
+    },
+    "红利低波": {
+     "final": 121581.08,
+     "total_ret": 0.0132,
+     "cagr": 0.0249,
+     "mdd": -0.0449,
+     "mdd_amt": 5117.1,
+     "peak_date": "2026-03-17",
+     "trough_date": "2026-03-23",
+     "recover_date": "2026-04-01",
+     "rec_days": 7,
+     "end": "2026-04-30"
+    },
+    "红利低波100": {
+     "final": 122742.72,
+     "total_ret": 0.0229,
+     "cagr": 0.0433,
+     "mdd": -0.0461,
+     "mdd_amt": 5335.06,
+     "peak_date": "2026-03-12",
+     "trough_date": "2026-03-23",
+     "recover_date": "2026-04-01",
+     "rec_days": 7,
+     "end": "2026-04-30"
+    }
+   }
+  },
+  {
+   "start": "2025-06",
+   "indices": {
+    "上证红利": {
+     "final": 124538.91,
+     "total_ret": 0.0378,
+     "cagr": 0.0724,
+     "mdd": -0.0549,
+     "mdd_amt": 7120.03,
+     "peak_date": "2026-05-06",
+     "trough_date": "2026-05-22",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-05-29"
+    },
+    "中证红利": {
+     "final": 121502.76,
+     "total_ret": 0.0125,
+     "cagr": 0.0238,
+     "mdd": -0.058,
+     "mdd_amt": 7385.52,
+     "peak_date": "2026-05-06",
+     "trough_date": "2026-05-28",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-05-29"
+    },
+    "红利低波": {
+     "final": 118616.79,
+     "total_ret": -0.0115,
+     "cagr": -0.0218,
+     "mdd": -0.0449,
+     "mdd_amt": 4623.21,
+     "peak_date": "2026-03-17",
+     "trough_date": "2026-03-23",
+     "recover_date": "2026-04-01",
+     "rec_days": 7,
+     "end": "2026-05-29"
+    },
+    "红利低波100": {
+     "final": 120089.08,
+     "total_ret": 0.0007,
+     "cagr": 0.0014,
+     "mdd": -0.0461,
+     "mdd_amt": 4818.03,
+     "peak_date": "2026-03-12",
+     "trough_date": "2026-03-23",
+     "recover_date": "2026-04-01",
+     "rec_days": 7,
+     "end": "2026-05-29"
+    }
+   }
+  },
+  {
+   "start": "2025-07",
+   "indices": {
+    "上证红利": {
+     "final": 112156.74,
+     "total_ret": -0.0654,
+     "cagr": -0.1203,
+     "mdd": -0.1247,
+     "mdd_amt": 15976.0,
+     "peak_date": "2026-06-04",
+     "trough_date": "2026-06-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-06-30"
+    },
+    "中证红利": {
+     "final": 109685.08,
+     "total_ret": -0.086,
+     "cagr": -0.1572,
+     "mdd": -0.1135,
+     "mdd_amt": 14040.74,
+     "peak_date": "2026-06-01",
+     "trough_date": "2026-06-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-06-30"
+    },
+    "红利低波": {
+     "final": 108155.53,
+     "total_ret": -0.0987,
+     "cagr": -0.1797,
+     "mdd": -0.0998,
+     "mdd_amt": 11987.72,
+     "peak_date": "2026-06-01",
+     "trough_date": "2026-06-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-06-30"
+    },
+    "红利低波100": {
+     "final": 108734.12,
+     "total_ret": -0.0939,
+     "cagr": -0.1712,
+     "mdd": -0.1044,
+     "mdd_amt": 12677.98,
+     "peak_date": "2026-06-01",
+     "trough_date": "2026-06-30",
+     "recover_date": null,
+     "rec_days": null,
+     "end": "2026-06-30"
+    }
+   }
+  },
+  {
+   "start": "2025-08",
+   "indices": {
+    "上证红利": {
+     "final": 127864.47,
+     "total_ret": 0.0655,
+     "cagr": 0.125,
+     "mdd": -0.1247,
+     "mdd_amt": 14597.41,
+     "peak_date": "2026-06-04",
+     "trough_date": "2026-06-30",
+     "recover_date": "2026-07-06",
+     "rec_days": 4,
+     "end": "2026-07-31"
+    },
+    "中证红利": {
+     "final": 123269.01,
+     "total_ret": 0.0272,
+     "cagr": 0.0514,
+     "mdd": -0.1135,
+     "mdd_amt": 12811.45,
+     "peak_date": "2026-06-01",
+     "trough_date": "2026-06-30",
+     "recover_date": "2026-07-03",
+     "rec_days": 3,
+     "end": "2026-07-31"
+    },
+    "红利低波": {
+     "final": 123086.44,
+     "total_ret": 0.0257,
+     "cagr": 0.0485,
+     "mdd": -0.0998,
+     "mdd_amt": 10996.52,
+     "peak_date": "2026-06-01",
+     "trough_date": "2026-06-30",
+     "recover_date": "2026-07-01",
+     "rec_days": 1,
+     "end": "2026-07-31"
+    },
+    "红利低波100": {
+     "final": 122493.58,
+     "total_ret": 0.0208,
+     "cagr": 0.0391,
+     "mdd": -0.1044,
+     "mdd_amt": 11576.32,
+     "peak_date": "2026-06-01",
+     "trough_date": "2026-06-30",
+     "recover_date": "2026-07-02",
+     "rec_days": 2,
+     "end": "2026-07-31"
+    }
+   }
+  }
+ ],
+ "meta": {
+  "amount": 10000.0,
+  "periods": 12,
+  "start_range": "2016-08 ~ 2025-08(起点), 窗口=起点起12个月",
+  "generated": "2026-08-26"
+ }
+}

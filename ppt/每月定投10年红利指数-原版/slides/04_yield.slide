@@ -1,0 +1,49 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>③ 当前股息率：仍是国债的 2.4 倍+</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ height: 72, marginTop: 4 }}>
+    <Text style={{ fontSize: 17, color: '#3B4A5C', lineHeight: 1.7 }}>
+      下表为四个指数<span style={{ fontWeight: 'bold' }}>近 12 个月实际分红收益率</span>（用官方全收益指数与价格指数价差计算，真实数据；Wind 同口径 2026-07-31 中证红利 4.24%，交叉验证一致）。
+    </Text>
+  </Box>
+
+  <Box style={{ height: 330, flexDirection: 'row', gap: 16 }}>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 22 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1D2939' }}>红利低波 <span style={{ fontSize: 15, color: '#6B7686' }}>H20269</span></Text>
+      <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#C0392B', marginTop: 10 }}>4.78%</Text>
+      <Text style={{ fontSize: 14, color: '#6B7686' }}>最新 4.72%（截至 2026-08-26）</Text>
+      <Text style={{ fontSize: 14, color: '#6B7686', marginTop: 8 }}>同期全收益 +3.1% ｜ 价格 -1.7%</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 22 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1D2939' }}>红利低波100 <span style={{ fontSize: 15, color: '#6B7686' }}>H20955</span></Text>
+      <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#C0392B', marginTop: 10 }}>4.24%</Text>
+      <Text style={{ fontSize: 14, color: '#6B7686' }}>最新 4.27%（截至 2026-08-26）</Text>
+      <Text style={{ fontSize: 14, color: '#6B7686', marginTop: 8 }}>同期全收益 +4.6% ｜ 价格 +0.3%</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 22 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1D2939' }}>上证红利 <span style={{ fontSize: 15, color: '#6B7686' }}>H00015</span></Text>
+      <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#C0392B', marginTop: 10 }}>4.28%</Text>
+      <Text style={{ fontSize: 14, color: '#6B7686' }}>最新 4.24%（截至 2026-08-26）</Text>
+      <Text style={{ fontSize: 14, color: '#6B7686', marginTop: 8 }}>同期全收益 +9.8% ｜ 价格 +5.5%</Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 22 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1D2939' }}>中证红利 <span style={{ fontSize: 15, color: '#6B7686' }}>H00922</span></Text>
+      <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#C0392B', marginTop: 10 }}>4.12%</Text>
+      <Text style={{ fontSize: 14, color: '#6B7686' }}>最新 4.17%（截至 2026-08-26）</Text>
+      <Text style={{ fontSize: 14, color: '#6B7686', marginTop: 8 }}>同期全收益 +6.6% ｜ 价格 +2.5%</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 112, marginTop: 6, background: '#FFF5F3', borderRadius: 12, padding: '16px 24px', border: '1px solid #F2D0CB' }}>
+    <Text style={{ fontSize: 18, color: '#8C2F28', lineHeight: 1.8, fontWeight: 600 }}>
+      对比：十年期国债收益率约 1.7%，红利股息率是其 2.4-2.8 倍。注意股息率随价格波动：7 月红利大涨后股息率已从高位回落，4%+ 的"租金"依然稀缺。
+    </Text>
+  </Box>
+
+  <Box style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

@@ -1,0 +1,67 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 100, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>怎么算的：口径与方法</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ height: 500, marginTop: 8, flexDirection: 'row', gap: 18 }}>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 26, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1D2939' }}>① 数据源</Text>
+        <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.7, marginTop: 14 }}>
+          中证指数官网（csindex.com.cn）<span style={{ fontWeight: 'bold' }}>全收益指数</span>官方日线
+          <br />
+          已含<b>分红再投资</b>，收益口径完整
+          <br />
+          H00015 / H00922 / H20269 / H20955
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 16, color: '#6B7686' }}>四个主流红利指数 · 官方数据 · 可复现</Text>
+    </Box>
+
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 26, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1D2939' }}>② 定投规则</Text>
+        <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.7, marginTop: 14 }}>
+          <span style={{ fontWeight: 'bold', color: '#C0392B' }}>每月首个交易日</span>按收盘价买入
+          <br />
+          每期 <b>¥10,000</b> · 雷打不动
+          <br />
+          2016.08 首期 → 2026.07 末期
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 16, color: '#6B7686' }}>不择时、不预测，只执行</Text>
+    </Box>
+
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 26, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1D2939' }}>③ 区间与投入</Text>
+        <Text style={{ fontSize: 20, lineHeight: 1.7, marginTop: 14 }}>
+          <span style={{ fontSize: 44, fontWeight: 'bold', color: '#C0392B' }}>120</span> 期 · 整 10 年
+        </Text>
+        <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.7 }}>
+          累计投入 <span style={{ fontWeight: 'bold', color: '#C0392B' }}>¥1,200,000</span>
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 16, color: '#6B7686' }}>2016.08 - 2026.07 完整十年</Text>
+    </Box>
+
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 26, justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1D2939' }}>④ 收益口径</Text>
+        <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.7, marginTop: 14 }}>
+          年化 = <b>XIRR</b>（资金时间价值口径）
+          <br />
+          每笔定投按实际投入时点计息
+          <br />
+          <span style={{ color: '#C0392B', fontWeight: 'bold' }}>未计</span>申购费、赎回费与税费
+        </Text>
+      </Box>
+      <Text style={{ fontSize: 16, color: '#6B7686' }}>口径透明 · 结果可交叉验证</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 52, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

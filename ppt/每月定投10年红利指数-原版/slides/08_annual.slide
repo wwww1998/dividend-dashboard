@@ -1,0 +1,52 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>4 年度表现：哪几年在"打折进货"</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ height: 84, marginTop: 6 }}>
+    <Text style={{ fontSize: 16.5, color: '#3B4A5C', lineHeight: 1.7 }}>
+      红色柱＝年末账户浮盈，绿色柱＝年末浮亏（2018 年四个指数全部浮亏，正是摊低成本的黄金期）。
+      <span style={{ fontWeight: 'bold' }}>「指数年度涨跌幅」＝该指数全收益口径自然年涨幅</span>，用来对照"账户当年盈亏有多少来自指数本身、多少来自定投摊低成本"。
+    </Text>
+  </Box>
+
+  <Box style={{ height: 300, marginTop: 6 }}>
+    <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#1D2939', marginBottom: 6 }}>每年末：账户浮盈/浮亏（示例：红利低波）</Text>
+    <Table
+      style={{ width: '100%', height: 262 }}
+      defaultTextStyle={{ fontSize: 13.5, textAlign: 'center', color: '#1A1A1A' }}
+      defaultCellStyle={{ border: { left: { width: 1, color: '#E3E8EF' }, right: { width: 1, color: '#E3E8EF' }, top: { width: 1, color: '#E3E8EF' }, bottom: { width: 1, color: '#E3E8EF' } }, padding: 7 }}
+      cells={[
+        [
+          { text: '年末', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '指数年度涨跌幅', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '累计投入', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '账户市值', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '累计浮盈', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          { text: '当年盈亏', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+        ],
+        [{ text: '2016', textStyle: { bold: true } }, { text: '+6.22%', textStyle: { color: '#C0392B' } }, { text: '¥50,000' }, { text: '¥50,257' }, { text: '+¥257', textStyle: { color: '#C0392B' } }, { text: '+¥0', textStyle: { color: '#C0392B' } }],
+        [{ text: '2017', textStyle: { bold: true } }, { text: '+23.57%', textStyle: { color: '#C0392B' } }, { text: '¥170,000' }, { text: '¥193,424' }, { text: '+¥23,424', textStyle: { color: '#C0392B' } }, { text: '+¥23,167', textStyle: { color: '#C0392B' } }],
+        [{ text: '2018', textStyle: { bold: true } }, { text: '-16.39%', textStyle: { color: '#27AE60', bold: true } }, { text: '¥290,000' }, { text: '¥270,877' }, { text: '-¥19,123', textStyle: { color: '#27AE60' } }, { text: '-¥42,547', textStyle: { color: '#27AE60' } }],
+        [{ text: '2019', textStyle: { bold: true } }, { text: '+20.94%', textStyle: { color: '#C0392B' } }, { text: '¥410,000' }, { text: '¥456,907' }, { text: '+¥46,907', textStyle: { color: '#C0392B' } }, { text: '+¥66,030', textStyle: { color: '#C0392B' } }],
+        [{ text: '2020', textStyle: { bold: true } }, { text: '+1.99%', textStyle: { color: '#C0392B' } }, { text: '¥530,000' }, { text: '¥593,186' }, { text: '+¥63,186', textStyle: { color: '#C0392B' } }, { text: '+¥16,279', textStyle: { color: '#C0392B' } }],
+        [{ text: '2021', textStyle: { bold: true } }, { text: '+16.34%', textStyle: { color: '#C0392B' } }, { text: '¥650,000' }, { text: '¥819,011' }, { text: '+¥169,011', textStyle: { color: '#C0392B' } }, { text: '+¥105,826', textStyle: { color: '#C0392B' } }],
+        [{ text: '2022', textStyle: { bold: true } }, { text: '+3.46%', textStyle: { color: '#C0392B' } }, { text: '¥770,000' }, { text: '¥966,051' }, { text: '+¥196,051', textStyle: { color: '#C0392B' } }, { text: '+¥27,040', textStyle: { color: '#C0392B' } }],
+        [{ text: '2023', textStyle: { bold: true } }, { text: '+12.23%', textStyle: { color: '#C0392B' } }, { text: '¥890,000' }, { text: '¥1,204,721' }, { text: '+¥314,721', textStyle: { color: '#C0392B' } }, { text: '+¥118,670', textStyle: { color: '#C0392B' } }],
+        [{ text: '2024', textStyle: { bold: true } }, { text: '+24.82%', textStyle: { color: '#C0392B', bold: true } }, { text: '¥1,010,000' }, { text: '¥1,635,835' }, { text: '+¥625,835', textStyle: { color: '#C0392B' } }, { text: '+¥311,114', textStyle: { color: '#C0392B' } }],
+        [{ text: '2025', textStyle: { bold: true } }, { text: '+5.57%', textStyle: { color: '#C0392B' } }, { text: '¥1,130,000' }, { text: '¥1,850,582' }, { text: '+¥720,582', textStyle: { color: '#C0392B' } }, { text: '+¥94,747', textStyle: { color: '#C0392B' } }],
+        [{ text: '2026', textStyle: { bold: true } }, { text: '+1.47%', textStyle: { color: '#C0392B' } }, { text: '¥1,200,000' }, { text: '¥1,967,153' }, { text: '+¥767,153', textStyle: { color: '#C0392B' } }, { text: '+¥46,571', textStyle: { color: '#C0392B' } }],
+      ]}
+    />
+  </Box>
+
+  <Box style={{ height: 80, marginTop: 6 }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>口径＝年末市值 − 当年已投入本金（2026 行为截至 2026-07-31）</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686', marginTop: 6 }}>「指数年度涨跌幅」2016 年为定投起点（2016-08-01）至年末，其余年份为自然年</Text>
+  </Box>
+
+  <Box style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

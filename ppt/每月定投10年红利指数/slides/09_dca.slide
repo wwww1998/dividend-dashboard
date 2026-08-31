@@ -1,0 +1,48 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '14px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>定投 vs 一次性：频率决定了回撤深度</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>同样的 10 年、同样的总投入</Text>
+  </Box>
+
+  <Box style={{ height: 452, marginTop: 10, flexDirection: 'row', gap: 18 }}>
+    <Box style={{ flex: 1, background: 'linear-gradient(135deg,#2B3A4A 0%,#1D2939 80%)', borderRadius: 16, padding: 30, justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#FFFFFF' }}>每月定投（本页方案）</Text>
+      <Box>
+        <Text style={{ fontSize: 20, color: '#8FA0B5' }}>组合最大回撤</Text>
+        <Text style={{ fontSize: 64, fontWeight: 'bold', color: '#FF6B5E', lineHeight: 1.1 }}>-11.5%</Text>
+        <Text style={{ fontSize: 18, color: '#8FA0B5', marginTop: 4 }}>~ -17.1%</Text>
+      </Box>
+      <Text style={{ fontSize: 16, color: '#8FA0B5', lineHeight: 1.7 }}>
+        每月买入摊低成本，2018/2020 年市场下跌时反而买到更多份额——浮亏浅、恢复快。
+      </Text>
+      <Box style={{ background: 'rgba(255,255,255,0.1)', borderRadius: 10, padding: '10px 16px' }}>
+        <Text style={{ fontSize: 16, color: '#FFB37A', fontWeight: 600 }}>跌时继续投 = 收益的主要来源</Text>
+      </Box>
+    </Box>
+
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 16, padding: 30, justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1D2939' }}>每年年初一次性（对比）</Text>
+      <Box>
+        <Text style={{ fontSize: 20, color: '#6B7686' }}>组合最大回撤</Text>
+        <Text style={{ fontSize: 64, fontWeight: 'bold', color: '#1D2939', lineHeight: 1.1 }}>-23.4%</Text>
+        <Text style={{ fontSize: 18, color: '#6B7686', marginTop: 4 }}>~ -27.5%</Text>
+      </Box>
+      <Text style={{ fontSize: 16, color: '#3B4A5C', lineHeight: 1.7 }}>
+        年初一次性买入 12 万，2018 年初买在阶段高点后撞上熊市，浮亏 6.7~7.9 万，次年 1 月才收复。
+      </Text>
+      <Box style={{ background: '#FFFFFF', borderRadius: 10, padding: '10px 16px', border: '1px solid #E3E8EF' }}>
+        <Text style={{ fontSize: 16, color: '#6B7686', fontWeight: 600 }}>回撤深度是月投的近 2 倍</Text>
+      </Box>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 74, marginTop: 6, background: '#FFF5F3', borderRadius: 12, padding: '12px 22px', border: '1px solid #F2D0CB' }}>
+    <Text style={{ fontSize: 17, color: '#8C2F28', fontWeight: 600 }}>
+      💡 定投频率越高，成本摊薄越充分。月投把 10 年最大浮亏控制在 11%~17%，这就是"纪律"的量化价值。
+    </Text>
+  </Box>
+
+  <Box style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

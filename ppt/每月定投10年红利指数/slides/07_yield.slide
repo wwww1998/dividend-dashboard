@@ -1,0 +1,40 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 100, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>当前股息率：每年白拿 4%+ 的"租金"</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>最新股息率（截至 2026-08-26）</Text>
+  </Box>
+
+  <Box style={{ height: 460, marginTop: 12, flexDirection: 'row', gap: 18 }}>
+    <Box style={{ flex: 1.4 }}>
+      <Chart
+        style={{ height: 440 }}
+        chartType='barChart'
+        title='股息率 vs 十年国债'
+        colors={['#C0392B', '#8FA0B5']}
+        data={[
+          ['指数', '股息率%', '十年国债%'],
+          ['红利低波', 4.72, 1.7],
+          ['红利低波100', 4.27, 1.7],
+          ['上证红利', 4.24, 1.7],
+          ['中证红利', 4.17, 1.7],
+        ]}
+      />
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 16 }}>
+      <Box style={{ flex: 1, background: '#1D2939', borderRadius: 14, padding: 24 }}>
+        <Text style={{ fontSize: 20, color: '#8FA0B5' }}>红利"租金"是国债的</Text>
+        <Text style={{ fontSize: 64, fontWeight: 'bold', color: '#FF6B5E', lineHeight: 1.1 }}>2.4~2.8 倍</Text>
+        <Text style={{ fontSize: 16, color: '#8FA0B5', marginTop: 8 }}>十年国债约 1.7%，红利股息率 4.2%~4.7%</Text>
+      </Box>
+      <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 22 }}>
+        <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1D2939' }}>每年现金流</Text>
+        <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#C0392B', marginTop: 6 }}>¥120 万 × 4.5% ≈ ¥5.4 万/年</Text>
+        <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 6 }}>持仓 120 万，每年分红现金流约 5.4 万，远超利息</Text>
+      </Box>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 52, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>股息率随价格波动：7 月红利大涨后已从高位回落，4%+ 的"租金"依然稀缺 · 四大红利全收益指数</Text>
+  </Box>
+</Slide>

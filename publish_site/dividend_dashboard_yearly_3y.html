@@ -178,16 +178,25 @@ tr.hl td{background:#fffaf7}
   </div>
 </div>
 
-<!-- 1 总账 -->
+<!-- 1 指数走势 -->
 <div class="sec">
-  <h2><span class="no">1</span>总账：四个指数全部盈利</h2>
+  <h2><span class="no">1</span>四大红利指数走势：十年谁在领跑</h2>
+  <div class="desc">四指数<b>全收益</b>（含分红再投）日线，从定投起点归一化为 100 的走势。红利低波整体领先，红利低波100 波动更小；2024 年红利行情四指数同步走强。悬浮可查看任一时点相对起点倍数。</div>
+  <div class="card">
+    <div id="trendChart" style="height:400px"></div>
+  </div>
+</div>
+
+<!-- 2 总账 -->
+<div class="sec">
+  <h2><span class="no">2</span>总账：四个指数全部盈利</h2>
   <div class="desc">年化 7.51% - 10.67% 不等，最低也跑赢银行理财。但回撤差异显著——最大回撤（定投组合市值口径）从 -13.49% 到 -14.53% 不等，这正是持有体验的分水岭。<span style="color:var(--sub)">（* 股息率为近 12 个月实际分红收益率，价差法计算，Wind 同口径交叉验证一致）</span></div>
   <div class="cards" id="cards"></div>
 </div>
 
 <!-- 2 真实回撤 -->
 <div class="sec">
-  <h2><span class="no">2</span>真实回撤：你实际会浮亏多少、亏多久</h2>
+  <h2><span class="no">3</span>真实回撤：你实际会浮亏多少、亏多久</h2>
   <div class="desc">两条口径都要看：① <b>定投组合市值回撤</b>＝每年扣款后账户市值从峰值回落的最大幅度，是定投者真实的浮亏体验；② <b>指数点位回撤</b>＝一次性买入持有的最大跌幅。左图默认展示组合口径，可切换。</div>
 
   <div class="chart">
@@ -220,7 +229,7 @@ tr.hl td{background:#fffaf7}
 
 <!-- 3 市值走势 -->
 <div class="sec">
-  <h2><span class="no">3</span>定投市值走势：30 万 如何滚成 33.7 - 35.3 万</h2>
+  <h2><span class="no">4</span>定投市值走势：30 万 如何滚成 33.7 - 35.3 万</h2>
   <div class="desc">灰线为累计投入本金（阶梯至 300,000）。曲线在大部分年份都压在投入线上方，但 2024 年 5-9 月与 2026 年 6 月回调时会短暂跌破——"亏钱时咬牙继续投"正是收益的主要来源。</div>
   <div class="chart">
     <div class="head"><div class="t">组合市值 vs 累计投入</div><div class="hint">悬浮查看任一时点浮盈/浮亏</div></div>
@@ -231,7 +240,7 @@ tr.hl td{background:#fffaf7}
 
 <!-- 4 年度 -->
 <div class="sec">
-  <h2><span class="no">4</span>年度表现：哪几年在"打折进货"</h2>
+  <h2><span class="no">5</span>年度表现：哪几年在"打折进货"</h2>
   <div class="desc">下拉切换指数。红色柱＝年末账户浮盈，绿色柱＝年末浮亏（2024 年 5-9 月回调、2026 年 3-6 月回落亦是摊低成本的黄金期，但三年年末全部盈利）。<b>「指数年度涨跌幅」＝该指数全收益口径自然年涨幅</b>，用来对照"账户当年盈亏有多少来自指数本身、多少来自定投摊低成本"。</div>
   <div class="chart">
     <div class="head">
@@ -251,7 +260,7 @@ tr.hl td{background:#fffaf7}
 <div class="sec">
   <!-- 5 指数年度涨跌幅 -->
 <div class="sec">
-  <h2><span class="no">5</span>指数年度涨跌幅：四指数横向对比</h2>
+  <h2><span class="no">6</span>指数年度涨跌幅：四指数横向对比</h2>
   <div class="desc">各指数年度涨跌幅（<b>全收益口径</b>，含分红再投）。自然年口径（上年末→本年末）；2026 行为截至 2026-07-31（非完整年度）。红涨绿跌（A 股习惯）。</div>
   <div class="tbl-box" style="overflow-x:auto">
     <table id="tbl_yoy" style="min-width:560px"></table>
@@ -259,7 +268,7 @@ tr.hl td{background:#fffaf7}
 </div>
 
 <!-- 6 那到底选哪个 -->
-  <h2><span class="no">6</span>那到底选哪个？</h2>
+  <h2><span class="no">7</span>那到底选哪个？</h2>
   <div class="desc">回撤数据是选择的钥匙：收益相近时，回撤更小、恢复更快的指数持有体验更好，也更可能坚持到底。</div>
   <div class="pick" id="pick"></div>
   <div class="quote">
@@ -427,6 +436,22 @@ function renderUnder(){
 document.getElementById("segPort").onclick=()=>{underMode="port";document.getElementById("segPort").className="on";document.getElementById("segIdx").className="";renderUnder();};
 document.getElementById("segIdx").onclick=()=>{underMode="idx";document.getElementById("segIdx").className="on";document.getElementById("segPort").className="";renderUnder();};
 
+/* 指数走势(归一化) */
+let trendChart=null;
+(function(){
+  const base = {};
+  CODES.forEach(c=>{ const arr=SERIES[c].value; base[c]=arr.find(v=>v!=null); });
+  trendChart = echarts.init(document.getElementById("trendChart"));
+  trendChart.setOption({
+    tooltip:{trigger:"axis",backgroundColor:"rgba(29,41,57,.92)",borderWidth:0,textStyle:{color:"#fff",fontSize:12},valueFormatter:v=>v==null?"-":v.toFixed(1)},
+    legend:{data:CODES.map(c=>SHORT[c]),top:0,textStyle:{color:"#6b7686",fontSize:12},icon:"roundRect",itemWidth:18,itemHeight:8},
+    grid:{left:58,right:20,top:38,bottom:32},
+    xAxis:{type:"category",data:DATES,axisLine:{lineStyle:{color:"#ccd4de"}},axisLabel:{color:"#6b7686",fontSize:11},axisTick:{show:false}},
+    yAxis:{type:"value",scale:true,axisLabel:{color:"#6b7686",fontSize:11,formatter:"{value}"},splitLine:{lineStyle:{color:"#eef2f7"}}},
+    series:CODES.map(c=>({name:SHORT[c],type:"line",showSymbol:false,smooth:false,data:SERIES[c].value.map(v=>v==null?null:+(v/base[c]*100).toFixed(1)),lineStyle:{width:2,color:COLORS[c]},itemStyle:{color:COLORS[c]}}))
+  });
+})();
+
 /* 市值走势 */
 let growthChart=null;
 function renderGrowth(){
@@ -502,7 +527,7 @@ document.getElementById("selYear").onchange = e=>{curCode=e.target.value;renderA
 })();
 
 /* init */
-window.addEventListener("resize",()=>{underChart&&underChart.resize();growthChart&&growthChart.resize();annualChart&&annualChart.resize();});
+window.addEventListener("resize",()=>{underChart&&underChart.resize();growthChart&&growthChart.resize();annualChart&&annualChart.resize();trendChart&&trendChart.resize();});
 (function init(){
   underChart = echarts.init(document.getElementById("c_under"));
   growthChart = echarts.init(document.getElementById("c_growth"));

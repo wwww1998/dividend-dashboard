@@ -1,0 +1,78 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 100, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>总账：四个指数全部盈利</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>120 期 · ¥120 万 · 2016.08-2026.07</Text>
+  </Box>
+
+  <Box style={{ height: 220, flexDirection: 'row', alignItems: 'center', gap: 40 }}>
+    <Box style={{ flex: 1 }}>
+      <Text style={{ fontSize: 20, color: '#6B7686' }}>收益最高的红利低波</Text>
+      <Text style={{ fontSize: 92, fontWeight: 'bold', color: '#C0392B', lineHeight: 1.1 }}>+63.9%</Text>
+      <Text style={{ fontSize: 18, color: '#3B4A5C', marginTop: 8 }}>¥120 万 → <b>¥1,967,153</b>（年化 9.56%）</Text>
+    </Box>
+    <Box style={{ flex: 2 }}>
+      <Table
+        style={{ width: '100%', height: 180 }}
+        defaultTextStyle={{ fontSize: 16, textAlign: 'center', color: '#1A1A1A' }}
+        defaultCellStyle={{ border: { left: { width: 1, color: '#E3E8EF' }, right: { width: 1, color: '#E3E8EF' }, top: { width: 1, color: '#E3E8EF' }, bottom: { width: 1, color: '#E3E8EF' } }, padding: 10 }}
+        cells={[
+          [
+            { text: '指数', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+            { text: '终值', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+            { text: '总收益', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+            { text: '年化(XIRR)', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#1D2939' } } },
+          ],
+          [
+            { text: '红利低波', textStyle: { bold: true } },
+            { text: '¥1,967,153', textStyle: { bold: true, color: '#C0392B' } },
+            { text: '+63.9%', textStyle: { bold: true, color: '#C0392B' } },
+            { text: '9.56%', textStyle: { bold: true, color: '#C0392B' } },
+          ],
+          [
+            { text: '红利低波100' },
+            { text: '¥1,848,858', textStyle: { color: '#C0392B' } },
+            { text: '+54.1%', textStyle: { color: '#C0392B' } },
+            { text: '8.39%', textStyle: { color: '#C0392B' } },
+          ],
+          [
+            { text: '上证红利' },
+            { text: '¥1,837,767', textStyle: { color: '#C0392B' } },
+            { text: '+53.1%', textStyle: { color: '#C0392B' } },
+            { text: '8.27%', textStyle: { color: '#C0392B' } },
+          ],
+          [
+            { text: '中证红利' },
+            { text: '¥1,834,922', textStyle: { color: '#C0392B' } },
+            { text: '+52.9%', textStyle: { color: '#C0392B' } },
+            { text: '8.24%', textStyle: { color: '#C0392B' } },
+          ],
+        ]}
+      />
+    </Box>
+  </Box>
+
+  <Box style={{ height: 280, marginTop: 16, flexDirection: 'row', gap: 18 }}>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 24 }}>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>🏆 红利低波收益最高</Text>
+      <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.7, marginTop: 12 }}>
+        高股息 + 低波动双因子，10 年多赚约 <b>¥13 万</b>（vs 四指数均值）。波动更小、持有体验更好，是定投的最优选择。
+      </Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 24 }}>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>🛡 红利低波100 回撤最小</Text>
+      <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.7, marginTop: 12 }}>
+        100 只成分更分散，组合最大回撤仅 <b>-11.53%</b>，收益与红利低波接近，风险更平滑。
+      </Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#EEF2F7', borderRadius: 14, padding: 24 }}>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1D2939' }}>📈 年化 8.2%+ 意味着什么</Text>
+      <Text style={{ fontSize: 18, color: '#3B4A5C', lineHeight: 1.7, marginTop: 12 }}>
+        最低也跑赢银行理财与十年国债（约 1.7%），且含每年 4%+ 的现金分红现金流。
+      </Text>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 52, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>

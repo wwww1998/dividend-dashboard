@@ -1,0 +1,733 @@
+=== boot pid=19240 ts=2026-08-27 14:49:03.882 cwd=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版 argv=C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep-start.js --project D:/.workbuddy/2026-08-26-15-50-21/dividend/ppt/每月定投10年红利指数-原版 --filename 每月定投10年红利指数-原版.pptx ===
+[2026-08-27 14:49:03.874] [INFO ] [pid=19240] [start] invoked pid=19240 cwd=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版 daemonChild=no dev=no argv=[--project D:/.workbuddy/2026-08-26-15-50-21/dividend/ppt/每月定投10年红利指数-原版 --filename 每月定投10年红利指数-原版.pptx]
+[2026-08-27 14:49:03.916] [INFO ] [pid=19240] [start] spawning daemon projectDir=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版 filename=每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:03.960] [INFO ] [pid=19240] [start] daemon spawned childPid=31472; waiting started ipc
+=== boot pid=31472 ts=2026-08-27 14:49:07.429 cwd=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版 argv=C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep-start.js --project D:/.workbuddy/2026-08-26-15-50-21/dividend/ppt/每月定投10年红利指数-原版 --filename 每月定投10年红利指数-原版.pptx --__daemon-child ===
+[2026-08-27 14:49:07.421] [INFO ] [pid=31472] [start] invoked pid=31472 cwd=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版 daemonChild=yes dev=no argv=[--project D:/.workbuddy/2026-08-26-15-50-21/dividend/ppt/每月定投10年红利指数-原版 --filename 每月定投10年红利指数-原版.pptx --__daemon-child]
+[2026-08-27 14:49:07.434] [INFO ] [pid=31472] [start] daemon child runWorker ppid=19240
+[2026-08-27 14:49:07.438] [INFO ] [pid=31472] [worker] start projectDir=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版 filename=每月定投10年红利指数-原版.pptx version=5.4.4
+[2026-08-27 14:49:07.444] [INFO ] [pid=31472] [worker] init ok dirs=ready
+[2026-08-27 14:49:07.447] [INFO ] [pid=31472] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-08-27 14:49:07.450] [INFO ] [pid=31472] [worker] openFile start
+[2026-08-27 14:49:07.456] [INFO ] [pid=31472] [open-file] copy blank.pptx start src=C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\resources\pptx\blank.pptx dest=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:07.471] [INFO ] [pid=31472] [open-file] copy blank.pptx ok dest=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=12
+[2026-08-27 14:49:07.582] [ERROR] [pid=31472] [http] editorStatus http 404 url=http://127.0.0.1:39099/api/editor/status body={"code":-1,"message":"no editor open for file_path=D:\\.workbuddy\\2026-08-26-15-50-21\\dividend\\ppt\\每月定投10年红利指数-原版\\每月定投10年红利指数-原版.pptx"} ms=101
+[2026-08-27 14:49:07.585] [INFO ] [pid=31472] [open-file] open send url=http://127.0.0.1:39099/localapi/open filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:07.619] [INFO ] [pid=31472] [open-file] open ok fileId=5FEF1F60 fileType=slide filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=30
+[2026-08-27 14:49:07.623] [INFO ] [pid=31472] [worker] openFile ok fileId=5FEF1F60 filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:07.627] [INFO ] [pid=31472] [worker] previewUrl=http://127.0.0.1:39099/static/slide/pc.html?local_edit=1&client=sdk_local&localFilePath=D%3A%5C.workbuddy%5C2026-08-26-15-50-21%5Cdividend%5Cppt%5C%E6%AF%8F%E6%9C%88%E5%AE%9A%E6%8A%9510%E5%B9%B4%E7%BA%A2%E5%88%A9%E6%8C%87%E6%95%B0-%E5%8E%9F%E7%89%88%5C%E6%AF%8F%E6%9C%88%E5%AE%9A%E6%8A%9510%E5%B9%B4%E7%BA%A2%E5%88%A9%E6%8C%87%E6%95%B0-%E5%8E%9F%E7%89%88.pptx
+[2026-08-27 14:49:07.635] [INFO ] [pid=31472] [state] state.json not found, creating path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\.slidep\state.json filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:07.645] [INFO ] [pid=31472] [worker] commitEndpoint=http://127.0.0.1:39099/localapi/commitrevision
+[2026-08-27 14:49:07.667] [INFO ] [pid=31472] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA"}
+[2026-08-27 14:49:07.689] [INFO ] [pid=31472] [mcp] mcp:slide_get_info ok ms=16
+[2026-08-27 14:49:07.698] [INFO ] [pid=31472] [purge] purge start backendSlideCount=0
+[2026-08-27 14:49:07.702] [INFO ] [pid=31472] [purge] purge ok removed=0 ms=52
+[2026-08-27 14:49:07.712] [INFO ] [pid=31472] [worker] initial sync submitted pages=0
+[2026-08-27 14:49:07.717] [INFO ] [pid=31472] [sync] submit nextRound=1 dirty=<none> pendingDirtySize=0 merged=no
+[2026-08-27 14:49:07.721] [INFO ] [pid=31472] [sync] drain start round=1 pendingDirtySize=0
+[2026-08-27 14:49:07.730] [INFO ] [pid=31472] [sync] aligned round=1 attempt=1 size=0 desired=0 pendingDirtySize=0
+[2026-08-27 14:49:07.748] [INFO ] [pid=31472] [worker] ready fileId=5FEF1F60 backendUrl=http://127.0.0.1:39099 initialPages=0 ms=310
+[2026-08-27 14:49:07.752] [INFO ] [pid=19240] [start] daemon started childPid=31472 ms=3836
+[2026-08-27 14:49:07.752] [INFO ] [pid=31472] [sync] reconcile ok round=1 attempt=1 ms=27
+[2026-08-27 14:49:07.755] [INFO ] [pid=31472] [sync] drain end round=1 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=34
+[2026-08-27 14:49:07.776] [INFO ] [pid=31472] [watcher] ready dir=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides
+[2026-08-27 14:49:22.045] [INFO ] [pid=31472] [watcher] event=add file=slides\01_cover.slide
+[2026-08-27 14:49:22.555] [INFO ] [pid=31472] [watcher] flush batch dirty=[01_cover] size=1
+[2026-08-27 14:49:22.558] [INFO ] [pid=31472] [sync] submit nextRound=2 dirty=01_cover pendingDirtySize=1 merged=no
+[2026-08-27 14:49:22.561] [INFO ] [pid=31472] [sync] drain start round=2 pendingDirtySize=1
+[2026-08-27 14:49:22.565] [INFO ] [pid=31472] [sync] step=add round=2 attempt=1 pageId=01_cover index=0
+[2026-08-27 14:49:22.568] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=01_cover index=0
+[2026-08-27 14:49:22.572] [INFO ] [pid=31472] [render] start pageId=01_cover file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\01_cover.slide
+[2026-08-27 14:49:26.275] [INFO ] [pid=31472] [render] ok pageId=01_cover slides=1 ms=3703
+[2026-08-27 14:49:26.281] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:49:26.339] [INFO ] [pid=31472] [commit] commit send pageId=4f25c1 targetIndex=0 version=1 baseVersion=0 revisionBytes=17700
+[2026-08-27 14:49:26.371] [INFO ] [pid=31472] [commit] commit ok pageId=4f25c1 revisionId=45819fa2 ms=27
+[2026-08-27 14:49:26.383] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=01_cover slideId=4f25c1 index=0 version=1 baseVersion=0 revisionId=45819fa2 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=3814
+[2026-08-27 14:49:26.389] [INFO ] [pid=31472] [sync] aligned round=2 attempt=1 size=1 desired=1 pendingDirtySize=0
+[2026-08-27 14:49:26.391] [INFO ] [pid=31472] [sync] reconcile ok round=2 attempt=1 ms=3827
+[2026-08-27 14:49:26.394] [INFO ] [pid=31472] [backend-ops] save start file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:26.397] [INFO ] [pid=31472] [commit] save send filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:26.513] [INFO ] [pid=31472] [commit] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=112
+[2026-08-27 14:49:26.516] [INFO ] [pid=31472] [backend-ops] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=122
+[2026-08-27 14:49:26.519] [INFO ] [pid=31472] [sync] drain end round=2 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=3958
+[2026-08-27 14:49:32.755] [INFO ] [pid=31472] [watcher] event=add file=slides\02_what.slide
+[2026-08-27 14:49:33.268] [INFO ] [pid=31472] [watcher] flush batch dirty=[02_what] size=1
+[2026-08-27 14:49:33.272] [INFO ] [pid=31472] [sync] submit nextRound=3 dirty=02_what pendingDirtySize=1 merged=no
+[2026-08-27 14:49:33.274] [INFO ] [pid=31472] [sync] drain start round=3 pendingDirtySize=1
+[2026-08-27 14:49:33.278] [INFO ] [pid=31472] [sync] step=add round=3 attempt=1 pageId=02_what index=1
+[2026-08-27 14:49:33.282] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=02_what index=1
+[2026-08-27 14:49:33.285] [INFO ] [pid=31472] [render] start pageId=02_what file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\02_what.slide
+[2026-08-27 14:49:33.915] [INFO ] [pid=31472] [render] ok pageId=02_what slides=1 ms=630
+[2026-08-27 14:49:33.919] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:49:33.956] [INFO ] [pid=31472] [commit] commit send pageId=f2159a targetIndex=1 version=2 baseVersion=1 revisionBytes=20560
+[2026-08-27 14:49:33.982] [INFO ] [pid=31472] [commit] commit ok pageId=f2159a revisionId=40deac34 ms=20
+[2026-08-27 14:49:33.991] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=02_what slideId=f2159a index=1 version=2 baseVersion=1 revisionId=40deac34 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=709
+[2026-08-27 14:49:33.995] [INFO ] [pid=31472] [sync] aligned round=3 attempt=1 size=2 desired=2 pendingDirtySize=0
+[2026-08-27 14:49:33.997] [INFO ] [pid=31472] [sync] reconcile ok round=3 attempt=1 ms=720
+[2026-08-27 14:49:34.000] [INFO ] [pid=31472] [backend-ops] save start file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:34.002] [INFO ] [pid=31472] [commit] save send filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:34.119] [INFO ] [pid=31472] [commit] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=114
+[2026-08-27 14:49:34.122] [INFO ] [pid=31472] [backend-ops] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=123
+[2026-08-27 14:49:34.125] [INFO ] [pid=31472] [sync] drain end round=3 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=851
+[2026-08-27 14:49:41.938] [INFO ] [pid=31472] [watcher] event=add file=slides\03_why.slide
+[2026-08-27 14:49:42.454] [INFO ] [pid=31472] [watcher] flush batch dirty=[03_why] size=1
+[2026-08-27 14:49:42.458] [INFO ] [pid=31472] [sync] submit nextRound=4 dirty=03_why pendingDirtySize=1 merged=no
+[2026-08-27 14:49:42.461] [INFO ] [pid=31472] [sync] drain start round=4 pendingDirtySize=1
+[2026-08-27 14:49:42.464] [INFO ] [pid=31472] [sync] step=add round=4 attempt=1 pageId=03_why index=2
+[2026-08-27 14:49:42.467] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=03_why index=2
+[2026-08-27 14:49:42.470] [INFO ] [pid=31472] [render] start pageId=03_why file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\03_why.slide
+[2026-08-27 14:49:42.797] [INFO ] [pid=31472] [render] ok pageId=03_why slides=1 ms=327
+[2026-08-27 14:49:42.801] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:49:42.832] [INFO ] [pid=31472] [commit] commit send pageId=f566a4 targetIndex=2 version=3 baseVersion=2 revisionBytes=19804
+[2026-08-27 14:49:42.860] [INFO ] [pid=31472] [commit] commit ok pageId=f566a4 revisionId=9ffab600 ms=24
+[2026-08-27 14:49:42.897] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=03_why slideId=f566a4 index=2 version=3 baseVersion=2 revisionId=9ffab600 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=430
+[2026-08-27 14:49:42.902] [INFO ] [pid=31472] [sync] aligned round=4 attempt=1 size=3 desired=3 pendingDirtySize=0
+[2026-08-27 14:49:42.905] [INFO ] [pid=31472] [sync] reconcile ok round=4 attempt=1 ms=442
+[2026-08-27 14:49:42.907] [INFO ] [pid=31472] [backend-ops] save start file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:42.910] [INFO ] [pid=31472] [commit] save send filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:43.049] [INFO ] [pid=31472] [commit] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=136
+[2026-08-27 14:49:43.053] [INFO ] [pid=31472] [backend-ops] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=146
+[2026-08-27 14:49:43.055] [INFO ] [pid=31472] [sync] drain end round=4 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=594
+[2026-08-27 14:49:53.088] [INFO ] [pid=31472] [watcher] event=add file=slides\04_yield.slide
+[2026-08-27 14:49:53.607] [INFO ] [pid=31472] [watcher] flush batch dirty=[04_yield] size=1
+[2026-08-27 14:49:53.608] [INFO ] [pid=31472] [sync] submit nextRound=5 dirty=04_yield pendingDirtySize=1 merged=no
+[2026-08-27 14:49:53.609] [INFO ] [pid=31472] [sync] drain start round=5 pendingDirtySize=1
+[2026-08-27 14:49:53.611] [INFO ] [pid=31472] [sync] step=add round=5 attempt=1 pageId=04_yield index=3
+[2026-08-27 14:49:53.612] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=04_yield index=3
+[2026-08-27 14:49:53.614] [INFO ] [pid=31472] [render] start pageId=04_yield file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\04_yield.slide
+[2026-08-27 14:49:53.872] [INFO ] [pid=31472] [render] ok pageId=04_yield slides=1 ms=258
+[2026-08-27 14:49:53.875] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:49:53.893] [INFO ] [pid=31472] [commit] commit send pageId=d10802 targetIndex=3 version=4 baseVersion=3 revisionBytes=28968
+[2026-08-27 14:49:53.915] [INFO ] [pid=31472] [commit] commit ok pageId=d10802 revisionId=4312f39d ms=20
+[2026-08-27 14:49:53.922] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=04_yield slideId=d10802 index=3 version=4 baseVersion=3 revisionId=4312f39d code=0 images=[local=0 remote=0 cached=0 failed=0] ms=310
+[2026-08-27 14:49:53.926] [INFO ] [pid=31472] [sync] aligned round=5 attempt=1 size=4 desired=4 pendingDirtySize=0
+[2026-08-27 14:49:53.928] [INFO ] [pid=31472] [sync] reconcile ok round=5 attempt=1 ms=318
+[2026-08-27 14:49:53.930] [INFO ] [pid=31472] [backend-ops] save start file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:53.932] [INFO ] [pid=31472] [commit] save send filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:49:54.022] [INFO ] [pid=31472] [commit] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=89
+[2026-08-27 14:49:54.023] [INFO ] [pid=31472] [backend-ops] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=93
+[2026-08-27 14:49:54.024] [INFO ] [pid=31472] [sync] drain end round=5 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=415
+[2026-08-27 14:50:05.701] [INFO ] [pid=31472] [watcher] event=add file=slides\05_total.slide
+[2026-08-27 14:50:06.212] [INFO ] [pid=31472] [watcher] flush batch dirty=[05_total] size=1
+[2026-08-27 14:50:06.214] [INFO ] [pid=31472] [sync] submit nextRound=6 dirty=05_total pendingDirtySize=1 merged=no
+[2026-08-27 14:50:06.215] [INFO ] [pid=31472] [sync] drain start round=6 pendingDirtySize=1
+[2026-08-27 14:50:06.216] [INFO ] [pid=31472] [sync] step=add round=6 attempt=1 pageId=05_total index=4
+[2026-08-27 14:50:06.218] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=05_total index=4
+[2026-08-27 14:50:06.220] [INFO ] [pid=31472] [render] start pageId=05_total file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\05_total.slide
+[2026-08-27 14:50:06.539] [INFO ] [pid=31472] [render] ok pageId=05_total slides=1 ms=319
+[2026-08-27 14:50:06.573] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:06.596] [INFO ] [pid=31472] [commit] commit send pageId=35147f targetIndex=4 version=5 baseVersion=4 revisionBytes=39036
+[2026-08-27 14:50:06.618] [INFO ] [pid=31472] [commit] commit ok pageId=35147f revisionId=32ef30fd ms=20
+[2026-08-27 14:50:06.627] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=05_total slideId=35147f index=4 version=5 baseVersion=4 revisionId=32ef30fd code=0 images=[local=0 remote=0 cached=0 failed=0] ms=409
+[2026-08-27 14:50:06.629] [INFO ] [pid=31472] [sync] aligned round=6 attempt=1 size=5 desired=5 pendingDirtySize=0
+[2026-08-27 14:50:06.630] [INFO ] [pid=31472] [sync] reconcile ok round=6 attempt=1 ms=414
+[2026-08-27 14:50:06.631] [INFO ] [pid=31472] [backend-ops] save start file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:50:06.632] [INFO ] [pid=31472] [commit] save send filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:50:06.750] [INFO ] [pid=31472] [commit] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=117
+[2026-08-27 14:50:06.751] [INFO ] [pid=31472] [backend-ops] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=120
+[2026-08-27 14:50:06.752] [INFO ] [pid=31472] [sync] drain end round=6 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=537
+[2026-08-27 14:50:17.353] [INFO ] [pid=31472] [watcher] event=add file=slides\06_drawdown.slide
+[2026-08-27 14:50:17.866] [INFO ] [pid=31472] [watcher] flush batch dirty=[06_drawdown] size=1
+[2026-08-27 14:50:17.868] [INFO ] [pid=31472] [sync] submit nextRound=7 dirty=06_drawdown pendingDirtySize=1 merged=no
+[2026-08-27 14:50:17.869] [INFO ] [pid=31472] [sync] drain start round=7 pendingDirtySize=1
+[2026-08-27 14:50:17.871] [INFO ] [pid=31472] [sync] step=add round=7 attempt=1 pageId=06_drawdown index=5
+[2026-08-27 14:50:17.873] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=06_drawdown index=5
+[2026-08-27 14:50:17.875] [INFO ] [pid=31472] [render] start pageId=06_drawdown file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\06_drawdown.slide
+[2026-08-27 14:50:18.277] [INFO ] [pid=31472] [render] ok pageId=06_drawdown slides=1 ms=402
+[2026-08-27 14:50:18.279] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:18.299] [INFO ] [pid=31472] [commit] commit send pageId=bc7a6f targetIndex=5 version=6 baseVersion=5 revisionBytes=37632
+[2026-08-27 14:50:18.322] [INFO ] [pid=31472] [commit] commit ok pageId=bc7a6f revisionId=ae97401a ms=20
+[2026-08-27 14:50:18.327] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=06_drawdown slideId=bc7a6f index=5 version=6 baseVersion=5 revisionId=ae97401a code=0 images=[local=0 remote=0 cached=0 failed=0] ms=453
+[2026-08-27 14:50:18.329] [INFO ] [pid=31472] [sync] aligned round=7 attempt=1 size=6 desired=6 pendingDirtySize=0
+[2026-08-27 14:50:18.331] [INFO ] [pid=31472] [sync] reconcile ok round=7 attempt=1 ms=461
+[2026-08-27 14:50:18.333] [INFO ] [pid=31472] [backend-ops] save start file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:50:18.335] [INFO ] [pid=31472] [commit] save send filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:50:18.502] [INFO ] [pid=31472] [commit] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=164
+[2026-08-27 14:50:18.503] [INFO ] [pid=31472] [backend-ops] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=170
+[2026-08-27 14:50:18.505] [INFO ] [pid=31472] [sync] drain end round=7 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=636
+[2026-08-27 14:50:25.845] [INFO ] [pid=31472] [watcher] event=add file=slides\07_growth.slide
+[2026-08-27 14:50:26.349] [INFO ] [pid=31472] [watcher] flush batch dirty=[07_growth] size=1
+[2026-08-27 14:50:26.351] [INFO ] [pid=31472] [sync] submit nextRound=8 dirty=07_growth pendingDirtySize=1 merged=no
+[2026-08-27 14:50:26.352] [INFO ] [pid=31472] [sync] drain start round=8 pendingDirtySize=1
+[2026-08-27 14:50:26.354] [INFO ] [pid=31472] [sync] step=add round=8 attempt=1 pageId=07_growth index=6
+[2026-08-27 14:50:26.355] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:50:26.358] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:50:26.363] [WARN ] [pid=31472] [worker] reconcile failed (Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error); trying soft recovery (purge backend + sync version, no editor restart)
+[2026-08-27 14:50:26.370] [INFO ] [pid=31472] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA"}
+[2026-08-27 14:50:26.377] [INFO ] [pid=31472] [mcp] mcp:slide_get_info ok ms=6
+[2026-08-27 14:50:26.379] [INFO ] [pid=31472] [purge] purge start backendSlideCount=6
+[2026-08-27 14:50:26.388] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:26.396] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=7
+[2026-08-27 14:50:26.407] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:26.418] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=7
+[2026-08-27 14:50:26.428] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:26.442] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=11
+[2026-08-27 14:50:26.451] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:26.462] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=8
+[2026-08-27 14:50:26.472] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:26.482] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=8
+[2026-08-27 14:50:26.494] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:26.519] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=21
+[2026-08-27 14:50:26.522] [INFO ] [pid=31472] [purge] purge ok removed=6 ms=158
+[2026-08-27 14:50:26.535] [INFO ] [pid=31472] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA"}
+[2026-08-27 14:50:26.547] [INFO ] [pid=31472] [mcp] mcp:slide_get_info ok ms=9
+[2026-08-27 14:50:26.550] [INFO ] [pid=31472] [backend-ops] seedServerVersion from=6 to=12
+[2026-08-27 14:50:26.552] [INFO ] [pid=31472] [worker] recovery (soft) ok: purged=6 backendNow=0page(s) version=12, view reset; reconcile will redo full sync
+[2026-08-27 14:50:26.554] [INFO ] [pid=31472] [sync] reconcile FAIL but recovered via onReconcileFailure round=8 attempt=1 (recovery 1/2) ms=201; re-running reconcile
+[2026-08-27 14:50:26.556] [INFO ] [pid=31472] [sync] step=add round=8 attempt=2 pageId=01_cover index=0
+[2026-08-27 14:50:26.558] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=01_cover index=0
+[2026-08-27 14:50:26.561] [INFO ] [pid=31472] [render] start pageId=01_cover file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\01_cover.slide
+[2026-08-27 14:50:26.691] [INFO ] [pid=31472] [render] ok pageId=01_cover slides=1 ms=130
+[2026-08-27 14:50:26.693] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:26.701] [INFO ] [pid=31472] [commit] commit send pageId=253e56 targetIndex=0 version=7 baseVersion=12 revisionBytes=17700
+[2026-08-27 14:50:26.714] [INFO ] [pid=31472] [commit] commit ok pageId=253e56 revisionId=8bc84c4e ms=12
+[2026-08-27 14:50:26.745] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=01_cover slideId=253e56 index=0 version=7 baseVersion=12 revisionId=8bc84c4e code=0 images=[local=0 remote=0 cached=0 failed=0] ms=187
+[2026-08-27 14:50:26.746] [INFO ] [pid=31472] [sync] step=add round=8 attempt=2 pageId=02_what index=1
+[2026-08-27 14:50:26.747] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=02_what index=1
+[2026-08-27 14:50:26.749] [INFO ] [pid=31472] [render] start pageId=02_what file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\02_what.slide
+[2026-08-27 14:50:26.900] [INFO ] [pid=31472] [render] ok pageId=02_what slides=1 ms=151
+[2026-08-27 14:50:26.902] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:26.914] [INFO ] [pid=31472] [commit] commit send pageId=09c792 targetIndex=1 version=8 baseVersion=13 revisionBytes=20552
+[2026-08-27 14:50:26.928] [INFO ] [pid=31472] [commit] commit ok pageId=09c792 revisionId=9e46ebf5 ms=12
+[2026-08-27 14:50:26.935] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=02_what slideId=09c792 index=1 version=8 baseVersion=13 revisionId=9e46ebf5 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=188
+[2026-08-27 14:50:26.938] [INFO ] [pid=31472] [sync] step=add round=8 attempt=2 pageId=03_why index=2
+[2026-08-27 14:50:26.939] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=03_why index=2
+[2026-08-27 14:50:26.941] [INFO ] [pid=31472] [render] start pageId=03_why file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\03_why.slide
+[2026-08-27 14:50:27.050] [INFO ] [pid=31472] [render] ok pageId=03_why slides=1 ms=109
+[2026-08-27 14:50:27.052] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:27.061] [INFO ] [pid=31472] [commit] commit send pageId=529b46 targetIndex=2 version=9 baseVersion=14 revisionBytes=19784
+[2026-08-27 14:50:27.074] [INFO ] [pid=31472] [commit] commit ok pageId=529b46 revisionId=efb14a7f ms=12
+[2026-08-27 14:50:27.078] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=03_why slideId=529b46 index=2 version=9 baseVersion=14 revisionId=efb14a7f code=0 images=[local=0 remote=0 cached=0 failed=0] ms=139
+[2026-08-27 14:50:27.080] [INFO ] [pid=31472] [sync] step=add round=8 attempt=2 pageId=04_yield index=3
+[2026-08-27 14:50:27.081] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=04_yield index=3
+[2026-08-27 14:50:27.082] [INFO ] [pid=31472] [render] start pageId=04_yield file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\04_yield.slide
+[2026-08-27 14:50:27.201] [INFO ] [pid=31472] [render] ok pageId=04_yield slides=1 ms=119
+[2026-08-27 14:50:27.203] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:27.213] [INFO ] [pid=31472] [commit] commit send pageId=1f3058 targetIndex=3 version=10 baseVersion=15 revisionBytes=28968
+[2026-08-27 14:50:27.257] [INFO ] [pid=31472] [commit] commit ok pageId=1f3058 revisionId=e09fdcfb ms=15
+[2026-08-27 14:50:27.261] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=04_yield slideId=1f3058 index=3 version=10 baseVersion=15 revisionId=e09fdcfb code=0 images=[local=0 remote=0 cached=0 failed=0] ms=180
+[2026-08-27 14:50:27.263] [INFO ] [pid=31472] [sync] step=add round=8 attempt=2 pageId=05_total index=4
+[2026-08-27 14:50:27.264] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=05_total index=4
+[2026-08-27 14:50:27.265] [INFO ] [pid=31472] [render] start pageId=05_total file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\05_total.slide
+[2026-08-27 14:50:27.444] [INFO ] [pid=31472] [render] ok pageId=05_total slides=1 ms=179
+[2026-08-27 14:50:27.446] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:27.456] [INFO ] [pid=31472] [commit] commit send pageId=61b748 targetIndex=4 version=11 baseVersion=16 revisionBytes=39036
+[2026-08-27 14:50:27.475] [INFO ] [pid=31472] [commit] commit ok pageId=61b748 revisionId=9c6a7dca ms=16
+[2026-08-27 14:50:27.478] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=05_total slideId=61b748 index=4 version=11 baseVersion=16 revisionId=9c6a7dca code=0 images=[local=0 remote=0 cached=0 failed=0] ms=214
+[2026-08-27 14:50:27.480] [INFO ] [pid=31472] [sync] step=add round=8 attempt=2 pageId=06_drawdown index=5
+[2026-08-27 14:50:27.481] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=06_drawdown index=5
+[2026-08-27 14:50:27.483] [INFO ] [pid=31472] [render] start pageId=06_drawdown file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\06_drawdown.slide
+[2026-08-27 14:50:27.740] [INFO ] [pid=31472] [render] ok pageId=06_drawdown slides=1 ms=257
+[2026-08-27 14:50:27.741] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:27.753] [INFO ] [pid=31472] [commit] commit send pageId=e9a39e targetIndex=5 version=12 baseVersion=17 revisionBytes=37632
+[2026-08-27 14:50:27.775] [INFO ] [pid=31472] [commit] commit ok pageId=e9a39e revisionId=c135198f ms=17
+[2026-08-27 14:50:27.779] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=06_drawdown slideId=e9a39e index=5 version=12 baseVersion=17 revisionId=c135198f code=0 images=[local=0 remote=0 cached=0 failed=0] ms=298
+[2026-08-27 14:50:27.781] [INFO ] [pid=31472] [sync] step=add round=8 attempt=2 pageId=07_growth index=6
+[2026-08-27 14:50:27.784] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:50:27.786] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:50:27.789] [WARN ] [pid=31472] [worker] reconcile failed (Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error); trying soft recovery (purge backend + sync version, no editor restart)
+[2026-08-27 14:50:27.797] [INFO ] [pid=31472] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA"}
+[2026-08-27 14:50:27.805] [INFO ] [pid=31472] [mcp] mcp:slide_get_info ok ms=5
+[2026-08-27 14:50:27.806] [INFO ] [pid=31472] [purge] purge start backendSlideCount=6
+[2026-08-27 14:50:27.813] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:27.821] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=6
+[2026-08-27 14:50:27.828] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:27.838] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=6
+[2026-08-27 14:50:27.844] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:27.855] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=9
+[2026-08-27 14:50:27.864] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:27.873] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=7
+[2026-08-27 14:50:27.880] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:27.887] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=5
+[2026-08-27 14:50:27.894] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":0}
+[2026-08-27 14:50:27.905] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=8
+[2026-08-27 14:50:27.906] [INFO ] [pid=31472] [purge] purge ok removed=6 ms=115
+[2026-08-27 14:50:27.913] [INFO ] [pid=31472] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA"}
+[2026-08-27 14:50:27.919] [INFO ] [pid=31472] [mcp] mcp:slide_get_info ok ms=5
+[2026-08-27 14:50:27.921] [INFO ] [pid=31472] [backend-ops] seedServerVersion from=18 to=24
+[2026-08-27 14:50:27.922] [INFO ] [pid=31472] [worker] recovery (soft) ok: purged=6 backendNow=0page(s) version=24, view reset; reconcile will redo full sync
+[2026-08-27 14:50:27.923] [INFO ] [pid=31472] [sync] reconcile FAIL but recovered via onReconcileFailure round=8 attempt=2 (recovery 2/2) ms=1368; re-running reconcile
+[2026-08-27 14:50:27.925] [INFO ] [pid=31472] [sync] step=add round=8 attempt=3 pageId=01_cover index=0
+[2026-08-27 14:50:27.926] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=01_cover index=0
+[2026-08-27 14:50:27.927] [INFO ] [pid=31472] [render] start pageId=01_cover file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\01_cover.slide
+[2026-08-27 14:50:27.992] [INFO ] [pid=31472] [render] ok pageId=01_cover slides=1 ms=65
+[2026-08-27 14:50:27.994] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:28.006] [INFO ] [pid=31472] [commit] commit send pageId=543c01 targetIndex=0 version=13 baseVersion=24 revisionBytes=17700
+[2026-08-27 14:50:28.020] [INFO ] [pid=31472] [commit] commit ok pageId=543c01 revisionId=f7f662ea ms=12
+[2026-08-27 14:50:28.025] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=01_cover slideId=543c01 index=0 version=13 baseVersion=24 revisionId=f7f662ea code=0 images=[local=0 remote=0 cached=0 failed=0] ms=99
+[2026-08-27 14:50:28.027] [INFO ] [pid=31472] [sync] step=add round=8 attempt=3 pageId=02_what index=1
+[2026-08-27 14:50:28.029] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=02_what index=1
+[2026-08-27 14:50:28.032] [INFO ] [pid=31472] [render] start pageId=02_what file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\02_what.slide
+[2026-08-27 14:50:28.159] [INFO ] [pid=31472] [render] ok pageId=02_what slides=1 ms=127
+[2026-08-27 14:50:28.160] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:28.171] [INFO ] [pid=31472] [commit] commit send pageId=3054d2 targetIndex=1 version=14 baseVersion=25 revisionBytes=20564
+[2026-08-27 14:50:28.185] [INFO ] [pid=31472] [commit] commit ok pageId=3054d2 revisionId=efe9deb8 ms=12
+[2026-08-27 14:50:28.190] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=02_what slideId=3054d2 index=1 version=14 baseVersion=25 revisionId=efe9deb8 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=161
+[2026-08-27 14:50:28.192] [INFO ] [pid=31472] [sync] step=add round=8 attempt=3 pageId=03_why index=2
+[2026-08-27 14:50:28.193] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=03_why index=2
+[2026-08-27 14:50:28.194] [INFO ] [pid=31472] [render] start pageId=03_why file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\03_why.slide
+[2026-08-27 14:50:28.304] [INFO ] [pid=31472] [render] ok pageId=03_why slides=1 ms=110
+[2026-08-27 14:50:28.307] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:28.314] [INFO ] [pid=31472] [commit] commit send pageId=0dd574 targetIndex=2 version=15 baseVersion=26 revisionBytes=19808
+[2026-08-27 14:50:28.329] [INFO ] [pid=31472] [commit] commit ok pageId=0dd574 revisionId=02a5db9b ms=14
+[2026-08-27 14:50:28.333] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=03_why slideId=0dd574 index=2 version=15 baseVersion=26 revisionId=02a5db9b code=0 images=[local=0 remote=0 cached=0 failed=0] ms=140
+[2026-08-27 14:50:28.336] [INFO ] [pid=31472] [sync] step=add round=8 attempt=3 pageId=04_yield index=3
+[2026-08-27 14:50:28.337] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=04_yield index=3
+[2026-08-27 14:50:28.339] [INFO ] [pid=31472] [render] start pageId=04_yield file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\04_yield.slide
+[2026-08-27 14:50:28.448] [INFO ] [pid=31472] [render] ok pageId=04_yield slides=1 ms=109
+[2026-08-27 14:50:28.450] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:28.459] [INFO ] [pid=31472] [commit] commit send pageId=1211da targetIndex=3 version=16 baseVersion=27 revisionBytes=28980
+[2026-08-27 14:50:28.474] [INFO ] [pid=31472] [commit] commit ok pageId=1211da revisionId=5353c94e ms=13
+[2026-08-27 14:50:28.478] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=04_yield slideId=1211da index=3 version=16 baseVersion=27 revisionId=5353c94e code=0 images=[local=0 remote=0 cached=0 failed=0] ms=141
+[2026-08-27 14:50:28.480] [INFO ] [pid=31472] [sync] step=add round=8 attempt=3 pageId=05_total index=4
+[2026-08-27 14:50:28.481] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=05_total index=4
+[2026-08-27 14:50:28.482] [INFO ] [pid=31472] [render] start pageId=05_total file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\05_total.slide
+[2026-08-27 14:50:28.611] [INFO ] [pid=31472] [render] ok pageId=05_total slides=1 ms=129
+[2026-08-27 14:50:28.616] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:28.631] [INFO ] [pid=31472] [commit] commit send pageId=40b2ef targetIndex=4 version=17 baseVersion=28 revisionBytes=39020
+[2026-08-27 14:50:28.650] [INFO ] [pid=31472] [commit] commit ok pageId=40b2ef revisionId=e10171eb ms=16
+[2026-08-27 14:50:28.655] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=05_total slideId=40b2ef index=4 version=17 baseVersion=28 revisionId=e10171eb code=0 images=[local=0 remote=0 cached=0 failed=0] ms=174
+[2026-08-27 14:50:28.659] [INFO ] [pid=31472] [sync] step=add round=8 attempt=3 pageId=06_drawdown index=5
+[2026-08-27 14:50:28.660] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=06_drawdown index=5
+[2026-08-27 14:50:28.662] [INFO ] [pid=31472] [render] start pageId=06_drawdown file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\06_drawdown.slide
+[2026-08-27 14:50:28.838] [INFO ] [pid=31472] [render] ok pageId=06_drawdown slides=1 ms=176
+[2026-08-27 14:50:28.840] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:50:28.849] [INFO ] [pid=31472] [commit] commit send pageId=3bf78c targetIndex=5 version=18 baseVersion=29 revisionBytes=37624
+[2026-08-27 14:50:28.868] [INFO ] [pid=31472] [commit] commit ok pageId=3bf78c revisionId=bf496499 ms=17
+[2026-08-27 14:50:28.876] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=06_drawdown slideId=3bf78c index=5 version=18 baseVersion=29 revisionId=bf496499 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=216
+[2026-08-27 14:50:28.878] [INFO ] [pid=31472] [sync] step=add round=8 attempt=3 pageId=07_growth index=6
+[2026-08-27 14:50:28.879] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:50:28.880] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:50:28.882] [WARN ] [pid=31472] [sync] recovery budget exhausted round=8 (2/2); falling back to failure throttle
+[2026-08-27 14:50:28.883] [ERROR] [pid=31472] [sync] reconcile FAIL round=8 attempt=3 (1/5) ms=959 Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error
+    at Compiler.parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:202:46)
+    at parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:397:21)
+    at CE.parse (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:12894)
+    at vE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:13356)
+    at Gd.validateAndTransform (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:266)
+    at Gd.eval (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:14824)
+    at LE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:3280)
+    at CV (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:12798)
+    at mh.addSlideAt (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:17549)
+    at L.reconcile (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:24371)
+[2026-08-27 14:50:28.932] [INFO ] [pid=31472] [sync] backoff round=8 5000ms before next reconcile retry
+[2026-08-27 14:50:33.938] [INFO ] [pid=31472] [sync] step=add round=8 attempt=4 pageId=07_growth index=6
+[2026-08-27 14:50:33.940] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:50:33.942] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:50:33.945] [WARN ] [pid=31472] [sync] recovery budget exhausted round=8 (2/2); falling back to failure throttle
+[2026-08-27 14:50:33.947] [ERROR] [pid=31472] [sync] reconcile FAIL round=8 attempt=4 (2/5) ms=9 Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error
+    at Compiler.parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:202:46)
+    at parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:397:21)
+    at CE.parse (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:12894)
+    at vE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:13356)
+    at Gd.validateAndTransform (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:266)
+    at Gd.eval (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:14824)
+    at LE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:3280)
+    at CV (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:12798)
+    at mh.addSlideAt (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:17549)
+    at L.reconcile (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:24371)
+[2026-08-27 14:50:33.948] [INFO ] [pid=31472] [sync] backoff round=8 5000ms before next reconcile retry
+[2026-08-27 14:50:38.956] [INFO ] [pid=31472] [sync] step=add round=8 attempt=5 pageId=07_growth index=6
+[2026-08-27 14:50:38.958] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:50:38.961] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:50:38.964] [WARN ] [pid=31472] [sync] recovery budget exhausted round=8 (2/2); falling back to failure throttle
+[2026-08-27 14:50:38.965] [ERROR] [pid=31472] [sync] reconcile FAIL round=8 attempt=5 (3/5) ms=10 Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error
+    at Compiler.parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:202:46)
+    at parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:397:21)
+    at CE.parse (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:12894)
+    at vE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:13356)
+    at Gd.validateAndTransform (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:266)
+    at Gd.eval (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:14824)
+    at LE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:3280)
+    at CV (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:12798)
+    at mh.addSlideAt (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:17549)
+    at L.reconcile (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:24371)
+[2026-08-27 14:50:38.966] [INFO ] [pid=31472] [sync] backoff round=8 5000ms before next reconcile retry
+[2026-08-27 14:50:39.400] [INFO ] [pid=31472] [watcher] event=add file=slides\08_annual.slide
+[2026-08-27 14:50:39.909] [INFO ] [pid=31472] [watcher] flush batch dirty=[08_annual] size=1
+[2026-08-27 14:50:39.911] [INFO ] [pid=31472] [sync] submit round=8 dirty=08_annual pendingDirtySize=2 merged=yes
+[2026-08-27 14:50:43.969] [INFO ] [pid=31472] [sync] step=add round=8 attempt=6 pageId=07_growth index=6
+[2026-08-27 14:50:43.972] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:50:43.973] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:50:43.975] [WARN ] [pid=31472] [sync] recovery budget exhausted round=8 (2/2); falling back to failure throttle
+[2026-08-27 14:50:43.976] [ERROR] [pid=31472] [sync] reconcile FAIL round=8 attempt=6 (4/5) ms=8 Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error
+    at Compiler.parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:202:46)
+    at parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:397:21)
+    at CE.parse (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:12894)
+    at vE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:13356)
+    at Gd.validateAndTransform (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:266)
+    at Gd.eval (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:14824)
+    at LE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:3280)
+    at CV (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:12798)
+    at mh.addSlideAt (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:17549)
+    at L.reconcile (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:24371)
+[2026-08-27 14:50:43.978] [INFO ] [pid=31472] [sync] backoff round=8 5000ms before next reconcile retry
+[2026-08-27 14:50:48.995] [INFO ] [pid=31472] [sync] step=add round=8 attempt=7 pageId=07_growth index=6
+[2026-08-27 14:50:48.996] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:50:48.998] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:50:49.001] [WARN ] [pid=31472] [sync] recovery budget exhausted round=8 (2/2); falling back to failure throttle
+[2026-08-27 14:50:49.004] [ERROR] [pid=31472] [sync] reconcile FAIL round=8 attempt=7 (5/5) ms=10 Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error
+    at Compiler.parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:202:46)
+    at parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:397:21)
+    at CE.parse (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:12894)
+    at vE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:13356)
+    at Gd.validateAndTransform (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:266)
+    at Gd.eval (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:14824)
+    at LE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:3280)
+    at CV (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:12798)
+    at mh.addSlideAt (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:17549)
+    at L.reconcile (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:24371)
+[2026-08-27 14:50:49.005] [WARN ] [pid=31472] [sync] giving up auto-retry round=8 pendingDirtySize=2 next external submit will resume
+[2026-08-27 14:50:49.006] [WARN ] [pid=31472] [sync] skip save round=8: residual failure state (consecutiveFailures=5 pendingDirtySize=2); defer save until next clean reconcile
+[2026-08-27 14:50:49.007] [INFO ] [pid=31472] [sync] drain end round=8 reconciles=7 mergedSubmits=2 pendingDirtySize=2 ms=22655
+[2026-08-27 14:50:51.932] [INFO ] [pid=31472] [watcher] event=add file=slides\09_yoy.slide
+[2026-08-27 14:50:52.435] [INFO ] [pid=31472] [watcher] flush batch dirty=[09_yoy] size=1
+[2026-08-27 14:50:52.438] [INFO ] [pid=31472] [sync] submit nextRound=9 dirty=09_yoy pendingDirtySize=3 merged=no
+[2026-08-27 14:50:52.440] [INFO ] [pid=31472] [sync] drain start round=9 pendingDirtySize=3
+[2026-08-27 14:50:52.442] [INFO ] [pid=31472] [sync] step=add round=9 attempt=1 pageId=07_growth index=6
+[2026-08-27 14:50:52.443] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:50:52.445] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:50:52.447] [WARN ] [pid=31472] [sync] recovery budget exhausted round=9 (2/2); falling back to failure throttle
+[2026-08-27 14:50:52.448] [ERROR] [pid=31472] [sync] reconcile FAIL round=9 attempt=1 (6/5) ms=6 Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error
+    at Compiler.parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:202:46)
+    at parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:397:21)
+    at CE.parse (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:12894)
+    at vE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:13356)
+    at Gd.validateAndTransform (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:266)
+    at Gd.eval (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:14824)
+    at LE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:3280)
+    at CV (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:12798)
+    at mh.addSlideAt (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:17549)
+    at L.reconcile (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:24371)
+[2026-08-27 14:50:52.449] [WARN ] [pid=31472] [sync] giving up auto-retry round=9 pendingDirtySize=3 next external submit will resume
+[2026-08-27 14:50:52.450] [WARN ] [pid=31472] [sync] skip save round=9: residual failure state (consecutiveFailures=6 pendingDirtySize=3); defer save until next clean reconcile
+[2026-08-27 14:50:52.451] [INFO ] [pid=31472] [sync] drain end round=9 reconciles=1 mergedSubmits=1 pendingDirtySize=3 ms=11
+[2026-08-27 14:51:04.849] [INFO ] [pid=31472] [watcher] event=add file=slides\10_pick.slide
+[2026-08-27 14:51:05.365] [INFO ] [pid=31472] [watcher] flush batch dirty=[10_pick] size=1
+[2026-08-27 14:51:05.368] [INFO ] [pid=31472] [sync] submit nextRound=10 dirty=10_pick pendingDirtySize=4 merged=no
+[2026-08-27 14:51:05.370] [INFO ] [pid=31472] [sync] drain start round=10 pendingDirtySize=4
+[2026-08-27 14:51:05.374] [INFO ] [pid=31472] [sync] step=add round=10 attempt=1 pageId=07_growth index=6
+[2026-08-27 14:51:05.377] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:51:05.381] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:51:05.386] [WARN ] [pid=31472] [sync] recovery budget exhausted round=10 (2/2); falling back to failure throttle
+[2026-08-27 14:51:05.390] [ERROR] [pid=31472] [sync] reconcile FAIL round=10 attempt=1 (7/5) ms=17 Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error
+    at Compiler.parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:202:46)
+    at parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:397:21)
+    at CE.parse (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:12894)
+    at vE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:13356)
+    at Gd.validateAndTransform (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:266)
+    at Gd.eval (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:14824)
+    at LE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:3280)
+    at CV (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:12798)
+    at mh.addSlideAt (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:17549)
+    at L.reconcile (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:24371)
+[2026-08-27 14:51:05.393] [WARN ] [pid=31472] [sync] giving up auto-retry round=10 pendingDirtySize=4 next external submit will resume
+[2026-08-27 14:51:05.396] [WARN ] [pid=31472] [sync] skip save round=10: residual failure state (consecutiveFailures=7 pendingDirtySize=4); defer save until next clean reconcile
+[2026-08-27 14:51:05.398] [INFO ] [pid=31472] [sync] drain end round=10 reconciles=1 mergedSubmits=1 pendingDirtySize=4 ms=28
+[2026-08-27 14:51:14.543] [INFO ] [pid=31472] [watcher] event=add file=slides\11_foot.slide
+[2026-08-27 14:51:15.050] [INFO ] [pid=31472] [watcher] flush batch dirty=[11_foot] size=1
+[2026-08-27 14:51:15.053] [INFO ] [pid=31472] [sync] submit nextRound=11 dirty=11_foot pendingDirtySize=5 merged=no
+[2026-08-27 14:51:15.056] [INFO ] [pid=31472] [sync] drain start round=11 pendingDirtySize=5
+[2026-08-27 14:51:15.060] [INFO ] [pid=31472] [sync] step=add round=11 attempt=1 pageId=07_growth index=6
+[2026-08-27 14:51:15.063] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:51:15.066] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:51:15.071] [WARN ] [pid=31472] [sync] recovery budget exhausted round=11 (2/2); falling back to failure throttle
+[2026-08-27 14:51:15.074] [ERROR] [pid=31472] [sync] reconcile FAIL round=11 attempt=1 (8/5) ms=15 Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error
+    at Compiler.parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:202:46)
+    at parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:397:21)
+    at CE.parse (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:12894)
+    at vE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:13356)
+    at Gd.validateAndTransform (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:266)
+    at Gd.eval (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:14824)
+    at LE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:3280)
+    at CV (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:12798)
+    at mh.addSlideAt (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:17549)
+    at L.reconcile (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:24371)
+[2026-08-27 14:51:15.077] [WARN ] [pid=31472] [sync] giving up auto-retry round=11 pendingDirtySize=5 next external submit will resume
+[2026-08-27 14:51:15.079] [WARN ] [pid=31472] [sync] skip save round=11: residual failure state (consecutiveFailures=8 pendingDirtySize=5); defer save until next clean reconcile
+[2026-08-27 14:51:15.081] [INFO ] [pid=31472] [sync] drain end round=11 reconciles=1 mergedSubmits=1 pendingDirtySize=5 ms=25
+[2026-08-27 14:51:20.785] [INFO ] [pid=31472] [watcher] event=add file=slides\12_disclaimer.slide
+[2026-08-27 14:51:21.295] [INFO ] [pid=31472] [watcher] flush batch dirty=[12_disclaimer] size=1
+[2026-08-27 14:51:21.298] [INFO ] [pid=31472] [sync] submit nextRound=12 dirty=12_disclaimer pendingDirtySize=6 merged=no
+[2026-08-27 14:51:21.300] [INFO ] [pid=31472] [sync] drain start round=12 pendingDirtySize=6
+[2026-08-27 14:51:21.304] [INFO ] [pid=31472] [sync] step=add round=12 attempt=1 pageId=07_growth index=6
+[2026-08-27 14:51:21.307] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:51:21.310] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:51:21.314] [WARN ] [pid=31472] [sync] recovery budget exhausted round=12 (2/2); falling back to failure throttle
+[2026-08-27 14:51:21.317] [ERROR] [pid=31472] [sync] reconcile FAIL round=12 attempt=1 (9/5) ms=14 Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+    ,-[15:1]
+ 12 |     <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+ 13 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 14 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+ 15 |         <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值 > 投入</Text>
+    :                                                                                                                ^
+ 16 |       </Box>
+ 17 |       <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+ 18 |         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+    `----
+
+
+Caused by:
+    Syntax Error
+    at Compiler.parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:202:46)
+    at parseSync (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\node_modules\@swc\core\index.js:397:21)
+    at CE.parse (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:12894)
+    at vE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:13356)
+    at Gd.validateAndTransform (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:266)
+    at Gd.eval (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5938:14824)
+    at LE (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5945:3280)
+    at CV (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:12798)
+    at mh.addSlideAt (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:17549)
+    at L.reconcile (C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep.js:5993:24371)
+[2026-08-27 14:51:21.319] [WARN ] [pid=31472] [sync] giving up auto-retry round=12 pendingDirtySize=6 next external submit will resume
+[2026-08-27 14:51:21.321] [WARN ] [pid=31472] [sync] skip save round=12: residual failure state (consecutiveFailures=9 pendingDirtySize=6); defer save until next clean reconcile
+[2026-08-27 14:51:21.324] [INFO ] [pid=31472] [sync] drain end round=12 reconciles=1 mergedSubmits=1 pendingDirtySize=6 ms=24
+=== boot pid=10732 ts=2026-08-27 14:51:32.894 cwd=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版 argv=C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep-validate.js --project D:/.workbuddy/2026-08-26-15-50-21/dividend/ppt/每月定投10年红利指数-原版 --all ===
+[2026-08-27 14:51:32.890] [INFO ] [pid=10732] [validate] --all mode: found 12 files in D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides
+[2026-08-27 14:51:32.897] [INFO ] [pid=10732] [validate] batch start files=12 checkOverflow=true
+[2026-08-27 14:51:40.802] [INFO ] [pid=10732] [validate] batch done total=12 passed=8 failed=4 ms=7913
+[2026-08-27 14:51:50.066] [INFO ] [pid=31472] [watcher] event=change file=slides\02_what.slide
+[2026-08-27 14:51:50.068] [INFO ] [pid=31472] [watcher] event=change file=slides\07_growth.slide
+[2026-08-27 14:51:50.082] [INFO ] [pid=31472] [watcher] event=change file=slides\03_why.slide
+[2026-08-27 14:51:50.085] [INFO ] [pid=31472] [watcher] event=change file=slides\04_yield.slide
+[2026-08-27 14:51:50.594] [INFO ] [pid=31472] [watcher] flush batch dirty=[02_what,07_growth,03_why,04_yield] size=4
+[2026-08-27 14:51:50.597] [INFO ] [pid=31472] [sync] submit nextRound=13 dirty=02_what,07_growth,03_why,04_yield pendingDirtySize=9 merged=no
+[2026-08-27 14:51:50.599] [INFO ] [pid=31472] [sync] drain start round=13 pendingDirtySize=9
+[2026-08-27 14:51:50.602] [INFO ] [pid=31472] [sync] step=remove-dirty round=13 attempt=1 pageId=02_what index=1
+[2026-08-27 14:51:50.604] [INFO ] [pid=31472] [backend-ops] removeSlideAt start index=1
+[2026-08-27 14:51:50.619] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":1}
+[2026-08-27 14:51:50.630] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=8
+[2026-08-27 14:51:50.633] [INFO ] [pid=31472] [backend-ops] removeSlideAt ok index=1 serverVersion=31 ms=29
+[2026-08-27 14:51:50.637] [INFO ] [pid=31472] [sync] step=remove-dirty round=13 attempt=1 pageId=03_why index=1
+[2026-08-27 14:51:50.639] [INFO ] [pid=31472] [backend-ops] removeSlideAt start index=1
+[2026-08-27 14:51:50.649] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":1}
+[2026-08-27 14:51:50.660] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=8
+[2026-08-27 14:51:50.663] [INFO ] [pid=31472] [backend-ops] removeSlideAt ok index=1 serverVersion=32 ms=24
+[2026-08-27 14:51:50.666] [INFO ] [pid=31472] [sync] step=remove-dirty round=13 attempt=1 pageId=04_yield index=1
+[2026-08-27 14:51:50.669] [INFO ] [pid=31472] [backend-ops] removeSlideAt start index=1
+[2026-08-27 14:51:50.680] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"5FEF1F60-8073-47C9-B981-0EC88FFF22AA","page_index":1}
+[2026-08-27 14:51:50.692] [INFO ] [pid=31472] [mcp] mcp:slide_remove_slide ok ms=9
+[2026-08-27 14:51:50.695] [INFO ] [pid=31472] [backend-ops] removeSlideAt ok index=1 serverVersion=33 ms=26
+[2026-08-27 14:51:50.698] [INFO ] [pid=31472] [sync] step=add round=13 attempt=1 pageId=02_what index=1
+[2026-08-27 14:51:50.701] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=02_what index=1
+[2026-08-27 14:51:50.703] [INFO ] [pid=31472] [render] start pageId=02_what file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\02_what.slide
+[2026-08-27 14:51:51.156] [INFO ] [pid=31472] [render] ok pageId=02_what slides=1 ms=453
+[2026-08-27 14:51:51.159] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:51:51.195] [INFO ] [pid=31472] [commit] commit send pageId=f928a3 targetIndex=1 version=19 baseVersion=33 revisionBytes=20632
+[2026-08-27 14:51:51.216] [INFO ] [pid=31472] [commit] commit ok pageId=f928a3 revisionId=5373a689 ms=18
+[2026-08-27 14:51:51.225] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=02_what slideId=f928a3 index=1 version=19 baseVersion=33 revisionId=5373a689 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=524
+[2026-08-27 14:51:51.228] [INFO ] [pid=31472] [sync] step=add round=13 attempt=1 pageId=03_why index=2
+[2026-08-27 14:51:51.230] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=03_why index=2
+[2026-08-27 14:51:51.233] [INFO ] [pid=31472] [render] start pageId=03_why file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\03_why.slide
+[2026-08-27 14:51:51.452] [INFO ] [pid=31472] [render] ok pageId=03_why slides=1 ms=219
+[2026-08-27 14:51:51.455] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:51:51.472] [INFO ] [pid=31472] [commit] commit send pageId=9e9b5f targetIndex=2 version=20 baseVersion=34 revisionBytes=19860
+[2026-08-27 14:51:51.495] [INFO ] [pid=31472] [commit] commit ok pageId=9e9b5f revisionId=57d64896 ms=19
+[2026-08-27 14:51:51.504] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=03_why slideId=9e9b5f index=2 version=20 baseVersion=34 revisionId=57d64896 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=274
+[2026-08-27 14:51:51.508] [INFO ] [pid=31472] [sync] step=add round=13 attempt=1 pageId=04_yield index=3
+[2026-08-27 14:51:51.511] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=04_yield index=3
+[2026-08-27 14:51:51.514] [INFO ] [pid=31472] [render] start pageId=04_yield file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\04_yield.slide
+[2026-08-27 14:51:51.795] [INFO ] [pid=31472] [render] ok pageId=04_yield slides=1 ms=281
+[2026-08-27 14:51:51.798] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:51:51.822] [INFO ] [pid=31472] [commit] commit send pageId=05e2b2 targetIndex=3 version=21 baseVersion=35 revisionBytes=29036
+[2026-08-27 14:51:51.847] [INFO ] [pid=31472] [commit] commit ok pageId=05e2b2 revisionId=f00fb6c9 ms=22
+[2026-08-27 14:51:51.857] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=04_yield slideId=05e2b2 index=3 version=21 baseVersion=35 revisionId=f00fb6c9 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=347
+[2026-08-27 14:51:51.860] [INFO ] [pid=31472] [sync] step=add round=13 attempt=1 pageId=07_growth index=6
+[2026-08-27 14:51:51.862] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=07_growth index=6
+[2026-08-27 14:51:51.865] [INFO ] [pid=31472] [render] start pageId=07_growth file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\07_growth.slide
+[2026-08-27 14:51:52.050] [INFO ] [pid=31472] [render] ok pageId=07_growth slides=1 ms=185
+[2026-08-27 14:51:52.053] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:51:52.068] [INFO ] [pid=31472] [commit] commit send pageId=d0daab targetIndex=6 version=22 baseVersion=36 revisionBytes=16864
+[2026-08-27 14:51:52.089] [INFO ] [pid=31472] [commit] commit ok pageId=d0daab revisionId=d6509792 ms=17
+[2026-08-27 14:51:52.097] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=07_growth slideId=d0daab index=6 version=22 baseVersion=36 revisionId=d6509792 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=235
+[2026-08-27 14:51:52.100] [INFO ] [pid=31472] [sync] step=add round=13 attempt=1 pageId=08_annual index=7
+[2026-08-27 14:51:52.102] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=08_annual index=7
+[2026-08-27 14:51:52.106] [INFO ] [pid=31472] [render] start pageId=08_annual file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\08_annual.slide
+[2026-08-27 14:51:52.643] [INFO ] [pid=31472] [render] ok pageId=08_annual slides=1 ms=537
+[2026-08-27 14:51:52.646] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:51:52.679] [INFO ] [pid=31472] [commit] commit send pageId=5d9e51 targetIndex=7 version=23 baseVersion=37 revisionBytes=54300
+[2026-08-27 14:51:52.723] [INFO ] [pid=31472] [commit] commit ok pageId=5d9e51 revisionId=49a2e215 ms=40
+[2026-08-27 14:51:52.733] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=08_annual slideId=5d9e51 index=7 version=23 baseVersion=37 revisionId=49a2e215 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=631
+[2026-08-27 14:51:52.736] [INFO ] [pid=31472] [sync] step=add round=13 attempt=1 pageId=09_yoy index=8
+[2026-08-27 14:51:52.739] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=09_yoy index=8
+[2026-08-27 14:51:52.742] [INFO ] [pid=31472] [render] start pageId=09_yoy file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\09_yoy.slide
+[2026-08-27 14:51:53.098] [INFO ] [pid=31472] [render] ok pageId=09_yoy slides=1 ms=357
+[2026-08-27 14:51:53.101] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:51:53.122] [INFO ] [pid=31472] [commit] commit send pageId=8dfc5a targetIndex=8 version=24 baseVersion=38 revisionBytes=43992
+[2026-08-27 14:51:53.161] [INFO ] [pid=31472] [commit] commit ok pageId=8dfc5a revisionId=cd222fe1 ms=35
+[2026-08-27 14:51:53.169] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=09_yoy slideId=8dfc5a index=8 version=24 baseVersion=38 revisionId=cd222fe1 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=430
+[2026-08-27 14:51:53.173] [INFO ] [pid=31472] [sync] step=add round=13 attempt=1 pageId=10_pick index=9
+[2026-08-27 14:51:53.174] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=10_pick index=9
+[2026-08-27 14:51:53.177] [INFO ] [pid=31472] [render] start pageId=10_pick file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\10_pick.slide
+[2026-08-27 14:51:53.624] [INFO ] [pid=31472] [render] ok pageId=10_pick slides=1 ms=447
+[2026-08-27 14:51:53.626] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:51:53.646] [INFO ] [pid=31472] [commit] commit send pageId=2180d2 targetIndex=9 version=25 baseVersion=39 revisionBytes=40656
+[2026-08-27 14:51:53.681] [INFO ] [pid=31472] [commit] commit ok pageId=2180d2 revisionId=cad65cae ms=30
+[2026-08-27 14:51:53.691] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=10_pick slideId=2180d2 index=9 version=25 baseVersion=39 revisionId=cad65cae code=0 images=[local=0 remote=0 cached=0 failed=0] ms=517
+[2026-08-27 14:51:53.695] [INFO ] [pid=31472] [sync] step=add round=13 attempt=1 pageId=11_foot index=10
+[2026-08-27 14:51:53.698] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=11_foot index=10
+[2026-08-27 14:51:53.702] [INFO ] [pid=31472] [render] start pageId=11_foot file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\11_foot.slide
+[2026-08-27 14:51:53.909] [INFO ] [pid=31472] [render] ok pageId=11_foot slides=1 ms=206
+[2026-08-27 14:51:53.911] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:51:53.922] [INFO ] [pid=31472] [commit] commit send pageId=682a9d targetIndex=10 version=26 baseVersion=40 revisionBytes=19456
+[2026-08-27 14:51:53.940] [INFO ] [pid=31472] [commit] commit ok pageId=682a9d revisionId=4987163e ms=17
+[2026-08-27 14:51:53.946] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=11_foot slideId=682a9d index=10 version=26 baseVersion=40 revisionId=4987163e code=0 images=[local=0 remote=0 cached=0 failed=0] ms=248
+[2026-08-27 14:51:53.948] [INFO ] [pid=31472] [sync] step=add round=13 attempt=1 pageId=12_disclaimer index=11
+[2026-08-27 14:51:53.950] [INFO ] [pid=31472] [backend-ops] addSlideAt start pageId=12_disclaimer index=11
+[2026-08-27 14:51:53.952] [INFO ] [pid=31472] [render] start pageId=12_disclaimer file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides\12_disclaimer.slide
+[2026-08-27 14:51:54.049] [INFO ] [pid=31472] [render] ok pageId=12_disclaimer slides=1 ms=97
+[2026-08-27 14:51:54.050] [INFO ] [pid=31472] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-27 14:51:54.061] [INFO ] [pid=31472] [commit] commit send pageId=91548c targetIndex=11 version=27 baseVersion=41 revisionBytes=6392
+[2026-08-27 14:51:54.071] [INFO ] [pid=31472] [commit] commit ok pageId=91548c revisionId=e5af520b ms=8
+[2026-08-27 14:51:54.075] [INFO ] [pid=31472] [backend-ops] addSlideAt ok pageId=12_disclaimer slideId=91548c index=11 version=27 baseVersion=41 revisionId=e5af520b code=0 images=[local=0 remote=0 cached=0 failed=0] ms=125
+[2026-08-27 14:51:54.078] [INFO ] [pid=31472] [sync] aligned round=13 attempt=1 size=12 desired=12 pendingDirtySize=0
+[2026-08-27 14:51:54.079] [INFO ] [pid=31472] [sync] reconcile ok round=13 attempt=1 ms=3478
+[2026-08-27 14:51:54.081] [INFO ] [pid=31472] [backend-ops] save start file=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:51:54.082] [INFO ] [pid=31472] [commit] save send filePath=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx
+[2026-08-27 14:51:54.370] [INFO ] [pid=31472] [commit] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=286
+[2026-08-27 14:51:54.372] [INFO ] [pid=31472] [backend-ops] save ok file_path=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\每月定投10年红利指数-原版.pptx ms=291
+[2026-08-27 14:51:54.373] [INFO ] [pid=31472] [sync] drain end round=13 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=3774
+=== boot pid=32692 ts=2026-08-27 14:51:56.867 cwd=D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版 argv=C:\Users\wxk11\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep-validate.js --project D:/.workbuddy/2026-08-26-15-50-21/dividend/ppt/每月定投10年红利指数-原版 --all ===
+[2026-08-27 14:51:56.863] [INFO ] [pid=32692] [validate] --all mode: found 12 files in D:\.workbuddy\2026-08-26-15-50-21\dividend\ppt\每月定投10年红利指数-原版\slides
+[2026-08-27 14:51:56.871] [INFO ] [pid=32692] [validate] batch start files=12 checkOverflow=true
+[2026-08-27 14:52:01.043] [INFO ] [pid=32692] [validate] batch done total=12 passed=12 failed=0 ms=4181

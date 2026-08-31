@@ -1,0 +1,38 @@
+<Slide style={{ width: '1280px', height: '720px', background: '#FFFFFF', padding: '20px 64px', fontFamily: '"PingFang SC","Microsoft YaHei",sans-serif', color: '#1A1A1A' }}>
+  <Box style={{ height: 96, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#1D2939' }}>3 定投市值走势：120 万 如何滚成 183.5 - 196.7 万</Text>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+
+  <Box style={{ height: 540, marginTop: 8, background: '#EEF2F7', borderRadius: 14, padding: 30 }}>
+    <Text style={{ fontSize: 19, color: '#3B4A5C', lineHeight: 2 }}>
+      灰线为累计投入本金（阶梯至 1,200,000）。曲线在大部分年份都压在投入线上方，但 2018 年与 2020 年初会短暂跌破——
+      <span style={{ fontWeight: 'bold', color: '#C0392B' }}>"亏钱时咬牙继续投"正是收益的主要来源</span>。
+    </Text>
+    <Box style={{ flexDirection: 'row', gap: 18, marginTop: 40 }}>
+      <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+        <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波（终值 ¥1,967,153）</Text>
+        <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>十年定投曲线：2016-2026，大部分时间市值大于投入</Text>
+      </Box>
+      <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 12, padding: 20 }}>
+        <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1D2939' }}>红利低波100（终值 ¥1,848,858）</Text>
+        <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 8 }}>上证红利（终值 ¥1,837,767）</Text>
+        <Text style={{ fontSize: 15, color: '#6B7686', marginTop: 4 }}>中证红利（终值 ¥1,834,922）</Text>
+      </Box>
+    </Box>
+    <Box style={{ marginTop: 30, flexDirection: 'row', gap: 12 }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+        <Box style={{ width: 26, height: 10, borderRadius: 5, background: '#C0392B' }} />
+        <Text style={{ fontSize: 15, color: '#3B4A5C' }}>组合市值</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+        <Box style={{ width: 26, height: 10, borderRadius: 5, background: '#9AA7B8' }} />
+        <Text style={{ fontSize: 15, color: '#3B4A5C' }}>累计投入 ¥1,200,000（阶梯）</Text>
+      </Box>
+    </Box>
+  </Box>
+
+  <Box style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 14, color: '#6B7686' }}>四大红利全收益指数 · 数据回测</Text>
+  </Box>
+</Slide>
