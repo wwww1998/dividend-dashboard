@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import json, urllib.request, base64, time, subprocess
-TOKEN = "REPLACED"
+import json, urllib.request, base64, time, subprocess, os
+TOKEN = os.getenv("GITHUB_TOKEN", "")
 API = "https://api.github.com/repos/wwww1998/dividend-dashboard"
 def api(method, path, data=None, tries=4):
     body = json.dumps(data).encode() if data is not None else None

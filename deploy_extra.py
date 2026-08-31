@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """通过 GitHub API 将 7 个新文件推送到 gh-pages 分支（独立子目录）"""
-import json, base64, urllib.request, sys
+import json, base64, urllib.request, sys, os
 
-TOKEN = "REPLACED"
+TOKEN = os.getenv("GITHUB_TOKEN", "")
 REPO = "wwww1998/dividend-dashboard"
 BASE = "https://api.github.com/repos/" + REPO
 HDR = {"Authorization": "Bearer " + TOKEN, "User-Agent": "curl", "Accept": "application/vnd.github+json"}

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """导航页作为主站: 根 index.html=导航, 月投10年移到 monthly/10y/"""
-import json, base64, urllib.request, sys
+import json, base64, urllib.request, sys, os
 
-TOKEN = "REPLACED"
+TOKEN = os.getenv("GITHUB_TOKEN", "")
 REPO = "wwww1998/dividend-dashboard"
 BASE = "https://api.github.com/repos/" + REPO
 HDR = {"Authorization": "Bearer " + TOKEN, "User-Agent": "curl", "Accept": "application/vnd.github+json"}

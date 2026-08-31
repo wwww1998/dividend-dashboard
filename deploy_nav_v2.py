@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """更新 gh-pages 根 index.html 为修正后的导航页(2列, 无主站标签), 并同步 dashboard/副本"""
-import json, base64, urllib.request, sys
+import json, base64, urllib.request, sys, os
 
-TOKEN = "REPLACED"
+TOKEN = os.getenv("GITHUB_TOKEN", "")
 REPO = "wwww1998/dividend-dashboard"
 BASE = "https://api.github.com/repos/" + REPO
 HDR = {"Authorization": "Bearer " + TOKEN, "User-Agent": "curl", "Accept": "application/vnd.github+json"}
