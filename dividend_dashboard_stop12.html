@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四大红利全收益指数 · 定投12个月后停止 · 多久回正？</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<script>window.echarts||document.write('<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.5.0/echarts.min.js"><\/script>');</script>
+<style>
+:root{
+  --bg:#f4f6fa; --card:#ffffff; --ink:#1a2332; --sub:#6b7686; --line:#e6eaf0;
+  --red:#c0392b; --green:#1e8e5a; --accent:#b3372c;
+  --c1:#e67e22; --c2:#3498db; --c3:#e74c3c; --c4:#27ae60;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding:32px 20px 80px}
+.hero{background:linear-gradient(135deg,#2b3a4a 0%,#1d2939 60%,#3a2a2a 100%);border-radius:18px;color:#fff;padding:38px 40px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%)}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 14px;font-size:12.5px;letter-spacing:1px;margin-bottom:14px}
+.hero h1{font-size:27px;font-weight:800;letter-spacing:.5px;margin-bottom:10px}
+.hero h1 em{font-style:normal;color:#ffb37a}
+.hero .sub{font-size:14.5px;color:#c7d2de;max-width:820px}
+.hero .rules{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.hero .rule{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:7px 14px;font-size:12.8px;color:#e8eef6}
+.hero .rule b{color:#ffd28a}
+.sec{margin-top:38px}
+.sec h2{font-size:21px;font-weight:800;display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.sec h2 .no{background:var(--accent);color:#fff;width:28px;height:28px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:none}
+.sec .desc{color:var(--sub);font-size:13.5px;margin-bottom:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;position:relative;box-shadow:0 1px 3px rgba(20,30,50,.05)}
+.card .top{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.card .dot{width:10px;height:10px;border-radius:50%}
+.card .nm{font-size:14.5px;font-weight:700}
+.card .badge{margin-left:auto;font-size:11px;border-radius:999px;padding:2px 9px;font-weight:700}
+.card .badge.win{background:#fdecea;color:var(--red)}
+.card .fval{font-size:25px;font-weight:800;margin:6px 0 2px}
+.card .fval small{font-size:13px;color:var(--sub);font-weight:500}
+.card .kv{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
+.card .kv .k{font-size:11.5px;color:var(--sub)}
+.card .kv .v{font-size:14px;font-weight:700}
+.card .kv .v.pos{color:var(--red)} .card .kv .v.neg{color:var(--green)}
+.card .badge.steady{background:#e7f6ee;color:var(--green)}
+.ix-code{font-family:ui-monospace,Consolas,"SF Mono",monospace;background:#f0f3f8;color:#3a4a5e;padding:2px 8px;border-radius:5px;font-size:12.5px;letter-spacing:.5px;font-weight:700;white-space:nowrap}
+/* 科普 */
+.know{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.kn{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 1px 3px rgba(20,30,50,.05)}
+.kn h3{font-size:15px;font-weight:800;margin-bottom:10px;display:flex;align-items:center;gap:8px;line-height:1.4}
+.kn .ico{width:24px;height:24px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;color:#fff;flex:none}
+.kn p{font-size:13.2px;color:#4a5568;margin-bottom:8px;line-height:1.75}
+.kn ul{list-style:none}
+.kn li{font-size:13px;padding:7px 0;border-bottom:1px dashed #f1f4f8;line-height:1.6}
+.kn li:last-child{border-bottom:none}
+.kn li b{color:var(--ink)}
+.tbl-box{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow-x:auto;overflow-y:hidden;box-shadow:0 1px 3px rgba(20,30,50,.05);-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:600px}
+th{background:#f8fafc;color:var(--sub);font-weight:600;text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:11px 14px;border-bottom:1px solid #f1f4f8;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+td b{font-weight:700}
+.pos{color:var(--red)} .neg{color:var(--green)}
+tr.hl td{background:#fffaf7}
+.tbl-scroll-hint{display:none;color:var(--sub);font-size:12px;margin:6px 2px 0;text-align:right}
+@media(max-width:760px){
+  .hero h1{font-size:22px}.hero{padding:28px 22px}
+  .cards{grid-template-columns:1fr}
+  .know{grid-template-columns:1fr}
+  .pick{grid-template-columns:1fr}
+  .card .kv{grid-template-columns:1fr}
+  th,td{padding:9px 10px;font-size:12.5px}
+  .tbl-scroll-hint{display:block}
+}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 14px 10px;box-shadow:0 1px 3px rgba(20,30,50,.05)}
+.chart .head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:0 6px 8px}
+.chart .head .t{font-size:15px;font-weight:700}
+.chart .head .hint{font-size:12px;color:var(--sub)}
+.chart .head .pick{display:flex;align-items:center;gap:6px;margin-left:auto;font-size:12.5px;color:var(--sub)}
+.chart .head .pick select{padding:5px 8px;border:1px solid var(--line);border-radius:8px;font-size:12.5px;background:#fff}
+#c_rec,#c_profit{width:100%;height:420px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;padding:4px 8px 10px;font-size:12.5px;color:var(--sub)}
+.legend .li{display:flex;align-items:center;gap:6px}
+.legend .sw{width:14px;height:4px;border-radius:2px}
+.alert{background:linear-gradient(135deg,#fdf3f2,#fdf8f6);border:1px solid #f2d6d0;border-radius:14px;padding:20px 22px;margin-top:14px}
+.alert .t{font-size:15.5px;font-weight:800;color:var(--red);margin-bottom:8px}
+.alert .b{font-size:13.5px;color:#5b4a45}
+.alert .big{font-size:34px;font-weight:800;color:var(--red)}
+.alert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:12px}
+.alert-grid .ag{background:#fff;border:1px solid #f0e0dc;border-radius:10px;padding:12px 14px}
+.alert-grid .ag .n{font-size:12px;color:var(--sub)}
+.alert-grid .ag .v{font-size:19px;font-weight:800}
+.pick{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.pick .pc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 1px 3px rgba(20,30,50,.05)}
+.pick .pc .pt{display:flex;align-items:center;gap:8px;font-weight:800;font-size:15.5px;margin-bottom:4px}
+.pick .pc .pc-tag{font-size:11px;background:#fdecea;color:var(--red);border-radius:999px;padding:2px 9px;font-weight:700}
+.pick .pc .pc-sub{color:var(--sub);font-size:12.8px;margin-bottom:12px}
+.pick .pc ul{list-style:none}
+.pick .pc li{font-size:13.2px;padding:6px 0;border-bottom:1px dashed #f1f4f8;display:flex;gap:8px}
+.pick .pc li:last-child{border-bottom:none}
+.pick .pc li .k{color:var(--sub);flex:none}
+.pick .pc li .v{font-weight:700}
+.foot{margin-top:44px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px;font-size:12.8px;color:var(--sub)}
+.foot h3{color:var(--ink);font-size:14.5px;margin-bottom:8px}
+.foot p{margin-bottom:6px}
+.foot .warn{color:var(--red);font-weight:600}
+.quote{margin-top:18px;background:#1d2939;border-radius:14px;padding:24px 28px;color:#e8eef6}
+.quote p{font-size:16.5px;font-weight:600;letter-spacing:.5px}
+.quote .who{margin-top:8px;font-size:12.5px;color:#8fa0b5}
+.cta{margin-top:18px;background:linear-gradient(135deg,#fdf3f2 0%,#fbe9e7 100%);border:1px solid #f3d9d5;border-radius:14px;padding:24px 30px;text-align:center;box-shadow:0 1px 6px rgba(192,57,43,.06)}
+.cta p{font-size:16px;font-weight:700;color:#8c2f28;letter-spacing:.5px;line-height:1.8}
+.cta p b{color:#b3372c;font-weight:800}
+.cta .sub{font-size:12px;color:#8b7a77;margin-top:8px;letter-spacing:.3px;line-height:1.7}
+@media(max-width:720px){.hero h1{font-size:22px}.hero{padding:28px 22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HERO -->
+<div class="hero">
+  <h1>每月定投 12 个月后停止定投：<br><em>多久能回正？</em></h1>
+  <div class="sub">基于中证指数官网全收益指数官方日线，对 <b>97 个起点</b>（2016-08 至 2024-08 每月首个交易日）每月定投 ¥1 万元、连续 <b>12 期</b>（总投入 ¥12 万）后<b>停止定投</b>，持有不动，追踪账户市值何时回到累计投入（回正）。</div>
+  <div class="rules">
+    <div class="rule">起点范围 <b>2016.08 - 2024.08</b></div>
+    <div class="rule">定投 <b>12 期（1 年）后停止</b></div>
+    <div class="rule">每期 <b>¥10,000</b>（总投入 ¥12 万）</div>
+    <div class="rule">起点数 <b>97 个</b></div>
+    <div class="rule">口径 <b>全收益指数（含分红再投）</b></div>
+  </div>
+</div>
+
+<!-- 0 背景科普 -->
+<div class="sec">
+  <h2><span class="no">0</span>红利指数基金是什么？为什么买？</h2>
+  <div class="desc">先搞懂三件事，再看上面的回正数据才有意义。</div>
+  <div class="know">
+    <div class="kn">
+      <h3><span class="ico" style="background:#3498db">①</span>是什么：一篮子"爱分红的好公司"</h3>
+      <p>红利指数基金＝跟踪<b>红利指数</b>的基金（场内 ETF 或场外联接基金）。红利指数从股市里挑出一批<b>股息率高、分红稳定</b>的股票，按股息率加权——你买的不是一只股票，而是"高股息组合"，每年收到成分公司的现金分红。四个主流红利指数的<b>全收益代码</b>：</p>
+      <ul>
+        <li><b>上证红利全收益</b> <span class="ix-code">H00015</span>：沪市 50 只，老牌高股息大盘成分，每年 12 月调仓换股，当前央国企权重 75‑80%</li>
+        <li><b>中证红利全收益</b> <span class="ix-code">H00922</span>：沪深 100 只，全市场主流红利成分，每年 12 月调仓换股，当前央国企权重 70‑75%</li>
+        <li><b>红利低波全收益</b> <span class="ix-code">H20269</span>：沪深 50 只，红利低波双因子成分，每年 12 月调仓换股，当前央国企权重 70‑75%</li>
+        <li><b>红利低波100全收益</b> <span class="ix-code">H20955</span>：沪深 100 只，双因子更分散的成分，季度调仓换股（3/6/9/12 月），当前央国企权重 65‑70%</li>
+      </ul>
+      <p style="font-size:12px;color:var(--sub);margin-top:6px">注：指数规则不专门筛选国企，因高股息行业特征，国央企天然占比更高。</p>
+    </div>
+    <div class="kn">
+      <h3><span class="ico" style="background:#e67e22">②</span>为什么买：三条获利逻辑</h3>
+      <ul>
+        <li><b>每年收"租"（现金分红）</b>：当前股息率约 4%-5%，1 万本金每年约 400-500 元现金分红，远超十年国债（约 1.7%）与银行理财。</li>
+        <li><b>复利滚雪球（分红再投资＋定投）</b>：分红再买份额、跌时定投买更多份额，份额越滚越多。即使只定投 1 年就停止，摊低成本的效果也让"回本"远比直觉快——本页回测里停止时亏损的起点，历史全部回正。</li>
+        <li><b>防御性（低波动抗跌）</b>：成分股多为银行、煤炭、石化、交运龙头，盈利稳定。定投过程中几乎必定经历 1 次账面浮亏，但停止后持有等待，最深约 -21%（中位 -6%~-8%）即可收复。</li>
+      </ul>
+      <p style="margin-top:8px;color:var(--sub)">总回报 ≈ <b>股息收益（4-5%）</b>＋盈利增长（稳健）＋估值变化（小）——红利策略赚的是"确定性现金流"，不赌估值。</p>
+    </div>
+    <div class="kn">
+      <h3><span class="ico" style="background:#27ae60">③</span>当前股息率：仍是国债的 2.4 倍+</h3>
+      <p>下表为四个指数<b>近 12 个月实际分红收益率</b>（用官方全收益指数与价格指数价差计算，真实数据；Wind 同口径 2026-07-31 中证红利 4.24%，交叉验证一致）。</p>
+      <div class="cards" id="yieldCards" style="grid-template-columns:1fr 1fr;margin-top:4px"></div>
+      <p style="margin-top:10px;color:var(--sub);font-size:12.5px">对比：十年期国债收益率约 <b style="color:var(--ink)">1.7%</b>，红利股息率是其 <b>2.4-2.8 倍</b>。注意股息率随价格波动：7 月红利大涨后股息率已从高位回落，4%+ 的"租金"依然稀缺。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 1 总览卡片 -->
+<div class="sec">
+  <h2><span class="no">1</span>停止定投时，账户是赚是亏？</h2>
+  <div class="desc">约 8 成起点在定投满 12 期时已经盈利；约 2 成起点此时仍浮亏，但停止定投后持有不动，历史上全部都能回正。</div>
+  <div class="cards" id="cards"></div>
+</div>
+
+<!-- 2 停止后回正耗时 -->
+<div class="sec">
+  <h2><span class="no">2</span>亏损的起点，停止后多久回正？</h2>
+  <div class="desc">回正＝停止定投后，账户市值重新回到累计投入（¥12 万）的<b>交易日数</b>。此图只展示"停止时仍亏损"的起点（已盈利起点不产生等待）。柱越高＝等待越久；无柱＝该起点停止时已盈利。</div>
+  <div class="chart">
+    <div class="head"><div class="t">停止后回正耗时（交易日，按起点）</div><div class="hint">只显示停止时亏损的起点</div></div>
+    <div id="c_rec"></div>
+    <div class="legend" id="lg1"></div>
+  </div>
+</div>
+
+<!-- 3 停止时浮盈/浮亏 -->
+<div class="sec">
+  <h2><span class="no">3</span>停止定投时，账面浮盈或浮亏多少？</h2>
+  <div class="desc">定投满 12 期（停止日）当天账户的浮盈/浮亏金额（元）。0 线之上＝赚，之下＝亏。深坑集中在 2017H2-2018 与 2025 中段。</div>
+  <div class="chart">
+    <div class="head"><div class="t">停止日账面浮盈（元，按起点）</div><div class="hint">悬浮查看任一起点</div></div>
+    <div id="c_profit"></div>
+    <div class="legend" id="lg2"></div>
+  </div>
+</div>
+
+<!-- 4 明细表 -->
+<div class="sec">
+  <h2><span class="no">4</span>选一个起点，看停止后的完整回正过程</h2>
+  <div class="desc">下拉选择任意起始月份，查看四个指数：停止日浮盈/浮亏、回正日期、回正耗时、停止后最深浮亏。</div>
+  <div class="chart">
+    <div class="head">
+      <div class="t">指定起点 · 定投12期后停止明细</div>
+      <div class="pick"><span>起点月份</span><select id="selStart"></select></div>
+    </div>
+    <div class="tbl-box" style="border:none;box-shadow:none">
+    <table id="tbl_pick"></table>
+    </div>
+    <div class="tbl-scroll-hint">← 左右滑动查看更多 →</div>
+  </div>
+</div>
+
+<!-- 5 结论 -->
+<div class="sec">
+  <h2><span class="no">5</span>那到底意味着什么？</h2>
+  <div class="desc">即使只定投 1 年就停止，历史最差的情形也只需约 10-12 个月即可回正；普通亏损起点约 1-3 个月回正。定投摊低成本的效果，让"回本"远比直觉快。</div>
+  <div class="alert">
+    <div class="t">⚠ 记住</div>
+    <div class="b">"回正"说的是<b>市值曾经回到本金</b>（停止后持有等待）；它与"期末恰好盈利"是两回事。前者给足等待时间几乎必然发生，后者要求特定时点账面盈利——本页统计的是<b>停止定投后的回正耗时</b>。</div>
+    <div class="alert-grid" id="alertGrid"></div>
+  </div>
+</div>
+
+<!-- 6 那到底选哪个 -->
+<div class="sec">
+  <h2><span class="no">6</span>那到底选哪个？</h2>
+  <div class="desc">收益相近时，停止时盈利占比更高、回正更快、浮亏更浅的指数持有体验更好，也更可能坚持到底。</div>
+  <div class="pick" id="pick"></div>
+  <div class="quote">
+    <p>「10 年定投的最大考验从来不是选哪个指数，而是在账面浮亏的那几个月里，你能不能继续投下去。定投最大的敌人不是市场，是你自己。」</p>
+    <div class="who">回撤是权益策略固有特征，坚持是关键。对比 10 年期缴年金险，其保证回本周期约 8‑12 年，中途退保会亏损本金。红利定投波动直观可见，但保留资金流动性，长期具备更高收益的可能性。</div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <p>如需获取更多定投策略参考、同步市场变化相关观察，<b>欢迎和我进一步交流，落地你的定投计划</b>。您的支持是我继续研究的动力。以上内容仅供学习参考，不构成投资建议，投资有风险，入市需谨慎。</p>
+</div>
+
+<!-- foot -->
+<div class="foot">
+  <h3>口径与方法说明</h3>
+  <p>1. <b>数据源</b>：中证指数官网（csindex.com.cn）官方日线行情，全收益指数（含分红再投资），四个指数：H00015 上证红利、H00922 中证红利、H20269 红利低波、H20955 红利低波100 全收益。</p>
+  <p>2. <b>定投与停止</b>：以 2016-08 至 2024-08 每个月的首个交易日为起点（97 个），自该起点起连续 12 个月、每月首个交易日定投 ¥10,000（12 期、总投入 ¥120,000）；第 12 期定投日为"停止日"，此后不再新增投入、持有不动。</p>
+  <p>3. <b>回正</b>＝停止日之后账户市值（份额 × 指数点位）首次重新达到累计投入 ¥120,000 的交易日数；"回正耗时（中位/最长）"仅统计停止时仍亏损的起点。回正日期之后的数据用于追踪，停止时已盈利的起点回正耗时记 0。</p>
+  <p>4. <b>停止日浮盈/浮亏</b>＝停止日市值 − 累计投入；<b>停止后最深浮亏</b>＝停止日后市值相对累计投入的最大跌幅（%）。</p>
+  <p>5. <b>收益口径</b>：收益率为百分比口径，与定投金额线性无关；未计交易费用与税费。</p>
+  <p>6. <b>当前股息率</b>：近 12 个月实际分红收益率，用官方全收益指数与价格指数的日收益差累计（价差法·逐日口径）计算（2025-07-31 ~ 2026-07-31），与 Wind 披露 TTM 股息率交叉验证一致（如中证红利 4.24%，2026-07-31）；最新股息率截至 2026-08-26。</p>
+  <p class="warn">⚠ 本页为历史数据回测，不代表未来收益。红利策略亦存在长期跑输与估值回归风险。投资有风险，决策需谨慎。</p>
+</div>
+
+</div>
+
+<script>
+const STARTS = ["2016-08", "2016-09", "2016-10", "2016-11", "2016-12", "2017-01", "2017-02", "2017-03", "2017-04", "2017-05", "2017-06", "2017-07", "2017-08", "2017-09", "2017-10", "2017-11", "2017-12", "2018-01", "2018-02", "2018-03", "2018-04", "2018-05", "2018-06", "2018-07", "2018-08", "2018-09", "2018-10", "2018-11", "2018-12", "2019-01", "2019-02", "2019-03", "2019-04", "2019-05", "2019-06", "2019-07", "2019-08", "2019-09", "2019-10", "2019-11", "2019-12", "2020-01", "2020-02", "2020-03", "2020-04", "2020-05", "2020-06", "2020-07", "2020-08", "2020-09", "2020-10", "2020-11", "2020-12", "2021-01", "2021-02", "2021-03", "2021-04", "2021-05", "2021-06", "2021-07", "2021-08", "2021-09", "2021-10", "2021-11", "2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08"];
+const SHORTS = ["上证红利", "中证红利", "红利低波", "红利低波100"];
+const CODES = {"上证红利": "H00015", "中证红利": "H00922", "红利低波": "H20269", "红利低波100": "H20955"};
+const COLORS = {"H00015": "#e67e22", "H00922": "#3498db", "H20269": "#e74c3c", "H20955": "#27ae60"};
+const STATS = {"上证红利": {"n_total": 97, "n_profit": 77, "n_loss": 20, "n_unrec": 0, "rec_med": 25, "rec_p75": 93, "rec_p90": 157, "rec_max": 182, "deep_med": -0.06733761548496686, "deep_min": -0.14341568027560148, "rec_all_med": 0}, "中证红利": {"n_total": 97, "n_profit": 73, "n_loss": 24, "n_unrec": 0, "rec_med": 15, "rec_p75": 74, "rec_p90": 135, "rec_max": 183, "deep_med": -0.05200203119152158, "deep_min": -0.1907406480109609, "rec_all_med": 0}, "红利低波": {"n_total": 97, "n_profit": 78, "n_loss": 19, "n_unrec": 0, "rec_med": 33, "rec_p75": 98, "rec_p90": 164, "rec_max": 193, "deep_med": -0.06237108256205692, "deep_min": -0.19618680801877164, "rec_all_med": 0}, "红利低波100": {"n_total": 97, "n_profit": 75, "n_loss": 22, "n_unrec": 0, "rec_med": 60, "rec_p75": 112, "rec_p90": 184, "rec_max": 224, "deep_med": -0.07850202837556652, "deep_min": -0.2137139898651811, "rec_all_med": 0}};
+const SERIES = {"上证红利": {"profit_at_stop": [11239, 14252, 11767, 11553, 10468, 9720, 10186, 15021, 6619, -575, -4561, -3381, -13073, -7325, -9026, -6605, -9207, -6799, -10024, -901, 10118, 16697, 4855, 3306, 7930, 5132, 3625, 2745, 2724, 151, 5647, -10053, -419, -10419, -6652, -6795, -3177, 7707, 9112, 5416, 4637, 14703, 5439, 321, 7810, 9982, 10093, 12844, 10848, 4796, 17882, 14221, 3107, 1711, 5251, 1616, 4659, 8699, 296, 1476, 3969, 567, 3963, 3132, -5368, 3547, 95, 2745, 6734, 6410, 14179, 6814, 5832, 10526, 5844, 6918, 1506, 1834, 582, 2234, 9987, 7083, 10411, 12532, 11781, 4215, 133, 14206, 4097, 4136, 5501, 1059, -756, 2498, -229, 3712, 5145], "rec_days": [1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 13, 182, 157, 135, 112, 93, 75, 52, 25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 13, 2, 62, 41, 22, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 7, 1, 1, 9, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 14, 1, 1, 1, 1, 1, 6, 1, 1, 1, 1], "rec_days_loss": [null, null, null, null, null, null, null, null, null, 4, 13, 182, 157, 135, 112, 93, 75, 52, 25, 1, null, null, null, null, null, null, null, null, null, null, null, 13, 2, 62, 41, 22, 2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 8, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 6, null, 1, null, null]}, "中证红利": {"profit_at_stop": [12393, 14573, 13611, 13023, 11649, 9580, 10632, 13065, 5564, -780, -4436, -3215, -12974, -9197, -12134, -10636, -13002, -8023, -10751, -891, 12162, 22237, 10237, 9875, 11948, 7754, 5049, 3135, 2858, -406, 5876, -10155, 1507, -8211, -3355, -2474, 2068, 14403, 15251, 10510, 9259, 18852, 10421, 4854, 12218, 11105, 12848, 16082, 11907, 6379, 17222, 12258, 4311, 6264, 8531, 3352, 4873, 5619, -1885, 523, 2491, -229, 2530, -1599, -7027, 3987, 773, 4127, 7624, 5410, 11839, 4288, 4423, 9689, 5169, 4800, -191, 165, -573, -749, 7670, 6315, 9577, 10970, 8559, 2084, -1366, 16047, 5579, 5720, 5433, 676, 606, 3402, 971, 3835, 5376], "rec_days": [1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 13, 183, 161, 135, 112, 93, 74, 48, 24, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10, 1, 59, 38, 20, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 15, 2, 1, 9, 1, 2, 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 14, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "rec_days_loss": [null, null, null, null, null, null, null, null, null, 5, 13, 183, 161, 135, 112, 93, 74, 48, 24, 1, null, null, null, null, null, null, null, null, null, 1, null, 10, null, 59, 38, 20, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 15, null, null, 9, null, 2, 9, null, null, null, null, null, null, null, null, null, null, null, 1, null, 1, 3, null, null, null, null, null, null, 14, null, null, null, null, null, null, null, null, null, null]}, "红利低波": {"profit_at_stop": [14879, 15544, 12112, 12113, 12504, 9850, 10641, 13345, 5361, -782, -4616, -2372, -11930, -9945, -12972, -10737, -13608, -8651, -10518, -1561, 7814, 17871, 6177, 6709, 10613, 7780, 4770, 3766, 4411, 2163, 8306, -9752, -695, -9268, -4176, -4024, 612, 13846, 14178, 8284, 7321, 17171, 6221, 2469, 9730, 10811, 10845, 14700, 8637, -1029, 11575, 13676, 3026, 2092, 9104, 7515, 8080, 10961, 6528, 7963, 7255, 1028, 5666, 2659, -6152, 3772, -827, 2639, 6573, 8131, 18253, 9651, 8237, 13175, 7301, 7382, 2070, 1790, 519, 2114, 8556, 8636, 12275, 13935, 12593, 5626, 2838, 16880, 7566, 7079, 7124, 3248, 3102, 5570, 4317, 9938, 11959], "rec_days": [1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 8, 193, 164, 141, 117, 98, 75, 53, 33, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 22, 2, 60, 39, 20, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 8, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "rec_days_loss": [null, null, null, null, null, null, null, null, null, 5, 8, 193, 164, 141, 117, 98, 75, 53, 33, 2, null, null, null, null, null, null, null, null, null, null, null, 22, 2, 60, 39, 20, null, null, null, null, null, null, null, null, null, null, null, null, null, 5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 8, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}, "红利低波100": {"profit_at_stop": [14707, 16504, 13990, 11482, 8952, 4850, 2873, 4812, -751, -3874, -7629, -6996, -15866, -10409, -12351, -10262, -11041, -5799, -8248, -1434, 11680, 20628, 10158, 9763, 11310, 8460, 4438, 2688, 2090, -597, 4103, -12430, -3971, -10070, -5909, -4350, 105, 11483, 12698, 7188, 5265, 14590, 7159, 2636, 9148, 12749, 10099, 8309, 7766, 528, 7691, 12193, 3661, 4493, 13790, 8497, 7670, 13078, 5525, 4961, 5434, 1551, 1380, -3800, -5335, 3020, 898, 5676, 9312, 10091, 19401, 11927, 10820, 17691, 10917, 7449, 3042, 3294, 142, -2991, 3256, 2715, 7440, 5293, 2381, 1004, -3204, 17132, 7807, 9862, 8654, 3683, 3664, 5916, 3527, 6204, 6083], "rec_days": [1, 1, 1, 1, 1, 1, 1, 1, 3, 224, 206, 184, 162, 135, 112, 93, 74, 48, 25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 1, 103, 83, 60, 39, 21, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 8, 1, 26, 10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "rec_days_loss": [null, null, null, null, null, null, null, null, 3, 224, 206, 184, 162, 135, 112, 93, 74, 48, 25, 1, null, null, null, null, null, null, null, null, null, 5, null, 103, 83, 60, 39, 21, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 26, 10, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 4, null, null, null, null, null, null, 15, null, null, null, null, null, null, null, null, null, null]}};
+const ROWS = {"上证红利": [{"profit_at_stop": 11239, "recover_days": 1, "recover_date": "2017-07-04", "max_loss_after": 0.0882}, {"profit_at_stop": 14252, "recover_days": 1, "recover_date": "2017-08-02", "max_loss_after": 0.1161}, {"profit_at_stop": 11767, "recover_days": 1, "recover_date": "2017-09-04", "max_loss_after": 0.1008}, {"profit_at_stop": 11553, "recover_days": 1, "recover_date": "2017-10-10", "max_loss_after": 0.0946}, {"profit_at_stop": 10468, "recover_days": 1, "recover_date": "2017-11-02", "max_loss_after": 0.0859}, {"profit_at_stop": 9720, "recover_days": 1, "recover_date": "2017-12-04", "max_loss_after": 0.0821}, {"profit_at_stop": 10186, "recover_days": 1, "recover_date": "2018-01-03", "max_loss_after": 0.0882}, {"profit_at_stop": 15021, "recover_days": 1, "recover_date": "2018-02-02", "max_loss_after": 0.1357}, {"profit_at_stop": 6619, "recover_days": 1, "recover_date": "2018-03-02", "max_loss_after": 0.0533}, {"profit_at_stop": -575, "recover_days": 4, "recover_date": "2018-04-10", "max_loss_after": -0.0168}, {"profit_at_stop": -4561, "recover_days": 13, "recover_date": "2018-05-21", "max_loss_after": -0.0348}, {"profit_at_stop": -3381, "recover_days": 182, "recover_date": "2019-03-01", "max_loss_after": -0.1434}, {"profit_at_stop": -13073, "recover_days": 157, "recover_date": "2019-02-25", "max_loss_after": -0.1379}, {"profit_at_stop": -7325, "recover_days": 135, "recover_date": "2019-02-25", "max_loss_after": -0.1331}, {"profit_at_stop": -9026, "recover_days": 112, "recover_date": "2019-02-25", "max_loss_after": -0.1268}, {"profit_at_stop": -6605, "recover_days": 93, "recover_date": "2019-02-25", "max_loss_after": -0.1205}, {"profit_at_stop": -9207, "recover_days": 75, "recover_date": "2019-02-25", "max_loss_after": -0.1067}, {"profit_at_stop": -6799, "recover_days": 52, "recover_date": "2019-02-22", "max_loss_after": -0.098}, {"profit_at_stop": -10024, "recover_days": 25, "recover_date": "2019-02-13", "max_loss_after": -0.0842}, {"profit_at_stop": -901, "recover_days": 1, "recover_date": "2019-02-11", "max_loss_after": 0.0017}, {"profit_at_stop": 10118, "recover_days": 1, "recover_date": "2019-03-04", "max_loss_after": 0.0949}, {"profit_at_stop": 16697, "recover_days": 1, "recover_date": "2019-04-02", "max_loss_after": 0.1376}, {"profit_at_stop": 4855, "recover_days": 1, "recover_date": "2019-05-07", "max_loss_after": 0.0523}, {"profit_at_stop": 3306, "recover_days": 1, "recover_date": "2019-06-04", "max_loss_after": 0.0239}, {"profit_at_stop": 7930, "recover_days": 1, "recover_date": "2019-07-02", "max_loss_after": 0.0716}, {"profit_at_stop": 5132, "recover_days": 1, "recover_date": "2019-08-02", "max_loss_after": 0.0288}, {"profit_at_stop": 3625, "recover_days": 1, "recover_date": "2019-09-03", "max_loss_after": 0.033}, {"profit_at_stop": 2745, "recover_days": 1, "recover_date": "2019-10-09", "max_loss_after": 0.0336}, {"profit_at_stop": 2724, "recover_days": 1, "recover_date": "2019-11-04", "max_loss_after": 0.0268}, {"profit_at_stop": 151, "recover_days": 1, "recover_date": "2019-12-03", "max_loss_after": 0.0041}, {"profit_at_stop": 5647, "recover_days": 1, "recover_date": "2020-01-03", "max_loss_after": 0.0462}, {"profit_at_stop": -10053, "recover_days": 13, "recover_date": "2020-02-20", "max_loss_after": -0.0673}, {"profit_at_stop": -419, "recover_days": 2, "recover_date": "2020-03-04", "max_loss_after": -0.0023}, {"profit_at_stop": -10419, "recover_days": 62, "recover_date": "2020-07-06", "max_loss_after": -0.0916}, {"profit_at_stop": -6652, "recover_days": 41, "recover_date": "2020-07-06", "max_loss_after": -0.0865}, {"profit_at_stop": -6795, "recover_days": 22, "recover_date": "2020-07-03", "max_loss_after": -0.0657}, {"profit_at_stop": -3177, "recover_days": 2, "recover_date": "2020-07-03", "max_loss_after": -0.0046}, {"profit_at_stop": 7707, "recover_days": 1, "recover_date": "2020-08-04", "max_loss_after": 0.0629}, {"profit_at_stop": 9112, "recover_days": 1, "recover_date": "2020-09-02", "max_loss_after": 0.0757}, {"profit_at_stop": 5416, "recover_days": 1, "recover_date": "2020-10-12", "max_loss_after": 0.0638}, {"profit_at_stop": 4637, "recover_days": 1, "recover_date": "2020-11-03", "max_loss_after": 0.0475}, {"profit_at_stop": 14703, "recover_days": 1, "recover_date": "2020-12-02", "max_loss_after": 0.1209}, {"profit_at_stop": 5439, "recover_days": 1, "recover_date": "2021-01-05", "max_loss_after": 0.0391}, {"profit_at_stop": 321, "recover_days": 1, "recover_date": "2021-02-02", "max_loss_after": 0.005}, {"profit_at_stop": 7810, "recover_days": 1, "recover_date": "2021-03-02", "max_loss_after": 0.0568}, {"profit_at_stop": 9982, "recover_days": 1, "recover_date": "2021-04-02", "max_loss_after": 0.0707}, {"profit_at_stop": 10093, "recover_days": 1, "recover_date": "2021-05-07", "max_loss_after": 0.0941}, {"profit_at_stop": 12844, "recover_days": 1, "recover_date": "2021-06-02", "max_loss_after": 0.0994}, {"profit_at_stop": 10848, "recover_days": 1, "recover_date": "2021-07-02", "max_loss_after": 0.0793}, {"profit_at_stop": 4796, "recover_days": 1, "recover_date": "2021-08-03", "max_loss_after": 0.0248}, {"profit_at_stop": 17882, "recover_days": 1, "recover_date": "2021-09-02", "max_loss_after": 0.1742}, {"profit_at_stop": 14221, "recover_days": 1, "recover_date": "2021-10-11", "max_loss_after": 0.1353}, {"profit_at_stop": 3107, "recover_days": 1, "recover_date": "2021-11-02", "max_loss_after": 0.0066}, {"profit_at_stop": 1711, "recover_days": 1, "recover_date": "2021-12-02", "max_loss_after": 0.0185}, {"profit_at_stop": 5251, "recover_days": 1, "recover_date": "2022-01-05", "max_loss_after": 0.0389}, {"profit_at_stop": 1616, "recover_days": 1, "recover_date": "2022-02-08", "max_loss_after": 0.0388}, {"profit_at_stop": 4659, "recover_days": 1, "recover_date": "2022-03-02", "max_loss_after": 0.0503}, {"profit_at_stop": 8699, "recover_days": 1, "recover_date": "2022-04-06", "max_loss_after": 0.0904}, {"profit_at_stop": 296, "recover_days": 7, "recover_date": "2022-05-16", "max_loss_after": -0.0335}, {"profit_at_stop": 1476, "recover_days": 1, "recover_date": "2022-06-02", "max_loss_after": 0.0039}, {"profit_at_stop": 3969, "recover_days": 1, "recover_date": "2022-07-04", "max_loss_after": 0.0352}, {"profit_at_stop": 567, "recover_days": 9, "recover_date": "2022-08-12", "max_loss_after": -0.0307}, {"profit_at_stop": 3963, "recover_days": 1, "recover_date": "2022-09-02", "max_loss_after": 0.031}, {"profit_at_stop": 3132, "recover_days": 1, "recover_date": "2022-10-11", "max_loss_after": 0.023}, {"profit_at_stop": -5368, "recover_days": 8, "recover_date": "2022-11-11", "max_loss_after": -0.0387}, {"profit_at_stop": 3547, "recover_days": 1, "recover_date": "2022-12-02", "max_loss_after": 0.0236}, {"profit_at_stop": 95, "recover_days": 1, "recover_date": "2023-01-04", "max_loss_after": 0.0084}, {"profit_at_stop": 2745, "recover_days": 1, "recover_date": "2023-02-02", "max_loss_after": 0.0252}, {"profit_at_stop": 6734, "recover_days": 1, "recover_date": "2023-03-02", "max_loss_after": 0.0617}, {"profit_at_stop": 6410, "recover_days": 1, "recover_date": "2023-04-04", "max_loss_after": 0.0594}, {"profit_at_stop": 14179, "recover_days": 1, "recover_date": "2023-05-05", "max_loss_after": 0.128}, {"profit_at_stop": 6814, "recover_days": 1, "recover_date": "2023-06-02", "max_loss_after": 0.0583}, {"profit_at_stop": 5832, "recover_days": 1, "recover_date": "2023-07-04", "max_loss_after": 0.0401}, {"profit_at_stop": 10526, "recover_days": 1, "recover_date": "2023-08-02", "max_loss_after": 0.0741}, {"profit_at_stop": 5844, "recover_days": 1, "recover_date": "2023-09-04", "max_loss_after": 0.0654}, {"profit_at_stop": 6918, "recover_days": 1, "recover_date": "2023-10-10", "max_loss_after": 0.0476}, {"profit_at_stop": 1506, "recover_days": 1, "recover_date": "2023-11-02", "max_loss_after": 0.0152}, {"profit_at_stop": 1834, "recover_days": 1, "recover_date": "2023-12-04", "max_loss_after": 0.0166}, {"profit_at_stop": 582, "recover_days": 1, "recover_date": "2024-01-03", "max_loss_after": 0.0186}, {"profit_at_stop": 2234, "recover_days": 1, "recover_date": "2024-02-02", "max_loss_after": 0.021}, {"profit_at_stop": 9987, "recover_days": 1, "recover_date": "2024-03-04", "max_loss_after": 0.0908}, {"profit_at_stop": 7083, "recover_days": 1, "recover_date": "2024-04-02", "max_loss_after": 0.0658}, {"profit_at_stop": 10411, "recover_days": 1, "recover_date": "2024-05-07", "max_loss_after": 0.0878}, {"profit_at_stop": 12532, "recover_days": 1, "recover_date": "2024-06-04", "max_loss_after": 0.1076}, {"profit_at_stop": 11781, "recover_days": 1, "recover_date": "2024-07-02", "max_loss_after": 0.1006}, {"profit_at_stop": 4215, "recover_days": 1, "recover_date": "2024-08-02", "max_loss_after": 0.0333}, {"profit_at_stop": 133, "recover_days": 14, "recover_date": "2024-09-24", "max_loss_after": -0.0534}, {"profit_at_stop": 14206, "recover_days": 1, "recover_date": "2024-10-09", "max_loss_after": 0.0373}, {"profit_at_stop": 4097, "recover_days": 1, "recover_date": "2024-11-04", "max_loss_after": 0.0402}, {"profit_at_stop": 4136, "recover_days": 1, "recover_date": "2024-12-03", "max_loss_after": 0.0459}, {"profit_at_stop": 5501, "recover_days": 1, "recover_date": "2025-01-03", "max_loss_after": 0.0376}, {"profit_at_stop": 1059, "recover_days": 1, "recover_date": "2025-02-06", "max_loss_after": 0.0079}, {"profit_at_stop": -756, "recover_days": 6, "recover_date": "2025-03-11", "max_loss_after": -0.0078}, {"profit_at_stop": 2498, "recover_days": 1, "recover_date": "2025-04-02", "max_loss_after": 0.0259}, {"profit_at_stop": -229, "recover_days": 1, "recover_date": "2025-05-07", "max_loss_after": 0.0051}, {"profit_at_stop": 3712, "recover_days": 1, "recover_date": "2025-06-04", "max_loss_after": 0.0338}, {"profit_at_stop": 5145, "recover_days": 1, "recover_date": "2025-07-02", "max_loss_after": 0.051}], "中证红利": [{"profit_at_stop": 12393, "recover_days": 1, "recover_date": "2017-07-04", "max_loss_after": 0.0952}, {"profit_at_stop": 14573, "recover_days": 1, "recover_date": "2017-08-02", "max_loss_after": 0.1165}, {"profit_at_stop": 13611, "recover_days": 1, "recover_date": "2017-09-04", "max_loss_after": 0.1149}, {"profit_at_stop": 13023, "recover_days": 1, "recover_date": "2017-10-10", "max_loss_after": 0.11}, {"profit_at_stop": 11649, "recover_days": 1, "recover_date": "2017-11-02", "max_loss_after": 0.0971}, {"profit_at_stop": 9580, "recover_days": 1, "recover_date": "2017-12-04", "max_loss_after": 0.0812}, {"profit_at_stop": 10632, "recover_days": 1, "recover_date": "2018-01-03", "max_loss_after": 0.0939}, {"profit_at_stop": 13065, "recover_days": 1, "recover_date": "2018-02-02", "max_loss_after": 0.118}, {"profit_at_stop": 5564, "recover_days": 1, "recover_date": "2018-03-02", "max_loss_after": 0.0437}, {"profit_at_stop": -780, "recover_days": 5, "recover_date": "2018-04-11", "max_loss_after": -0.019}, {"profit_at_stop": -4436, "recover_days": 13, "recover_date": "2018-05-21", "max_loss_after": -0.0322}, {"profit_at_stop": -3215, "recover_days": 183, "recover_date": "2019-03-04", "max_loss_after": -0.1907}, {"profit_at_stop": -12974, "recover_days": 161, "recover_date": "2019-03-01", "max_loss_after": -0.1854}, {"profit_at_stop": -9197, "recover_days": 135, "recover_date": "2019-02-25", "max_loss_after": -0.1796}, {"profit_at_stop": -12134, "recover_days": 112, "recover_date": "2019-02-25", "max_loss_after": -0.1704}, {"profit_at_stop": -10636, "recover_days": 93, "recover_date": "2019-02-25", "max_loss_after": -0.1604}, {"profit_at_stop": -13002, "recover_days": 74, "recover_date": "2019-02-22", "max_loss_after": -0.1212}, {"profit_at_stop": -8023, "recover_days": 48, "recover_date": "2019-02-18", "max_loss_after": -0.1106}, {"profit_at_stop": -10751, "recover_days": 24, "recover_date": "2019-02-12", "max_loss_after": -0.095}, {"profit_at_stop": -891, "recover_days": 1, "recover_date": "2019-02-11", "max_loss_after": 0.0077}, {"profit_at_stop": 12162, "recover_days": 1, "recover_date": "2019-03-04", "max_loss_after": 0.1145}, {"profit_at_stop": 22237, "recover_days": 1, "recover_date": "2019-04-02", "max_loss_after": 0.1864}, {"profit_at_stop": 10237, "recover_days": 1, "recover_date": "2019-05-07", "max_loss_after": 0.0996}, {"profit_at_stop": 9875, "recover_days": 1, "recover_date": "2019-06-04", "max_loss_after": 0.0716}, {"profit_at_stop": 11948, "recover_days": 1, "recover_date": "2019-07-02", "max_loss_after": 0.1057}, {"profit_at_stop": 7754, "recover_days": 1, "recover_date": "2019-08-02", "max_loss_after": 0.0481}, {"profit_at_stop": 5049, "recover_days": 1, "recover_date": "2019-09-03", "max_loss_after": 0.0439}, {"profit_at_stop": 3135, "recover_days": 1, "recover_date": "2019-10-09", "max_loss_after": 0.0351}, {"profit_at_stop": 2858, "recover_days": 1, "recover_date": "2019-11-04", "max_loss_after": 0.026}, {"profit_at_stop": -406, "recover_days": 1, "recover_date": "2019-12-03", "max_loss_after": 0.0006}, {"profit_at_stop": 5876, "recover_days": 1, "recover_date": "2020-01-03", "max_loss_after": 0.0486}, {"profit_at_stop": -10155, "recover_days": 10, "recover_date": "2020-02-17", "max_loss_after": -0.0655}, {"profit_at_stop": 1507, "recover_days": 1, "recover_date": "2020-03-03", "max_loss_after": 0.0124}, {"profit_at_stop": -8211, "recover_days": 59, "recover_date": "2020-07-01", "max_loss_after": -0.0598}, {"profit_at_stop": -3355, "recover_days": 38, "recover_date": "2020-07-01", "max_loss_after": -0.0554}, {"profit_at_stop": -2474, "recover_days": 20, "recover_date": "2020-07-01", "max_loss_after": -0.0325}, {"profit_at_stop": 2068, "recover_days": 1, "recover_date": "2020-07-02", "max_loss_after": 0.0412}, {"profit_at_stop": 14403, "recover_days": 1, "recover_date": "2020-08-04", "max_loss_after": 0.1232}, {"profit_at_stop": 15251, "recover_days": 1, "recover_date": "2020-09-02", "max_loss_after": 0.1261}, {"profit_at_stop": 10510, "recover_days": 1, "recover_date": "2020-10-12", "max_loss_after": 0.1145}, {"profit_at_stop": 9259, "recover_days": 1, "recover_date": "2020-11-03", "max_loss_after": 0.0906}, {"profit_at_stop": 18852, "recover_days": 1, "recover_date": "2020-12-02", "max_loss_after": 0.159}, {"profit_at_stop": 10421, "recover_days": 1, "recover_date": "2021-01-05", "max_loss_after": 0.0892}, {"profit_at_stop": 4854, "recover_days": 1, "recover_date": "2021-02-02", "max_loss_after": 0.0475}, {"profit_at_stop": 12218, "recover_days": 1, "recover_date": "2021-03-02", "max_loss_after": 0.0922}, {"profit_at_stop": 11105, "recover_days": 1, "recover_date": "2021-04-02", "max_loss_after": 0.0862}, {"profit_at_stop": 12848, "recover_days": 1, "recover_date": "2021-05-07", "max_loss_after": 0.1093}, {"profit_at_stop": 16082, "recover_days": 1, "recover_date": "2021-06-02", "max_loss_after": 0.1283}, {"profit_at_stop": 11907, "recover_days": 1, "recover_date": "2021-07-02", "max_loss_after": 0.0918}, {"profit_at_stop": 6379, "recover_days": 1, "recover_date": "2021-08-03", "max_loss_after": 0.0406}, {"profit_at_stop": 17222, "recover_days": 1, "recover_date": "2021-09-02", "max_loss_after": 0.1621}, {"profit_at_stop": 12258, "recover_days": 1, "recover_date": "2021-10-11", "max_loss_after": 0.1086}, {"profit_at_stop": 4311, "recover_days": 1, "recover_date": "2021-11-02", "max_loss_after": 0.0148}, {"profit_at_stop": 6264, "recover_days": 1, "recover_date": "2021-12-02", "max_loss_after": 0.0544}, {"profit_at_stop": 8531, "recover_days": 1, "recover_date": "2022-01-05", "max_loss_after": 0.0681}, {"profit_at_stop": 3352, "recover_days": 1, "recover_date": "2022-02-08", "max_loss_after": 0.0507}, {"profit_at_stop": 4873, "recover_days": 1, "recover_date": "2022-03-02", "max_loss_after": 0.0475}, {"profit_at_stop": 5619, "recover_days": 1, "recover_date": "2022-04-06", "max_loss_after": 0.0645}, {"profit_at_stop": -1885, "recover_days": 15, "recover_date": "2022-05-26", "max_loss_after": -0.0411}, {"profit_at_stop": 523, "recover_days": 2, "recover_date": "2022-06-06", "max_loss_after": -0.0029}, {"profit_at_stop": 2491, "recover_days": 1, "recover_date": "2022-07-04", "max_loss_after": 0.0243}, {"profit_at_stop": -229, "recover_days": 9, "recover_date": "2022-08-12", "max_loss_after": -0.0427}, {"profit_at_stop": 2530, "recover_days": 1, "recover_date": "2022-09-02", "max_loss_after": 0.0205}, {"profit_at_stop": -1599, "recover_days": 2, "recover_date": "2022-10-12", "max_loss_after": -0.0132}, {"profit_at_stop": -7027, "recover_days": 9, "recover_date": "2022-11-14", "max_loss_after": -0.052}, {"profit_at_stop": 3987, "recover_days": 1, "recover_date": "2022-12-02", "max_loss_after": 0.0299}, {"profit_at_stop": 773, "recover_days": 1, "recover_date": "2023-01-04", "max_loss_after": 0.0144}, {"profit_at_stop": 4127, "recover_days": 1, "recover_date": "2023-02-02", "max_loss_after": 0.0361}, {"profit_at_stop": 7624, "recover_days": 1, "recover_date": "2023-03-02", "max_loss_after": 0.0683}, {"profit_at_stop": 5410, "recover_days": 1, "recover_date": "2023-04-04", "max_loss_after": 0.0488}, {"profit_at_stop": 11839, "recover_days": 1, "recover_date": "2023-05-05", "max_loss_after": 0.1015}, {"profit_at_stop": 4288, "recover_days": 1, "recover_date": "2023-06-02", "max_loss_after": 0.0421}, {"profit_at_stop": 4423, "recover_days": 1, "recover_date": "2023-07-04", "max_loss_after": 0.0318}, {"profit_at_stop": 9689, "recover_days": 1, "recover_date": "2023-08-02", "max_loss_after": 0.0709}, {"profit_at_stop": 5169, "recover_days": 1, "recover_date": "2023-09-04", "max_loss_after": 0.0592}, {"profit_at_stop": 4800, "recover_days": 1, "recover_date": "2023-10-10", "max_loss_after": 0.0297}, {"profit_at_stop": -191, "recover_days": 1, "recover_date": "2023-11-02", "max_loss_after": 0.0001}, {"profit_at_stop": 165, "recover_days": 1, "recover_date": "2023-12-04", "max_loss_after": 0.0015}, {"profit_at_stop": -573, "recover_days": 1, "recover_date": "2024-01-03", "max_loss_after": 0.0058}, {"profit_at_stop": -749, "recover_days": 3, "recover_date": "2024-02-06", "max_loss_after": -0.0078}, {"profit_at_stop": 7670, "recover_days": 1, "recover_date": "2024-03-04", "max_loss_after": 0.0689}, {"profit_at_stop": 6315, "recover_days": 1, "recover_date": "2024-04-02", "max_loss_after": 0.0565}, {"profit_at_stop": 9577, "recover_days": 1, "recover_date": "2024-05-07", "max_loss_after": 0.0802}, {"profit_at_stop": 10970, "recover_days": 1, "recover_date": "2024-06-04", "max_loss_after": 0.097}, {"profit_at_stop": 8559, "recover_days": 1, "recover_date": "2024-07-02", "max_loss_after": 0.07}, {"profit_at_stop": 2084, "recover_days": 1, "recover_date": "2024-08-02", "max_loss_after": 0.0148}, {"profit_at_stop": -1366, "recover_days": 14, "recover_date": "2024-09-24", "max_loss_after": -0.0634}, {"profit_at_stop": 16047, "recover_days": 1, "recover_date": "2024-10-09", "max_loss_after": 0.0471}, {"profit_at_stop": 5579, "recover_days": 1, "recover_date": "2024-11-04", "max_loss_after": 0.0555}, {"profit_at_stop": 5720, "recover_days": 1, "recover_date": "2024-12-03", "max_loss_after": 0.0584}, {"profit_at_stop": 5433, "recover_days": 1, "recover_date": "2025-01-03", "max_loss_after": 0.0365}, {"profit_at_stop": 676, "recover_days": 1, "recover_date": "2025-02-06", "max_loss_after": 0.0065}, {"profit_at_stop": 606, "recover_days": 1, "recover_date": "2025-03-04", "max_loss_after": 0.0052}, {"profit_at_stop": 3402, "recover_days": 1, "recover_date": "2025-04-02", "max_loss_after": 0.0321}, {"profit_at_stop": 971, "recover_days": 1, "recover_date": "2025-05-07", "max_loss_after": 0.0149}, {"profit_at_stop": 3835, "recover_days": 1, "recover_date": "2025-06-04", "max_loss_after": 0.0357}, {"profit_at_stop": 5376, "recover_days": 1, "recover_date": "2025-07-02", "max_loss_after": 0.0523}], "红利低波": [{"profit_at_stop": 14879, "recover_days": 1, "recover_date": "2017-07-04", "max_loss_after": 0.1141}, {"profit_at_stop": 15544, "recover_days": 1, "recover_date": "2017-08-02", "max_loss_after": 0.125}, {"profit_at_stop": 12112, "recover_days": 1, "recover_date": "2017-09-04", "max_loss_after": 0.1021}, {"profit_at_stop": 12113, "recover_days": 1, "recover_date": "2017-10-10", "max_loss_after": 0.1021}, {"profit_at_stop": 12504, "recover_days": 1, "recover_date": "2017-11-02", "max_loss_after": 0.1041}, {"profit_at_stop": 9850, "recover_days": 1, "recover_date": "2017-12-04", "max_loss_after": 0.0849}, {"profit_at_stop": 10641, "recover_days": 1, "recover_date": "2018-01-03", "max_loss_after": 0.0937}, {"profit_at_stop": 13345, "recover_days": 1, "recover_date": "2018-02-02", "max_loss_after": 0.1177}, {"profit_at_stop": 5361, "recover_days": 1, "recover_date": "2018-03-02", "max_loss_after": 0.0431}, {"profit_at_stop": -782, "recover_days": 5, "recover_date": "2018-04-11", "max_loss_after": -0.0142}, {"profit_at_stop": -4616, "recover_days": 8, "recover_date": "2018-05-14", "max_loss_after": -0.0315}, {"profit_at_stop": -2372, "recover_days": 193, "recover_date": "2019-03-18", "max_loss_after": -0.1962}, {"profit_at_stop": -11930, "recover_days": 164, "recover_date": "2019-03-06", "max_loss_after": -0.1907}, {"profit_at_stop": -9945, "recover_days": 141, "recover_date": "2019-03-05", "max_loss_after": -0.1842}, {"profit_at_stop": -12972, "recover_days": 117, "recover_date": "2019-03-04", "max_loss_after": -0.1755}, {"profit_at_stop": -10737, "recover_days": 98, "recover_date": "2019-03-04", "max_loss_after": -0.1663}, {"profit_at_stop": -13608, "recover_days": 75, "recover_date": "2019-02-25", "max_loss_after": -0.115}, {"profit_at_stop": -8651, "recover_days": 53, "recover_date": "2019-02-25", "max_loss_after": -0.1034}, {"profit_at_stop": -10518, "recover_days": 33, "recover_date": "2019-02-25", "max_loss_after": -0.0878}, {"profit_at_stop": -1561, "recover_days": 2, "recover_date": "2019-02-12", "max_loss_after": -0.0042}, {"profit_at_stop": 7814, "recover_days": 1, "recover_date": "2019-03-04", "max_loss_after": 0.0799}, {"profit_at_stop": 17871, "recover_days": 1, "recover_date": "2019-04-02", "max_loss_after": 0.147}, {"profit_at_stop": 6177, "recover_days": 1, "recover_date": "2019-05-07", "max_loss_after": 0.0612}, {"profit_at_stop": 6709, "recover_days": 1, "recover_date": "2019-06-04", "max_loss_after": 0.0485}, {"profit_at_stop": 10613, "recover_days": 1, "recover_date": "2019-07-02", "max_loss_after": 0.0923}, {"profit_at_stop": 7780, "recover_days": 1, "recover_date": "2019-08-02", "max_loss_after": 0.0521}, {"profit_at_stop": 4770, "recover_days": 1, "recover_date": "2019-09-03", "max_loss_after": 0.0381}, {"profit_at_stop": 3766, "recover_days": 1, "recover_date": "2019-10-09", "max_loss_after": 0.0423}, {"profit_at_stop": 4411, "recover_days": 1, "recover_date": "2019-11-04", "max_loss_after": 0.0387}, {"profit_at_stop": 2163, "recover_days": 1, "recover_date": "2019-12-03", "max_loss_after": 0.0221}, {"profit_at_stop": 8306, "recover_days": 1, "recover_date": "2020-01-03", "max_loss_after": 0.0678}, {"profit_at_stop": -9752, "recover_days": 22, "recover_date": "2020-03-04", "max_loss_after": -0.0624}, {"profit_at_stop": -695, "recover_days": 2, "recover_date": "2020-03-04", "max_loss_after": -0.0076}, {"profit_at_stop": -9268, "recover_days": 60, "recover_date": "2020-07-02", "max_loss_after": -0.0716}, {"profit_at_stop": -4176, "recover_days": 39, "recover_date": "2020-07-02", "max_loss_after": -0.0624}, {"profit_at_stop": -4024, "recover_days": 20, "recover_date": "2020-07-01", "max_loss_after": -0.0408}, {"profit_at_stop": 612, "recover_days": 1, "recover_date": "2020-07-02", "max_loss_after": 0.0342}, {"profit_at_stop": 13846, "recover_days": 1, "recover_date": "2020-08-04", "max_loss_after": 0.119}, {"profit_at_stop": 14178, "recover_days": 1, "recover_date": "2020-09-02", "max_loss_after": 0.1141}, {"profit_at_stop": 8284, "recover_days": 1, "recover_date": "2020-10-12", "max_loss_after": 0.0876}, {"profit_at_stop": 7321, "recover_days": 1, "recover_date": "2020-11-03", "max_loss_after": 0.0729}, {"profit_at_stop": 17171, "recover_days": 1, "recover_date": "2020-12-02", "max_loss_after": 0.1435}, {"profit_at_stop": 6221, "recover_days": 1, "recover_date": "2021-01-05", "max_loss_after": 0.0508}, {"profit_at_stop": 2469, "recover_days": 1, "recover_date": "2021-02-02", "max_loss_after": 0.0163}, {"profit_at_stop": 9730, "recover_days": 1, "recover_date": "2021-03-02", "max_loss_after": 0.0734}, {"profit_at_stop": 10811, "recover_days": 1, "recover_date": "2021-04-02", "max_loss_after": 0.0797}, {"profit_at_stop": 10845, "recover_days": 1, "recover_date": "2021-05-07", "max_loss_after": 0.0957}, {"profit_at_stop": 14700, "recover_days": 1, "recover_date": "2021-06-02", "max_loss_after": 0.1233}, {"profit_at_stop": 8637, "recover_days": 1, "recover_date": "2021-07-02", "max_loss_after": 0.0606}, {"profit_at_stop": -1029, "recover_days": 5, "recover_date": "2021-08-09", "max_loss_after": -0.0163}, {"profit_at_stop": 11575, "recover_days": 1, "recover_date": "2021-09-02", "max_loss_after": 0.1171}, {"profit_at_stop": 13676, "recover_days": 1, "recover_date": "2021-10-11", "max_loss_after": 0.1246}, {"profit_at_stop": 3026, "recover_days": 2, "recover_date": "2021-11-03", "max_loss_after": -0.0008}, {"profit_at_stop": 2092, "recover_days": 1, "recover_date": "2021-12-02", "max_loss_after": 0.0216}, {"profit_at_stop": 9104, "recover_days": 1, "recover_date": "2022-01-05", "max_loss_after": 0.0817}, {"profit_at_stop": 7515, "recover_days": 1, "recover_date": "2022-02-08", "max_loss_after": 0.0863}, {"profit_at_stop": 8080, "recover_days": 1, "recover_date": "2022-03-02", "max_loss_after": 0.0764}, {"profit_at_stop": 10961, "recover_days": 1, "recover_date": "2022-04-06", "max_loss_after": 0.1107}, {"profit_at_stop": 6528, "recover_days": 1, "recover_date": "2022-05-06", "max_loss_after": 0.0234}, {"profit_at_stop": 7963, "recover_days": 1, "recover_date": "2022-06-02", "max_loss_after": 0.0555}, {"profit_at_stop": 7255, "recover_days": 1, "recover_date": "2022-07-04", "max_loss_after": 0.0577}, {"profit_at_stop": 1028, "recover_days": 8, "recover_date": "2022-08-11", "max_loss_after": -0.0286}, {"profit_at_stop": 5666, "recover_days": 1, "recover_date": "2022-09-02", "max_loss_after": 0.0449}, {"profit_at_stop": 2659, "recover_days": 1, "recover_date": "2022-10-11", "max_loss_after": 0.0209}, {"profit_at_stop": -6152, "recover_days": 8, "recover_date": "2022-11-11", "max_loss_after": -0.0466}, {"profit_at_stop": 3772, "recover_days": 1, "recover_date": "2022-12-02", "max_loss_after": 0.0237}, {"profit_at_stop": -827, "recover_days": 1, "recover_date": "2023-01-04", "max_loss_after": 0.0003}, {"profit_at_stop": 2639, "recover_days": 1, "recover_date": "2023-02-02", "max_loss_after": 0.0227}, {"profit_at_stop": 6573, "recover_days": 1, "recover_date": "2023-03-02", "max_loss_after": 0.0613}, {"profit_at_stop": 8131, "recover_days": 1, "recover_date": "2023-04-04", "max_loss_after": 0.0743}, {"profit_at_stop": 18253, "recover_days": 1, "recover_date": "2023-05-05", "max_loss_after": 0.155}, {"profit_at_stop": 9651, "recover_days": 1, "recover_date": "2023-06-02", "max_loss_after": 0.0815}, {"profit_at_stop": 8237, "recover_days": 1, "recover_date": "2023-07-04", "max_loss_after": 0.0641}, {"profit_at_stop": 13175, "recover_days": 1, "recover_date": "2023-08-02", "max_loss_after": 0.095}, {"profit_at_stop": 7301, "recover_days": 1, "recover_date": "2023-09-04", "max_loss_after": 0.0818}, {"profit_at_stop": 7382, "recover_days": 1, "recover_date": "2023-10-10", "max_loss_after": 0.0505}, {"profit_at_stop": 2070, "recover_days": 1, "recover_date": "2023-11-02", "max_loss_after": 0.0202}, {"profit_at_stop": 1790, "recover_days": 1, "recover_date": "2023-12-04", "max_loss_after": 0.0169}, {"profit_at_stop": 519, "recover_days": 1, "recover_date": "2024-01-03", "max_loss_after": 0.017}, {"profit_at_stop": 2114, "recover_days": 1, "recover_date": "2024-02-02", "max_loss_after": 0.0183}, {"profit_at_stop": 8556, "recover_days": 1, "recover_date": "2024-03-04", "max_loss_after": 0.0771}, {"profit_at_stop": 8636, "recover_days": 1, "recover_date": "2024-04-02", "max_loss_after": 0.0785}, {"profit_at_stop": 12275, "recover_days": 1, "recover_date": "2024-05-07", "max_loss_after": 0.1035}, {"profit_at_stop": 13935, "recover_days": 1, "recover_date": "2024-06-04", "max_loss_after": 0.1187}, {"profit_at_stop": 12593, "recover_days": 1, "recover_date": "2024-07-02", "max_loss_after": 0.1076}, {"profit_at_stop": 5626, "recover_days": 1, "recover_date": "2024-08-02", "max_loss_after": 0.0458}, {"profit_at_stop": 2838, "recover_days": 1, "recover_date": "2024-09-03", "max_loss_after": 0.0114}, {"profit_at_stop": 16880, "recover_days": 1, "recover_date": "2024-10-09", "max_loss_after": 0.0591}, {"profit_at_stop": 7566, "recover_days": 1, "recover_date": "2024-11-04", "max_loss_after": 0.0734}, {"profit_at_stop": 7079, "recover_days": 1, "recover_date": "2024-12-03", "max_loss_after": 0.0721}, {"profit_at_stop": 7124, "recover_days": 1, "recover_date": "2025-01-03", "max_loss_after": 0.0475}, {"profit_at_stop": 3248, "recover_days": 1, "recover_date": "2025-02-06", "max_loss_after": 0.0275}, {"profit_at_stop": 3102, "recover_days": 1, "recover_date": "2025-03-04", "max_loss_after": 0.0257}, {"profit_at_stop": 5570, "recover_days": 1, "recover_date": "2025-04-02", "max_loss_after": 0.0542}, {"profit_at_stop": 4317, "recover_days": 1, "recover_date": "2025-05-07", "max_loss_after": 0.0451}, {"profit_at_stop": 9938, "recover_days": 1, "recover_date": "2025-06-04", "max_loss_after": 0.0878}, {"profit_at_stop": 11959, "recover_days": 1, "recover_date": "2025-07-02", "max_loss_after": 0.1021}], "红利低波100": [{"profit_at_stop": 14707, "recover_days": 1, "recover_date": "2017-07-04", "max_loss_after": 0.1186}, {"profit_at_stop": 16504, "recover_days": 1, "recover_date": "2017-08-02", "max_loss_after": 0.1335}, {"profit_at_stop": 13990, "recover_days": 1, "recover_date": "2017-09-04", "max_loss_after": 0.1189}, {"profit_at_stop": 11482, "recover_days": 1, "recover_date": "2017-10-10", "max_loss_after": 0.1023}, {"profit_at_stop": 8952, "recover_days": 1, "recover_date": "2017-11-02", "max_loss_after": 0.0705}, {"profit_at_stop": 4850, "recover_days": 1, "recover_date": "2017-12-04", "max_loss_after": 0.0379}, {"profit_at_stop": 2873, "recover_days": 1, "recover_date": "2018-01-03", "max_loss_after": 0.0296}, {"profit_at_stop": 4812, "recover_days": 1, "recover_date": "2018-02-02", "max_loss_after": 0.0423}, {"profit_at_stop": -751, "recover_days": 3, "recover_date": "2018-03-06", "max_loss_after": -0.0086}, {"profit_at_stop": -3874, "recover_days": 224, "recover_date": "2019-03-05", "max_loss_after": -0.2133}, {"profit_at_stop": -7629, "recover_days": 206, "recover_date": "2019-03-05", "max_loss_after": -0.2137}, {"profit_at_stop": -6996, "recover_days": 184, "recover_date": "2019-03-05", "max_loss_after": -0.2121}, {"profit_at_stop": -15866, "recover_days": 162, "recover_date": "2019-03-04", "max_loss_after": -0.2012}, {"profit_at_stop": -10409, "recover_days": 135, "recover_date": "2019-02-25", "max_loss_after": -0.1909}, {"profit_at_stop": -12351, "recover_days": 112, "recover_date": "2019-02-25", "max_loss_after": -0.178}, {"profit_at_stop": -10262, "recover_days": 93, "recover_date": "2019-02-25", "max_loss_after": -0.1655}, {"profit_at_stop": -11041, "recover_days": 74, "recover_date": "2019-02-22", "max_loss_after": -0.0933}, {"profit_at_stop": -5799, "recover_days": 48, "recover_date": "2019-02-18", "max_loss_after": -0.0826}, {"profit_at_stop": -8248, "recover_days": 25, "recover_date": "2019-02-13", "max_loss_after": -0.0693}, {"profit_at_stop": -1434, "recover_days": 1, "recover_date": "2019-02-11", "max_loss_after": 0.0003}, {"profit_at_stop": 11680, "recover_days": 1, "recover_date": "2019-03-04", "max_loss_after": 0.1101}, {"profit_at_stop": 20628, "recover_days": 1, "recover_date": "2019-04-02", "max_loss_after": 0.1716}, {"profit_at_stop": 10158, "recover_days": 1, "recover_date": "2019-05-07", "max_loss_after": 0.0931}, {"profit_at_stop": 9763, "recover_days": 1, "recover_date": "2019-06-04", "max_loss_after": 0.0752}, {"profit_at_stop": 11310, "recover_days": 1, "recover_date": "2019-07-02", "max_loss_after": 0.0955}, {"profit_at_stop": 8460, "recover_days": 1, "recover_date": "2019-08-02", "max_loss_after": 0.0573}, {"profit_at_stop": 4438, "recover_days": 1, "recover_date": "2019-09-03", "max_loss_after": 0.0375}, {"profit_at_stop": 2688, "recover_days": 1, "recover_date": "2019-10-09", "max_loss_after": 0.0286}, {"profit_at_stop": 2090, "recover_days": 1, "recover_date": "2019-11-04", "max_loss_after": 0.0198}, {"profit_at_stop": -597, "recover_days": 5, "recover_date": "2019-12-09", "max_loss_after": -0.005}, {"profit_at_stop": 4103, "recover_days": 1, "recover_date": "2020-01-03", "max_loss_after": 0.036}, {"profit_at_stop": -12430, "recover_days": 103, "recover_date": "2020-07-03", "max_loss_after": -0.1193}, {"profit_at_stop": -3971, "recover_days": 83, "recover_date": "2020-07-03", "max_loss_after": -0.1162}, {"profit_at_stop": -10070, "recover_days": 60, "recover_date": "2020-07-02", "max_loss_after": -0.0785}, {"profit_at_stop": -5909, "recover_days": 39, "recover_date": "2020-07-02", "max_loss_after": -0.0687}, {"profit_at_stop": -4350, "recover_days": 21, "recover_date": "2020-07-02", "max_loss_after": -0.0408}, {"profit_at_stop": 105, "recover_days": 1, "recover_date": "2020-07-02", "max_loss_after": 0.027}, {"profit_at_stop": 11483, "recover_days": 1, "recover_date": "2020-08-04", "max_loss_after": 0.0992}, {"profit_at_stop": 12698, "recover_days": 1, "recover_date": "2020-09-02", "max_loss_after": 0.1019}, {"profit_at_stop": 7188, "recover_days": 1, "recover_date": "2020-10-12", "max_loss_after": 0.0777}, {"profit_at_stop": 5265, "recover_days": 1, "recover_date": "2020-11-03", "max_loss_after": 0.0575}, {"profit_at_stop": 14590, "recover_days": 1, "recover_date": "2020-12-02", "max_loss_after": 0.1234}, {"profit_at_stop": 7159, "recover_days": 1, "recover_date": "2021-01-05", "max_loss_after": 0.0536}, {"profit_at_stop": 2636, "recover_days": 1, "recover_date": "2021-02-02", "max_loss_after": 0.0163}, {"profit_at_stop": 9148, "recover_days": 1, "recover_date": "2021-03-02", "max_loss_after": 0.068}, {"profit_at_stop": 12749, "recover_days": 1, "recover_date": "2021-04-02", "max_loss_after": 0.0981}, {"profit_at_stop": 10099, "recover_days": 1, "recover_date": "2021-05-07", "max_loss_after": 0.0921}, {"profit_at_stop": 8309, "recover_days": 1, "recover_date": "2021-06-02", "max_loss_after": 0.0683}, {"profit_at_stop": 7766, "recover_days": 1, "recover_date": "2021-07-02", "max_loss_after": 0.0606}, {"profit_at_stop": 528, "recover_days": 1, "recover_date": "2021-08-03", "max_loss_after": 0.0042}, {"profit_at_stop": 7691, "recover_days": 1, "recover_date": "2021-09-02", "max_loss_after": 0.0778}, {"profit_at_stop": 12193, "recover_days": 1, "recover_date": "2021-10-11", "max_loss_after": 0.0977}, {"profit_at_stop": 3661, "recover_days": 1, "recover_date": "2021-11-02", "max_loss_after": 0.0118}, {"profit_at_stop": 4493, "recover_days": 1, "recover_date": "2021-12-02", "max_loss_after": 0.0422}, {"profit_at_stop": 13790, "recover_days": 1, "recover_date": "2022-01-05", "max_loss_after": 0.1102}, {"profit_at_stop": 8497, "recover_days": 1, "recover_date": "2022-02-08", "max_loss_after": 0.0954}, {"profit_at_stop": 7670, "recover_days": 1, "recover_date": "2022-03-02", "max_loss_after": 0.0717}, {"profit_at_stop": 13078, "recover_days": 1, "recover_date": "2022-04-06", "max_loss_after": 0.1293}, {"profit_at_stop": 5525, "recover_days": 1, "recover_date": "2022-05-06", "max_loss_after": 0.0232}, {"profit_at_stop": 4961, "recover_days": 1, "recover_date": "2022-06-02", "max_loss_after": 0.0358}, {"profit_at_stop": 5434, "recover_days": 1, "recover_date": "2022-07-04", "max_loss_after": 0.0455}, {"profit_at_stop": 1551, "recover_days": 8, "recover_date": "2022-08-11", "max_loss_after": -0.021}, {"profit_at_stop": 1380, "recover_days": 1, "recover_date": "2022-09-02", "max_loss_after": 0.0151}, {"profit_at_stop": -3800, "recover_days": 26, "recover_date": "2022-11-15", "max_loss_after": -0.0576}, {"profit_at_stop": -5335, "recover_days": 10, "recover_date": "2022-11-15", "max_loss_after": -0.0455}, {"profit_at_stop": 3020, "recover_days": 1, "recover_date": "2022-12-02", "max_loss_after": 0.0256}, {"profit_at_stop": 898, "recover_days": 1, "recover_date": "2023-01-04", "max_loss_after": 0.0164}, {"profit_at_stop": 5676, "recover_days": 1, "recover_date": "2023-02-02", "max_loss_after": 0.0444}, {"profit_at_stop": 9312, "recover_days": 1, "recover_date": "2023-03-02", "max_loss_after": 0.0846}, {"profit_at_stop": 10091, "recover_days": 1, "recover_date": "2023-04-04", "max_loss_after": 0.0935}, {"profit_at_stop": 19401, "recover_days": 1, "recover_date": "2023-05-05", "max_loss_after": 0.1636}, {"profit_at_stop": 11927, "recover_days": 1, "recover_date": "2023-06-02", "max_loss_after": 0.1009}, {"profit_at_stop": 10820, "recover_days": 1, "recover_date": "2023-07-04", "max_loss_after": 0.0849}, {"profit_at_stop": 17691, "recover_days": 1, "recover_date": "2023-08-02", "max_loss_after": 0.1408}, {"profit_at_stop": 10917, "recover_days": 1, "recover_date": "2023-09-04", "max_loss_after": 0.1085}, {"profit_at_stop": 7449, "recover_days": 1, "recover_date": "2023-10-10", "max_loss_after": 0.0533}, {"profit_at_stop": 3042, "recover_days": 1, "recover_date": "2023-11-02", "max_loss_after": 0.025}, {"profit_at_stop": 3294, "recover_days": 1, "recover_date": "2023-12-04", "max_loss_after": 0.027}, {"profit_at_stop": 142, "recover_days": 1, "recover_date": "2024-01-03", "max_loss_after": 0.0094}, {"profit_at_stop": -2991, "recover_days": 4, "recover_date": "2024-02-07", "max_loss_after": -0.0446}, {"profit_at_stop": 3256, "recover_days": 1, "recover_date": "2024-03-04", "max_loss_after": 0.0263}, {"profit_at_stop": 2715, "recover_days": 1, "recover_date": "2024-04-02", "max_loss_after": 0.0299}, {"profit_at_stop": 7440, "recover_days": 1, "recover_date": "2024-05-07", "max_loss_after": 0.0585}, {"profit_at_stop": 5293, "recover_days": 1, "recover_date": "2024-06-04", "max_loss_after": 0.052}, {"profit_at_stop": 2381, "recover_days": 1, "recover_date": "2024-07-02", "max_loss_after": 0.0229}, {"profit_at_stop": 1004, "recover_days": 1, "recover_date": "2024-08-02", "max_loss_after": 0.0049}, {"profit_at_stop": -3204, "recover_days": 15, "recover_date": "2024-09-25", "max_loss_after": -0.0708}, {"profit_at_stop": 17132, "recover_days": 1, "recover_date": "2024-10-09", "max_loss_after": 0.0575}, {"profit_at_stop": 7807, "recover_days": 1, "recover_date": "2024-11-04", "max_loss_after": 0.0766}, {"profit_at_stop": 9862, "recover_days": 1, "recover_date": "2024-12-03", "max_loss_after": 0.0919}, {"profit_at_stop": 8654, "recover_days": 1, "recover_date": "2025-01-03", "max_loss_after": 0.0635}, {"profit_at_stop": 3683, "recover_days": 1, "recover_date": "2025-02-06", "max_loss_after": 0.0318}, {"profit_at_stop": 3664, "recover_days": 1, "recover_date": "2025-03-04", "max_loss_after": 0.0321}, {"profit_at_stop": 5916, "recover_days": 1, "recover_date": "2025-04-02", "max_loss_after": 0.0507}, {"profit_at_stop": 3527, "recover_days": 1, "recover_date": "2025-05-07", "max_loss_after": 0.0379}, {"profit_at_stop": 6204, "recover_days": 1, "recover_date": "2025-06-04", "max_loss_after": 0.0555}, {"profit_at_stop": 6083, "recover_days": 1, "recover_date": "2025-07-02", "max_loss_after": 0.0581}]};
+const YIELDS = {"H00015": {"dy": 4.284872209606361, "tr": 9.81404009845126, "pr": 5.529167888844899, "d0": "2025-07-31", "d1": "2026-07-31", "ldy": 4.242927152013687, "ld1": "2026-08-26"}, "H00922": {"dy": 4.11766685810494, "tr": 6.600024336495847, "pr": 2.4823574783909064, "d0": "2025-07-31", "d1": "2026-07-31", "ldy": 4.1654829205676425, "ld1": "2026-08-26"}, "H20269": {"dy": 4.776164438422647, "tr": 3.08544995170813, "pr": -1.6907144867145174, "d0": "2025-07-31", "d1": "2026-07-31", "ldy": 4.715681102579228, "ld1": "2026-08-26"}, "H20955": {"dy": 4.24353118681754, "tr": 4.583987013980972, "pr": 0.3404558271634328, "d0": "2025-07-31", "d1": "2026-07-31", "ldy": 4.272382720163181, "ld1": "2026-08-26"}};
+const OTC = {"H00015": "华泰柏瑞红利ETF联接A(012761)/C(012762)", "H00922": "易方达中证红利ETF联接发起式A(009051)/C(009052)", "H20269": "华泰柏瑞中证红利低波动ETF联接A(007466)/C(007467)", "H20955": "景顺长城中证红利低波动100ETF联接A(016128)/C(016129)"};
+
+const fonts = {fontFamily:"-apple-system,'PingFang SC','Microsoft YaHei',sans-serif"};
+const axis = {
+  axisLine:{lineStyle:{color:"#d7dde6"}},
+  axisLabel:{color:"#6b7686",fontSize:11,...fonts},
+  splitLine:{lineStyle:{color:"#eef1f6"}}
+};
+
+/* ---------- 1 卡片 ---------- */
+(function(){
+  const box = document.getElementById("cards");
+  const bestWin = Math.max(...SHORTS.map(x=>STATS[x].n_profit/STATS[x].n_total));
+  SHORTS.forEach(short=>{
+    const s = STATS[short];
+    const el = document.createElement("div");
+    el.className = "card";
+    el.innerHTML = `
+      <div class="top"><span class="dot" style="background:${COLORS[CODES[short]]}"></span><span class="nm">${short}</span><span class="ix-code">${CODES[short]}</span>
+        ${s.n_profit/s.n_total===bestWin?'<span class="badge win">盈利时点最多</span>':''}</div>
+      <div class="fval">${(s.n_profit/s.n_total*100).toFixed(1)}% <small>停止时已盈利</small></div>
+      <div class="kv">
+        <div><div class="k">停止时仍亏损</div><div class="v">${s.n_loss} / ${s.n_total} 个起点</div></div>
+        <div><div class="k">亏损起点回正</div><div class="v">${s.n_loss-s.n_unrec}/${s.n_loss} 个已回正</div></div>
+        <div><div class="k">回正耗时(中位)</div><div class="v">${s.rec_med} 交易日</div></div>
+        <div><div class="k">最长等待</div><div class="v">${s.rec_max} 交易日</div></div>
+        <div><div class="k">停止后最深浮亏(中位)</div><div class="v neg">${(s.deep_med*100).toFixed(1)}%</div></div>
+        <div><div class="k">最深浮亏(最差)</div><div class="v neg">${(s.deep_min*100).toFixed(1)}%</div></div>
+      </div>`;
+    box.appendChild(el);
+  });
+})();
+
+/* ---------- 股息率卡片 ---------- */
+(function(){
+  const box = document.getElementById("yieldCards");
+  box.innerHTML = SHORTS.map(short=>{
+    const c = CODES[short];
+    const y = YIELDS[c];
+    return `<div class="card" style="padding:14px 16px">
+      <div class="top"><span class="dot" style="background:${COLORS[c]}"></span><span class="nm">${short}</span><span class="ix-code">${c}</span></div>
+      <div style="font-size:24px;font-weight:700;color:#e74c3c">${y.ldy.toFixed(2)}%</div>
+      <div style="font-size:12px;color:var(--sub);margin-top:2px">最新股息率（截至 ${y.ld1}）</div>
+      <div style="font-size:24px;font-weight:600;margin-top:8px">${y.dy.toFixed(2)}%</div>
+      <div style="font-size:12px;color:var(--sub);margin-top:2px">近12个月实际股息率（${y.d0} ~ ${y.d1}）</div>
+      <div style="font-size:11.5px;color:var(--sub);margin-top:8px;background:#fafbfc;border-radius:8px;padding:6px 8px">同期全收益 ${y.tr.toFixed(1)}% ｜ 价格 ${y.pr.toFixed(1)}%</div>
+    </div>`;
+  }).join("");
+})();
+
+/* ---------- 6 那到底选哪个 ---------- */
+(function(){
+  const CODE2SHORT = {};
+  SHORTS.forEach(s=>CODE2SHORT[CODES[s]]=s);
+  const PICK = ["H20269","H00922","H00015"];
+  const pickMeta = {
+    H20269: {t:"如果只能选一个：红利低波全收益", tag:"全场最佳", tagCls:"badge win",
+             why:"停止时盈利占比最高，横跨沪深两市、50 只成分股兼顾分散与弹性，持有体验最稳。"},
+    H00922: {t:"看重回正速度：中证红利全收益", tag:"回正最快", tagCls:"badge steady",
+             why:"亏损起点回正中位仅 15 个交易日（约 1 个月），指数规模大、流动性好。"},
+    H00015: {t:"追求浮亏最浅：上证红利全收益", tag:"浮亏最浅", tagCls:"badge steady",
+             why:"停止后最深浮亏仅约 -14.3%（四者最浅），账面心理压力最小。"},
+  };
+  const html = PICK.map(code=>{
+    const short = CODE2SHORT[code];
+    const s = STATS[short];
+    const m = pickMeta[code];
+    const profPct = (s.n_profit/s.n_total*100).toFixed(1);
+    const li = [
+      ["停止时盈利占比", profPct+"%（亏损 "+s.n_loss+" / "+s.n_total+" 个起点）"],
+      ["亏损起点回正中位", s.rec_med+" 交易日（约 "+Math.max(1,Math.round(s.rec_med/21))+" 个月）"],
+      ["最长等待回正", s.rec_max+" 交易日"],
+      ["停止后最深浮亏(中位)", (s.deep_med*100).toFixed(1)+"%"],
+      ["最深浮亏(最差)", (s.deep_min*100).toFixed(1)+"%"],
+    ];
+    return `<div class="pc">
+      <div class="pt"><span class="dot" style="width:10px;height:10px;border-radius:50%;background:${COLORS[code]}"></span>${m.t} <span class="${m.tagCls}" style="font-size:11px;border-radius:999px;padding:2px 9px;font-weight:700;flex:none">${m.tag}</span></div>
+      <div class="pc-sub"><span class="ix-code">${code}</span> · 场外基金：${OTC[code]}</div>
+      <ul>${li.map(x=>`<li><span class="k">${x[0]}</span><span class="v">${x[1]}</span></li>`).join("")}</ul>
+      <div style="font-size:12.5px;color:var(--sub);margin-top:10px;background:#fafbfc;border-radius:8px;padding:8px 10px">${m.why}</div>
+    </div>`;
+  }).join("");
+  document.getElementById("pick").innerHTML = html;
+})();
+
+/* ---------- 2 停止后回正耗时柱状图(仅亏损起点) ---------- */
+let recChart=null;
+function renderRec(){
+  const series = SHORTS.map(short=>({
+    name:short, type:"bar", data:SERIES[short].rec_days_loss,
+    barWidth:"18%", color:COLORS[CODES[short]],
+    itemStyle:{borderRadius:[3,3,0,0]},
+    emphasis:{focus:"series"}
+  }));
+  recChart.setOption({
+    grid:{left:48,right:24,top:30,bottom:52},
+    tooltip:{trigger:"axis",formatter:ps=>{
+      const i=ps[0].dataIndex;
+      let s=`起点 <b>${STARTS[i]}</b><br>`;
+      SHORTS.forEach(short=>{
+        const v=SERIES[short].rec_days_loss[i];
+        s+=`${short}：${v==null?"停止时已盈利":v+" 交易日（约"+(v>=21?Math.round(v/21):1)+"个月）"}<br>`;
+      });
+      return s;
+    }},
+    legend:{data:SHORTS,top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect"},
+    xAxis:{type:"category",data:STARTS,axisLabel:{...axis.axisLabel,interval:Math.ceil(STARTS.length/10)},...axis},
+    yAxis:{type:"value",name:"交易日",nameTextStyle:{color:"#6b7686"},axisLabel:{color:"#6b7686",fontSize:11},splitLine:{lineStyle:{color:"#eef1f6"}}},
+    series
+  }, true);
+}
+
+/* ---------- 3 停止日浮盈折线 ---------- */
+let profitChart=null;
+function renderProfit(){
+  const series = SHORTS.map(short=>({
+    name:short, type:"line", data:SERIES[short].profit_at_stop, smooth:false, symbol:"none", color:COLORS[CODES[short]],
+    lineStyle:{width:1.8,color:COLORS[CODES[short]]},
+    areaStyle:{color:{type:"linear",x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:COLORS[CODES[short]]+"33"},{offset:1,color:COLORS[CODES[short]]+"05"}]}},
+    emphasis:{focus:"series"}
+  }));
+  profitChart.setOption({
+    grid:{left:60,right:24,top:30,bottom:52},
+    tooltip:{trigger:"axis",valueFormatter:v=>v.toLocaleString()+" 元"},
+    legend:{data:SHORTS,top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect"},
+    xAxis:{type:"category",data:STARTS,boundaryGap:false,axisLabel:{...axis.axisLabel,interval:Math.ceil(STARTS.length/10)},...axis},
+    yAxis:{type:"value",axisLabel:{formatter:v=>(v>=0?"+":"")+Math.round(v/1000)+"k",color:"#6b7686",fontSize:11},splitLine:{lineStyle:{color:"#eef1f6"}}},
+    series
+  }, true);
+}
+
+/* ---------- 4 明细表 ---------- */
+(function(){
+  const sel = document.getElementById("selStart");
+  sel.innerHTML = STARTS.map(s=>`<option value="${s}">${s}</option>`).join("");
+  sel.value = STARTS[STARTS.length-1];  // 默认选中最近一个起点
+  function render(){
+    const start = sel.value;
+    const rows = SHORTS.map(short=>{
+      const r = ROWS[short][STARTS.indexOf(start)];
+      const prof = r.profit_at_stop;
+      const rec = r.recover_days!=null ? r.recover_days+" 天" : "—";
+      const deep = (r.max_loss_after*100).toFixed(1);
+      return `<tr ${short==="红利低波"?"class='hl'":""}>
+        <td><span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${COLORS[CODES[short]]}"></span> <b>${short}</b></td>
+        <td class="num ${prof>=0?"pos":"neg"}"><b>${prof>=0?"+":""}¥${Math.abs(prof).toLocaleString()}</b></td>
+        <td class="num ${prof>=0?"pos":"neg"}">${prof>=0?"盈利":"亏损"}</td>
+        <td class="num">${r.recover_date||"—"}</td>
+        <td class="num">${rec}</td>
+        <td class="num neg">${deep}%</td>
+      </tr>`;
+    }).join("");
+    document.getElementById("tbl_pick").innerHTML = `
+      <tr><th>指数</th><th class="num">停止日浮盈/浮亏</th><th class="num">状态</th><th class="num">回正日期</th><th class="num">回正耗时</th><th class="num">停止后最深浮亏</th></tr>${rows}`;
+  }
+  sel.onchange = render;
+  render();
+})();
+
+/* 图例 */
+(function(){
+  document.getElementById("lg1").innerHTML = SHORTS.map(short=>`<div class="li"><span class="sw" style="background:${COLORS[CODES[short]]}"></span>${short} 亏损起点回正耗时中位 ${STATS[short].rec_med} 天</div>`).join("");
+  document.getElementById("lg2").innerHTML = SHORTS.map(short=>`<div class="li"><span class="sw" style="background:${COLORS[CODES[short]]}"></span>${short} 停止时盈利占比 ${(STATS[short].n_profit/STATS[short].n_total*100).toFixed(1)}%</div>`).join("");
+})();
+
+/* 提醒区 */
+(function(){
+  const box = document.getElementById("alertGrid");
+  const items = [
+    {n:"停止时已盈利", v:"75%-80%", s:"约 4/5 起点定投满1年即盈利"},
+    {n:"亏损起点全部回正", v:"100%", s:"停止后持有，历史全部收复"},
+    {n:"回正耗时(中位)", v:"15-60 交易日", s:"约 1-3 个月"},
+    {n:"最长等待", v:"224 交易日", s:"约 10-11 个月（2018 熊市起点）"},
+  ];
+  items.forEach(it=>{
+    const el = document.createElement("div");
+    el.className = "ag";
+    el.innerHTML = `<div class="n">${it.n}</div><div class="v">${it.v}</div><div style="font-size:12px;color:var(--sub)">${it.s}</div>`;
+    box.appendChild(el);
+  });
+})();
+
+/* init */
+window.addEventListener("resize",()=>{recChart&&recChart.resize();profitChart&&profitChart.resize();});
+(function init(){
+  recChart = echarts.init(document.getElementById("c_rec"));
+  profitChart = echarts.init(document.getElementById("c_profit"));
+  renderRec(); renderProfit();
+})();
+</script>
+</body>
+</html>

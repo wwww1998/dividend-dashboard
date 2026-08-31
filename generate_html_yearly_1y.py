@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""读 result.json, 生成 dividend_dashboard.html 网页看板"""
+"""读 result_yearly_1y.json, 生成 dividend_dashboard_yearly_1y.html 网页看板(每年定投1年)"""
 import json, datetime
 
-r = json.load(open("result.json", encoding="utf-8"))
+r = json.load(open("result_yearly_1y.json", encoding="utf-8"))
 idx = r["indices"]
 
 # 股息率数据(价差法, 近12个月)
@@ -72,7 +72,7 @@ html = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>四大红利全收益指数 · 10年定投数据回测</title>
+<title>四大红利全收益指数 · 1年定投数据回测</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <script>window.echarts||document.write('<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.5.0/echarts.min.js"><\\/script>');</script>
 <style>
@@ -132,22 +132,6 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
 table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:480px}
 th{background:#f8fafc;color:var(--sub);font-weight:600;text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
 td{padding:11px 14px;border-bottom:1px solid #f1f4f8;white-space:nowrap}
-.tbl-scroll-hint{display:none;color:var(--sub);font-size:12px;margin:6px 2px 0;text-align:right}
-@media(max-width:760px){
-  .hero h1{font-size:23px}.hero{padding:28px 22px}
-  .know{grid-template-columns:1fr}
-  .cards{grid-template-columns:1fr}
-  .pick{grid-template-columns:1fr}
-  .card .kv{grid-template-columns:1fr}
-  th,td{padding:9px 10px;font-size:12.5px}
-  /* 回撤明细表8列: 隐藏耗时列(第6峰值→谷底 / 第8峰值→恢复), 保留所有日期和金额 */
-  #tbl_mdd td:nth-child(6), #tbl_mdd td:nth-child(8),
-  #tbl_mdd th:nth-child(6), #tbl_mdd th:nth-child(8){display:none}
-  /* 年度表6列: 隐藏当年盈亏(衍生值, 由浮盈变化可推算) */
-  #tbl_annual td:nth-child(6), #tbl_annual th:nth-child(6){display:none}
-  /* 年度涨跌对比表: 四指数全部保留, 窄屏靠横向滚动 (tbl-box 已 overflow-x:auto) */
-  .tbl-scroll-hint{display:block}
-}
 tr:last-child td{border-bottom:none}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 td b{font-weight:700}
@@ -201,7 +185,16 @@ tr.hl td{background:#fffaf7}
 .cta p{font-size:16px;font-weight:700;color:#8c2f28;letter-spacing:.5px;line-height:1.8}
 .cta p b{color:#b3372c;font-weight:800}
 .cta .sub{font-size:12px;color:#8b7a77;margin-top:8px;letter-spacing:.3px;line-height:1.7}
-@media(max-width:720px){.hero h1{font-size:23px}.hero{padding:28px 22px}}
+@media(max-width:760px){
+  .hero h1{font-size:23px}.hero{padding:28px 22px}
+  .know,.cards,.pick{grid-template-columns:1fr}
+  .card .kv{grid-template-columns:1fr}
+  th,td{padding:9px 10px;font-size:12.5px}
+  #tbl_mdd td:nth-child(6),#tbl_mdd td:nth-child(8),#tbl_mdd th:nth-child(6),#tbl_mdd th:nth-child(8){display:none}
+  #tbl_annual td:nth-child(6),#tbl_annual th:nth-child(6){display:none}
+  /* 年度涨跌对比表: 四指数全部保留, 窄屏靠横向滚动 (tbl-box 已 overflow-x:auto) */
+  .tbl-scroll-hint{display:block}
+}
 </style>
 </head>
 <body>
@@ -209,11 +202,11 @@ tr.hl td{background:#fffaf7}
 
 <!-- HERO -->
 <div class="hero">
-  <h1>每月定投 %%AMOUNT%% 元红利指数，10 年后能赚多少？<br><em>四大红利全收益指数 ·数据回测</em></h1>
-  <div class="sub">基于中证指数官网全收益指数官方日线（csindex.com.cn），逐日复算 2016-08 至 2026-07 十年定投：每月首个交易日买入 %%AMOUNT%% 元，共 %%PERIODS%% 期、累计投入 ¥%%TOTAL%%。重点还原每个指数的<b style="color:#ffb37a">真实回测</b>——包括定投组合的实际浮亏与恢复耗时。</div>
+  <h1>每年年初定投 %%AMOUNT%% 元红利指数，1 年后能赚多少？<br><em>四大红利全收益指数 ·数据回测</em></h1>
+  <div class="sub">基于中证指数官网全收益指数官方日线（csindex.com.cn），逐日复算 2025-01 至 2026-07 一年定投：每年年初（1 月首个交易日）买入 %%AMOUNT%% 元，共 %%PERIODS%% 期、累计投入 ¥%%TOTAL%%。重点还原每个指数的<b style="color:#ffb37a">真实回测</b>——包括定投组合的实际浮亏与恢复耗时。</div>
   <div class="rules">
-    <div class="rule">周期 <b>2016.08 - 2026.07</b></div>
-    <div class="rule">频率 <b>每月首个交易日</b></div>
+    <div class="rule">周期 <b>2025.01 - 2026.07</b></div>
+    <div class="rule">频率 <b>每年年初（1 月首个交易日）</b></div>
     <div class="rule">每期 <b>¥%%AMOUNT%%</b></div>
     <div class="rule">总投入 <b>¥%%TOTAL%%</b>（%%PERIODS%% 期）</div>
     <div class="rule">口径 <b>全收益指数（含分红再投）</b></div>
@@ -240,8 +233,8 @@ tr.hl td{background:#fffaf7}
       <h3><span class="ico" style="background:#e67e22">②</span>为什么买：三条获利逻辑</h3>
       <ul>
         <li><b>每年收"租"（现金分红）</b>：当前股息率约 4%-5%，1 万本金每年约 400-500 元现金分红，远超十年国债（约 1.7%）与银行理财。</li>
-        <li><b>复利滚雪球（分红再投资＋定投）</b>：分红再买份额、跌时定投买更多份额，份额越滚越多。回测里 10 年 %%INVEST_WAN%% 变 %%FINAL_BEST_WAN%%（红利低波），一半收益来自"低点坚持买入积累的份额"。</li>
-        <li><b>防御性（低波动抗跌）</b>：成分股多为银行、煤炭、石化、交运龙头，盈利稳定。10 年定投最大回撤仅 -11.6%~-17.1%，比大盘温和。</li>
+        <li><b>复利滚雪球（分红再投资＋定投）</b>：分红再买份额、跌时定投买更多份额，份额越滚越多。回测里 1 年 %%INVEST_WAN%% 变 %%FINAL_BEST_WAN%%（红利低波），一半收益来自"低点坚持买入积累的份额"。</li>
+        <li><b>防御性（低波动抗跌）</b>：成分股多为银行、煤炭、石化、交运龙头，盈利稳定。1 年定投最大回撤仅 -12.2%~-14.4%，比大盘温和。</li>
       </ul>
       <p style="margin-top:8px;color:var(--sub)">总回报 ≈ <b>股息收益（4-5%）</b>＋盈利增长（稳健）＋估值变化（小）——红利策略赚的是"确定性现金流"，不赌估值。</p>
     </div>
@@ -257,7 +250,7 @@ tr.hl td{background:#fffaf7}
 <!-- 1 指数走势 -->
 <div class="sec">
   <h2><span class="no">1</span>四大红利指数走势：十年谁在领跑</h2>
-  <div class="desc">四指数<b>全收益</b>（含分红再投）日线，从定投起点 2016-08-01 归一化为 100 的走势。红利低波十年整体领先，红利低波100 波动更小；2024 年红利行情四指数同步走强。悬浮可查看任一时点相对起点倍数。</div>
+  <div class="desc">四指数<b>全收益</b>（含分红再投）日线，从定投起点归一化为 100 的走势。红利低波整体领先，红利低波100 波动更小；2024 年红利行情四指数同步走强。悬浮可查看任一时点相对起点倍数。</div>
   <div class="card">
     <div id="trendChart" style="height:400px"></div>
   </div>
@@ -273,7 +266,7 @@ tr.hl td{background:#fffaf7}
 <!-- 2 真实回撤 -->
 <div class="sec">
   <h2><span class="no">3</span>真实回撤：你实际会浮亏多少、亏多久</h2>
-  <div class="desc">两条口径都要看：① <b>定投组合市值回撤</b>＝每月扣款后账户市值从峰值回落的最大幅度，是定投者真实的浮亏体验；② <b>指数点位回撤</b>＝一次性买入持有的最大跌幅。左图默认展示组合口径，可切换。</div>
+  <div class="desc">两条口径都要看：① <b>定投组合市值回撤</b>＝每年扣款后账户市值从峰值回落的最大幅度，是定投者真实的浮亏体验；② <b>指数点位回撤</b>＝一次性买入持有的最大跌幅。左图默认展示组合口径，可切换。</div>
 
   <div class="chart">
     <div class="head">
@@ -297,8 +290,8 @@ tr.hl td{background:#fffaf7}
   </div>
 
   <div class="alert">
-    <div class="t">⚠ 持有体验提醒：2016 年以来最深的坑在哪</div>
-    <div class="b">定投区间内最深的坑是 <b>2018 年熊市</b>（指数口径最大回撤 %%MDD_IDX_RANGE%%）与 <b>2021 年 9-11 月红利行情回落</b>（组合口径浮亏 %%MDD_AMT_RANGE%% 元）。定投通过持续买入摊低成本，把这些坑填浅了一大半——但请记住：回撤是红利策略的固有属性，不是 bug。</div>
+    <div class="t">⚠ 持有体验提醒：2025 年以来最深的坑在哪</div>
+    <div class="b">定投区间内最深的坑是 <b>2026 年 3-6 月红利回落</b>（指数口径最大回撤 %%MDD_IDX_RANGE%%）与 <b>2025 年 11 月-2026 年 6 月阶段性回落</b>（组合口径浮亏 %%MDD_AMT_RANGE%% 元）。定投通过持续买入摊低成本，把这些坑填浅了一大半——但请记住：回撤是红利策略的固有属性，不是 bug。</div>
     <div class="alert-grid" id="alertGrid"></div>
   </div>
 </div>
@@ -306,7 +299,7 @@ tr.hl td{background:#fffaf7}
 <!-- 3 市值走势 -->
 <div class="sec">
   <h2><span class="no">4</span>定投市值走势：%%INVEST_WAN%% 如何滚成 %%FINAL_WAN_RANGE%%</h2>
-  <div class="desc">灰线为累计投入本金（阶梯至 %%TOTAL%%）。曲线在大部分年份都压在投入线上方，但 2018 年与 2020 年初会短暂跌破——"亏钱时咬牙继续投"正是收益的主要来源。</div>
+  <div class="desc">灰线为累计投入本金（阶梯至 %%TOTAL%%）。曲线在大部分时间都压在投入线上方，但 2026 年 6 月回调时会短暂跌破——"亏钱时咬牙继续投"正是收益的主要来源。</div>
   <div class="chart">
     <div class="head"><div class="t">组合市值 vs 累计投入</div><div class="hint">悬浮查看任一时点浮盈/浮亏</div></div>
     <div id="c_growth"></div>
@@ -317,7 +310,7 @@ tr.hl td{background:#fffaf7}
 <!-- 4 年度 -->
 <div class="sec">
   <h2><span class="no">5</span>年度表现：哪几年在"打折进货"</h2>
-  <div class="desc">下拉切换指数。红色柱＝年末账户浮盈，绿色柱＝年末浮亏（2018 年四个指数全部浮亏，正是摊低成本的黄金期）。<b>「指数年度涨跌幅」＝该指数全收益口径自然年涨幅</b>，用来对照"账户当年盈亏有多少来自指数本身、多少来自定投摊低成本"。</div>
+  <div class="desc">下拉切换指数。红色柱＝年末账户浮盈，绿色柱＝年末浮亏（2026 年 3-6 月回落亦是摊低成本的黄金期，两年年末全部盈利）。<b>「指数年度涨跌幅」＝该指数全收益口径自然年涨幅</b>，用来对照"账户当年盈亏有多少来自指数本身、多少来自定投摊低成本"。</div>
   <div class="chart">
     <div class="head">
       <div class="t">每年末：账户浮盈/浮亏</div>
@@ -337,11 +330,10 @@ tr.hl td{background:#fffaf7}
   <!-- 5 指数年度涨跌幅 -->
 <div class="sec">
   <h2><span class="no">6</span>指数年度涨跌幅：四指数横向对比</h2>
-  <div class="desc">各指数年度涨跌幅（<b>全收益口径</b>，含分红再投）。2016 年为定投起点（2016-08-01）至年末，其余年份为自然年（上年末→本年末）；2026 行为截至 2026-07-31（非完整年度）。红涨绿跌（A 股习惯）。</div>
+  <div class="desc">各指数年度涨跌幅（<b>全收益口径</b>，含分红再投）。自然年口径（上年末→本年末）；2026 行为截至 2026-07-31（非完整年度）。红涨绿跌（A 股习惯）。</div>
   <div class="tbl-box" style="overflow-x:auto">
-<table id="tbl_yoy" style="min-width:560px"></table>
-      </div>
-      <div class="tbl-scroll-hint">← 左右滑动查看更多 →</div>
+    <table id="tbl_yoy" style="min-width:560px"></table>
+  </div>
 </div>
 
 <!-- 6 那到底选哪个 -->
@@ -349,7 +341,7 @@ tr.hl td{background:#fffaf7}
   <div class="desc">回撤数据是选择的钥匙：收益相近时，回撤更小、恢复更快的指数持有体验更好，也更可能坚持到底。</div>
   <div class="pick" id="pick"></div>
   <div class="quote">
-    <p>「10 年定投的最大考验从来不是选哪个指数，而是在账面浮亏的那几个月里，你能不能继续投下去。定投最大的敌人不是市场，是你自己。」</p>
+    <p>「1 年定投的最大考验从来不是选哪个指数，而是在账面浮亏的那几个月里，你能不能继续投下去。定投最大的敌人不是市场，是你自己。」</p>
     <div class="who">回撤是权益策略固有特征，坚持是关键。对比 10 年期缴年金险，其保证回本周期约 8‑12 年，中途退保会亏损本金。红利定投波动直观可见，但保留资金流动性，长期具备更高收益的可能性。</div>
   </div>
 </div>
@@ -363,10 +355,10 @@ tr.hl td{background:#fffaf7}
 <div class="foot">
   <h3>口径与方法说明</h3>
   <p>1. <b>数据源</b>：中证指数官网（csindex.com.cn）官方日线行情，全收益指数（含分红再投资），四个指数：H00015 上证红利、H00922 中证红利、H20269 红利低波、H20955 红利低波100 全收益。页面推荐产品均为<b>场外联接基金（A/C 类）</b>，可定投：A 类收申购费（长期持有更省），C 类免申购费但按日计提销售服务费（短期持有更省）。</p>
-  <p>2. <b>定投规则</b>：每月首个交易日按当日收盘价买入 %%AMOUNT%% 元；2016-08 首期至 2026-07 末期为 %%PERIODS%% 期、总投入 ¥%%TOTAL%%；未计交易费用与税费。</p>
+  <p>2. <b>定投规则</b>：每年年初（1 月首个交易日）按当日收盘价买入 %%AMOUNT%% 元；2025-01 首期至 2026-01 末期为 %%PERIODS%% 期、总投入 ¥%%TOTAL%%；未计交易费用与税费。</p>
   <p>3. <b>年化收益率</b>：按逐笔现金流 XIRR（资金时间价值口径）计算。</p>
   <p>4. <b>组合市值回撤</b>＝每日（累计份额 × 指数点位）从历史峰值回落的最大幅度；<b>指数点位回撤</b>＝指数点位本身从峰值的最大跌幅；<b>恢复日</b>＝回撤区间内首次收复峰值的日期。</p>
-  <p>5. <b>口径说明</b>：本页按月定投 ¥%%AMOUNT%% 复算，共 %%PERIODS%% 期、总投入 ¥%%TOTAL%%；收益率与回撤均为百分比口径，与定投金额大小无关（线性缩放）。回测采用中证指数官网全收益指数真实日线、精确到每月首个交易日收盘价买入，未计交易费用与税费。<b>组合市值口径最大回撤四项：%%MDD_LIST%%</b>。</p>
+  <p>5. <b>口径说明</b>：本页按年定投 ¥%%AMOUNT%% 复算，共 %%PERIODS%% 期、总投入 ¥%%TOTAL%%；收益率与回撤均为百分比口径，与定投金额大小无关（线性缩放）。回测采用中证指数官网全收益指数真实日线、精确到每年年初（1 月首个交易日）收盘价买入，未计交易费用与税费。<b>组合市值口径最大回撤四项：%%MDD_LIST%%</b>。</p>
   <p>6. <b>当前股息率</b>：近 12 个月实际分红收益率，用官方全收益指数与价格指数的日收益差累计（价差法·逐日口径）计算（%%DY_RANGE%%），与 Wind 披露 TTM 股息率交叉验证一致（如中证红利 4.24%，2026-07-31）；逐日口径与首尾法结果差异通常小于 0.3pct。</p>
   <p>7. <b>年度表现口径</b>：年末浮盈＝年末市值−累计投入；当年盈亏＝年末市值−上年末市值−当年投入；2026 行为截至 2026-07-31（回测区间末），非完整年度。</p>
   <p class="warn">⚠ 本页为历史数据回测，不代表未来收益。红利策略亦存在长期跑输与估值回归风险。投资有风险，决策需谨慎。</p>
@@ -404,7 +396,7 @@ const TOTAL  = SERIES.H20269.invested[SERIES.H20269.invested.length-1];
         <div><div class="k">净赚</div><div class="v pos">+¥${c.profit.toLocaleString()}</div></div>
         <div><div class="k">组合最大回撤</div><div class="v neg">${c.mdd_p.toFixed(2)}%</div></div>
         <div><div class="k">当前股息率*</div><div class="v pos">${c.dy.toFixed(2)}%</div></div>
-        <div><div class="k">指数10年最大回撤</div><div class="v neg">${c.mdd_i.toFixed(2)}%</div></div>
+        <div><div class="k">指数1年最大回撤</div><div class="v neg">${c.mdd_i.toFixed(2)}%</div></div>
       </div>
       <div class="mdd">最大浮亏 ¥${c.mdd_p_amt.toLocaleString()}（${c.mdd_p_peak} 峰值 → ${c.mdd_p_trough} 谷底，${c.mdd_p_recover_days} 天收复）</div>
       <div class="etf" style="margin-top:8px">场外基金：${c.otc}</div>`;
@@ -463,15 +455,15 @@ const TOTAL  = SERIES.H20269.invested[SERIES.H20269.invested.length-1];
 /* ---------- 区间内回撤提醒 ---------- */
 (function(){
   const box = document.getElementById("alertGrid");
-  // 指数口径10年回撤提醒 + 组合口径浮亏
+  // 指数口径1年回撤提醒 + 组合口径浮亏
   const idxCards = CARDS.map(c=>({short:c.short, pct:c.mdd_i, peak:c.mdd_i_peak, trough:c.mdd_i_trough, rec:c.mdd_i_recover, days:c.mdd_i_recover_days})).sort((a,b)=>a.pct-b.pct);
   const worst = idxCards[0];
   const worstPort = CARDS.slice().sort((a,b)=>a.mdd_p-b.mdd_p)[0];
   const items = [
-    {n:"指数口径最深回撤（2018 熊市）", v:`${worst.pct.toFixed(2)}%`, s:`${worst.short} · ${worst.peak} → ${worst.trough}，约 ${worst.days/30.44|0} 个月收复`},
+    {n:"指数口径最深回撤（2026 年 3-6 月回调）", v:`${worst.pct.toFixed(2)}%`, s:`${worst.short} · ${worst.peak} → ${worst.trough}，${worst.recover?("约 "+(worst.days/30.44|0)+" 个月收复"):"未收复"}`},
     {n:"组合口径最大浮亏", v:`-¥${worstPort.mdd_p_amt.toLocaleString()}`, s:`${worstPort.short} · 峰值 ${worstPort.mdd_p_peak} → 谷底 ${worstPort.mdd_p_trough}`},
-    {n:"四个指数平均组合回撤", v:`${(CARDS.reduce((s,c)=>s+c.mdd_p,0)/4).toFixed(2)}%`, s:`2016.07 - 2026.07 定投区间内`},
-    {n:"组合回撤最深的时点", v:`2021.09 - 11`, s:`红利行情阶段性回落，谷底浮亏 ${CARDS.filter(c=>c.mdd_p_trough.startsWith("2021-11")).map(c=>SHORT[c.code]+" -¥"+c.mdd_p_amt.toLocaleString()).join("、")}`},
+    {n:"四个指数平均组合回撤", v:`${(CARDS.reduce((s,c)=>s+c.mdd_p,0)/4).toFixed(2)}%`, s:`2025.01 - 2026.07 定投区间内`},
+    {n:"组合回撤最深的时点", v:`${worstPort.mdd_p_trough.slice(0,7)}`, s:`组合口径回撤最深：${worstPort.short}，谷底 ${worstPort.mdd_p_trough}，浮亏 -¥${worstPort.mdd_p_amt.toLocaleString()}`},
   ];
   items.forEach(it=>{
     const el = document.createElement("div");
@@ -532,12 +524,12 @@ let trendChart=null;
 /* 市值走势 */
 let growthChart=null;
 function renderGrowth(){
-  const series = CODES.map(c=>({name:SHORT[c],type:"line",data:SERIES[c].value,smooth:false,symbol:"none",lineStyle:{width:2,color:COLORS[c]},itemStyle:{color:COLORS[c]}}));
-  series.push({name:"累计投入",type:"line",data:SERIES.H20269.invested,smooth:false,symbol:"none",lineStyle:{width:1.6,type:"dashed",color:"#9aa7b8"},itemStyle:{color:"#9aa7b8",opacity:.55}});
+  const series = CODES.map(c=>({name:SHORT[c],type:"line",data:SERIES[c].value,smooth:false,symbol:"none",lineStyle:{width:2,color:COLORS[c]}}));
+  series.push({name:"累计投入",type:"line",data:SERIES.H20269.invested,smooth:false,symbol:"none",lineStyle:{width:1.6,type:"dashed",color:"#9aa7b8"},itemStyle:{opacity:.55}});
   growthChart.setOption({
-    grid:{left:64,right:24,top:38,bottom:52},
-    tooltip:{trigger:"axis",backgroundColor:"rgba(29,41,57,.92)",borderWidth:0,textStyle:{color:"#fff",fontSize:12},valueFormatter:v=>"¥"+Math.round(v).toLocaleString()},
-    legend:{data:[...CODES.map(c=>SHORT[c]),"累计投入"],top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect",itemWidth:18,itemHeight:8},
+    grid:{left:64,right:24,top:30,bottom:52},
+    tooltip:{trigger:"axis",valueFormatter:v=>"¥"+Math.round(v).toLocaleString()},
+    legend:{data:[...CODES.map(c=>SHORT[c]),"累计投入"],top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect"},
     xAxis:{type:"category",data:DATES,boundaryGap:false,...axis},
     yAxis:{type:"value",axisLabel:{formatter:v=>"¥"+(v>=10000?(v/10000).toFixed(1)+"万":v),color:"#6b7686",fontSize:11},splitLine:{lineStyle:{color:"#eef1f6"}}},
     series
@@ -588,7 +580,7 @@ document.getElementById("selYear").onchange = e=>{curCode=e.target.value;renderA
     const m = pickMeta[code];
     const li = [
       ["年化收益率", c.cagr.toFixed(2)+"%"+ (c.cagr===maxCagr?"（四者最高）":"")],
-      ["10年终值", "¥"+c.final_value.toLocaleString()+"（+"+c.total_ret.toFixed(1)+"%）"],
+      ["1年终值", "¥"+c.final_value.toLocaleString()+"（+"+c.total_ret.toFixed(1)+"%）"],
       ["组合最大回撤", c.mdd_p.toFixed(2)+"%"],
       ["最大浮亏", "-¥"+c.mdd_p_amt.toLocaleString()+"（"+c.mdd_p_trough+" 谷底）"],
       ["回撤收复", c.mdd_p_recover_days+" 天"],
@@ -650,5 +642,5 @@ html = html.replace("__CARDS__", jdump(CARDS))
 html = html.replace("__YIELDS__", jdump(YIELDS))
 html = html.replace("__ANNUAL_GRID__", jdump(ANNUAL_GRID))
 
-open("dividend_dashboard.html", "w", encoding="utf-8").write(html)
-print("已生成 dividend_dashboard.html,", len(html)//1024, "KB")
+open("dividend_dashboard_yearly_1y.html", "w", encoding="utf-8").write(html)
+print("已生成 dividend_dashboard_yearly_1y.html,", len(html)//1024, "KB")
