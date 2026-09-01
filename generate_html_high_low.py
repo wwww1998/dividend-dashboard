@@ -446,7 +446,7 @@ __chartTasks.push(function(){
     tooltip:{trigger:"axis",backgroundColor:"rgba(29,41,57,.92)",borderWidth:0,textStyle:{color:"#fff",fontSize:12},valueFormatter:v=>v==null?"-":"¥"+Math.round(v).toLocaleString()},
     legend:{data:[...INDICES.map(it=>SHORT[it.code]+"(最低价)"),"累计投入"],top:0,textStyle:{...fonts,fontSize:12,color:"#6b7686"},icon:"roundRect",itemWidth:18,itemHeight:8},
     xAxis:{type:"category",data:INDICES[0].low.plot.dates,axisLine:{lineStyle:{color:"#ccd4de"}},axisLabel:{color:"#6b7686",fontSize:11},axisTick:{show:false}},
-    yAxis:{type:"value",axisLabel:{formatter:v=>v>=10000?(v/10000).toFixed(1)+"万":v,color:"#6b7686",fontSize:11},splitLine:{lineStyle:{color:"#eef1f6"}},
+    yAxis:{type:"value",axisLabel:{formatter:v=>v>=10000?(v/10000).toFixed(1)+"万":v,color:"#6b7686",fontSize:11},splitLine:{lineStyle:{color:"#eef1f6"}}},
     series
   };
   chart.setOption(option);
